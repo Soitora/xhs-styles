@@ -1,0 +1,263 @@
+@-moz-document domain("sweclockers.com") {
+/* Alternative CSS for Sweclockers (6.0)
+* Original by: Blargmode
+* Redesigned by: Soitora
+* Created: 2017-11-03
+* Version: 1.1
+* Licence: GNU General Public License v3 (GPL-3).
+*/
+
+.articleNavi .head {
+    padding-top: 3px
+}
+.bbColor[style="color: blue;"] {
+    color: #09F!important
+}
+.spoilerContent .bbVideoYoutube:first-child {
+    clear: both
+}
+.articleNavi .quick a, .bbIns, .bbMark, .pages a {
+    border-radius: 3px!important
+}
+.bbSpoiler .spoilerHeader {
+    float: right;
+    margin-top: 7px;
+    margin-right: 5px
+}
+.bbIns, .bbMark {
+    padding: 0 1px!important
+}
+.header, .header .shadow, .menuItem, .searchField .fieldWrap, .searchField input, .signinDialog input, body {
+    background-color: #23272A!important;
+    color: #8A8A8A!important
+}
+.header, .header .shadow, .menuItem, body {
+    background-image: url(https://i.imgur.com/WFaaTHm.png)!important
+}
+.tv-frame .tvf-top {
+    background-image: url("https://i.imgur.com/CNDrVSr.png");
+}
+.tv-frame .tvf-left {
+    background-image: url("https://i.imgur.com/ZwcU1J6.png");
+}
+.tv-frame .tvf-right {
+    background-image: url("https://i.imgur.com/kRfpQVW.png");
+}
+.tv-frame .tvf-bottom {
+    background-image: url("https://i.imgur.com/X8stvnH.png");
+}
+.newsList .commentsBubble {
+    background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+}
+.pushListMonster {
+    background: -moz-linear-gradient(top, #4a276a, #4a276a);
+}
+.mainRecentNews {
+    background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
+}
+.forumWidget {
+    background: -moz-linear-gradient(top, #75421d, #75421d);
+}
+.orangeInfoBox {
+    background: -moz-linear-gradient(top, #75421d, #75421d);
+}
+.bbRelatedBox {
+    border: 0px inset #2C2F33;
+    border-radius: 2px;
+    background: #2C2F33;
+    margin-bottom: 16px;
+    padding: 10px 10px 0;
+}
+.bbIns, .bbMark {
+    background-color: #713a11!important
+}
+.articleKeywords a, .articleNavi .pageButton:hover, .bbTable th, .filterLinks .filterLink.isSelected, .forumForm .body, .forumList .numThreads, .forumList .numViews, .forumList .title, .forumPost, .forumResultPost, .infoBox, .marketList .status, .marketList .title, .memberTable .cell, .pages .isCurrent, .pages a.isCurrent:hover, .pages a.isCurrent:hover .label, .pages a:hover, .postBox, .signinDialog .inner, .stepWidget .stepItem.isSelected, .tanukiCombobox .tcbSelectedItem, .threadList .numReplies, .threadList .select, .threadList .status, .threadList .title, input, select, textarea {
+    background-color: #23272A!important
+}
+#Better_SweClockers fieldset, #betterSwecFilterSettingsList, .bbPoll .inner, .bbQuote, .bbSpoiler .spoilerFrame, .footer .top, .forumForm input, .forumForm textarea, .forumList .lastReply, .forumList .lastThread, .forumList .link, .forumList .numReplies, .forumList .status, .forumPost .details, .forumPost .profile, .forumResultPost .dateline, .infoTextWindow, .mainContent, .marketList .date, .marketList .price, .memberTable .alt2, .postBox .shortcut, .quickReply textarea, .showFrame, .tanukiCombobox .tcbTriggerFrame, .threadList .lastReply, .threadList .numViews, .threadMap .postElement {
+    background-color: #23272A!important
+}
+.threadList .isSticky .numReplies, .threadList .isSticky .select, .threadList .isSticky .status, .threadList .isSticky .title {
+    background-color: #272727!important
+}
+.threadList .isSelected .cell {
+    background-color: #200e00!important
+}
+.threadList .isSticky .lastReply, .threadList .isSticky .numViews {
+    background-color: #2C2F33!important
+}
+.mainMenu .isSelected {
+    background-color: #2C2F33!important;
+    background-image: none!important
+}
+img[src*="/image/diagram/"] {
+    background-color: #CCC
+}
+:not(.arrow):not(.handle) {
+    border-color: #333!important
+}
+.mainWidget .body .divider {
+    border-color: #43413d!important
+}
+.bbTable thead .bbParagraph, .forumTable th .numReplies, .pages a:hover>.label, .postBox .head .title, .tanukiCombobox .tcbSelectedItem {
+    color: #EBEBEB!important
+}
+#Better_SweClockers input:not(.button), #Better_SweClockers textarea, .bbList, .bbParagraph, .bbPre, .bbcode h1, .bbcode h2, .bbcode h3, .bbcode h4, .bbcode h5, .bbcode h6, .contactInfo, .expanderHeader, .feedItem, .forumForm, .forumPost .quoteHead, .forumPost .showFrame, .forumPost .title, .forumResultPost, .forumRules, .forumTable tbody .numThreads, .forumTable td .by, .forumTable td .date, .forumTable td .descr, .forumTable td .numReplies, .forumTable td .time, .forumTable td.numReplies, .galleryFiles, .galleryFiles input, .galleryForm, .galleryForm input, .galleryForm select, .galleryForm textarea, .header .profile .options, .infoText, .infoTextWindow, .marketAcceptRules, .marketFilterBox input, .marketFilterBox select, .marketForm, .marketForm input, .marketForm select, .marketForm textarea, .marketList .row, .memberTable, .ninjaSearch h5, .pages .isCurrent .label, .profileHeader .label, .quickReply label, .searchField input, .signinDialog, .signinDialog input, .spoilerPlaceholder, .tanukiSelect select, .tanukiTextarea textarea, .tanukiTextbox input, label, select {
+    color: #8A8A8A!important
+}
+.prisjaktPopular .ppPrice {
+    color: #6f867e
+}
+#proofArticle, * a, .feedMore, .footer .top a::before, .forumList .lastThread h3, .galleryBody .commentLink::before, .header .profile .hasUnread a, .mwLabel.mwComments, .plLabel.plComments {
+    color: #c15200!important
+}
+#proofArticle:hover, * a:hover, .feedMore:hover, .footer .top a::before:hover, .forumList .lastThread h3:hover, .galleryBody .commentLink::before:hover, .mwLabel.mwComments:hover, .plLabel.plComments:hover {
+    color: #ff8d38!important
+}
+.articleCommentsWidget .boxAction .actionLabel, .forumPost .postHeader .headerLink, .forumTable .title h3 a, .mainWidget .label, .plHead a, .pushListInternal .link .label, .slide a, .socialWidget a {
+    color: #EBEBEB!important
+}
+.commentsBubble, .commentsBubble:hover, .errorBox a, .footer .bottom a, .forumResultPost .postHeader .threadTitle .label, .mainWidget h5 a, .mwReadmore a, .pushListInternal .head h5 a {
+    color: #FFF!important
+}
+.pushListInternal .head a {
+    color: #CCC!important
+}
+.link .label, .pushListExternal a span {
+    color: #6A6A6A!important
+}
+.articleNavi .isCurrent a, .galleryItem a, .header a, .hotGallery a, .newsList .bbParagraph a, .pages a, .popularGalleries a, .tagSection h2 a, .threadMap .postElement a, .videoPush a {
+    color: #8A8A8A!important
+}
+.button, .galleryFileEditor button, .tanukiButton, .taunkiButton, a.button {
+    color: #DDD!important
+}
+.mwLabel, .mwLabel:hover, .plLabel, .plLabel:hover {
+    color: #d8d8d8!important
+}
+.commentsWidget .mwReadmore {
+    text-decoration: none!important
+}
+.commentsWidget .mwReadmore a:hover {
+    text-decoration: underline!important
+}
+.pln {
+    color: #8A8A8A!important
+}
+.pun {
+    color: #BBB!important
+}
+.kwd {
+    color: #0050FF!important
+}
+.lit {
+    color: #EBEBEB!important
+}
+.header .main {
+    background: linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), color-stop(98%, #2C2F33), to(#272829))!important;
+    background: -webkit-linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
+    background: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
+    background: -o-linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
+    background: linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important
+}
+.bbImage .caption {
+    background-color: rgba(35, 39, 42, .8)!important
+}
+.postBox .head {
+    background: -webkit-linear-gradient(top, #979590, #84827d 60%, #7a7873)!important;
+    background: -moz-linear-gradient(top, #979590, #7a7873)!important;
+    background: -o-linear-gradient(top, #979590, #84827d 60%, #7a7873)!important;
+    background: linear-gradient(top, #979590, #84827d 60%, #7a7873)!important
+}
+.bbExpander>.expanderFrame>.expanderFade, .bbQuote.isExpandable>.quoteFrame>.quoteFade {
+    background: -moz-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 39, 42, 0)), color-stop(25%, rgba(35, 39, 42, .5)), color-stop(100%, rgba(35, 39, 42, 1)));
+    background: -webkit-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+    background: -o-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+    background: linear-gradient(to bottom, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+}
+.forumPost .postHeader .cell {
+    background-color: #3e3e3e!important;
+    background-image: -webkit-linear-gradient(top, #3e3e3e, #353535)!important;
+    background-image: -moz-linear-gradient(top, #3e3e3e, #353535)!important;
+    background-image: -o-linear-gradient(top, #3e3e3e, #353535)!important;
+    background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important
+}
+.forumPost.isAuthor .postHeader .cell {
+    background-color: #75421d!important;
+    background-image: -webkit-linear-gradient(top, #75421d, #623e24)!important;
+    background-image: -moz-linear-gradient(top, #75421d, #623e24)!important;
+    background-image: -o-linear-gradient(top, #75421d, #623e24)!important;
+    background-image: linear-gradient(to bottom, #75421d, #75421d)!important
+}
+.button, .galleryFileEditor button, .tanukiButton, .taunkiButton {
+    background-color: #3e3e3e!important;
+    background-image: -webkit-linear-gradient(top, #3e3e3e, #353535)!important;
+    background-image: -moz-linear-gradient(top, #3e3e3e, #353535)!important;
+    background-image: -o-linear-gradient(top, #3e3e3e, #353535)!important;
+    background-image: linear-gradient(to bottom, #3e3e3e, #353535)!important
+}
+.forumResultPost .postHeader .threadTitle {
+    background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+}
+.forumTable .caption {
+    background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+}
+.forumTable .head .cell {
+    background: -moz-linear-gradient(top, #75421d, #75421d);
+}
+#threadList-1 tr.hasUnreadPosts td.status {
+    box-shadow: inset 5px 0 0 0 #75421d;
+}
+.button:hover, .galleryFileEditor button:hover, .tanukiButton:hover, .taunkiButton:hover {
+    background-color: #2a2a2a!important;
+    background-image: -webkit-linear-gradient(top, #2a2a2a, #262626)!important;
+    background-image: -moz-linear-gradient(top, #2a2a2a, #262626)!important;
+    background-image: -o-linear-gradient(top, #2a2a2a, #262626)!important;
+    background-image: linear-gradient(to bottom, #2a2a2a, #262626)!important
+}
+.button, .galleryFileEditor button, .tanukiButton, .taunkiButton {
+    background-color: #3e3e3e !important;
+    background-image: -webkit-linear-gradient(top, #3e3e3e, #353535) !important;
+    background-image: -moz-linear-gradient(top, #3e3e3e, #353535) !important;
+    background-image: -o-linear-gradient(top, #3e3e3e, #353535) !important;
+    background-image: linear-gradient(to bottom, #2C2F33, #2C2F33) !important;
+}
+.prisjaktPopular {
+    background-color: #1d3c49!important;
+    background-image: -webkit-linear-gradient(top, #1d3c49, #204150)!important;
+    background-image: -moz-linear-gradient(top, #1d3c49, #204150)!important;
+    background-image: -o-linear-gradient(top, #1d3c49, #204150)!important;
+    background-image: linear-gradient(to bottom, #1d3c49, #204150)!important
+}
+.pushListInternal {
+    color: #fff;
+    border-radius: 8px;
+    background-color: #2C2F33;
+    background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
+    background: -o-linear-gradient(top, #2C2F33, #2C2F33);
+    background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+    background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 100%);
+    background: linear-gradient(top, #2C2F33, #2C2F33);
+}
+.pages .icon, .sideMenu .icon {
+    background-image: url(http://blargmode.se/files/sweclockers_dark_theme/spritemap.png)!important
+}
+img[src*="/artikel/diagram/"] {
+    filter: invert(85%);
+    -webkit-filter: invert(85%);
+    -o-filter: invert(85%);
+    -ms-filter: "invert(85%)";
+    background: none!important
+}
+.bbPre.showFrame, .bbSpoiler .spoilerFrame, .bbcode .bbQuote, .bbcode hr.bbHr {
+    border: 1px solid #333!important;
+    border-top-color: #000!important;
+    border-left-color: #000!important
+}
+/* Last update: 2017-11-03 20:40:22 */
+}
