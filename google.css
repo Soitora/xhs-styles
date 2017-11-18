@@ -107,7 +107,7 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
     }
 }
-@-moz-document regexp("https?://(www|images|encrypted).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})/search.*") {
+@-moz-document regexp("https?://(www|images|encrypted).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})(/search.*|/?)$") {
     #viewport, #gsr {
         background: #F5F5F5;
     }
@@ -1337,7 +1337,7 @@
         padding-top: 10px;
     }
 }
-@-moz-document regexp("https?://(www|encrypted|images).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})/search.*") {
+@-moz-document regexp("https?://(www|encrypted|images).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})(/search.*|/?)$") {
     #gsr g-section-with-header g-scrolling-carousel {
         margin-left: -20px !important;
     }
@@ -1510,7 +1510,7 @@
         font-family: "Roboto", "Arial", Sans-serif;
     }
 }
-@-moz-document regexp("https?://(www|encrypted).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})/search.*") {
+@-moz-document regexp("https?://(www|encrypted).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})(/search.*|/?)$") {
     #hdtb, .sfbg, .sfbgg, .sfbgx, #hdtbSum, #hdtbMenus {
         background: #2C2F33 !important;
     }
