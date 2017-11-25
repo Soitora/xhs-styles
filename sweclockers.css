@@ -1,375 +1,951 @@
 @-moz-document domain("sweclockers.com") {
 /* Dark Mode for Sweclockers.com
-* Original by: Blargmode
-* Redesigned by: Soitora
+* Created by: Soitora
 * Created: 2017-11-03
-* Updated: 2017-11-21
-* Version: 1.2
+* Updated: 2017-11-25
+* Version: 1.3
 * Licence: GNU General Public License v3 (GPL-3).
 */
-
-.articleNavi .head {
-  padding-top: 3px
-}
-
-.bbColor[style="color: blue;"] {
-  color: #09F!important
-}
-
-.spoilerContent .bbVideoYoutube:first-child {
-  clear: both
-}
-
-.articleNavi .quick a, .bbIns, .bbMark, .pages a {
-  border-radius: 3px!important
-}
-
-.bbSpoiler .spoilerHeader {
-  float: right;
-  margin-top: 7px;
-  margin-right: 5px
-}
-
-.bbIns, .bbMark {
-  padding: 0 1px!important
-}
-
-.header, .header .shadow, .menuItem, .searchField .fieldWrap, .searchField input, .signinDialog input, body {
-  background-color: #23272A!important;
-  color: #8A8A8A!important
-}
-
-.mainMenu li.optionBlackfriday {
-  border-color: #393d44!important;
-}
-
-.header, .header .shadow, .menuItem, body {
-  background-image: url(https://i.imgur.com/WFaaTHm.png)!important
-}
-
-.tv-frame .tvf-top {
-  background-image: url("https://i.imgur.com/CNDrVSr.png");
-}
-
-.tv-frame .tvf-left {
-  background-image: url("https://i.imgur.com/ZwcU1J6.png");
-}
-
-.tv-frame .tvf-right {
-  background-image: url("https://i.imgur.com/kRfpQVW.png");
-}
-
-.tv-frame .tvf-bottom {
-  background-image: url("https://i.imgur.com/X8stvnH.png");
-}
-
-.newsList .commentsBubble {
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-}
-
-.pushListMonster {
-  background: -moz-linear-gradient(top, #4a276a, #4a276a);
-}
-
-.mainRecentNews {
-  background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
-}
-
-.forumWidget, .orangeInfoBox {
-  background: -moz-linear-gradient(top, #a95000, #a95000);
-}
-
-.bbRelatedBox {
-  border: 0px inset #2C2F33;
-  border-radius: 2px;
-  background: #2C2F33;
-  margin-bottom: 16px;
-  padding: 10px 10px 0;
-}
-
-.bbIns, .bbMark {
-  background-color: #a95000!important
-}
-
-.articleKeywords a, .articleNavi .pageButton:hover, .bbTable th, .filterLinks .filterLink.isSelected, .forumForm .body, .forumList .numThreads, .forumList .numViews, .forumList .title, .forumPost, .forumResultPost, .infoBox, .marketList .status, .marketList .title, .memberTable .cell, .pages .isCurrent, .pages a.isCurrent:hover, .pages a.isCurrent:hover .label, .pages a:hover, .postBox, .signinDialog .inner, .stepWidget .stepItem.isSelected, .tanukiCombobox .tcbSelectedItem, .threadList .numReplies, .threadList .select, .threadList .status, .threadList .title, input, select, textarea {
-  background-color: #23272A!important
-}
-
-#Better_SweClockers fieldset, #betterSwecFilterSettingsList, .bbPoll .inner, .bbQuote, .bbSpoiler .spoilerFrame, .footer .top, .forumForm input, .forumForm textarea, .forumList .lastReply, .forumList .lastThread, .forumList .link, .forumList .numReplies, .forumList .status, .forumPost .details, .forumPost .profile, .forumResultPost .dateline, .infoTextWindow, .mainContent, .marketList .date, .marketList .price, .memberTable .alt2, .postBox .shortcut, .quickReply textarea, .showFrame, .tanukiCombobox .tcbTriggerFrame, .threadList .lastReply, .threadList .numViews, .threadMap .postElement {
-  background-color: #23272A!important
-}
-
-optgroup[label="Better SweClockers"] {
-  background-color: #2C2F33;
-}
-
-.threadList .isSticky .numReplies, .threadList .isSticky .select, .threadList .isSticky .status, .threadList .isSticky .title {
-  background-color: #272727!important
-}
-
-.threadList .isSelected .cell {
-  background-color: #200e00!important
-}
-
-.threadList .isSticky .lastReply, .threadList .isSticky .numViews {
-  background-color: #2C2F33!important
-}
-
-.mainMenu .isSelected {
-  background-color: #2C2F33!important;
-  background-image: none!important
-}
-
-img[src*="/image/diagram/"] {
-  background-color: #CCC
-}
-
 :not(.arrow):not(.handle) {
-  border-color: #1f2225!important
+	border-color: #1f2225!important
 }
-
-.mainWidget .body .divider {
-  border-color: #43413d!important
+.bbColor[style="color: blue;"] {
+	color: #09F!important
 }
-
-.bbTable thead .bbParagraph, .forumTable th .numReplies, .pages a:hover>.label, .postBox .head .title, .tanukiCombobox .tcbSelectedItem {
-  color: #EBEBEB!important
+#Better_SweClockers fieldset, #betterSwecFilterSettingsList {
+	background-color: #23272A!important
 }
-
-#Better_SweClockers input:not(.button), #Better_SweClockers textarea, .bbList, .bbParagraph, .bbPre, .bbcode h1, .bbcode h2, .bbcode h3, .bbcode h4, .bbcode h5, .bbcode h6, .contactInfo, .expanderHeader, .feedItem, .forumForm, .forumPost .quoteHead, .forumPost .showFrame, .forumPost .title, .forumResultPost, .forumRules, .forumTable tbody .numThreads, .forumTable td .by, .forumTable td .date, .forumTable td .descr, .forumTable td .numReplies, .forumTable td .time, .forumTable td.numReplies, .galleryFiles, .galleryFiles input, .galleryForm, .galleryForm input, .galleryForm select, .galleryForm textarea, .header .profile .options, .infoText, .infoTextWindow, .marketAcceptRules, .marketFilterBox input, .marketFilterBox select, .marketForm, .marketForm input, .marketForm select, .marketForm textarea, .marketList .row, .memberTable, .ninjaSearch h5, .pages .isCurrent .label, .profileHeader .label, .quickReply label, .searchField input, .signinDialog, .signinDialog input, .spoilerPlaceholder, .tanukiSelect select, .tanukiTextarea textarea, .tanukiTextbox input, label, select {
-  color: #8A8A8A!important
+#Better_SweClockers input:not(.button), #Better_SweClockers textarea {
+	color: #8A8A8A!important
 }
-
-.prisjaktPopular .ppPrice {
-  color: #6f867e
+#Better_SweClockers_SearchWithGoogle {
+	color: #166beb;
+	font-family: Courier;
 }
-
-#proofArticle, * a, .feedMore, .footer .top a::before, .forumList .lastThread h3, .galleryBody .commentLink::before, .header .profile .hasUnread a, .mwLabel.mwComments, .plLabel.plComments {
-  color: #a95000!important
+optgroup[label="Better SweClockers"] {
+	background-color: #2C2F33;
 }
-
-#proofArticle:hover, * a:hover, .feedMore:hover, .footer .top a::before:hover, .forumList .lastThread h3:hover, .galleryBody .commentLink::before:hover, .mwLabel.mwComments:hover, .plLabel.plComments:hover {
-  color: #a95000!important
-}
-
-.forumList .categoryItem .cell, .forumList .categoryItem.isCollapsed .cell {
-  background: #2C2F33;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
-  background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -o-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33);
-  background: linear-gradient(top, #2C2F33, #2C2F33)
-}
-
-.forumForm>.head {
-  background: #2C2F33;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
-  background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -o-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2C2F33', EndColorStr='#2C2F33')";
-  background: -ms-linear-gradient(top, #2C2F33, #2C2F33);
-  background: linear-gradient(top, #2C2F33, #2C2F33);
-}
-
-.articleCommentsWidget .boxAction .actionLabel, .forumPost .postHeader .headerLink, .forumTable .title h3 a, .mainWidget .label, .plHead a, .pushListInternal .link .label, .slide a, .socialWidget a {
-  color: #EBEBEB!important
-}
-
-.commentsBubble, .commentsBubble:hover, .errorBox a, .footer .bottom a, .forumResultPost .postHeader .threadTitle .label, .mainWidget h5 a, .mwReadmore a, .pushListInternal .head h5 a {
-  color: #FFF!important
-}
-
-.footer .bottom {
-  background: #202326;
-  color: #FFF;
-  padding: 20px 0 20px 0;
-}
-
-.pushListInternal .head a {
-  color: #CCC!important
-}
-
-.link .label, .pushListExternal a span {
-  color: #6A6A6A!important
-}
-
-.articleNavi .isCurrent a, .galleryItem a, .header a, .hotGallery a, .newsList .bbParagraph a, .pages a, .popularGalleries a, .tagSection h2 a, .threadMap .postElement a, .videoPush a {
-  color: #8A8A8A!important
-}
-
-.button, .galleryFileEditor button, .tanukiButton, .taunkiButton, a.button {
-  color: #DDD!important
-}
-
-.mwLabel, .mwLabel:hover, .plLabel, .plLabel:hover {
-  color: #d8d8d8!important
-}
-
-.commentsWidget .mwReadmore {
-  text-decoration: none!important
-}
-
-.commentsWidget .mwReadmore a:hover {
-  text-decoration: underline!important
-}
-
-.pln {
-  color: #8A8A8A!important
-}
-
-.pun {
-  color: #BBB!important
-}
-
-.kwd {
-  color: #0050FF!important
-}
-
-.lit {
-  color: #EBEBEB!important
-}
-
-.header .main {
-  background: linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), color-stop(98%, #2C2F33), to(#272829))!important;
-  background: -webkit-linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background: -o-linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
-  background: linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important
-}
-
-.bbImage .caption {
-  background-color: rgba(35, 39, 42, .8)!important
-}
-
-.postBox .head {
-  background: -webkit-linear-gradient(top, #979590, #84827d 60%, #7a7873)!important;
-  background: -moz-linear-gradient(top, #979590, #7a7873)!important;
-  background: -o-linear-gradient(top, #979590, #84827d 60%, #7a7873)!important;
-  background: linear-gradient(top, #979590, #84827d 60%, #7a7873)!important
-}
-
-.bbExpander>.expanderFrame>.expanderFade, .bbQuote.isExpandable>.quoteFrame>.quoteFade {
-  background: -moz-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 39, 42, 0)), color-stop(25%, rgba(35, 39, 42, .5)), color-stop(100%, rgba(35, 39, 42, 1)));
-  background: -webkit-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-  background: -o-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-  background: linear-gradient(to bottom, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-}
-
-.forumPost .postHeader .cell {
-  background-color: #2C2F33!important;
-  background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important
-}
-
-.forumPost.isAuthor .postHeader .cell {
-  background-color: #a95000!important;
-  background-image: -webkit-linear-gradient(top, #a95000, #a95000)!important;
-  background-image: -moz-linear-gradient(top, #a95000, #a95000)!important;
-  background-image: -o-linear-gradient(top, #a95000, #a95000)!important;
-  background-image: linear-gradient(to bottom, #a95000, #a95000)!important
-}
-
-.forumPost.isLinked.isAuthor {
-  border-color: #a95000;
-  box-shadow: 0 0 5px 2px #a95000;
-}
-
-.button, .galleryFileEditor button, .tanukiButton, .taunkiButton {
-  background-color: #2C2F33!important;
-  background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important;
-  background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important
-}
-
-.forumResultPost .postHeader .threadTitle {
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
-}
-
-.forumTable .caption {
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
-}
-
-.forumTable .head .cell {
-  background: -moz-linear-gradient(top, #a95000, #a95000);
-}
-
-#threadList-1 tr.hasUnreadPosts td.status {
-  box-shadow: inset 5px 0 0 0 #a95000;
-}
-
-.button:hover, .galleryFileEditor button:hover, .tanukiButton:hover, .taunkiButton:hover {
-  background-color: #2a2a2a!important;
-  background-image: -webkit-linear-gradient(top, #2a2a2a, #262626)!important;
-  background-image: -moz-linear-gradient(top, #2a2a2a, #262626)!important;
-  background-image: -o-linear-gradient(top, #2a2a2a, #262626)!important;
-  background-image: linear-gradient(to bottom, #2a2a2a, #262626)!important
-}
-
-.button, .galleryFileEditor button, .tanukiButton, .taunkiButton {
-  background-color: #2C2F33 !important;
-  background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33) !important;
-  background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33) !important;
-  background-image: -o-linear-gradient(top, #2C2F33, #2C2F33) !important;
-  background-image: linear-gradient(to bottom, #2C2F33, #2C2F33) !important;
-}
-
-.prisjaktPopular {
-  background-color: #1d3c49!important;
-  background-image: -webkit-linear-gradient(top, #1d3c49, #204150)!important;
-  background-image: -moz-linear-gradient(top, #1d3c49, #204150)!important;
-  background-image: -o-linear-gradient(top, #1d3c49, #204150)!important;
-  background-image: linear-gradient(to bottom, #1d3c49, #204150)!important
-}
-
-.pushListInternal {
-  color: #fff;
-  border-radius: 8px;
-  background-color: #2C2F33;
-  background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
-  background: -o-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
-  background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 100%);
-  background: linear-gradient(top, #2C2F33, #2C2F33);
-}
-
-.pages .icon, .sideMenu .icon {
-  background-image: url(http://blargmode.se/files/sweclockers_dark_theme/spritemap.png)!important
-}
-
 img[src*="/artikel/diagram/"] {
-  filter: invert(85%);
-  -webkit-filter: invert(85%);
-  -o-filter: invert(85%);
-  -ms-filter: "invert(85%)";
-  background: none!important
+	background-color: #8a8a8a;
+	-webkit-filter: invert(85%);
+	-o-filter: invert(85%);
+	-ms-filter: "invert(85%)";
+	filter: invert(85%);
+	background: none!important
 }
-
-.bbPre.showFrame, .bbSpoiler .spoilerFrame, .bbcode .bbQuote, .bbcode hr.bbHr {
-  border: 1px solid #2C2F33!important;
-  border-top-color: #2C2F33!important;
-  border-left-color: #2C2F33!important
+img[src*="/image/diagram/"] {
+	background-color: #CCC
 }
-
-.mellandagsrea .tips .tipsData .productCell, .mellandagsrea .tips .tipsData .userCell .colUser, .mellandagsrea .tips .tipsData .pjCell {
-  background: #2C2F33;
+.bbRelatedBox {
+	border: 0px inset #2C2F33;
+	border-radius: 2px;
+	background: #2C2F33;
+	margin-bottom: 16px;
+	padding: 10px 10px 0;
 }
-
-.mellandagsrea .tips .tipsRow:hover .productCell, .mellandagsrea .tips .tipsRow:hover .pjCell, .mellandagsrea .tips .tipsRow:hover .userCell .colUser {
-  background: #23272A;
+.bbPre.showFrame {
+	background: #2C2F33;
+	border-left-color: #2C2F33!important;
+	border-top-color: #2C2F33!important;
+	border: 1px solid #2C2F33!important;
 }
-
+.button, a.button {
+	background-color: #2C2F33!important;
+	background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important;
+	color: #DDD!important;
+}
+.bbIns, .bbMark {
+	padding: 0 1px!important;
+	border-radius: 3px!important;
+	background-color: #a95000!important
+}
+.mainMenu li.optionBlackfriday {
+	border-color: #393d44!important;
+}
+.tv-frame .tvf-left {
+	background-image: url("https://i.imgur.com/ZwcU1J6.png");
+}
+.tv-frame .tvf-top {
+	background-image: url("https://i.imgur.com/CNDrVSr.png");
+}
+.tv-frame .tvf-right {
+	background-image: url("https://i.imgur.com/kRfpQVW.png");
+}
+.tv-frame .tvf-bottom {
+	background-image: url("https://i.imgur.com/X8stvnH.png");
+}
+.newsList .commentsBubble {
+	background: -webkit-gradient(linear, left top, left bottom, from(#202326), to(#202326));
+	background: -moz-linear-gradient(top, #202326, #202326);
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border: 1px solid #202326;
+}
+.postBox .head {
+	background: -moz-linear-gradient(top, #979590, #979590)!important;
+	background: -o-linear-gradient(top, #979590, #979590 60%, #979590)!important;
+	background: -webkit-linear-gradient(top, #979590, #979590 60%, #979590)!important;
+	background: linear-gradient(top, #979590, #979590 60%, #979590)!important
+}
+.pages .icon {
+	background-image: url(https://simonmattila.se/projects/sweclockers/xhs-spritemap.png)!important
+}
+.sideMenu .icon {
+	background-image: url(https://simonmattila.se/projects/sweclockers/xhs-spritemap.png)!important
+}
+.bbSpoiler .spoilerHeader {
+	float: right;
+	margin-top: 7px;
+	margin-right: 5px
+}
+.commentsWidget .mwReadmore {
+	text-decoration: none!important
+}
+.commentsWidget .mwReadmore a:hover {
+	text-decoration: underline!important
+}
+.footer .bottom {
+	background: #202326;
+	color: #FFF;
+	padding: 20px 0 20px 0;
+}
+.forumForm>.head {
+	background: #2C2F33;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
+	background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -o-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2C2F33', EndColorStr='#2C2F33')";
+}
+.bbcode hr.bbHr {
+	border: 1px solid #2C2F33!important;
+	border-top-color: #2C2F33!important;
+	border-left-color: #2C2F33!important
+}
+.mainMenu .isSelected {
+	background-color: #2C2F33!important;
+	background-image: none!important
+}
+.articleNavi .head {
+	border-bottom: 1px solid #b2afa6;
+	padding-top: 3px
+}
+.bbImage .caption {
+	background-color: rgba(35, 39, 42, .8)!important
+}
+.bbSpoiler .spoilerFrame {
+	border: 1px solid #2C2F33!important;
+	border-top-color: #2C2F33!important;
+	border-left-color: #2C2F33!important
+}
+.forumPost.isLinked.isAuthor {
+	border-color: #a95000;
+	box-shadow: 0 0 5px 2px #a95000;
+}
+.bbcode .bbQuote {
+	border: 1px solid #2C2F33!important;
+	border-top-color: #2C2F33!important;
+	border-left-color: #2C2F33!important
+}
+.forumTable .caption {
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+}
+.header .logo {
+	background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');
+}
+.header .main {
+	background: linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), color-stop(98%, #2C2F33), to(#272829))!important;
+	background: -webkit-linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background: -o-linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important;
+	background: linear-gradient(top, #2C2F33, #2C2F33 98%, #272829)!important
+}
+.spoilerContent .bbVideoYoutube:first-child {
+	clear: both
+}
+.threadList .isSelected .cell {
+	background: #200e00 !important;
+	border-bottom-color: #d7d5d1
+}
+.forumResultPost .postHeader .threadTitle {
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+}
+.forumPost .postHeader .cell {
+	background-color: #2C2F33!important;
+	background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important
+}
+.mainWidget .body .divider {
+	border-color: #43413d!important
+}
+.forumTable .head .cell {
+	background: -moz-linear-gradient(top, #a95000, #a95000);
+}
+.galleryFileEditor button, .tanukiButton, .taunkiButton {
+	color: #DDD!important;
+	background-color: #2C2F33!important;
+	background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important;
+	background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important
+}
+.forumPost.isAuthor .postHeader .cell {
+	background-color: #a95000!important;
+	background-image: -webkit-linear-gradient(top, #a95000, #a95000)!important;
+	background-image: -moz-linear-gradient(top, #a95000, #a95000)!important;
+	background-image: -o-linear-gradient(top, #a95000, #a95000)!important;
+	background-image: linear-gradient(to bottom, #a95000, #a95000)!important
+}
+.articleNavi .quick a, .pages a {
+	border-radius: 3px!important
+}
+.link .label, .pushListExternal a span {
+	color: #6A6A6A!important
+}
+.mellandagsrea .tips .tipsData .pjCell {
+	background: #2C2F33;
+	border-bottom: 2px solid #2C2F33;
+	color: #2C2F33;
+}
+.mellandagsrea .tips .tipsData .productCell {
+	background: #2C2F33;
+	border-bottom: 2px solid #2C2F33;
+	border-left: 1px solid #2C2F33;
+}
+.searchField .fieldWrap, .searchField input, .signinDialog input {
+	background-color: #23272A!important;
+	background-image: url(https://i.imgur.com/WFaaTHm.png)!important;
+	color: #8A8A8A!important;
+}
+.mwLabel, .mwLabel:hover, .plLabel, .plLabel:hover {
+	color: #d8d8d8!important
+}
+.mellandagsrea .tips .tipsData .userCell .colUser {
+	background: #2C2F33;
+	border-bottom: 2px solid #2C2F33;
+	border-right: 1px solid #2C2F33;
+}
+.mellandagsrea .tips .tipsRow:hover .userCell .colUser {
+	background: #23272A;
+}
 .mellandagsrea .tips .tipsData .userCell .colScore .label {
-  background: #a95000;
+	background: #a95000;
+	color: #fff;
 }
-
+.mellandagsrea .vendorProducts {
+	background: #2C2F33;
+	border-left: 1px solid #2C2F33;
+	border-top: 1px solid #2C2F33;
+}
+.mellandagsrea .productFooter {
+	background: #2C2F33;
+}
+.threadList .isSticky .lastReply, .threadList .isSticky .numViews {
+	background-color: #2C2F33!important
+}
+.bbExpander>.expanderFrame>.expanderFade, .bbQuote.isExpandable>.quoteFrame>.quoteFade {
+	background: -moz-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 39, 42, 0)), color-stop(25%, rgba(35, 39, 42, .5)), color-stop(100%, rgba(35, 39, 42, 1)));
+	background: -webkit-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+	background: -o-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+	background: linear-gradient(to bottom, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%)
+}
+.forumList .categoryItem .cell, .forumList .categoryItem.isCollapsed .cell {
+	background: #2C2F33;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
+	background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -o-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33);
+	background: linear-gradient(top, #2C2F33, #2C2F33)
+}
+.button:hover, .galleryFileEditor button:hover, .tanukiButton:hover, .taunkiButton:hover {
+	background-color: #2a2a2a!important;
+	background-image: -webkit-linear-gradient(top, #2a2a2a, #262626)!important;
+	background-image: -moz-linear-gradient(top, #2a2a2a, #262626)!important;
+	background-image: -o-linear-gradient(top, #2a2a2a, #262626)!important;
+	background-image: linear-gradient(to bottom, #2a2a2a, #262626)!important
+}
+.mellandagsrea .tips .tipsRow:hover .productCell, .mellandagsrea .tips .tipsRow:hover .pjCell {
+	background: #23272A;
+}
+.header, .header .shadow, .menuItem, .searchField .fieldWrap, .searchField input, .signinDialog input, body {
+	background-color: #23272A!important;
+	color: #8A8A8A!important;
+	background-image: url(https://i.imgur.com/WFaaTHm.png)!important
+}
+.threadList .isSticky .numReplies, .threadList .isSticky .select, .threadList .isSticky .status, .threadList .isSticky .title {
+	background-color: #272727!important
+}
+.bbTable thead .bbParagraph, .forumTable th .numReplies, .pages a:hover>.label, .postBox .head .title, .tanukiCombobox .tcbSelectedItem {
+	color: #EBEBEB!important
+}
+.commentsBubble, .commentsBubble:hover, .errorBox a, .footer .bottom a, .forumResultPost .postHeader .threadTitle .label, .mainWidget h5 a, .mwReadmore a, .pushListInternal .head h5 a {
+	color: #FFF!important
+}
+.articleCommentsWidget .boxAction .actionLabel, .forumPost .postHeader .headerLink, .forumTable .title h3 a, .mainWidget .label, .plHead a, .pushListInternal .link .label, .slide a, .socialWidget a {
+	color: #EBEBEB!important
+}
+.articleNavi .isCurrent a, .galleryItem a, .header a, .hotGallery a, .newsList .bbParagraph a, .pages a, .popularGalleries a, .tagSection h2 a, .threadMap .postElement a, .videoPush a {
+	color: #8A8A8A!important
+}
+.bbPoll .inner, .bbQuote, .bbSpoiler .spoilerFrame, .footer .top, .forumForm input, .forumForm textarea, .forumList .lastReply, .forumList .lastThread, .forumList .link, .forumList .numReplies, .forumList .status, .forumPost .details, .forumPost .profile, .forumResultPost .dateline, .infoTextWindow, .mainContent, .marketList .date, .marketList .price, .memberTable .alt2, .postBox .shortcut, .quickReply textarea, .showFrame, .tanukiCombobox .tcbTriggerFrame, .threadList .lastReply, .threadList .numViews, .threadMap .postElement {
+	background-color: #23272A!important
+}
+.articleKeywords a, .articleNavi .pageButton:hover, .bbTable th, .filterLinks .filterLink.isSelected, .forumForm .body, .forumList .numThreads, .forumList .numViews, .forumList .title, .forumPost, .forumResultPost, .infoBox, .marketList .status, .marketList .title, .memberTable .cell, .pages .isCurrent, .pages a.isCurrent:hover .label, .postBox, .signinDialog .inner, .stepWidget .stepItem.isSelected, .tanukiCombobox .tcbSelectedItem, .threadList .numReplies, .threadList .select, .threadList .status, .threadList .title, input, select, textarea {
+	background-color: #23272A!important
+}
+.searchField .fieldWrap, .bbList, .bbParagraph, .bbPre, .contactInfo, .expanderHeader, .feedItem, .forumForm, .forumPost .quoteHead, .forumPost .showFrame, .forumPost .title, .forumResultPost, .forumRules, .forumTable tbody .numThreads, .forumTable td .by, .forumTable td .date, .forumTable td .descr, .forumTable td .numReplies, .forumTable td .time, .forumTable td.numReplies, .galleryFiles, .galleryFiles input, .galleryForm, .galleryForm input, .galleryForm select, .galleryForm textarea, .header .profile .options, .infoText, .infoTextWindow, .marketAcceptRules, .marketFilterBox input, .marketFilterBox select, .marketForm, .marketForm input, .marketForm select, .marketForm textarea, .marketList .row, .memberTable, .ninjaSearch h5, .pages .isCurrent .label, .profileHeader .label, .quickReply label, .signinDialog, .spoilerPlaceholder, .tanukiSelect select, .tanukiTextarea textarea, .tanukiTextbox input, label, select {
+	color: #8A8A8A!important
+}
+.forumWidget {
+	background-color: #a95000;
+	background: -moz-linear-gradient(top, #a95000, #a95000);
+	background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
+	background: -o-linear-gradient(top, #a95000, #a95000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
+	background: -webkit-linear-gradient(top, #a95000, #a95000);
+	background: linear-gradient(top, #a95000, #a95000)
+}
+.mainRecentNews {
+	background-color: #2C2F33;
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 100%);
+	background: -o-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
+	background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
+	background: linear-gradient(top, #2C2F33, #2C2F33)
+}
+.orangeInfoBox {
+	background-color: #a95000;
+	background: -moz-linear-gradient(top, #a95000, #a95000);
+	background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
+	background: -o-linear-gradient(top, #a95000, #a95000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
+	background: -webkit-linear-gradient(top, #a95000, #a95000);
+	background: linear-gradient(top, #a95000, #a95000)
+}
+.prisjaktPopular {
+	color: #fff;
+	background-color: #1d3c49;
+	background: -moz-linear-gradient(top, #1d3c49, #1d3c49);
+	background: -ms-linear-gradient(top, #1d3c49 0, #1d3c49 100%);
+	background: -o-linear-gradient(top, #1d3c49, #1d3c49);
+	background: -webkit-gradient(linear, left top, left bottom, from(#1d3c49), to(#1d3c49));
+	background: -webkit-linear-gradient(top, #1d3c49, #1d3c49);
+	background: linear-gradient(top, #1d3c49, #1d3c49)
+}
+.prisjaktPopular .ppPrice {
+	color: #6f867e
+}
+#proofArticle, * a, .feedMore, .footer .top a::before, .forumList .lastThread h3, .galleryBody .commentLink::before, .header .profile .hasUnread a, .mwLabel.mwComments, .plLabel.plComments {
+	color: #a95000!important
+}
+#proofArticle:hover, * a:hover, .feedMore:hover, .footer .top a::before:hover, .forumList .lastThread h3:hover, .galleryBody .commentLink::before:hover, .mwLabel.mwComments:hover, .plLabel.plComments:hover {
+	color: #a95000!important
+}
+#threadList-1 tr.hasUnreadPosts td.status {
+	box-shadow: inset 5px 0 0 0 #a95000;
+}
+.profileFeed .date {
+  color: #864000;
+}
+.pushListInternal {
+	color: #fff;
+	background-color: #2C2F33;
+	background: -moz-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 100%);
+	background: -o-linear-gradient(top, #2C2F33, #2C2F33);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33));
+	background: -webkit-linear-gradient(top, #2C2F33, #2C2F33);
+	background: linear-gradient(top, #2C2F33, #2C2F33)
+}
+.pushListInternal .head a {
+	color: #CCC!important
+}
+.pushListMonster {
+	background-color: #4a276a;
+	background: -moz-linear-gradient(top, #4a276a, #4a276a);
+	background: -ms-linear-gradient(top, #4a276a, #4a276a);
+	background: -o-linear-gradient(top, #4a276a, #4a276a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4a276a), to(#4a276a));
+	background: -webkit-linear-gradient(top, #4a276a, #4a276a);
+	background: linear-gradient(top, #4a276a, #4a276a)
+}
+.threadStatus {
+	background-image: url('https://simonmattila.se/projects/sweclockers/threadStatus.png');
+	background-repeat: no-repeat;
+	background-size: 850px auto;
+	background-position: 0 0;
+	margin: 0 auto;
+	width: 19px;
+	height: 19px;
+}
+.kwd {
+	color: #0050FF!important
+}
+.lit {
+	color: #EBEBEB!important
+}
+.pln {
+	color: #8A8A8A!important
+}
+.pun {
+	color: #BBB!important
+}
+.tanukiCombobox.hasErrors .tcbTriggerFrame {
+	border-color: #a95000;
+	outline: #a95000 auto 5px
+}
+.tanukiFile.hasErrors input {
+	border-color: #a95000;
+	outline: #a95000 auto 5px
+}
+.tanukiSelect.hasErrors select {
+	border-color: #a95000;
+	outline: #a95000 auto 5px
+}
+.tanukiTextarea.hasErrors textarea {
+	border-color: #a95000;
+	outline: #a95000 auto 5px
+}
+.tanukiTextbox.hasErrors input {
+	border-color: #a95000;
+	outline: #a95000 auto 5px
+}
+.tanukiError .error {
+	background-color: #a95000;
+	border: 1px solid #a95000;
+	color: #fff;
+}
+.tanukiCombobox .tcbPanel {
+	background: #202326;
+	border: 1px
+	solid #7f9db9;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.175) }
+  
+/*
+@media only screen and (-webkit-min-device-pixel-ratio:1.1), only screen and (-moz-min-device-pixel-ratio:1.1), only screen and (min-device-pixel-ratio:1.1), only screen and (max-device-width:480px), only screen and (min-resolution:1.1dppx) { .articleCommentsWidget .boxAction .actionIcon; .articleList .comments .icon; .articleListCompact .comments .icon; .bbAward .badge; .bbImage .imgControls .icon; .bbSlideshow .slideControls .icon; .contentTools .icon; .fbShareButton .fbIcon; .footer .bottom .logo; .footer .top .block; .footer .top .rssFeeds .icon; .forumList .cell.status .forumStatus; .forumPost .controls .button .icon; .forumPost .deletedMessage .icon; .forumPost .modNotice .icon; .forumPost .profile .moderatorNotes .icon; .forumResultPost .deletedMessage .icon; .galleryRating .star; .header .logo; .header .profile .icon; .lightbox .lbControls .lbNavButton .lbButtonIcon; .mainContent .button.report .icon; .mainWidget .mwHeadIcon; .mainWidget .mwIcon; .marketList .comments .icon; .marketList .marketThumb.noImage .icon; .newsList .commentsBubble span; .ninjaSearch .searchField .icon; .ninjaSearchResult .resultList .icon div .pages .icon; .profileHeader .statistics .icon; .pushList .plIcon; .pushListMonster .plmi-arrow; .quickReply .rssLink .icon; .sideBox .icon; .sideMenu .icon; .smiley; .threadList .body .lastReply .icon; .threadList .pageLinks .icon; .threadStatus; .toolbar .tbButton .btnIcon; .wndToolbarDecorator .wndToolbarMenu .wndToolbarControl; }
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (-moz-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2), only screen and (min-resolution:2dppx) { .articleCommentsWidget .boxAction .actionIcon; .articleList .comments .icon; .articleListCompact .comments .icon; .contentTools .icon; .fbShareButton .fbIcon; .footer .bottom .logo; .footer .top .rssFeeds .icon; .forumList .cell.status .forumStatus; .forumPost .controls .button .icon; .forumPost .deletedMessage .icon; .forumPost .modNotice .icon; .forumPost .profile .moderatorNotes .icon; .forumResultPost .deletedMessage .icon; .galleryRating .star; .header .logo; .header .profile .icon; .mainContent .button.report .icon; .mainWidget .mwHeadIcon; .mainWidget .mwIcon; .marketList .comments .icon; .marketList .marketThumb.noImage .icon; .newsList .commentsBubble span; .ninjaSearch .searchField .icon; .ninjaSearchResult .resultList .icon div; .pages .icon; .profileHeader .statistics .icon; .pushList .plIcon; .pushListMonster .plmi-arrow .quickReply .rssLink .icon; .sideBox .icon; .sideMenu .icon; .smiley; .threadList .body .lastReply .icon; .threadList .pageLinks .icon; .threadStatus; .wndToolbarDecorator .wndToolbarMenu .wndToolbarControl; }
+a, .link {color: #1f5994;}
+.adblockBanner { background: #ffc; border-bottom: 1px solid #d7d5d1; box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.25) }
+	.adblockBanner .information { color: #6a6a6a; line-height: 1.5; }
+.articleBBCode .bbBlockQuote:after {color: #6a6a6a}
+.articleBBCode .bbTable th {background-color: #d7d5d1;}
+.articleBBCode .bbTable thead th { background: #33322e; background: -moz-linear-gradient(top, #2C2F33, #2C2F33); background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 100%); background: -o-linear-gradient(top, #2C2F33, #2C2F33); background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33)); background: -webkit-linear-gradient(top, #2C2F33, #2C2F33); background: linear-gradient(top, #2C2F33, #2C2F33); color: #fff }
+.articleByline .author a {color: #6a6a6a;}
+.articleCommentsWidget .boxAction .actionIcon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.articleCommentsWidget .boxAction .actionLink {color: inherit;}
+.articleHeader .kicker {color: #a95000;}
+.articleHeader .meta { color: #a95000; margin-bottom: 6px; }
+	.articleHeader .meta a {color: inherit}
+.articleHeader .preamble {color: #282828;}
+.articleHeader h1 {color: #a95000}
+.articleKeywords a { background: #d7d5d1; border: 1px solid #b3afa6; color: #6a6a6a; }
+	.articleKeywords a:hover {background: #ceccc8}
+.articleList .category {color: inherit;}
+.articleList .comments {color: #a95000;}
+	.articleList .comments .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.articleList .title {color: #1f5994;}
+.articleList>.listItem {border-bottom: 1px solid #b2afa6}
+.articleListCompact .comments {color: #a95000;}
+	.articleListCompact .comments .icon { background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png'); background-repeat: no-repeat; }
+.articleNavi .pageButton:hover {background: #1f5994; color: #fff}
+.articleNavi .pageItem.isCurrent a {color: #6a6a6a;}
+.articleNavi .pageItem:before {color: #6a6a6a}
+.articlePage h2.pageTitle {color: #6a6a6a;}
+.articlesMostRead .articleListCompact {border-bottom: 1px solid #cdc9c1}
+.articlesMostTagged .tagSection {border-bottom: 1px solid #cdc9c1}
+.articlesMostTagged .tagSummary a { background: #d7d5d1; border: 1px solid #b3afa6; color: #6a6a6a; }
+	.articlesMostTagged .tagSummary a:hover {background: #ceccc8}
+.avatarEditor .loader span {background-image: url('/gfx/loader.gif');}
+.bbAbbr {border-bottom: 1px dotted rgba(40, 40, 40, 0.5)}
+.bbAward .badge {background-image: url("/gfx/awards.png");}
+.bbAward .reason { background: #f6f6f6; color: #757575; }
+.bbColor a {color: inherit;}
+.bbExpander .expanderFooter { border-top: 1px solid #b3b1ac; color: #999; }
+.bbExpander .expanderHeader { border-bottom: 1px solid #b3b1ac; color: #282828; }
+.bbImage .caption .text {color: #fff}
+	.bbImage .caption .text a {color: inherit;}
+.bbImage .caption .toggle {color: #fff}
+.bbImage .imgControls { background: #333; background: rgba(0, 0, 0, 0.25); }
+	.bbImage .imgControls .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.bbImage.hideCaption .caption .toggle { background: rgba(0, 0, 0, 0.25); color: #fff; }
+.bbMark {background: #fffbba}
+.bbPodcast fieldset {border: 1px solid #cdc9c1;}
+.bbPodcast p, .bbPodcast .meta {color: #6a6a6a}
+.bbPoll .isEmpty .optionBar>div {border-color: #b3afa6; background: #b3afa6}
+.bbPoll .optionBar>div {background: #a95000; border: 1px inset #a95000}
+.bbPoll .optionVoters {color: #6a6a6a}
+	.bbPoll .optionVoters a {color: inherit}
+.bbPoll .pollOptions .votesAbs, .bbPoll .pollOptions .votesRel {color: #6a6a6a}
+.bbPoll .pollQuestion {border-bottom: 1px solid #b3afa6}
+.bbPoll .pollSums .pollMessage {color: #6a6a6a;}
+.bbPoll .pollSums .totalVotes { border-top: 1px solid #b3afa6; color: #6a6a6a; }
+.bbPoll>.inner { background: #d7d5d1; border: 1px inset #b3afa6; }
+.bbPre {color: #8A8A8A!important}
+.bbPrisjaktFull .bar.style-1>div {background: #a95000}
+.bbPrisjaktFull .bar.style-2>div {background: #ab2226}
+.bbPrisjaktFull .bar.style-3>div {background: #55ab20}
+.bbPrisjaktFull .pjFooter .withPrisjakt {color: #6a6a6a;}
+.bbPrisjaktFull .pjVendors .bar {border-left: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8}
+	.bbPrisjaktFull .pjVendors .bar>div {background: #55ab20}
+.bbPrisjaktFull .pjVendors .name {color: #282828;}
+	.bbPrisjaktFull .pjVendors .name a {color: inherit}
+.bbPrisjaktFull h6 {border-bottom: 1px solid #b7b5b2; color: #6a6a6a}
+	.bbPrisjaktFull h6 a {color: inherit;}
+.bbPullQuote {color: #a7a093;}
+.bbQuote {border: 1px inset #b3afa6; background: #d7d5d1}
+	.bbQuote.isExpandable>.quoteFrame>.quoteFade { background: -moz-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%); background: -ms-linear-gradient(top, rgba(35, 39, 42, 0) 0, rgba(35, 39, 42, .5) 100%); background: -o-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 39, 42, 0)), color-stop(25%, rgba(35, 39, 42, .5)), color-stop(100%, rgba(35, 39, 42, 1))); background: -webkit-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%); background: linear-gradient(to bottom, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e7e5e0', endColorstr='#e7e5e0', GradientType=0) }
+	.bbQuote .quoteContent {border-top: 1px solid #b3afa6;}
+.bbSlideshow .slideControls { background: #333; background: rgba(0, 0, 0, 0.25); color: #fff; }
+	.bbSlideshow .slideControls .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.bbSlideshow .slideFooter {color: #6a6a6a;}
+.bbTable caption {border-bottom: 1px solid #cdc9c1; border-right: 1px solid #cdc9c1}
+.bbTable th, .bbTable td {border-bottom: 1px solid #cdc9c1; border-right: 1px solid #cdc9c1}
+.bbcode .bbIns { background-color: #d4fcbc border-bottom: 1px dotted #47ad09; text-decoration: none; }
+.bbcode .bbQuote { border-left-color: #2C2F33!important border-top-color: #2C2F33!important; border: 1px solid #2C2F33!important; }
+.bbcode h1, .bbcode h2, .bbcode h3, .bbcode h4, .bbcode h5, .bbcode h6 {color: #8A8A8A!important;color: #8A8A8A!important .bbTable}
+body {color: #282828; background: #fdfdfd}
+button .loader, .button .loader {background-image: url("/gfx/loaderButton.gif");}
+button, .button { -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d7d2', endColorstr='#bab8b3',GradientType=0)"; background-image: -moz-linear-gradient(top, #d9d7d2, #bab8b3); background-image: -ms-linear-gradient(top, #d9d7d2 0, #bab8b3 100%); background-image: -o-linear-gradient(top, #d9d7d2, #bab8b3); background-image: -webkit-gradient(linear, left top, left bottom, from(#d9d7d2), to(#bab8b3)); background-image: -webkit-linear-gradient(top, #d9d7d2, #bab8b3); background-image: linear-gradient(top, #d9d7d2, #bab8b3); background: #bab8b3; border: 1px solid #aaa9a8; color: #434343; }
+.button, a.button { background-color: #2C2F33!important; background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important; color: #DDD!important; }
+.button.isDisabled, button.isDisabled, .button[disabled], button[disabled] { -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d1cf', endColorstr='#d2d1cf',GradientType=0)"; background: #c3c2c0; background: -moz-linear-gradient(top, #d2d1cf, #d2d1cf); background: -ms-linear-gradient(top, #d2d1cf 0, #d2d1cf 100%); background: -o-linear-gradient(top, #d2d1cf, #d2d1cf); background: -webkit-gradient(linear, left top, left bottom, from(#d2d1cf), to(#d2d1cf)); background: -webkit-linear-gradient(top, #d2d1cf, #d2d1cf); background: linear-gradient(top, #d2d1cf, #d2d1cf) border: 1px solid #aaa9a8; color: #888; }
+.button:active, button:active { -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab8b3', endColorstr='#d9d7d2',GradientType=0)"; background-image: -moz-linear-gradient(top, #bab8b3, #d9d7d2); background-image: -ms-linear-gradient(top, #bab8b3 0, #d9d7d2 100%); background-image: -o-linear-gradient(top, #bab8b3, #d9d7d2); background-image: -webkit-gradient(linear, left top, left bottom, from(#bab8b3), to(#d9d7d2)); background-image: -webkit-linear-gradient(top, #bab8b3, #d9d7d2); background-image: linear-gradient(top, #bab8b3, #d9d7d2) background: #bab8b3; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25); }
+.button:hover, button:hover { -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#2C2F33', endColorstr='#2C2F33',GradientType=0)"; background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33); background-image: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 100%); background-image: -o-linear-gradient(top, #2C2F33, #2C2F33); background-image: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33)); background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33); background-image: linear-gradient(top, #2C2F33, #2C2F33) background: #2C2F33; }
+.carousel .nav.left .handle {border-right: 10px solid #a95000}
+.carousel .nav.right .handle {border-left: 10px solid #a95000}
+.carousel .slide .front {background: rgba(0, 0, 0, 0.5)}
+	.carousel .slide .front h3 {color: #FFF;}
+.carousel .slide .play { background: #333; background: rgba(0, 0, 0, 0.65); }
+	.carousel .slide .play .arrow { border-left-color: #eee; border-left-color: rgba(255, 255, 255, 0.85); }
+.carousel .slide .x-99mac {color: #fff; background: #4e90ff}
+.carousel .slide .x-fz {color: #fff; background: #ea2238}
+.carousel .slide .x-vrgeeks {color: #fff; background: #8111e1}
+.commentsWidget { background-color: #a95000; background: -moz-linear-gradient(top, #a95000, #a95000); background: -ms-linear-gradient(top, #a95000 0, #a95000 100%); background: -o-linear-gradient(top, #a95000, #a95000); background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000)); background: -webkit-linear-gradient(top, #a95000, #a95000); background: linear-gradient(top, #a95000, #a95000) color: #FFF; }
+.confirmBox { background-color: #33a736; border: 1px solid #2c8f2e; color: #fff; }
+	.confirmBox p {color: inherit}
+	.confirmBox a {color: inherit;}
+.contactInfo { border: 1px solid #cdc9c1; color: #8A8A8A!important; }
+	.contactInfo h1 {color: inherit;}
+.contentHeader {color: #6a6a6a}
+.contentTools .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.contestView fieldset p {color: inherit}
+.dataTable .cell {border-bottom: 1px solid #cdc9c1}
+.dataTable .subtitle {color: #6a6a6a}
+	.dataTable .subtitle a {color: inherit}
+.dataTable>.body .row .cell {border-top: 1px solid #cdc9c1; border-right: 1px solid #cdc9c1}
+.errorBox { background-color: #a95000; border-radius: 5px; border: 1px solid #a95000; clear: both; color: #fff; line-height: 1.5 margin-bottom: 24px; margin-top: 24px; padding: 20px; }
+	.errorBox a {color: #FFF!important}
+.fbShareButton { background-color: #428bca; background-image: -webkit-linear-gradient(top, #4c69ba 0, #3b55a0 100%); background-image: linear-gradient(to bottom, #4c69ba 0, #3b55a0 100%); border: 1px solid #357ebd; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4c69ba', endColorstr='#ff3b55a0', GradientType=0); }
+	.fbShareButton:hover { background-color: #3276b1; background-image: -webkit-linear-gradient(top, #5b7bd5 0, #4864b1 100%); background-image: linear-gradient(to bottom, #5b7bd5 0, #4864b1 100%); border-color: #285e8e; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5b7bd5', endColorstr='#ff4864b1', GradientType=0) }
+	.fbShareButton .fbShareLabel { color: #fff; text-shadow: 0 -1px 0 #354c8c; }
+	.fbShareButton .fbIcon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.feedCon .feedMore {color: #1f5994;}
+.feedControl {border-top: 1px solid #e8e8e8;}
+.feedItem { border-top: 1px solid #e6e6e6; color: #8A8A8A!important; }
+	.feedItem .detail {color: #999;}
+		.feedItem .detail a.user {color: #739e39}
+	.feedItem .media h2 a {color: #008aa5;}
+.filterLinks .filterLink {color: #1f5994}
+	.filterLinks .filterLink.isSelected {color: #6a6a6a; background: #e6e4e0}
+	.filterLinks .filterLink:hover, .filterLinks .filterLink.isSelected:hover {background: #1f5994; color: #FFF}
+	.filterLinks .filterLink a {color: inherit}
+.foote .footer .bottom .logo { background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png'); margin-top: 8px; }
+.footer {border-top: 1px solid #979795;}
+	.footer .top { background: #d8d7d5; border-top: 1px solid #bab9b8; color: #6a6a6a; }
+		.footer .top a {color: #1f5994;}
+			.footer .top a:before {color: #1f5994;}
+		.footer .top .block { background-image: url('/gfx/footerIcons.png'); border-right: 1px solid #9f9f9e; }
+		.footer .top .rssFeeds .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+		.footer .top .rssFeeds .link {color: #a95000;}
+	.footer .bottom a {color: #FFF!important}
+	.footer .bottom .copyright {color: #999}
+		.footer .bottom .copyright a {color: inherit}
+.formPostTable .cell.main .summary {color: #6a6a6a}
+.formThreadTable .isHidden .main a {color: #6a6a6a}
+.forumForm { border: 1px solid #b3afa6; color: #8A8A8A!important; }
+	.forumForm>.body {background: #e7e5e0}
+.forumList .categoryItem .title h2 {color: #fff;}
+.forumList .categoryItem .toggle .arrow { border-bottom-color: #ccc; border-bottom-color: rgba(255, 255, 255, 0.5); border-top-color: #ccc; border-top-color: rgba(255, 255, 255, 0.5); }
+.forumList .categoryItem.isCollapsed .cell.title a {color: #938f86}
+.forumList .cell.status .forumStatus {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.forumList .lastThread .time {color: #a95000}
+.forumList .lastThread h3 {color: #1f5994;}
+.forumList .subforums .link { background: #d7d5d1; color: #6a6a6a; }
+.forumPost { background: #e7e5e0; border: 1px solid #b3afa6; }
+-webkit-linear-gradient(top, #a95000, #a95000 60%, #a95000); background: linear-gradient(top, #a95000, #a95000 60%, #a95000) {}
+.forumPost.isLinked, .forumPost.isHidden.isAuthor.isLinked {border-color: #555; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.85)}
+.forumPost.isSelected .controls .button.multiquote { "; -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab8b3', endColorstr='#d9d7d2',GradientType=0); background-image: -moz-linear-gradient(top, #bab8b3, #d9d7d2); background-image: -ms-linear-gradient(top, #bab8b3 0, #d9d7d2 100%); background-image: -o-linear-gradient(top, #bab8b3, #d9d7d2); background-image: -webkit-gradient(linear, left top, left bottom, from(#bab8b3), to(#d9d7d2)); background-image: -webkit-linear-gradient(top, #bab8b3, #d9d7d2); background-image: linear-gradient(top, #bab8b3, #d9d7d2) background: #bab8b3; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5); }
+.forumPost.isGuru .controls .button.like .score, .forumPost.isLiked .controls .button.like .score {color: #a95000}
+.forumPost .lastEdited {color: #747472}
+.forumPost .modNotice {color: #747472}
+	.forumPost .modNotice .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.forumPost .postHeader {color: #fff}
+	.forumPost .postHeader .toggle {color: inherit}
+	.forumPost .postHeader .headerLink {color: #EBEBEB!important}
+	.forumPost .postHeader .cell, .forumPost.isHidden.isAuthor .postHeader .cell { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2C2F33', EndColorStr='#2C2F33')"; background: #979590; background: -moz-linear-gradient(top, #2C2F33, #2C2F33 60%, #2C2F33); background: -ms-linear-gradient(top, #2C2F33, #2C2F33 60%, #2C2F33 100%); background: -o-linear-gradient(top, #2C2F33, #2C2F33 60%, #2C2F33); background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33)); background: -webkit-linear-gradient(top, #2C2F33, #2C2F33 60%, #2C2F33); background: linear-gradient(top, #2C2F33, #2C2F33 60%, #2C2F33) }
+.forumPost .cell.alt2 {background: #d7d5d1}
+.forumPost .deletedMessage .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.forumPost .details .icon {color: #747472;}
+.forumPost .profile .moderatorNotes {color: #938f86;}
+	.forumPost .profile .moderatorNotes .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.forumPost .profile .meta {color: #938f86;}
+.forumPost .signature>.top {background: #938f86;}
+.forumPost .details .activity.online {color: #a95000}
+.forumPost .guruFlag, .forumPost .supporterFlag {color: #a95000;}
+.forumPost .controls .button .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.forumResultPost { background: #e7e5e0; border: 1px solid #b3afa6; color: #8A8A8A!important; }
+	.forumResultPost .postHeader .dateline {background: #d7d5d1;}
+	.forumResultPost .deletedMessage .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+	.forumResultPost .postHeader .threadTitle { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2C2F33', EndColorStr='#2C2F33')"; background: #2C2F33; background: -moz-linear-gradient(top, #2C2F33, #2C2F33); background: -ms-linear-gradient(top, #2C2F33, #2C2F33); background: -o-linear-gradient(top, #2C2F33, #2C2F33); background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), to(#2C2F33)); background: -webkit-linear-gradient(top, #2C2F33, #2C2F33); background: linear-gradient(top, #2C2F33, #2C2F33); color: #fff }
+		.forumResultPost .postHeader .threadTitle .label {color: #FFF!important}
+	.forumResultPost .postHeader .postNum, .forumResultPost .postHeader .postMap {color: #938f86}
+.forumSearch .tanukiTextbox input {background: #fafae0; border: 1px solid #aaa9a8}
+.forumTable {border: 1px solid #b3afa6;}
+	.forumTable.forumList h2 a:visited {color: #1f5994}
+	.forumTable h2 a {color: #1f5994;}
+		.forumTable h2 a:visited {color: #3e5f81}
+	.forumTable .cell.alt2 {background: #d7d5d1; border-bottom-color: #e7e5e0}
+	.forumTable .cell, .forumTable .cell.alt1 {background: #e7e5e0; border-bottom: #d7d5d1 2px solid}
+	.forumTable .title h3 a, .mainWidget .label, .plHead a, .pushListInternal .link .label, .slide a, .socialWidget a {color: #EBEBEB!important;color: #EBEBEB!important}
+.galleryBody .commentLink:before {content: "►"; color: #1f5994}
+.galleryFileEditor .fileItem .loader>div {background-image: url('/gfx/loader.gif');}
+.galleryFileEditor .fileItem .star {background-color: #a95000;}
+.galleryFileEditor .fileItem.isSelected>.inner {border-color: #a95000}
+.galleryFileEditor .fileItem>.inner { background: #d7d5d1; border: 1px solid #cdc9c1; }
+.galleryFileEditor .fileList .orderOverlay {background: rgba(231, 229, 224, 0.5);}
+.galleryFileEditor .orderHint {color: #999}
+.galleryFileEditor .uploadEntry {border-top: 1px solid #cdc9c1;}
+	.galleryFileEditor .uploadEntry .entrySize { color: #6a6a6a; white-space: nowrap; }
+	.galleryFileEditor .uploadEntry .entryName {color: #6a6a6a;}
+	.galleryFileEditor .uploadEntry .entryError>.errorAlert {color: #a95000;}
+	.galleryFileEditor .uploadEntry .entryState>.progressBar { background: #d7d5d1; border: 1px solid #cdc9c1; }
+		.galleryFileEditor .uploadEntry .entryState>.progressBar>div {background: #cdc9c1}
+	.galleryFileEditor .uploadEntry .entryState>.progressLabel {color: #999}
+.galleryFileEditor button, .tanukiButton, .taunkiButton { background-color: #2C2F33!important; background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important; color: #DDD!important; }
+.galleryFileEditor button:hover, .tanukiButton:hover, .taunkiButton:hover { background-color: #2C2F33!important; background-image: -moz-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: -o-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: -webkit-linear-gradient(top, #2C2F33, #2C2F33)!important; background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important background-image: linear-gradient(to bottom, #2C2F33, #2C2F33)!important; }
+.galleryHeader {color: #6a6a6a;}
+.galleryImage {border-bottom: 1px solid #d0d0d0}
+	.galleryImage img {border: 5px solid #363636;}
+.galleryItem {color: #6a6a6a;}
+	.galleryItem h3 {color: inherit}
+	.galleryItem .rating {color: #d8d8d8}
+	.galleryItem .image.noThumb a {background: rgba(0, 0, 0, 0.15)}
+	.galleryItem .author a, .galleryItem .cat a {color: inherit}
+.galleryNavi .next .arrow {border-left: 10px solid #a95000}
+.galleryNavi .prev .arrow {border-right: 10px solid #a95000}
+.galleryPortal .gridPanel {border-bottom: 1px solid #d8d8d8;}
+.galleryPortal .head {color: #6a6a6a}
+.galleryRating .score {color: #d8d8d8}
+.galleryRating .star {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.gp-hero-item {color: #fdfdfd;}
+	.gp-hero-item .gpi-play {background: #fdfdfd}
+		.gp-hero-item .gpi-play>div {border-left-color: #282828}
+.gp-item {border-bottom: 1px solid #cdc9c1}
+.gp-subject-group { background: #e7e5e0; border: 1px solid #cdc9c1; }
+	.gp-subject-group .gpsg-header {border-bottom: 1px solid #cdc9c1;}
+	.gp-subject-group .gpsg-more a { background: #d7d5d1; border: 1px solid #b3afa6; color: #282828; }
+		.gp-subject-group .gpsg-more a:hover {background: #ceccc8}
+	.gp-subject-group .bbcode a {color: inherit;}
+.gphi-descr {background: #282828;}
+.gpi-descr .bbcode a {color: inherit;}
+.gpi-play {background: #282828;}
+	.gpi-play>div {border-left-color: #fdfdfd;}
+h1 {color: #6a6a6a;}
+h5, h6 {color: #6a6a6a}
+.header { background: #c4c4c2; color: #6a6a6a; }
+	.header>.main { background-color: #2C2F33; background: -moz-linear-gradient(top, #2C2F33, #2C2F33 98%, #2C2F33); background: -ms-linear-gradient(top, #2C2F33 0, #2C2F33 98%, #2C2F33); background: -o-linear-gradient(top, #2C2F33, #2C2F33 98%, #2C2F33); background: -webkit-gradient(linear, left top, left bottom, from(#2C2F33), color-stop(98%, #2C2F33), to(#2C2F33)); background: -webkit-linear-gradient(top, #2C2F33, #2C2F33 98%, #2C2F33); background: linear-gradient(top, #2C2F33, #2C2F33 98%, #2C2F33); border-bottom: 1px solid #2C2F33; }
+		.header>.main .section.profile h5 a {color: inherit;}
+	.header .ticker {color: #6a6a6a;}
+		.header .ticker .current {color: inherit;}
+		.header .ticker .date {color: #a95000}
+	.header .profile .label {color: inherit}
+	.header .sections>.section {border-left: 1px solid #e1e1e1;}
+	.header .profile .options {color: #6a6a6a}
+	.header .profile .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+	.header .profile .hasUnread {color: #a95000;}
+	.header .profile .signout button {color: inherit;}
+.hotGallery {border-bottom: 1px solid #d8d8d8;}
+	.hotGallery .cat {color: inherit}
+	.hotGallery .rating {color: #d8d8d8}
+	.hotGallery .title {color: #6a6a6a;}
+	.hotGallery .author {color: inherit}
+	.hotGallery .hot {color: #a95000}
+.infoBox { background-color: #1f5994; border: 1px solid #153b62; color: #fff; }
+	.infoBox a {color: inherit;}
+	.infoBox p {color: inherit;}
+.infoTextWindow { background: #f9f9f9; border: 1px solid #c2c2c0; }
+input[disabled], select[disabled], textarea[disabled], input[disabled="disabled"], select[disabled="disabled"], textarea[disabled="disabled"] {color: #CCC; background: #f2f2f2}
+input[readonly], select[readonly], textarea[readonly], input[readonly="readonly"], select[readonly="readonly"], textarea[readonly="readonly"] {color: #CCC; background: #f2f2f2}
+input[type="text"], input[type="email"], input[type="url"], input[type="search"], input[type="number"], input[type="password"], select, textarea { background: #FFF; border: 1px solid #CCC; color: #282828; }
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="password"]:focus, select:focus, textarea:focus { border-color: #54504a; box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+.lightbox .lbControls .lbNavButton .lbButtonIcon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.lightbox .lbControls .lbNavButton .lbNavButtonInner {background-color: rgba(0, 0, 0, 0.25);}
+.lightbox .lbControls .lbNavButton:hover .lbNavButtonInner {background-color: rgba(0, 0, 0, 0.85)}
+.lightbox .lbControls .lbSlideFrame {background-color: rgba(0, 0, 0, 0.25);}
+	.lightbox .lbControls .lbSlideFrame:hover {background-color: rgba(0, 0, 0, 0.85)}
+.lightbox .lbControls .lbSlidePosition .lbSlideButton {background-color: rgba(255, 255, 255, 0.25);}
+	.lightbox .lbControls .lbSlidePosition .lbSlideButton.isActive {background-color: rgba(255, 255, 255, 0.65)}
+.lightbox .lbOverlay {background-color: rgba(0, 0, 0, 0.65);}
+.lightbox .lbSlideContents { -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); -ms-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); background-color: #FFF; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25) }
+.lightbox .lbSlideLoader {background: rgba(0, 0, 0, 0.25);}
+.mainContent { background: #e7e5e0; border: 1px solid #cdc9c1; }
+	.mainContent .contentSection {border-bottom: 1px solid #cdc9c1;}
+	.mainContent .mainContentHeader {color: #6a6a6a;}
+	.mainContent .greyContentShare #fbLikeButton { background: #fdfae3; border: 1px solid #ede8c5; }
+	.mainContent .ad.adModule {border-bottom: 1px solid #cdc9c1}
+	.mainContent .button.report .icon {background: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.mainMenu .menu li { background-color: #dfdfdf; border-left: 1px solid #a5a5a5; border-right: 1px solid #a5a5a5; border-top: 1px solid #a5a5a5; }
+	.mainMenu .menu li.isSelected {background-color: #2C2F33!important}
+		.mainMenu .menu li.isSelected a {color: #33322d;}
+	.mainMenu .menu li:hover {background-color: #ececec}
+	.mainMenu .menu li a {color: #51504d;}
+.mainMenu .rborder {border-bottom: 1px solid #9a9a9a;}
+.mainMenu .shadow { background-color: #c4c4c2; background: -moz-linear-gradient(top, #a6a6a5, #a6a6a5 65%, #a6a6a5 90%, #a6a6a5); background: -ms-linear-gradient(top, #a6a6a5 0, #a6a6a5 65%, #a6a6a5 90%, #a6a6a5); background: -o-linear-gradient(top, #a6a6a5, #a6a6a5 65%, #a6a6a5 90%, #a6a6a5); background: -webkit-gradient(linear, left top, left bottom, from(#a6a6a5), color-stop(65%, #a6a6a5), color-stop(90%, #b8b8b6), to(#a6a6a5)); background: -webkit-linear-gradient(top, #a6a6a5, #a6a6a5 65%, #a6a6a5 90%, #a6a6a5); background: linear-gradient(top, #a6a6a5, #a6a6a5 65%, #a6a6a5 90%, #a6a6a5) }
+.mainMenu li.isSelected.optionBack2school {border-color: #a5a5a5}
+	.mainMenu li.isSelected.optionBack2school:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionBack2school a {color: #51504d}
+.mainMenu li.isSelected.optionBlackfriday, .mainMenu li.isSelected.optionBlackfriday:hover {border-color: #a5a5a5; background-color: #f7f6f5}
+.mainMenu li.isSelected.optionCes {border-color: #a5a5a5}
+	.mainMenu li.isSelected.optionCes:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionCes a {color: #51504d}
+.mainMenu li.isSelected.optionComputex {border-color: #a5a5a5}
+	.mainMenu li.isSelected.optionComputex:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionComputex a {color: #51504d}
+.mainMenu li.isSelected.optionGreenfriday {border-color: #a5a5a5}
+	.mainMenu li.isSelected.optionGreenfriday:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionGreenfriday a {color: #51504d}
+.mainMenu li.isSelected.optionJulkalender {border-color: #a5a5a5}
+	.mainMenu li.isSelected.optionJulkalender:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionJulkalender:hover, .mainMenu li.isSelected.optionMellandagsrea:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionJulkalender a {color: #51504d}
+	.mainMenu li.isSelected.optionJulkalender a, .mainMenu li.isSelected.optionMellandagsrea a {color: #51504d}
+.mainMenu li.isSelected.optionJulkalender, .mainMenu li.isSelected.optionMellandagsrea {border-color: #a5a5a5}
+.mainMenu li.isSelected.optionPaskrea {border-color: #a5a5a5}
+	.mainMenu li.isSelected.optionPaskrea:hover {background-color: #f7f6f5}
+	.mainMenu li.isSelected.optionPaskrea a {color: #51504d}
+.mainMenu li.optionBack2school { background-color: #4d9edd; border-color: #4b99d6; }
+	.mainMenu li.optionBack2school:hover {background-color: #56b1f8}
+	.mainMenu li.optionBack2school a {color: #fff}
+.mainMenu li.optionBlackfriday:hover {border-color: #282828; background-color: #383838}
+.mainMenu li.optionBlackfriday a {color: #fff}
+.mainMenu li.optionCes { background-color: #619c41; border-color: #51743e; }
+	.mainMenu li.optionCes:hover {background-color: #71b64c}
+	.mainMenu li.optionCes a {color: #fff}
+.mainMenu li.optionComputex { background-color: #e4007f; border-color: #c6006e; }
+	.mainMenu li.optionComputex:hover {background-color: #e42790}
+	.mainMenu li.optionComputex a {color: #fff}
+.mainMenu li.optionE3 { background-color: #ea2238; border-color: #aa1929; }
+	.mainMenu li.optionE3:hover {background-color: #f23147}
+	.mainMenu li.optionE3 a {color: #fff}
+.mainMenu li.optionGreenfriday { background-color: #41a500; border-color: #2b760a; }
+	.mainMenu li.optionGreenfriday:hover {background-color: #4fb415}
+	.mainMenu li.optionGreenfriday a {color: #fff}
+.mainMenu li.optionJulkalender { background-color: #c00; border-color: #900; }
+	.mainMenu li.optionJulkalender:hover {background-color: #d11}
+	.mainMenu li.optionJulkalender:hover, .mainMenu li.optionMellandagsrea:hover {background-color: #ce003e}
+	.mainMenu li.optionJulkalender a {font-weight: 700; color: #fff}
+	.mainMenu li.optionJulkalender a, .mainMenu li.optionMellandagsrea a {color: #ffd662}
+.mainMenu li.optionJulkalender, .mainMenu li.optionMellandagsrea {background-color: #af0035; border-color: #780024}
+.mainMenu li.optionPaskrea {background-color: #ffd200; border-color: #d9a92b}
+	.mainMenu li.optionPaskrea:hover {background-color: #ffe200}
+.mainMenu li.optionVr { background-color: #8111e1; border-color: #6a0eb9; }
+	.mainMenu li.optionVr:hover {background-color: #9731ee}
+	.mainMenu li.optionVr a {color: #fff}
+.mainRecentJobs { background-color: #4a276a; background: -moz-linear-gradient(top, #4a276a, #4a276a); background: -ms-linear-gradient(top, #4a276a, #4a276a); background: -o-linear-gradient(top, #4a276a, #4a276a); background: -webkit-gradient(linear, left top, left bottom, from(#4a276a), to(#4a276a)); background: -webkit-linear-gradient(top, #4a276a, #4a276a); background: linear-gradient(top, #4a276a, #4a276a) }
+	.mainRecentJobs .mwJobLocation {color: #999;}
+	.mainRecentJobs .mwHeadIcon {background-image: url('/gfx/ext/monster/monsterBoxLogo.gif');}
+.mainWidget {color: #FFF;}
+	.mainWidget h6 {color: inherit;}
+	.mainWidget h5 {color: inherit;}
+	.mainWidget p {color: #999;}
+	.mainWidget .mwBody {color: #ebebeb}
+		.mainWidget .mwBody a {color: inherit}
+	.mainWidget .mwIcon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+	.mainWidget .mwHeadIcon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+	.mainWidget .mwItem.mwItemDivider {border-top-color: #333; border-top-color: rgba(255, 255, 255, 0.1)}
+	.mainWidget .mwLabel.mwComments {color: #a95000;}
+.marketHeader .marketMeta {color: #6a6a6a;}
+.marketList .comments {color: #a95000;}
+	.marketList .comments .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.marketList .date .time {color: #a95000}
+.marketList .marketThumb.noImage .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.marketList .meta {color: #282828}
+.marketList .type, .marketList .category {color: inherit}
+.marketList h2 {color: #1f5994;}
+.mellandagsrea .adInfo {color: #999;}
+.mellandagsrea .productName {color: #1f5994;}
+.mellandagsrea .productPriceOffer {color: #545454;}
+.mellandagsrea .productPriceRegular {color: #999;}
+.mellandagsrea .productPriceSavings { background: #a95000; color: #fff; }
+.mellandagsrea .tips .tipsData .colVendor, .mellandagsrea .tips .tipsData .colPrice {color: #6a6a6a;}
+.mellandagsrea .tips .tipsData .tipsRow:first-child .productCell, .mellandagsrea .tips .tipsData .tipsRow:first-child .pjCell {border-top: 1px solid #b3afa6;}
+.mellandagsrea .tips .tipsData .tipsRow:first-child .userCell .colUser {border-top: 1px solid #b3afa6;}
+.mellandagsrea .tips .tipsData .tipsRow:last-child .productCell, .mellandagsrea .tips .tipsData .tipsRow:last-child .pjCell {border-bottom: 1px solid #b3afa6;}
+.mellandagsrea .tips .tipsData .tipsRow:last-child .userCell .colUser {border-bottom: 1px solid #b3afa6;}
+.mellandagsrea .tips .tipsHeader {border-bottom: 1px solid #b3afa6;}
+.mellandagsrea .tips .tipsMeta .productCell, .mellandagsrea .tips .tipsMeta .pjCell, .mellandagsrea .tips .tipsMeta .userCell {color: #6a6a6a;}
+.mellandagsrea .tips .tipsTitle {color: #2b2b2b;}
+	.mellandagsrea .tips .tipsTitle a {color: inherit;}
+.mellandagsrea .vendorName {color: #2b2b2b;}
+	.mellandagsrea .vendorName a {color: inherit;}
+.monsterTable .title h4 {color: #1f5994;}
+.newsList .commentsBubble.isHot { background-color: #a95000; background: -moz-linear-gradient(top, #a95000, #a95000) background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000)); border-color: #a95000; }
+.newsList .commentsBubble span {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.newsList .pubItem {border-bottom: 1px solid #cdc9c1}
+	.newsList .pubItem.hasVideo .itemBanner .play { background: #333; background: rgba(0, 0, 0, 0.65); }
+		.newsList .pubItem.hasVideo .itemBanner .play .arrow { border-left-color: #eee; border-left-color: rgba(255, 255, 255, 0.85); }
+	.newsList .pubItem .itemText a {color: #282828;}
+		.newsList .pubItem .itemText a:last-child {color: #1f5994}
+	.newsList .pubItem .itemMeta a {color: inherit}
+	.newsList .pubItem .itemMeta li {color: #a95000;}
+	.newsList .pubItem .itemMeta .x-fz a {color: #fff; background: #ea2238}
+	.newsList .pubItem .itemMeta .x-99mac a {color: #fff; background: #4e90ff}
+	.newsList .pubItem .itemMeta .x-vrgeeks a {color: #fff; background: #8111e1}
+	.newsList .pubItem h1 a, .newsList .pubItem h2 a {color: #a95000}
+.newsList .relatedLinks {border: 1px solid #cdc9c1;}
+	.newsList .relatedLinks a {color: #1f5994}
+	.newsList .relatedLinks legend {color: #6a6a6a;}
+.newsList .subheading h4 {color: #6a6a6a;}
+.ninjaSearch .searchField .fieldWrap {background: #FFF; border: 1px solid #CCC}
+.ninjaSearch .searchField .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.ninjaSearch .searchField.isLoading .icon {background-image: url('/gfx/loader.fb.light.gif');}
+.ninjaSearchResult .resultList .icon div {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.orangeInfoBox h5 {color: inherit;}
+.orangeInfoBox h6 {color: inherit;}
+.overlay {background: rgba(0, 0, 0, 0.35);}
+.pages .isCurrent {color: #444; background: #e6e4e0}
+.pages a {color: #8A8A8A!important}
+	.pages a.isCurrent {background-color: #999; color: #FFF}
+	.pages a:hover, .pages a.isCurrent:hover { background-color: #1f5994; background-color: #23272A!important color: #FFF; }
+.pilotByline .guruFlag {color: #a95000}
+.pilotByline .meta {color: #999;}
+.pilotByline .name a {color: #6a6a6a;}
+.pmLogBox .body a {color: inherit;}
+.pmLogBox .body>.inner {color: #6a6a6a}
+.pollOptionGrid .head {color: inherit;}
+.popularGalleries .author a, .popularGalleries .cat a {color: inherit}
+.popularGalleries .rating {color: #d8d8d8}
+.popularGalleries .slide {color: #6a6a6a;}
+.popularGalleries h3 {color: inherit}
+.postBox { background: #e7e5e0; border: 1px solid #b3afa6; }
+	.postBox>.head {background: #d7d5d1;}
+		.postBox>.head .title {color: #6a6a6a;}
+.prisjaktPopular h5 {color: inherit;}
+.prisjaktPopular .descr {color: rgba(255, 255, 255, 0.5)}
+.prisjaktPopular .ppProduct { border-bottom: 1px solid rgba(255, 255, 255, 0.25); color: inherit; }
+.prisjaktPopular .ppThumb>div {background: #fff;}
+.profileFeed .date {color: #a95000}
+.profileHeader .guruFlag {color: #a95000}
+.profileHeader .meta {color: #6a6a6a;}
+.profileHeader .statistics .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.profileHeader .title {color: #6a6a6a}
+.pushList .plIcon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.pushList .plLabel.plComments {color: #a95000;}
+.pushList a {color: inherit}
+.pushList h5 {color: inherit;}
+.pushList h6 {color: inherit;}
+.pushListExternal {color: #6a6a6a}
+.pushListInternal .plBody {color: #ebebeb}
+.pushListInternal .plHead p {color: #999}
+	.pushListInternal .plHead p a {color: #ccc}
+.pushListMonster .plmi-arrow {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.pushListMonster .plmi-location {color: rgba(255, 255, 255, 0.75)}
+.pushListMonster .plm-item {border-bottom: 1px solid rgba(255, 255, 255, 0.25)}
+.quickReply .rssLink .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.quickReply h4 {color: #6a6a6a;}
+.quickReply textarea { background: #f7f7f7 border-bottom: 1px solid #dbdfe6; border-left: 1px solid #dbdfe6; border-right: 1px solid #dbdfe6; border-top: 1px solid #abadb3; }
+.s5fieldset {border: 1px solid #cdc9c1;}
+	.s5fieldset legend {color: #6a6a6a;}
+	.s5fieldset p {color: #6a6a6a}
+.sideBox .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.sideBox .label {color: inherit;}
+.sideBox .link {color: #6a6a6a;}
+.sideBox h5 {border-bottom: 1px solid #979590;}
+.sideMenu .label {color: inherit;}
+.sideMenu .menuItem .link {color: #1f5994;}
+.sideMenu .menuItem>p {color: #6a6a6a}
+.signaturePreview .signature>.top {background: #938f86;}
+.signinDialog .bg {background-image: url('/gfx/footerIcons.png');}
+.smiley {background-image: url('/gfx/smileys.png');}
+.sorter .column {color: #6a6a6a;}
+	.sorter .column:hover, .sorter .isCurrent:hover {background-color: #1f5994; color: #FFF}
+.sorter .isCurrent {color: #1f5994}
+.stepWidget .stepInfo {color: #6a6a6a;}
+.stepWidget .stepItem {color: #6a6a6a}
+	.stepWidget .stepItem.isSelected { background: #e6e4e0; color: #6a6a6a; }
+	.stepWidget .stepItem a {color: inherit}
+.subMenu .menu li { background-color: #e5e3dc; border-left: 1px solid #a5a5a5; border-right: 1px solid #a5a5a5; border-top: 1px solid #a5a5a5; }
+	.subMenu .menu li:hover {background-color: #f0efea}
+.subMenu li a {color: #7e7b76;}
+.subMenu li.isSelected a {color: #33322d;}
+.subMenu li.isSelected, .subMenu li.isSelected:hover {background-color: #fdfdfd}
+.tanukiCombobox .tbcsiClose { background-image: url(data:image/png; base64,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); }
+.tanukiCombobox .tcbPanelItem.isSelected {background: #1e90ff; color: #fff}
+.tanukiCombobox .tcbPanelTrigger {color: #505050}
+.tanukiCombobox .tcbSelectedItem { background: #f1f1f1; border: 1px solid #DDD; color: #EBEBEB; }
+.tanukiCombobox .tcbTriggerFrame {background: #FFF; border: 1px solid #CCC}
+.tanukiCombobox .tcbpLoadIcon {background-image: url('/gfx/loader.fb.light.gif')}
+.tanukiControl .tcHint {color: #999}
+	.tanukiControl .tcHint a {color: inherit;}
+.tanukiError a {color: inherit;}
+.tanukiError h6 { border-bottom: 1px solid #fff; color: inherit; }
+.tanukiError p {color: inherit}
+.tanukiRecaptcha .image {background-color: #FFF}
+	.tanukiRecaptcha .image img {border: 1px solid #CCC}
+.thr .threadMap .treeNode.hasChildren.isCollapsed>.treeCommand { background-color: rgba(231, 229, 224, 1); background-image: url('/gfx/treeView.grey.svg'); }
+.threadList .allPostsRead .title h2 a {color: #3e5f81}
+.threadList .body .cell.numViews {color: #282828; width: 50px}
+	.threadList .body .cell.numViews a {color: inherit}
+.threadList .body .lastReply .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.threadList .isHidden .title h2 {color: #6a6a6a;}
+	.threadList .isHidden .title h2 a {color: inherit}
+.threadList .isSticky .cell {background: #f0efd8; border-bottom-color: #d7d5d1}
+	.threadList .isSticky .cell.alt2 {background: #e7e6d0}
+.threadList .lastReply .time {color: #a95000}
+.threadList .pageLinks .icon {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.threadList .title .author, .threadList .title .forum {color: inherit}
+.threadList .title h2 a, .threadList .hasUnreadPosts .title h2 a {color: #1f5994}
+.threadMap .naviView .shortcut { background: #d7d5d1; border: 1px inset #b3afa6; color: #6a6a6a; }
+	.threadMap .naviView .shortcut a {color: inherit}
+.threadMap .postElement { background: #d7d5d1; border: 1px inset #b3afa6; color: #6a6a6a; }
+	.threadMap .postElement.isSelected {background: #ffc}
+	.threadMap .postElement.isLiked .karma {color: #a95000}
+	.threadMap .postElement.isAuthor .username {color: #a95000}
+	.threadMap .postElement .cell {border-left: 1px solid #b3afa6;}
+.threadMap .siblingCommand .label {color: #6a6a6a;}
+.threadMap .siblingCommand .loader {background: url('/gfx/loader.fb.grey.gif')}
+.threadMap .treeNode .nodeLoading {background: url('/gfx/loader.fb.grey.gif')}
+.threadMap .treeNode .treeLine {background-image: url('/gfx/treeView.grey.svg');}
+.threadStatus {background-image: url('/gfx/threadStatus.png');}
+.toolbar .tbButton .btnIcon {background-image: url('/gfx/toolbar.png');}
+.toolbar .tbButton.iconButton:hover .inner {border: 1px solid #949cff; background: rgba(148, 156, 255, 0.1)}
+.toolbar .tbDivider .inner {background: rgba(0, 0, 0, 0.1)}
+.tv-frame .tvf-bottom {background-image: url("https://i.imgur.com/X8stvnH.png");}
+.tv-frame .tvf-left {background-image: url("https://i.imgur.com/ZwcU1J6.png");}
+.tv-frame .tvf-right {background-image: url("https://i.imgur.com/kRfpQVW.png");}
+.tv-frame .tvf-top {background-image: url("https://i.imgur.com/CNDrVSr.png");}
+.videoPush .play { background: #333; background: rgba(0, 0, 0, 0.65); }
+	.videoPush .play .arrow { border-left-color: #eee; border-left-color: rgba(255, 255, 255, 0.85); }
+.videoPush h3 a {color: #6a6a6a;}
+.whiteFilterBox {border: 1px solid #ddd;}
+	.whiteFilterBox legend {color: #6a6a6a;}
+.whiteHeader {color: #6a6a6a}
+	.whiteHeader .meta a {color: inherit}
+	.whiteHeader h1 .titleSection {color: #d8d8d8;}
+.wndFrameDecorator { background: #fafafa border: 4px solid #282828; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+.wndModalOverlay {background: rgba(0, 0, 0, 0.35);}
+.wndStatusbarDecorator>.wndStatusbarMenu>.inner {border-top: 1px solid #e3e3e3;}
+.wndToolbarDecorator .wndToolbarMenu .wndToolbarControl {background-image: url('https://simonmattila.se/projects/sweclockers/xhs-spritemap.png');}
+.wndToolbarDecorator .wndToolbarMenu .wndToolbarInner {border-bottom: 1px solid #e3e3e3}
+.wndToolbarDecorator .wndToolbarMenu h4 {color: #6a6a6a}
+.wndWindowArea>.inner { background: rgba(0, 0, 0, 0.5); box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+*/
 }
