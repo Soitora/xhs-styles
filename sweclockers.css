@@ -2,8 +2,8 @@
 /* Dark Mode for Sweclockers.com
 * Created by: Soitora
 * Created: 2017-11-03
-* Updated: 2018-01-23
-* Version: 1.4b
+* Updated: 2018-02-21
+* Version: 1.4c
 * Licence: GNU General Public License v3 (GPL-3).
 */
 
@@ -103,22 +103,22 @@ a.button
 
   .tv-frame .tvf-left
   {
-    background-image: url("https://i.simonmattila.se/sweclockers/tvf-left.png");
+    background-image: url("https://i.simonmattila.se/custom/custom/sweclockers/tvf-left.png");
   }
-  
+
   .tv-frame .tvf-right
   {
-    background-image: url("https://i.simonmattila.se/sweclockers/tvf-right.png");
+    background-image: url("https://i.simonmattila.se/custom/sweclockers/tvf-right.png");
   }
 
   .tv-frame .tvf-top
   {
-    background-image: url("https://i.simonmattila.se/sweclockers/tvf-top.png");
+    background-image: url("https://i.simonmattila.se/custom/sweclockers/tvf-top.png");
   }
 
   .tv-frame .tvf-bottom
   {
-    background-image: url("https://i.simonmattila.se/sweclockers/tvf-bottom.png");
+    background-image: url("https://i.simonmattila.se/custom/sweclockers/tvf-bottom.png");
   }
 
   .newsList .commentsBubble
@@ -140,12 +140,12 @@ a.button
 
   .pages .icon
   {
-    background-image: url(https://i.simonmattila.se/sweclockers/xhs-spritemap.png)!important;
+    background-image: url(https://i.simonmattila.se/custom/sweclockers/xhs-spritemap.png)!important;
   }
 
   .sideMenu .icon
   {
-    background-image: url(https://i.simonmattila.se/sweclockers/xhs-spritemap.png)!important;
+    background-image: url(https://i.simonmattila.se/custom/sweclockers/xhs-spritemap.png)!important;
   }
 
   .bbSpoiler .spoilerHeader
@@ -246,7 +246,7 @@ a.button
 
   .header .logo
   {
-    background-image: url('https://i.simonmattila.se/sweclockers/xhs-spritemap.png');
+    background-image: url('https://i.simonmattila.se/custom/sweclockers/xhs-spritemap.png');
   }
 
   .header .main
@@ -351,7 +351,7 @@ a.button
 .signinDialog input
   {
     background-color: #1e1e1e!important;
-    background-image: url(https://i.simonmattila.se/sweclockers/body-background.png)!important;
+    background-image: url(https://i.simonmattila.se/custom/sweclockers/body-background.png)!important;
     color: #8A8A8A!important;
   }
 
@@ -449,14 +449,14 @@ body
   {
     background-color: #1e1e1e!important;
     color: #8A8A8A!important;
-    background-image: url(https://i.simonmattila.se/sweclockers/body-background.png)!important;
+    background-image: url(https://i.simonmattila.se/custom/sweclockers/body-background.png)!important;
   }
 
   .menuItem.isSelected
   {
     background-color: #1e1e1e!important;
     color: #1e1e1e!important;
-    background-image: url(https://i.simonmattila.se/sweclockers/menuItem-background.png)!important;
+    background-image: url(https://i.simonmattila.se/custom/sweclockers/menuItem-background.png)!important;
   }
 
   .threadList .isSticky .numReplies,
@@ -743,7 +743,7 @@ select
 
   .threadStatus
   {
-    background-image: url('https://i.simonmattila.se/sweclockers/threadStatus.png');
+    background-image: url('https://i.simonmattila.se/custom/sweclockers/threadStatus.png');
     background-repeat: no-repeat;
     background-size: 850px auto;
     background-position: 0 0;
