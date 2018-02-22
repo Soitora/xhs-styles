@@ -1,0 +1,722 @@
+@-moz-document domain("crunchyroll.com") {
+/* Dark Mode for Crunchyroll.com
+* Original by: MatthewCoccon
+* Redesigned by: Soitora
+* Created: 2018-02-21
+* Updated: 2018-02-22
+* Version: 1.0
+* Licence: GNU General Public License v3 (GPL-3).
+*/
+
+/* Main */
+.container-shadow {
+    background-color: /*[[bgcolor]]*/;
+}
+
+* {
+	text-shadow: none!important;
+	text-decoration: none !important;
+	box-shadow: none!important;
+	border-radius: 0px!important;
+}
+
+body, .new-template-body, textarea, ul.news-top-stories-row li a, .anime-lineup-blurb, span, ul.news-abbr .byline {
+	color: /*[[text2]]*/ !important;
+}
+
+img.portrait, img, .thumb-group-small-mug a img, .user-profile-thin-gb .guestbook-mug img, .thumb-user-small-mug a img, .search-video-thumbs .media-thumb-wide, .welcome-crnews-mug img, .welcome-news-mug img, .welcome-media-mug img, .newsfeed-bottom-nav {
+	border: 0px solid red;
+}
+
+main {
+	background: /*[[bgcolor]]*/;
+}
+
+.login-page main, .resetpw-page main {
+    background: /*[[bgcolor]]*/;
+}
+
+/* Review */
+
+#showview_content_reviews .no_reviews_notification {
+	background-color: /*[[bgcolor]]*/;
+}
+
+.default-button, a.default-button, input.default-button, span.default-button {
+	color: /*[[text1]]*/;
+	border: 1px solid /*[[text1]]*/;
+	background: transparent;
+}
+
+/* Comments */
+
+textarea {
+	background: /*[[bgcolor]]*/;
+	border: 0px solid red;
+}
+
+textarea.text-input {
+	border: 0px solid red;
+}
+
+.comments .more-replies {
+    background-color: /*[[bgcolor]]*/;
+    border-top: 1px solid /*[[bgcolor]]*/;
+}
+
+.comments .boxtitle {
+    border-bottom: 2px solid /*[[bgcolor]]*/;
+}
+
+/* Header */
+
+.site-header {
+	background: /*[[bcolor]]*/;
+}
+
+.header-menubar li a {
+	color: /*[[text1]]*/;
+}
+
+.isolated-page-header {
+	background-color: /*[[bcolor]]*/;
+}
+
+input {
+	background-color: /*[[bgcolor]]*/;
+	color: /*[[text2]]*/;
+}
+
+/* Search */
+
+.header-search-form {
+	border: 0px solid red;
+	border-left: 2px solid /*[[text2]]*/;
+}
+
+.header-search-autocomplete {
+	border: .0625rem solid /*[[border]]*/;
+	background: /*[[bgcolor]]*/;
+}
+
+.header-search-autocomplete a {
+	border-bottom: .0625rem solid /*[[border]]*/;
+	border-right: .0625rem solid /*[[border]]*/;
+}
+
+.header_search_result_name {
+	color: /*[[text1]]*/;
+}
+
+.header_search_result_type {
+	color: /*[[specialtext]]*/;
+}
+
+.header-search-autocomplete a:focus, .header-search-autocomplete a:hover, .header_search_autocomplete_item_focused {
+	background-color: /*[[border]]*/;
+}
+
+.search-body {
+	border-left: 1px solid /*[[border]]*/;
+}
+
+ul.search-tabs .highlight a, ul.search-tabs a:hover {
+	background-color: /*[[bgcolor]]*/;
+}
+
+ul.search-tabs a {
+	color: /*[[specialtext]]*/;
+}
+
+.search-video-thumbs .series, .search-results .name {
+	color: /*[[specialtext]]*/;
+}
+
+.search-video-thumbs .name {
+	color: /*[[specialtext]]*/;
+}
+
+/* Forms */
+
+.forms {
+    background: /*[[bcolor]]*/;
+    border: .1rem solid /*[[border]]*/;
+}
+
+.std-form input, .std-form textarea {
+    background: /*[[bgcolor]]*/;
+}
+
+.std-form input, .std-form select, .std-form textarea {
+    border: .1em solid /*[[border]]*/;
+        border-top-color: /*[[border]]*/;
+        border-right-color: /*[[border]]*/;
+        border-bottom-color: /*[[border]]*/;
+        border-left-color: /*[[border]]*/;
+}
+
+input.validated-input:invalid, textarea.validated-input:invalid {
+    background: url(http://www.crunchyroll.com//i/freetrial/validation/icon_x.png) /*[[bgcolor]]*/ right 1.3em center/1em no-repeat;
+}
+
+.std-form [name="signup_with_profile[gender]"], .std-form [type="radio"] {
+    background: /*[[bcolor]]*/;
+		border: .1em solid /*[[border]]*/;
+}
+
+.std-form [type="radio"]:checked {
+    background: /*[[crorange]]*/;
+    border: .1em solid /*[[border]]*/;
+}
+
+.std-form [type="checkbox"] {
+    border: .1em solid /*[[border]]*/;
+}
+
+.signup-form-section {
+    border-right: .0625rem solid /*[[border]]*/;
+}
+
+.login-page .form-area, .resetpw-page .form-area {
+    background-color: /*[[bcolor]]*/;
+}
+
+/* Message Box*/
+
+.message-container {
+	background: #293940;
+}
+
+.search-form-channel input[type=text] {
+	border: 0px solid /*[[text2]]*/;
+	border-left: 2px solid /*[[text1]]*/;
+}
+
+/* Body */
+
+body.main-page {
+	background-color: /*[[bgcolor]]*/ !important;
+}
+
+body {
+	background-color: /*[[bgcolor]]*/ !important;
+}
+
+body, .new-template-body, textarea, ul.news-top-stories-row li a, .anime-lineup-blurb, span, ul.news-abbr .byline {
+	color: /*[[text1]]*/;
+}
+
+#template_container.template-container, #template_body.old-template-body, .lineup-container, #main_content .landscape-element, #source_manga_showview #main_content .landscape-grid li .wrapper {
+	background: /*[[bcolor]]*/;
+}
+
+/* Content */
+
+.welcome-simulcasts .welcome-simulcasts-collection a {
+	color: /*[[text2]]*/;
+}
+
+.welcome-simulcasts .welcome-simulcasts-episode:hover {
+	background-color: /*[[bcolor]]*/;
+}
+
+.welcome-simulcasts .welcome-simulcasts-episode {
+	color: /*[[text2]]*/;
+}
+
+.show-all-simulcasts-button:hover {
+	border-color: /*[[bgcolor]]*/;
+}
+
+.show-all-simulcasts-button {
+	background: /*[[bgcolor]]*/;
+	border: 1px solid /*[[bgcolor]]*/;
+	color: /*[[text1]]*/;
+}
+
+/* Welcome News*/
+
+.welcome-crnews-title, .welcome-news-title {
+	color: /*[[specialtext]]*/;
+}
+
+/* Free Trial */
+
+#showmedia_free_trial_signup {
+	background: /*[[bcolor]]*/;
+	border: 0px solid /*[[border]]*/ !important;
+	border-left: 1px solid /*[[border]]*/ !important;
+    border-right: 1px solid /*[[border]]*/ !important;
+    border-bottom: 1px solid /*[[border]]*/ !important;
+}
+
+.showmedia-free-trial-header {
+	background: /*[[bcolor]]*/;
+	border: 0px solid /*[[border]]*/ !important;
+    border-top: 1px solid /*[[border]]*/ !important;
+}
+
+/* New Series */
+
+.welcome-latest-videos .series {
+	color: /*[[specialtext]]*/;
+}
+
+.welcome-latest-videos .name {
+	color: /*[[text1]]*/;
+}
+
+.welcome-latest-videos .ordernum {
+	color: /*[[specialtext]]*/;
+}
+
+/* Sidebar */
+
+#welcome_left {
+	border-right: 1px solid /*[[border]]*/;
+}
+
+#sidebar, .welcome-countdown-day, .welcome-crnews-item, .welcome-news-item, .old-template-body .cr-header, ul.news .news-date-label, .showcrunchynews .news-header2, .showcrunchynews .tag-header, .showcrunchynews .comments-header, .forum-category-head, div.forum-category-head, .forum-category-head, h2.forum-category-head, .showforumtopic-postreply-header, .user-profile-header, .user-profile-link, .user-profile-box h3, .library-category-header, .welcome-recent-episodes .welcome-recent-link, .manga-countdown-items, ul.newsfeed .news-date-label, .showcrunchynews .top-news {
+	border-bottom: 1px solid /*[[border]]*/;
+}
+
+#sidebar h3 {
+	color: /*[[text1]]*/;
+}
+
+.landscape-grid .wrapper:hover {
+	background: /*[[border]]*/;
+}
+
+.old-template-body a.block-link, a.block-link {
+	color: /*[[text3]]*/;
+}
+
+.welcome-block h1, .welcome-title-list h1 {
+	border-bottom: 0px solid red;
+}
+
+.welcome-block h1 a, .welcome-title-list h1 a {
+	color: /*[[text1]]*/;
+}
+
+.welcome-forum-category {
+	border-bottom: 0px solid red;
+}
+
+.welcome-forum-category a {
+	color: /*[[specialtext]]*/;
+}
+
+.welcome-pulse-box a {
+	color: /*[[specialtext]]*/;
+}
+
+.welcome-pulse-box a:hover {
+	background-color: /*[[border]]*/;
+}
+
+.welcome-countdown-items a {
+	color: /*[[text3]]*/;
+}
+
+.welcome-countdown-items a:hover {
+	background-color: /*[[border]]*/;
+}
+
+.welcome-recent-link a {
+	color: /*[[text2]]*/;
+}
+
+/* Footer */
+
+#footer_menu {
+	background-color: /*[[bgcolor]]*/;
+}
+
+#footer_menu {
+	display: none;
+}
+
+.isolated-page-footer {
+	background-color: /*[[bgcolor]]*/;
+	border-top: .1em solid /*[[border]]*/;
+}
+
+/*------------------------------- Sections -------------------------------*/
+
+/* Simulcast */
+
+.main-tabs, #tabs, .main-tabs a:hover, .main-tabs a.selected, .main-tabs a.selected:hover, .main-tabs a {
+	background: transparent;
+}
+
+.main-tabs a.selected {
+	color: /*[[text1]]*/;
+}
+
+.main-tabs a {
+	color: /*[[specialtext]]*/;
+}
+
+.portrait-element, #store_items li {
+	background: /*[[bcolor]]*/;
+}
+
+.wrapper .portrait-element:active, body .wrapper .landscape-element:active {
+	background: /*[[bgcolor]]*/!important;
+}
+
+.new-template-body h3, .guestbook-list, ul.news .body, .news-footer-more, .search-results a, #source_manga_showview .more-options, ul.newsfeed .body {
+	border-top: 1px solid /*[[border]]*/;
+}
+
+/* Series Highlighted - Other Popular Shows */
+
+.old-template-body a.block-link, a.block-link, .new-template-body a.block-link {
+	color: /*[[text3]]*/;
+}
+
+/* Episode List */
+
+#main_content_white, .white-wrapper {
+	background: /*[[bgcolor]]*/;
+}
+
+#showmedia_about_info_details span {
+	color: /*[[text1]]*/;
+}
+
+.guestbook-sort-bar {
+	border-top: 1px solid /*[[bgcolor]]*/;
+	padding-top: 3px;
+	background-color: /*[[bgcolor]]*/;
+}
+
+.guestbook-spoiler-checkbox {
+	color: #ef3333;
+}
+
+/* Animes */
+
+#source_showview .season-dropdown.open, #source_showview .season-dropdown {
+	color: /*[[text1]]*/;
+	background-color: /*[[bgcolor]]*/;
+	border: 1px solid /*[[text1]]*/;
+}
+
+/* News */
+
+ul.topbar-nav-sub {
+	background-color: /*[[bcolor]]*/;
+}
+
+ul.topbar-nav-sub li.highlight a {
+	background-color: /*[[text1]]*/;
+}
+
+ul.news-top-stories-row li a {
+	border: 0px solid red;
+	background: /*[[bgcolor]]*/;
+}
+
+ul.news h2 a {
+	color: /*[[specialtext]]*/;
+}
+
+ul.news .news-date-label {
+	color: /*[[text1]]*/;
+}
+
+ul.news li.news-item-pegged, ul.news li.news-item, ul.news-abbr, .showcrunchynews .bottom-nav, .orderstatus-grid td {
+	border: 1px solid /*[[border]]*/;
+}
+
+.news-bottom-nav {
+	border: 0px solid red;
+	background: /*[[bgcolor]]*/;
+}
+
+.news-header-right a {
+	color: /*[[specialtext]]*/;
+}
+
+.showcrunchynews .previous-label, .showcrunchynews .next-label {
+	color: /*[[text1]]*/;
+}
+
+#slidebox {
+	background-color: /*[[bgcolor]]*/;
+	border: 1px solid /*[[specialtext]]*/;
+}
+
+#slidebox h2 a {
+	color: /*[[specialtext]]*/;
+}
+
+.showcrunchynews h1 a {
+	color: /*[[specialtext]]*/;
+}
+
+ul.newsfeed li {
+	border: 0px dotted red;
+	border-bottom: 2px solid /*[[border]]*/ !important;
+}
+
+ul.newsfeed h2 a {
+	color: /*[[specialtext]]*/;
+}
+
+/* Calendar */
+
+.day.active .calendar-day {
+	background: /*[[bgcolor]]*/;
+}
+
+.calendar h1>a {
+	color: /*[[text2]]*/;
+}
+
+h1.day-name {
+	color: /*[[specialtext]]*/;
+}
+
+.calendar .pagination-arrow, .simulcast-lineup-toggle .mode-button {
+	background-color: /*[[bgcolor]]*/;
+}
+
+.simulcast-lineup-toggle .mode-button {
+	border-right: 0px solid red;
+}
+
+.simulcast-calendar {
+	color: /*[[specialtext]]*/;
+}
+
+/* Forum */
+
+.topbar-nav-trail a {
+	color: /*[[specialtext]]*/;
+}
+
+.topbar-nav-trail a:hover {
+	color: /*[[specialtext]]*/;
+}
+
+.forum_main-topic-desc, .group-card {
+	background: /*[[bgcolor]]*/;
+}
+
+a.forum_main-topic-desc-title {
+	color: /*[[text3]]*/;
+}
+
+.group-card-name {
+	color: /*[[specialtext]]*/;
+}
+
+.forumcategory-site-rules-block, .widget-forumcategory-header, .paginator-lite, .paginator-lite-selected, .showforumtopic-header {
+	background-color: /*[[bgcolor]]*/;
+}
+
+.widget-forumcategory-display td, .widget-forumcategory-display th, .paginator-lite, .paginator-lite-selected, .forum_series-display td, .forum_series-display th {
+	border: 1px solid /*[[border]]*/;
+}
+
+.forum_series-display-title a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	color: /*[[text1]]*/;
+}
+
+.forum_series-display-title a {
+	color: /*[[specialtext]]*/;
+}
+
+.widget-forumcategory-display-title a {
+	color: /*[[specialtext]]*/;
+}
+
+.paginator-lite, .paginator-lite-selected {
+	color: /*[[text1]]*/;
+}
+
+.paginator-lite-disabled {
+	border: 1px solid /*[[border]]*/;
+	background-color: /*[[bgcolor]]*/;
+}
+
+.paginator-lite-selected {
+	border: 1px solid /*[[text1]]*/;
+}
+
+.paginator-lite:hover {
+	background-color: /*[[specialtext]]*/;
+}
+
+.pollwidget {
+	background: /*[[bcolor]]*/;
+}
+
+.pollwidget-showpoll {
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid /*[[specialtext]]*/;
+}
+
+.showforumtopic-fblike {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.showforumtopic-messages td {
+	background-color: /*[[bgcolor]]*/;
+}
+
+.showforumtopic-message-user, .showforumtopic-message-user-footer {
+	border-right: 4px solid #9e2828;
+}
+
+.showforumtopic-message-footer {
+	border-bottom: 4px solid #9e2828;
+}
+
+.showforumtopic-message-user-name a {
+	color: /*[[specialtext]]*/;
+}
+
+.showforumtopic-message-user-details {
+	color: /*[[specialtext]]*/;
+}
+
+.bb-quote {
+	color: /*[[text2]]*/;
+	background-color: /*[[bgcolor]]*/;
+	border: 1px solid /*[[border]]*/;
+}
+
+/* Profile Page */
+
+.library-tab-widget .tab-contents-container, .user-profile-interests td a, .acct-contents, .inbox-body-contents {
+	border-left: 1px solid /*[[border]]*/;
+}
+
+.library-tab-widget .tab-contents-container {
+	border-top: 1px solid /*[[border]]*/;
+}
+
+.old-template-body .boxcontents {
+	border: 1px solid /*[[border]]*/;
+}
+
+.old-template-body .boxtitle {
+	background: /*[[bgcolor]]*/;
+}
+
+.library-tab-widget .tab a {
+	border-top: 0px solid red;
+	border-right: 0px solid red;
+}
+
+.library-tab-widget .tab-container .highlight a {
+	background-color: /*[[bgcolor]]*/;
+}
+
+.library-tab-widget .tab a {
+	background-color: /*[[border]]*/;
+}
+
+.tab-container .tab a {
+	color: /*[[specialtext]]*/;
+}
+
+.photoalbum-list, .thumb-product .mug {
+	border: 1px solid /*[[border]]*/;
+}
+
+.user-profile-link:hover, .search-results a:hover {
+	background-color: /*[[border]]*/;
+}
+
+.user-profile-link:hover img {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+/* Edit Profile */
+
+div.acct-nav a, .inbox-nav-contents a {
+	color: /*[[specialtext]]*/;
+}
+
+.acct-nav a:hover, .inbox-nav-contents li a:hover {
+	background-color: /*[[bgcolor]]*/;
+}
+
+.text-input[type=text], .text-input[type=password], textarea.text-input {
+	border: 1px solid /*[[border]]*/;
+}
+
+.acct-nav a.highlight, .inbox-nav-contents li.highlight a {
+	background-color: /*[[border]]*/;
+}
+
+/* Inbox */
+
+.pm-subject {
+	color: /*[[text1]]*/;
+}
+
+ul.topbar-nav-sub li.dim a:hover {
+	background-color: /*[[bgcolor]]*/;
+	color: /*[[text1]]*/;
+}
+
+/* Change Color */
+
+div[style="background-color:#FFF6CF"], div[style*="#FFF6CF"] {
+	background-color: /*[[bcolor]]*/ !important;
+}
+
+.header-menubar .freetrial-note, .add-queue-button.not-queued {
+  color: /*[[crorange]]*/;
+}
+
+a, a.text-link.strong, a.text-link, a.twitter-follow-button, .sub-tabs-menu .calendar-link {
+  color: /*[[specialtext]]*/;
+}
+
+#showmedia_about_info_details {
+    color: /*[[text2]]*/;
+}
+
+#template_body .special-button, #template_body a.special-button, #template_body input.special-button, #template_body span.special-button, .special-button, a.special-button, input.special-button, span.special-button {
+    text-shadow: 0 1px 4px /*[[crorange]]*/;
+    border: 1px solid /*[[crorange]]*/;
+    background: /*[[crorange]]*/;
+}
+
+.action.type-primary {
+    background-color: /*[[crorange]]*/;
+    border-color: /*[[crorange]]*/;
+}
+
+main .headline strong {
+    color: /*[[crorange]]*/;
+}
+
+.tablist a.action {
+    background-color: /*[[bcolor]]*/;
+    border: .0625rem solid /*[[crorange]]*/;
+    color: /*[[crorange]]*/;
+}
+
+.subscription-page a {
+    color: /*[[crorange]]*/;
+}
+
+.episode-progress-bar {
+    background: /*[[bcolor]]*/;
+}
+
+.default-button, a.default-button, input.default-button, span.default-button {
+    border: 1px solid /*[[border]]*/;
+}
+
+}
