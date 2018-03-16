@@ -189,14 +189,14 @@ UL#tabs LI.selected A {
 }
 
 #mainToolbar-searchbar #search {
-	background: #1e1e1e url(./images/zoom.png) no-repeat center center;
+	background: #1e1e1e url("https://i.imgur.com/eXsJgGt.png") no-repeat center center;
 	border-width: 1px 0;
 	height: 20px;
 	width: 20px;
 }
 
 #mainToolbar-searchbar #searchsel {
-	background: #1e1e1e url(./images/arrow.png) no-repeat -2px 3px;
+	background: #1e1e1e url("https://i.imgur.com/vGG4e3z.png") no-repeat -2px 3px;
 	height: 20px;
 	width: 10px;
 }
@@ -248,7 +248,7 @@ UL#tabs LI.selected A {
 }
 
 #mainStatusBar-menu {
-	background: transparent url(https://i.imgur.com/DIkyUFs.png) no-repeat center center;
+	background: transparent url("https://i.imgur.com/DIkyUFs.png") no-repeat center center;
 	float: left;
 	height: 100%;
 	min-height: 16px;
@@ -439,7 +439,7 @@ UL#tabs LI.selected A {
 }
 
 #mainToolbar a.tbbutton {
-	background: transparent url(https://i.imgur.com/BMi41yz.png) no-repeat 0 top;
+	background: transparent url("https://i.imgur.com/BMi41yz.png") no-repeat 0 top;
 	background-size: 1200% 100%;
 	cursor: pointer;
 	display: block;
@@ -451,7 +451,7 @@ UL#tabs LI.selected A {
 }
 
 #mainCatList li .icon {
-	background: transparent url(https://i.imgur.com/poEZ7hj.png) no-repeat;
+	background: transparent url("https://i.imgur.com/poEZ7hj.png") no-repeat;
 	background-size: 100% 1900%!important;
 	margin: -8px 3px;
 	padding: 8px;
@@ -460,7 +460,7 @@ UL#tabs LI.selected A {
 }
 
 #mainTorList .icon {
-	background: transparent url(https://i.imgur.com/poEZ7hj.png) no-repeat 0% 0%;
+	background: transparent url("https://i.imgur.com/poEZ7hj.png") no-repeat 0% 0%;
 	background-size: 100% 1900%!important;
 }
 
@@ -489,7 +489,7 @@ UL#tabs LI.selected A {
 }
 
 input.btn {
-	background: #F0F0F0 url(https://i.imgur.com/IYplvhA.png) repeat center top;
+	background: #F0F0F0 url("https://i.imgur.com/IYplvhA.png") repeat center top;
 	border: 1px solid #A0A0A0;
 }
 
@@ -518,11 +518,11 @@ input.btn:hover {
 }
 
 .CMenu a.exp {
-	background: #de454500 url(https://i.imgur.com/arqFDEO.png) no-repeat scroll 0 center;
+	background: #de454500 url("https://i.imgur.com/arqFDEO.png") no-repeat scroll 0 center;
 }
 
 .CMenu a.check {
-	background: transparent url(https://i.imgur.com/f6zO5AM.png) no-repeat scroll 5px center;
+	background: transparent url("https://i.imgur.com/f6zO5AM.png") no-repeat scroll 5px center;
 	background-color: transparent;
 }
 
@@ -550,9 +550,9 @@ input.btn:hover {
 }
 
 .dlg-head {
-	background: #F5F5F5 url(./images/blank.gif) no-repeat .3em .3em;
+	background: #F5F5F5 url("https://i.imgur.com/kqMx1Lf.gif") no-repeat .3em .3em;
 	background-color: #f5f5f5;
-	background-image: url("./images/blank.gif");
+	background-image: url("https://i.imgur.com/kqMx1Lf.gif");
 	border-bottom: 1px solid #C0C0C0;
 	border-bottom-color: #c0c0c0;
 	border-radius: 4px 4px 0 0;
