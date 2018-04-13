@@ -2,866 +2,663 @@
 /* Dark Mode for Sweclockers.com
 * Created by: Soitora
 * Created: 2017-11-03
-* Updated: 2018-03-16
-* Version: 1.4e
+* Updated: 2018-04-13
+* Version: 1.5
 * Licence: GNU General Public License v3 (GPL-3).
 */
-
-  :not(.arrow):not(.handle)
-  {
-    border-color: #191919!important;
-  }
-
-  :not(.arrow):not(.handle).menuItem
-  {
-    border-color: #1e1e1e!important;
-  }
-
-  .bbColor[style="color: blue;"]
-  {
-    color: #09F!important;
-  }
-
-  #Better_SweClockers fieldset,
-#betterSwecFilterSettingsList
-  {
-    background-color: #1e1e1e!important;
-  }
-
-  #Better_SweClockers input:not(.button),
-#Better_SweClockers textarea
-  {
-    color: #8A8A8A!important;
-  }
-
-  #Better_SweClockers_SearchWithGoogle
-  {
-    color: #166beb;
-    font-family: Courier;
-  }
-
-  optgroup[label="Better SweClockers"]
-  {
-    background-color: #1e1e1e;
-  }
-
-  img[src*="/artikel/diagram/"]
-  {
-    background-color: #8a8a8a;
-    -webkit-filter: invert(85%);
-    -o-filter: invert(85%);
-    -ms-filter: "invert(85%)";
-    filter: invert(85%);
-    background: none!important;
-  }
-
-  img[src*="/image/diagram/"]
-  {
-    background-color: #CCC;
-  }
-
-  .bbRelatedBox
-  {
-    border: 0px inset #1e1e1e;
-    border-radius: 2px;
-    background: #1e1e1e;
-    margin-bottom: 16px;
-    padding: 10px 10px 0;
-  }
-
-  .bbPre.showFrame
-  {
-    background: #1e1e1e;
-    border-left-color: #1e1e1e!important;
-    border-top-color: #1e1e1e!important;
-    border: 1px solid #1e1e1e!important;
-  }
-
-  .button,
-a.button
-  {
-    background-color: #1e1e1e!important;
-    background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
-    color: #DDD!important;
-  }
-
-  .bbIns,
-.bbMark
-  {
-    padding: 0 1px!important;
-    border-radius: 3px!important;
-    background-color: #a95000!important;
-  }
-
-  .mainMenu li.optionBlackfriday
-  {
-    border-color: #393d44!important;
-  }
-
-  .tv-frame .tvf-left
-  {
-    background-image: url("https://i.imgur.com/y8gWfV1.png");
-  }
-
-  .tv-frame .tvf-right
-  {
-    background-image: url("https://i.imgur.com/fD4VmHu.png");
-  }
-
-  .tv-frame .tvf-top
-  {
-    background-image: url("https://i.imgur.com/hxA5pui.png");
-  }
-
-  .tv-frame .tvf-bottom
-  {
-    background-image: url("https://i.imgur.com/HKERT5E.png");
-  }
-
-  .newsList .commentsBubble
-  {
-    background: -webkit-gradient(linear, left top, left bottom, from(#191919), to(#191919));
-    background: -moz-linear-gradient(top, #191919, #191919);
-    -webkit-border-top-left-radius: 8px;
-    -webkit-border-bottom-left-radius: 8px;
-    border: 1px solid #191919;
-  }
-
-  .postBox .head
-  {
-    background: -moz-linear-gradient(top, #979590, #979590)!important;
-    background: -o-linear-gradient(top, #979590, #979590 60%, #979590)!important;
-    background: -webkit-linear-gradient(top, #979590, #979590 60%, #979590)!important;
-    background: linear-gradient(top, #979590, #979590 60%, #979590)!important;
-  }
-
-  .pages .icon
-  {
-    background-image: url("https://i.imgur.com/83T2WX6.png")!important;
-  }
-
-  .sideMenu .icon
-  {
-    background-image: url("https://i.imgur.com/83T2WX6.png")!important;
-  }
-
-  .bbSpoiler .spoilerHeader
-  {
-    float: right;
-    margin-top: 7px;
-    margin-right: 5px;
-  }
-
-  .commentsWidget .mwReadmore
-  {
-    text-decoration: none!important;
-  }
-
-  .commentsWidget .mwReadmore a:hover
-  {
-    text-decoration: underline!important;
-  }
-
-  .footer .bottom
-  {
-    background: #191919;
-    color: #FFF;
-    padding: 20px 0 20px 0;
-  }
-
-  .forumForm>.head
-  {
-    background: #1e1e1e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-    background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#1e1e1e', EndColorStr='#1e1e1e')";
-  }
-
-  .bbcode hr.bbHr
-  {
-    border: 1px solid #1e1e1e!important;
-    border-top-color: #1e1e1e!important;
-    border-left-color: #1e1e1e!important;
-  }
-
-  .mainMenu .isSelected
-  {
-    background-color: #1e1e1e!important;
-    background-image: none!important;
-  }
-
-  .articleNavi .head
-  {
-    border-bottom: 1px solid #b2afa6;
-    padding-top: 3px;
-  }
-
-  .bbImage .caption
-  {
-    background-color: rgba(35, 39, 42, .8)!important;
-  }
-
-  .bbSpoiler .spoilerFrame
-  {
-    border: 1px solid #1e1e1e!important;
-    border-top-color: #1e1e1e!important;
-    border-left-color: #1e1e1e!important;
-  }
-
-  .forumPost.isLinked.isAuthor
-  {
-    border-color: #a95000;
-    box-shadow: 0 0 5px 2px #a95000;
-  }
-
-  .bbcode .bbQuote
-  {
-    border: 1px solid #8A8A8A!important;
-    border-top-color: #8A8A8A!important;
-    border-left-color: #8A8A8A!important;
-  }
-
-  .forumTable .caption
-  {
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-  }
-
-  .forumTable .cell.alt2
-  {
-    background: #1e1e1e;
-    border-bottom-color: #1e1e1e;
-  }
-
-  .forumTable .cell,
-.forumTable .cell.alt1
-  {
-    background: #1e1e1e;
-    border-bottom: #1e1e1e 2px solid;
-  }
-
-  .header .logo
-  {
-    background-image: url("https://i.imgur.com/83T2WX6.png");
-  }
-
-  .header .main
-  {
-    background: linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), color-stop(98%, #1e1e1e), to(#272829))!important;
-    background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background: -o-linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-    background: linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-  }
-
-  .spoilerContent .bbVideoYoutube:first-child
-  {
-    clear: both;
-  }
-
-  .threadList .isSelected .cell
-  {
-    background: #200e00 !important;
-    border-bottom-color: #d7d5d1;
-  }
-
-  .forumResultPost .postHeader .threadTitle
-  {
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-  }
-
-  .forumPost .postHeader .cell
-  {
-    background-color: #1e1e1e!important;
-    background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
-  }
-
-  .mainWidget .body .divider
-  {
-    border-color: #43413d!important;
-  }
-
-  .menu.root.clear
-  {
-    padding-left: 0px;
-  }
-
-  .forumTable .head .cell
-  {
-    background: -moz-linear-gradient(top, #a95000, #a95000);
-  }
-
-  .galleryFileEditor button,
-.tanukiButton,
-.taunkiButton
-  {
-    color: #DDD!important;
-    background-color: #1e1e1e!important;
-    background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-    background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
-  }
-
-  .forumPost.isAuthor .postHeader .cell
-  {
-    background-color: #a95000!important;
-    background-image: -webkit-linear-gradient(top, #a95000, #a95000)!important;
-    background-image: -moz-linear-gradient(top, #a95000, #a95000)!important;
-    background-image: -o-linear-gradient(top, #a95000, #a95000)!important;
-    background-image: linear-gradient(to bottom, #a95000, #a95000)!important;
-  }
-
-  .articleNavi .quick a,
-.pages a
-  {
-    border-radius: 3px!important;
-  }
-
-  .link .label,
-.pushListExternal a span
-  {
-    color: #6A6A6A!important;
-  }
-
-  .mellandagsrea .tips .tipsData .pjCell
-  {
-    background: #1e1e1e;
-    border-bottom: 2px solid #1e1e1e;
-    color: #1e1e1e;
-  }
-
-  .mellandagsrea .tips .tipsData .productCell
-  {
-    background: #1e1e1e;
-    border-bottom: 2px solid #1e1e1e;
-    border-left: 1px solid #1e1e1e;
-  }
-
-  .searchField .fieldWrap,
-.searchField input,
-.signinDialog input
-  {
-    background-color: #1e1e1e!important;
-    background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
-    color: #8A8A8A!important;
-  }
-
-  .mwLabel,
-.mwLabel:hover,
-.plLabel,
-.plLabel:hover
-  {
-    color: #ccc!important;
-  }
-
-  .mellandagsrea .tips .tipsData .userCell .colUser
-  {
-    background: #1e1e1e;
-    border-bottom: 2px solid #1e1e1e;
-    border-right: 1px solid #1e1e1e;
-  }
-
-  .mellandagsrea .tips .tipsRow:hover .userCell .colUser
-  {
-    background: #1e1e1e;
-  }
-
-  .mellandagsrea .tips .tipsData .userCell .colScore .label
-  {
-    background: #a95000;
-    color: #fff;
-  }
-
-  .mellandagsrea .vendorProducts
-  {
-    background: #1e1e1e;
-    border-left: 1px solid #1e1e1e;
-    border-top: 1px solid #1e1e1e;
-  }
-
-  .mellandagsrea .productFooter
-  {
-    background: #1e1e1e;
-  }
-
-  .threadList .isSticky .lastReply,
-.threadList .isSticky .numViews
-  {
-    background-color: #1e1e1e!important;
-  }
-
-  .bbExpander>.expanderFrame>.expanderFade,
-.bbQuote.isExpandable>.quoteFrame>.quoteFade
-  {
-    background: -moz-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 39, 42, 0)), color-stop(25%, rgba(35, 39, 42, .5)), color-stop(100%, rgba(35, 39, 42, 1)));
-    background: -webkit-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-    background: -o-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-    background: linear-gradient(to bottom, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
-  }
-
-  .forumList .categoryItem .cell,
-.forumList .categoryItem.isCollapsed .cell
-  {
-    background: #1e1e1e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-    background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e);
-    background: linear-gradient(top, #1e1e1e, #1e1e1e);
-  }
-
-  .button:hover,
-.galleryFileEditor button:hover,
-.tanukiButton:hover,
-.taunkiButton:hover
-  {
-    background-color: #2a2a2a!important;
-    background-image: -webkit-linear-gradient(top, #2a2a2a, #262626)!important;
-    background-image: -moz-linear-gradient(top, #2a2a2a, #262626)!important;
-    background-image: -o-linear-gradient(top, #2a2a2a, #262626)!important;
-    background-image: linear-gradient(to bottom, #2a2a2a, #262626)!important;
-  }
-
-  .mellandagsrea .tips .tipsRow:hover .productCell,
-.mellandagsrea .tips .tipsRow:hover .pjCell
-  {
-    background: #1e1e1e;
-  }
-
-  .header,
-.header .shadow,
-.menuItem,
-.searchField .fieldWrap,
-.searchField input,
-.signinDialog input,
-body
-  {
-    background-color: #1e1e1e!important;
-    color: #8A8A8A!important;
-    background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
-  }
-
-  .menuItem.isSelected
-  {
-    background-color: #1e1e1e!important;
-    color: #1e1e1e!important;
-    background-image: url("https://i.imgur.com/7Q8mgVx.png")!important;
-  }
-
-  .threadList .isSticky .numReplies,
-.threadList .isSticky .select,
-.threadList .isSticky .status,
-.threadList .isSticky .title
-  {
-    background-color: #272727!important;
-  }
-
-  .bbTable thead .bbParagraph,
-.forumTable th .numReplies,
-.pages a:hover>.label,
-.postBox .head .title,
-.tanukiCombobox .tcbSelectedItem
-  {
-    color: #EBEBEB!important;
-  }
-
-  .commentsBubble,
-.commentsBubble:hover,
-.errorBox a,
-.footer .bottom a,
-.forumResultPost .postHeader .threadTitle .label,
-.mainWidget h5 a,
-.mwReadmore a,
-.pushListInternal .head h5 a
-  {
-    color: #FFF!important;
-  }
-
-  .articleCommentsWidget .boxAction .actionLabel,
-.forumPost .postHeader .headerLink,
-.forumTable .title h3 a,
-.mainWidget .label,
-.plHead a,
-.pushListInternal .link .label,
-.slide a,
-.socialWidget a
-  {
-    color: #EBEBEB!important;
-  }
-
-  .articleNavi .isCurrent a,
-.galleryItem a,
-.header a,
-.hotGallery a,
-.newsList .bbParagraph a,
-.pages a,
-.popularGalleries a,
-.tagSection h2 a,
-.threadMap .postElement a,
-.videoPush a
-  {
-    color: #8A8A8A!important;
-  }
-
-  .bbPoll .inner,
-.bbQuote,
-.bbSpoiler .spoilerFrame,
-.footer .top,
-.forumForm input,
-.forumForm textarea,
-.forumList .lastReply,
-.forumList .lastThread,
-.forumList .link,
-.forumList .numReplies,
-.forumList .status,
-.forumPost .details,
-.forumPost .profile,
-.forumResultPost .dateline,
-.infoTextWindow,
-.mainContent,
-.marketList .date,
-.marketList .price,
-.memberTable .alt2,
-.postBox .shortcut,
-.quickReply textarea,
-.showFrame,
-.tanukiCombobox .tcbTriggerFrame,
-.threadList .lastReply,
-.threadList .numViews,
-.threadMap .postElement
-  {
-    background-color: #1e1e1e!important;
-  }
-
-  .articleKeywords a,
-.articleNavi .pageButton:hover,
-.bbTable th,
-.filterLinks .filterLink.isSelected,
-.forumForm .body,
-.forumList .numThreads,
-.forumList .numViews,
-.forumList .title,
-.forumPost,
-.forumResultPost,
-.infoBox,
-.marketList .status,
-.marketList .title,
-.memberTable .cell,
-.pages .isCurrent,
-.pages a.isCurrent:hover .label,
-.postBox,
-.signinDialog .inner,
-.stepWidget .stepItem.isSelected,
-.tanukiCombobox .tcbSelectedItem,
-.threadList .numReplies,
-.threadList .select,
-.threadList .status,
-.threadList .title,
-input,
-select,
-textarea
-  {
-    background-color: #1e1e1e!important;
-  }
-
-  .searchField .fieldWrap,
-.bbList,
-.bbParagraph,
-.bbPre,
-.contactInfo,
-.expanderHeader,
-.feedItem,
-.forumForm,
-.forumPost .quoteHead,
-.forumPost .showFrame,
-.forumPost .title,
-.forumResultPost,
-.forumRules,
-.forumTable tbody .numThreads,
-.forumTable td .by,
-.forumTable td .date,
-.forumTable td .descr,
-.forumTable td .numReplies,
-.forumTable td .time,
-.forumTable td.numReplies,
-.galleryFiles,
-.galleryFiles input,
-.galleryForm,
-.galleryForm input,
-.galleryForm select,
-.galleryForm textarea,
-.header .profile .options,
-.infoText,
-.infoTextWindow,
-.marketAcceptRules,
-.marketFilterBox input,
-.marketFilterBox select,
-.marketForm,
-.marketForm input,
-.marketForm select,
-.marketForm textarea,
-.marketList .row,
-.memberTable,
-.ninjaSearch h5,
-.pages .isCurrent .label,
-.profileHeader .label,
-.quickReply label,
-.signinDialog,
-.spoilerPlaceholder,
-.tanukiSelect select,
-.tanukiTextarea textarea,
-.tanukiTextbox input,
-label,
-select
-  {
-    color: #8A8A8A!important;
-  }
-
-  .forumWidget
-  {
-    background-color: #a95000;
-    background: -moz-linear-gradient(top, #a95000, #a95000);
-    background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
-    background: -o-linear-gradient(top, #a95000, #a95000);
-    background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
-    background: -webkit-linear-gradient(top, #a95000, #a95000);
-    background: linear-gradient(top, #a95000, #a95000);
-  }
-
-  .mainRecentNews
-  {
-    background-color: #1e1e1e;
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e 100%);
-    background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-    background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: linear-gradient(top, #1e1e1e, #1e1e1e);
-  }
-
-  .orangeInfoBox
-  {
-    background-color: #a95000;
-    background: -moz-linear-gradient(top, #a95000, #a95000);
-    background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
-    background: -o-linear-gradient(top, #a95000, #a95000);
-    background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
-    background: -webkit-linear-gradient(top, #a95000, #a95000);
-    background: linear-gradient(top, #a95000, #a95000);
-  }
-
-  .prisjaktPopular
-  {
-    color: #fff;
-    background-color: #1d3c49;
-    background: -moz-linear-gradient(top, #1d3c49, #1d3c49);
-    background: -ms-linear-gradient(top, #1d3c49 0, #1d3c49 100%);
-    background: -o-linear-gradient(top, #1d3c49, #1d3c49);
-    background: -webkit-gradient(linear, left top, left bottom, from(#1d3c49), to(#1d3c49));
-    background: -webkit-linear-gradient(top, #1d3c49, #1d3c49);
-    background: linear-gradient(top, #1d3c49, #1d3c49);
-  }
-
-  .prisjaktPopular .ppPrice
-  {
-    color: #6f867e;
-  }
-
-  #proofArticle,
-* a,
-.feedMore,
-.footer .top a::before,
-.forumList .lastThread h3,
-.galleryBody .commentLink::before,
-.header .profile .hasUnread a,
-.mwLabel.mwComments,
-.plLabel.plComments
-  {
-    color: #a95000!important;
-  }
-
-  #proofArticle:hover,
-* a:hover,
-.feedMore:hover,
-.footer .top a::before:hover,
-.forumList .lastThread h3:hover,
-.galleryBody .commentLink::before:hover,
-.mwLabel.mwComments:hover,
-.plLabel.plComments:hover
-  {
-    color: #a95000!important;
-  }
-
-  #threadList-1 tr.hasUnreadPosts td.status
-  {
-    box-shadow: inset 5px 0 0 0 #a95000;
-  }
-
-  .profileFeed .date
-  {
-    color: #864000;
-  }
-
-  .pushListInternal
-  {
-    color: #fff;
-    background-color: #1e1e1e;
-    background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e 100%);
-    background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-    background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-    background: linear-gradient(top, #1e1e1e, #1e1e1e);
-  }
-
-  .pushListInternal .head a
-  {
-    color: #CCC!important;
-  }
-
-  .pushListMonster
-  {
-    background-color: #4a276a;
-    background: -moz-linear-gradient(top, #4a276a, #4a276a);
-    background: -ms-linear-gradient(top, #4a276a, #4a276a);
-    background: -o-linear-gradient(top, #4a276a, #4a276a);
-    background: -webkit-gradient(linear, left top, left bottom, from(#4a276a), to(#4a276a));
-    background: -webkit-linear-gradient(top, #4a276a, #4a276a);
-    background: linear-gradient(top, #4a276a, #4a276a);
-  }
-
-  .threadStatus
-  {
-    background-image: url("https://i.imgur.com/rlERXyo.png");
-    background-repeat: no-repeat;
-    background-size: 850px auto;
-    background-position: 0 0;
-    margin: 0 auto;
-    width: 19px;
-    height: 19px;
-  }
-
-  .kwd
-  {
-    color: #0050FF!important;
-  }
-
-  .lit
-  {
-    color: #EBEBEB!important;
-  }
-
-  .pln
-  {
-    color: #8A8A8A!important;
-  }
-
-  .pun
-  {
-    color: #BBB!important;
-  }
-
-  .tanukiCombobox.hasErrors .tcbTriggerFrame
-  {
-    border-color: #a95000;
-    outline: #a95000 auto 5px;
-  }
-
-  .tanukiFile.hasErrors input
-  {
-    border-color: #a95000;
-    outline: #a95000 auto 5px;
-  }
-
-  .tanukiSelect.hasErrors select
-  {
-    border-color: #a95000;
-    outline: #a95000 auto 5px;
-  }
-
-  .tanukiTextarea.hasErrors textarea
-  {
-    border-color: #a95000;
-    outline: #a95000 auto 5px;
-  }
-
-  .tanukiTextbox.hasErrors input
-  {
-    border-color: #a95000;
-    outline: #a95000 auto 5px;
-  }
-
-  .tanukiError .error
-  {
-    background-color: #a95000;
-    border: 1px solid #a95000;
-    color: #fff;
-  }
-
-  .tanukiCombobox .tcbPanel
-  {
-    background: #191919;
-    border: 1px solid #7f9db9;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.175);
-  }
-
-  .carousel .nav.left .handle
-  {
-    border-right: 10px solid #a95000;
-  }
-
-  .carousel .nav.right .handle
-  {
-    border-left: 10px solid #a95000;
-  }
-
-  .gp-subject-group
-  {
-    background: #1e1e1e;
-    border: 1px solid #1e1e1e;
-  }
-
-  .gp-subject-group .gpsg-header
-  {
-    border-bottom: 1px solid #1e1e1e;
-  }
-
-  .gp-subject-group .gpsg-more a
-  {
-    background: #1e1e1e;
-    border: 1px solid #1e1e1e;
-    color: #191919;
-  }
-
-  .gp-subject-group .gpsg-more a:hover
-  {
-    background: #1e1e1e;
-  }
-
-  .gp-subject-group .bbcode a
-  {
-    color: inherit;
-  }
-
-  .mainContent .greyContentShare #fbLikeButton
-  {
-    background: #1e1e1e;
-    border: 1px solid #1e1e1e;
-  }
-
-  .whiteHeader h1 .titleSection
-  {
-    color: #a95000;
-  }
+     :not(.arrow):not(.handle) {
+        border-color: #191919!important;
+    }
+     :not(.arrow):not(.handle).menuItem {
+        border-color: #1e1e1e!important;
+    }
+    .bbColor[style="color: blue;"] {
+        color: #09F!important;
+    }
+    #Better_SweClockers fieldset,
+    #betterSwecFilterSettingsList {
+        background-color: #1e1e1e!important;
+    }
+    #Better_SweClockers input:not(.button),
+    #Better_SweClockers textarea {
+        color: #8A8A8A!important;
+    }
+    #Better_SweClockers_SearchWithGoogle {
+        color: #166beb;
+        font-family: Courier;
+    }
+    optgroup[label="Better SweClockers"] {
+        background-color: #1e1e1e;
+    }
+    img[src*="/artikel/diagram/"] {
+        background-color: #8a8a8a;
+        -webkit-filter: invert(85%);
+        -o-filter: invert(85%);
+        -ms-filter: "invert(85%)";
+        filter: invert(85%);
+        background: none!important;
+    }
+    img[src*="/image/diagram/"] {
+        background-color: #CCC;
+    }
+    .bbRelatedBox {
+        border: 0px inset #1e1e1e;
+        border-radius: 2px;
+        background: #1e1e1e;
+        margin-bottom: 16px;
+        padding: 10px 10px 0;
+    }
+    .bbPre.showFrame {
+        background: #1e1e1e;
+        border-left-color: #1e1e1e!important;
+        border-top-color: #1e1e1e!important;
+        border: 1px solid #1e1e1e!important;
+    }
+    .button,
+    a.button {
+        background-color: #1e1e1e!important;
+        background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
+        color: #DDD!important;
+    }
+    .bbIns,
+    .bbMark {
+        padding: 0 1px!important;
+        border-radius: 3px!important;
+        background-color: #a95000!important;
+    }
+    .mainMenu li.optionBlackfriday {
+        border-color: #393d44!important;
+    }
+    .tv-frame .tvf-left {
+        background-image: url("https://i.imgur.com/y8gWfV1.png");
+    }
+    .tv-frame .tvf-right {
+        background-image: url("https://i.imgur.com/fD4VmHu.png");
+    }
+    .tv-frame .tvf-top {
+        background-image: url("https://i.imgur.com/hxA5pui.png");
+    }
+    .tv-frame .tvf-bottom {
+        background-image: url("https://i.imgur.com/8KTvVe5.png");
+        height: 48px;
+    }
+    .newsList .commentsBubble {
+        background: -webkit-gradient(linear, left top, left bottom, from(#191919), to(#191919));
+        background: -moz-linear-gradient(top, #191919, #191919);
+        -webkit-border-top-left-radius: 8px;
+        -webkit-border-bottom-left-radius: 8px;
+        border: 1px solid #191919;
+    }
+    .postBox .head {
+        background: -moz-linear-gradient(top, #979590, #979590)!important;
+        background: -o-linear-gradient(top, #979590, #979590 60%, #979590)!important;
+        background: -webkit-linear-gradient(top, #979590, #979590 60%, #979590)!important;
+        background: linear-gradient(top, #979590, #979590 60%, #979590)!important;
+    }
+    .pages .icon {
+        background-image: url("https://i.imgur.com/83T2WX6.png")!important;
+    }
+    .sideMenu .icon {
+        background-image: url("https://i.imgur.com/83T2WX6.png")!important;
+    }
+    .bbSpoiler .spoilerHeader {
+        float: right;
+        margin-top: 7px;
+        margin-right: 5px;
+    }
+    .commentsWidget .mwReadmore {
+        text-decoration: none!important;
+    }
+    .commentsWidget .mwReadmore a:hover {
+        text-decoration: underline!important;
+    }
+    .footer .bottom {
+        background: #191919;
+        color: #FFF;
+        padding: 20px 0 20px 0;
+    }
+    .forumForm>.head {
+        background: #1e1e1e;
+        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
+        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#1e1e1e', EndColorStr='#1e1e1e')";
+    }
+    .bbcode hr.bbHr {
+        border: 1px solid #1e1e1e!important;
+        border-top-color: #1e1e1e!important;
+        border-left-color: #1e1e1e!important;
+    }
+    .mainMenu .isSelected {
+        background-color: #1e1e1e!important;
+        background-image: none!important;
+    }
+    .articleNavi .head {
+        border-bottom: 1px solid #b2afa6;
+        padding-top: 3px;
+    }
+    .bbImage .caption {
+        background-color: rgba(35, 39, 42, .8)!important;
+    }
+    .bbSpoiler .spoilerFrame {
+        border: 1px solid #1e1e1e!important;
+        border-top-color: #1e1e1e!important;
+        border-left-color: #1e1e1e!important;
+    }
+    .forumPost.isLinked.isAuthor {
+        border-color: #a95000;
+        box-shadow: 0 0 5px 2px #a95000;
+    }
+    .bbcode .bbQuote {
+        border: 1px solid #8A8A8A!important;
+        border-top-color: #8A8A8A!important;
+        border-left-color: #8A8A8A!important;
+    }
+    .forumTable .caption {
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+    }
+    .forumTable .cell.alt2 {
+        background: #1e1e1e;
+        border-bottom-color: #1e1e1e;
+    }
+    .forumTable .cell,
+    .forumTable .cell.alt1 {
+        background: #1e1e1e;
+        border-bottom: #1e1e1e 2px solid;
+    }
+    .header .logo {
+        background-image: url("https://i.imgur.com/83T2WX6.png");
+    }
+    .header .main {
+        background: linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), color-stop(98%, #1e1e1e), to(#272829))!important;
+        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
+        background: linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
+    }
+    .spoilerContent .bbVideoYoutube:first-child {
+        clear: both;
+    }
+    .threadList .isSelected .cell {
+        background: #200e00 !important;
+        border-bottom-color: #d7d5d1;
+    }
+    .forumResultPost .postHeader .threadTitle {
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+    }
+    .forumPost .postHeader .cell {
+        background-color: #1e1e1e!important;
+        background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
+    }
+    .mainWidget .body .divider {
+        border-color: #43413d!important;
+    }
+    .menu.root.clear {
+        padding-left: 0px;
+    }
+    .forumTable .head .cell {
+        background: -moz-linear-gradient(top, #a95000, #a95000);
+    }
+    .galleryFileEditor button,
+    .tanukiButton,
+    .taunkiButton {
+        color: #DDD!important;
+        background-color: #1e1e1e!important;
+        background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
+        background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
+    }
+    .forumPost.isAuthor .postHeader .cell {
+        background-color: #a95000!important;
+        background-image: -webkit-linear-gradient(top, #a95000, #a95000)!important;
+        background-image: -moz-linear-gradient(top, #a95000, #a95000)!important;
+        background-image: -o-linear-gradient(top, #a95000, #a95000)!important;
+        background-image: linear-gradient(to bottom, #a95000, #a95000)!important;
+    }
+    .articleNavi .quick a,
+    .pages a {
+        border-radius: 3px!important;
+    }
+    .link .label,
+    .pushListExternal a span {
+        color: #6A6A6A!important;
+    }
+    .mellandagsrea .tips .tipsData .pjCell {
+        background: #1e1e1e;
+        border-bottom: 2px solid #1e1e1e;
+        color: #1e1e1e;
+    }
+    .mellandagsrea .tips .tipsData .productCell {
+        background: #1e1e1e;
+        border-bottom: 2px solid #1e1e1e;
+        border-left: 1px solid #1e1e1e;
+    }
+    .searchField .fieldWrap,
+    .searchField input,
+    .signinDialog input {
+        background-color: #1e1e1e!important;
+        background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
+        color: #8A8A8A!important;
+    }
+    .mwLabel,
+    .mwLabel:hover,
+    .plLabel,
+    .plLabel:hover {
+        color: #ccc!important;
+    }
+    .mellandagsrea .tips .tipsData .userCell .colUser {
+        background: #1e1e1e;
+        border-bottom: 2px solid #1e1e1e;
+        border-right: 1px solid #1e1e1e;
+    }
+    .mellandagsrea .tips .tipsRow:hover .userCell .colUser {
+        background: #1e1e1e;
+    }
+    .mellandagsrea .tips .tipsData .userCell .colScore .label {
+        background: #a95000;
+        color: #fff;
+    }
+    .mellandagsrea .vendorProducts {
+        background: #1e1e1e;
+        border-left: 1px solid #1e1e1e;
+        border-top: 1px solid #1e1e1e;
+    }
+    .mellandagsrea .productFooter {
+        background: #1e1e1e;
+    }
+    .threadList .isSticky .lastReply,
+    .threadList .isSticky .numViews {
+        background-color: #1e1e1e!important;
+    }
+    .bbExpander>.expanderFrame>.expanderFade,
+    .bbQuote.isExpandable>.quoteFrame>.quoteFade {
+        background: -moz-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 39, 42, 0)), color-stop(25%, rgba(35, 39, 42, .5)), color-stop(100%, rgba(35, 39, 42, 1)));
+        background: -webkit-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+        background: -o-linear-gradient(top, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+        background: linear-gradient(to bottom, rgba(35, 39, 42, 0)0, rgba(35, 39, 42, .5)25%, rgba(35, 39, 42, 1)100%);
+    }
+    .forumList .categoryItem .cell,
+    .forumList .categoryItem.isCollapsed .cell {
+        background: #1e1e1e;
+        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
+        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e);
+        background: linear-gradient(top, #1e1e1e, #1e1e1e);
+    }
+    .button:hover,
+    .galleryFileEditor button:hover,
+    .tanukiButton:hover,
+    .taunkiButton:hover {
+        background-color: #2a2a2a!important;
+        background-image: -webkit-linear-gradient(top, #2a2a2a, #262626)!important;
+        background-image: -moz-linear-gradient(top, #2a2a2a, #262626)!important;
+        background-image: -o-linear-gradient(top, #2a2a2a, #262626)!important;
+        background-image: linear-gradient(to bottom, #2a2a2a, #262626)!important;
+    }
+    .mellandagsrea .tips .tipsRow:hover .productCell,
+    .mellandagsrea .tips .tipsRow:hover .pjCell {
+        background: #1e1e1e;
+    }
+    .header,
+    .header .shadow,
+    .menuItem,
+    .searchField .fieldWrap,
+    .searchField input,
+    .signinDialog input,
+    body {
+        background-color: #1e1e1e!important;
+        color: #8A8A8A!important;
+        background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
+    }
+    .menuItem.isSelected {
+        background-color: #1e1e1e!important;
+        color: #1e1e1e!important;
+        background-image: url("https://i.imgur.com/7Q8mgVx.png")!important;
+    }
+    .threadList .isSticky .numReplies,
+    .threadList .isSticky .select,
+    .threadList .isSticky .status,
+    .threadList .isSticky .title {
+        background-color: #272727!important;
+    }
+    .bbTable thead .bbParagraph,
+    .forumTable th .numReplies,
+    .pages a:hover>.label,
+    .postBox .head .title,
+    .tanukiCombobox .tcbSelectedItem {
+        color: #EBEBEB!important;
+    }
+    .commentsBubble,
+    .commentsBubble:hover,
+    .errorBox a,
+    .footer .bottom a,
+    .forumResultPost .postHeader .threadTitle .label,
+    .mainWidget h5 a,
+    .mwReadmore a,
+    .pushListInternal .head h5 a {
+        color: #FFF!important;
+    }
+    .articleCommentsWidget .boxAction .actionLabel,
+    .forumPost .postHeader .headerLink,
+    .forumTable .title h3 a,
+    .mainWidget .label,
+    .plHead a,
+    .pushListInternal .link .label,
+    .slide a,
+    .socialWidget a {
+        color: #EBEBEB!important;
+    }
+    .articleNavi .isCurrent a,
+    .galleryItem a,
+    .header a,
+    .hotGallery a,
+    .newsList .bbParagraph a,
+    .pages a,
+    .popularGalleries a,
+    .tagSection h2 a,
+    .threadMap .postElement a,
+    .videoPush a {
+        color: #8A8A8A!important;
+    }
+    .bbPoll .inner,
+    .bbQuote,
+    .bbSpoiler .spoilerFrame,
+    .footer .top,
+    .forumForm input,
+    .forumForm textarea,
+    .forumList .lastReply,
+    .forumList .lastThread,
+    .forumList .link,
+    .forumList .numReplies,
+    .forumList .status,
+    .forumPost .details,
+    .forumPost .profile,
+    .forumResultPost .dateline,
+    .infoTextWindow,
+    .mainContent,
+    .marketList .date,
+    .marketList .price,
+    .memberTable .alt2,
+    .postBox .shortcut,
+    .quickReply textarea,
+    .showFrame,
+    .tanukiCombobox .tcbTriggerFrame,
+    .threadList .lastReply,
+    .threadList .numViews,
+    .threadMap .postElement {
+        background-color: #1e1e1e!important;
+    }
+    .articleKeywords a,
+    .articleNavi .pageButton:hover,
+    .bbTable th,
+    .filterLinks .filterLink.isSelected,
+    .forumForm .body,
+    .forumList .numThreads,
+    .forumList .numViews,
+    .forumList .title,
+    .forumPost,
+    .forumResultPost,
+    .infoBox,
+    .marketList .status,
+    .marketList .title,
+    .memberTable .cell,
+    .pages .isCurrent,
+    .pages a.isCurrent:hover .label,
+    .postBox,
+    .signinDialog .inner,
+    .stepWidget .stepItem.isSelected,
+    .tanukiCombobox .tcbSelectedItem,
+    .threadList .numReplies,
+    .threadList .select,
+    .threadList .status,
+    .threadList .title,
+    input,
+    select,
+    textarea {
+        background-color: #1e1e1e!important;
+    }
+    .searchField .fieldWrap,
+    .bbList,
+    .bbParagraph,
+    .bbPre,
+    .contactInfo,
+    .expanderHeader,
+    .feedItem,
+    .forumForm,
+    .forumPost .quoteHead,
+    .forumPost .showFrame,
+    .forumPost .title,
+    .forumResultPost,
+    .forumRules,
+    .forumTable tbody .numThreads,
+    .forumTable td .by,
+    .forumTable td .date,
+    .forumTable td .descr,
+    .forumTable td .numReplies,
+    .forumTable td .time,
+    .forumTable td.numReplies,
+    .galleryFiles,
+    .galleryFiles input,
+    .galleryForm,
+    .galleryForm input,
+    .galleryForm select,
+    .galleryForm textarea,
+    .header .profile .options,
+    .infoText,
+    .infoTextWindow,
+    .marketAcceptRules,
+    .marketFilterBox input,
+    .marketFilterBox select,
+    .marketForm,
+    .marketForm input,
+    .marketForm select,
+    .marketForm textarea,
+    .marketList .row,
+    .memberTable,
+    .ninjaSearch h5,
+    .pages .isCurrent .label,
+    .profileHeader .label,
+    .quickReply label,
+    .signinDialog,
+    .spoilerPlaceholder,
+    .tanukiSelect select,
+    .tanukiTextarea textarea,
+    .tanukiTextbox input,
+    label,
+    select {
+        color: #8A8A8A!important;
+    }
+    .forumWidget {
+        background-color: #a95000;
+        background: -moz-linear-gradient(top, #a95000, #a95000);
+        background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
+        background: -o-linear-gradient(top, #a95000, #a95000);
+        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
+        background: -webkit-linear-gradient(top, #a95000, #a95000);
+        background: linear-gradient(top, #a95000, #a95000);
+    }
+    .mainRecentNews {
+        background-color: #1e1e1e;
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e 100%);
+        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
+        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: linear-gradient(top, #1e1e1e, #1e1e1e);
+    }
+    .orangeInfoBox {
+        background-color: #a95000;
+        background: -moz-linear-gradient(top, #a95000, #a95000);
+        background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
+        background: -o-linear-gradient(top, #a95000, #a95000);
+        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
+        background: -webkit-linear-gradient(top, #a95000, #a95000);
+        background: linear-gradient(top, #a95000, #a95000);
+    }
+    .prisjaktPopular {
+        color: #fff;
+        background-color: #1d3c49;
+        background: -moz-linear-gradient(top, #1d3c49, #1d3c49);
+        background: -ms-linear-gradient(top, #1d3c49 0, #1d3c49 100%);
+        background: -o-linear-gradient(top, #1d3c49, #1d3c49);
+        background: -webkit-gradient(linear, left top, left bottom, from(#1d3c49), to(#1d3c49));
+        background: -webkit-linear-gradient(top, #1d3c49, #1d3c49);
+        background: linear-gradient(top, #1d3c49, #1d3c49);
+    }
+    .prisjaktPopular .ppPrice {
+        color: #6f867e;
+    }
+    #proofArticle,
+    * a,
+    .feedMore,
+    .footer .top a::before,
+    .forumList .lastThread h3,
+    .galleryBody .commentLink::before,
+    .header .profile .hasUnread a,
+    .mwLabel.mwComments,
+    .plLabel.plComments {
+        color: #a95000!important;
+    }
+    #proofArticle:hover,
+    * a:hover,
+    .feedMore:hover,
+    .footer .top a::before:hover,
+    .forumList .lastThread h3:hover,
+    .galleryBody .commentLink::before:hover,
+    .mwLabel.mwComments:hover,
+    .plLabel.plComments:hover {
+        color: #a95000!important;
+    }
+    #threadList-1 tr.hasUnreadPosts td.status {
+        box-shadow: inset 5px 0 0 0 #a95000;
+    }
+    .profileFeed .date {
+        color: #864000;
+    }
+    .pushListInternal {
+        color: #fff;
+        background-color: #1e1e1e;
+        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e 100%);
+        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
+        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: linear-gradient(top, #1e1e1e, #1e1e1e);
+    }
+    .pushListInternal .head a {
+        color: #CCC!important;
+    }
+    .pushListMonster {
+        background-color: #4a276a;
+        background: -moz-linear-gradient(top, #4a276a, #4a276a);
+        background: -ms-linear-gradient(top, #4a276a, #4a276a);
+        background: -o-linear-gradient(top, #4a276a, #4a276a);
+        background: -webkit-gradient(linear, left top, left bottom, from(#4a276a), to(#4a276a));
+        background: -webkit-linear-gradient(top, #4a276a, #4a276a);
+        background: linear-gradient(top, #4a276a, #4a276a);
+    }
+    .threadStatus {
+        background-image: url("https://i.imgur.com/rlERXyo.png");
+        background-repeat: no-repeat;
+        background-size: 850px auto;
+        background-position: 0 0;
+        margin: 0 auto;
+        width: 19px;
+        height: 19px;
+    }
+    .kwd {
+        color: #0050FF!important;
+    }
+    .lit {
+        color: #EBEBEB!important;
+    }
+    .pln {
+        color: #8A8A8A!important;
+    }
+    .pun {
+        color: #BBB!important;
+    }
+    .tanukiCombobox.hasErrors .tcbTriggerFrame {
+        border-color: #a95000;
+        outline: #a95000 auto 5px;
+    }
+    .tanukiFile.hasErrors input {
+        border-color: #a95000;
+        outline: #a95000 auto 5px;
+    }
+    .tanukiSelect.hasErrors select {
+        border-color: #a95000;
+        outline: #a95000 auto 5px;
+    }
+    .tanukiTextarea.hasErrors textarea {
+        border-color: #a95000;
+        outline: #a95000 auto 5px;
+    }
+    .tanukiTextbox.hasErrors input {
+        border-color: #a95000;
+        outline: #a95000 auto 5px;
+    }
+    .tanukiError .error {
+        background-color: #a95000;
+        border: 1px solid #a95000;
+        color: #fff;
+    }
+    .tanukiCombobox .tcbPanel {
+        background: #191919;
+        border: 1px solid #7f9db9;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.175);
+    }
+    .carousel .nav.left .handle {
+        border-right: 10px solid #a95000;
+    }
+    .carousel .nav.right .handle {
+        border-left: 10px solid #a95000;
+    }
+    .gp-subject-group {
+        background: #1e1e1e;
+        border: 1px solid #1e1e1e;
+    }
+    .gp-subject-group .gpsg-header {
+        border-bottom: 1px solid #1e1e1e;
+    }
+    .gp-subject-group .gpsg-more a {
+        background: #1e1e1e;
+        border: 1px solid #1e1e1e;
+        color: #191919;
+    }
+    .gp-subject-group .gpsg-more a:hover {
+        background: #1e1e1e;
+    }
+    .gp-subject-group .bbcode a {
+        color: inherit;
+    }
+    .mainContent .greyContentShare #fbLikeButton {
+        background: #1e1e1e;
+        border: 1px solid #1e1e1e;
+    }
+    .whiteHeader h1 .titleSection {
+        color: #a95000;
+    }
+    .sponsoredArticle {
+        color: #d8d8d8;
+        background-color: #a95000;
+        background: -webkit-linear-gradient(top, #a95000, #a95000);
+        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
+        background: -o-linear-gradient(top, #a95000, #a95000);
+        background: -moz-linear-gradient(top, #a95000, #a95000);
+        background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
+        background: linear-gradient(top, #a95000, #a95000);
+    }
 }
