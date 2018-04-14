@@ -1,11 +1,11 @@
 @-moz-document domain("sweclockers.com") {
     /* Dark Mode for Sweclockers.com
-* Created by: Soitora
-* Created: 2017-11-03
-* Updated: 2018-04-14
-* Version: 1.5.1
-* Licence: GNU General Public License v3 (GPL-3).
-*/
+    * Created by: Soitora
+    * Created: 2017-11-03
+    * Updated: 2018-04-14
+    * Version: 1.5.1
+    * Licence: GNU General Public License v3 (GPL-3).
+    */
      :not(.arrow):not(.handle) {
         border-color: #191919!important;
     }
