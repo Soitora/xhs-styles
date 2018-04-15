@@ -2,25 +2,28 @@
     /* Dark Mode for Sweclockers.com
     * Created by: Soitora
     * Created: 2017-11-03
-    * Updated: 2018-04-14
-    * Version: 1.5.2
+    * Updated: 2018-04-15
+    * Version: 1.6
     * Licence: GNU General Public License v3 (GPL-3).
     */
      :not(.arrow):not(.handle) {
-        border-color: #131313!important;
+        border-color: /*[[borderColor]]*/
+        !important;
     }
      :not(.arrow):not(.handle).menuItem.isSelected {
         border-color: #161616!important;
     }
      :not(.arrow):not(.handle).menuItem {
-        border-color: #131313!important;
+        border-color: /*[[borderColor]]*/
+        !important;
     }
     .bbColor[style="color: blue;"] {
         color: #09F!important;
     }
     #Better_SweClockers fieldset,
     #betterSwecFilterSettingsList {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
     }
     #Better_SweClockers input:not(.button),
     #Better_SweClockers textarea {
@@ -31,7 +34,8 @@
         font-family: Courier;
     }
     optgroup[label="Better SweClockers"] {
-        background-color: #1e1e1e;
+        background-color: /*[[mainColor]]*/
+        ;
     }
     img[src*="/artikel/diagram/"] {
         background-color: #8a8a8a;
@@ -44,32 +48,48 @@
         background-color: #CCC;
     }
     .bbRelatedBox {
-        border: 0px inset #1e1e1e;
+        border: 0px inset/*[[mainColor]]*/
+        ;
         border-radius: 2px;
-        background: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
         margin-bottom: 16px;
         padding: 10px 10px 0;
     }
     .bbPre.showFrame {
-        background: #1e1e1e;
-        border-left-color: #1e1e1e!important;
-        border-top-color: #1e1e1e!important;
-        border: 1px solid #1e1e1e!important;
+        background: /*[[mainColor]]*/
+        ;
+        border-left-color: /*[[mainColor]]*/
+        !important;
+        border-top-color: /*[[mainColor]]*/
+        !important;
+        border: 1px solid/*[[mainColor]]*/
+        !important;
     }
     .button,
     a.button {
-        background-color: #1e1e1e!important;
-        background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
+        background-color: /*[[mainColor]]*/
+        !important;
+        background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: linear-gradient(to bottom, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
         color: #DDD!important;
     }
     .bbIns,
     .bbMark {
         padding: 0 1px!important;
         border-radius: 3px!important;
-        background-color: #a95000!important;
+        background-color: /*[[sweclockersOrange]]*/
+        !important;
     }
     .mainMenu li.optionBlackfriday {
         border-color: #393d44!important;
@@ -95,10 +115,16 @@
         border: 1px solid #191919;
     }
     .newsList .commentsBubble.isHot {
-        border-color: #a95000;
-        background-color: #a95000;
-        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
-        background: -moz-linear-gradient(top, #a95000, #a95000);
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        background-color: /*[[sweclockersOrange]]*/
+        ;
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
+        ), to(/*[[sweclockersOrange]]*/
+        ));
+        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
     }
     .newsList .pubItem .itemMeta li {
         color: #898989;
@@ -132,19 +158,32 @@
         padding: 20px 0 20px 0;
     }
     .forumForm>.head {
-        background: #1e1e1e;
-        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: /*[[mainColor]]*/
+        ;
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
+        ), to(/*[[mainColor]]*/
+        ));
+        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
     }
     .bbcode hr.bbHr {
-        border: 1px solid #1e1e1e!important;
-        border-top-color: #1e1e1e!important;
-        border-left-color: #1e1e1e!important;
+        border: 1px solid/*[[mainColor]]*/
+        !important;
+        border-top-color: /*[[mainColor]]*/
+        !important;
+        border-left-color: /*[[mainColor]]*/
+        !important;
     }
     .mainMenu .isSelected {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
         background-image: none!important;
     }
     .articleNavi .head {
@@ -155,13 +194,18 @@
         background-color: rgba(35, 39, 42, .8)!important;
     }
     .bbSpoiler .spoilerFrame {
-        border: 1px solid #1e1e1e!important;
-        border-top-color: #1e1e1e!important;
-        border-left-color: #1e1e1e!important;
+        border: 1px solid/*[[mainColor]]*/
+        !important;
+        border-top-color: /*[[mainColor]]*/
+        !important;
+        border-left-color: /*[[mainColor]]*/
+        !important;
     }
     .forumPost.isLinked.isAuthor {
-        border-color: #a95000;
-        box-shadow: 0 0 5px 2px #a95000;
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        box-shadow: 0 0 5px 2px/*[[sweclockersOrange]]*/
+        ;
     }
     .bbcode .bbQuote {
         border: 1px solid #8A8A8A!important;
@@ -169,27 +213,45 @@
         border-left-color: #8A8A8A!important;
     }
     .forumTable .caption {
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
     }
     .forumTable .cell.alt2 {
-        background: #1e1e1e;
-        border-bottom-color: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border-bottom-color: /*[[mainColor]]*/
+        ;
     }
     .forumTable .cell,
     .forumTable .cell.alt1 {
-        background: #1e1e1e;
-        border-bottom: #1e1e1e 2px solid;
+        background: /*[[mainColor]]*/
+        ;
+        border-bottom: /*[[mainColor]]*/
+        2px solid;
     }
     .header .logo {
         background-image: url("https://i.imgur.com/83T2WX6.png");
     }
     .header .main {
-        background: linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), color-stop(98%, #1e1e1e), to(#272829))!important;
-        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
-        background: linear-gradient(top, #1e1e1e, #1e1e1e 98%, #272829)!important;
+        background: linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        98%, #272829)!important;
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
+        ), color-stop(98%, /*[[mainColor]]*/
+        ), to(#272829))!important;
+        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        98%, #272829)!important;
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        98%, #272829)!important;
+        background: linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        98%, #272829)!important;
     }
     .spoilerContent .bbVideoYoutube:first-child {
         clear: both;
@@ -199,14 +261,25 @@
         border-bottom-color: #d7d5d1;
     }
     .forumResultPost .postHeader .threadTitle {
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
     }
     .forumPost .postHeader .cell {
-        background-color: #1e1e1e!important;
-        background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
+        background-color: /*[[mainColor]]*/
+        !important;
+        background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: linear-gradient(to bottom, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
     }
     .mainWidget .body .divider {
         border-color: #43413d!important;
@@ -215,41 +288,66 @@
         padding-left: 0px;
     }
     .forumTable .head .cell {
-        background: -moz-linear-gradient(top, #a95000, #a95000);
+        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
     }
     .forumPost.isReader {
-        box-shadow: -8px 0 0 #a95000;
+        box-shadow: -8px 0 0/*[[sweclockersOrange]]*/
+        ;
     }
     .forumPost .guruFlag,
     .forumPost .supporterFlag {
-        color: #a95000;
+        color: /*[[sweclockersOrange]]*/
+        ;
     }
     .forumPost .details .activity.online {
-        color: #a95000;
+        color: /*[[sweclockersOrange]]*/
+        ;
     }
     .forumPost.isGuru .controls .button.like .score,
     .forumPost.isLiked .controls .button.like .score {
-        color: #a95000;
+        color: /*[[sweclockersOrange]]*/
+        ;
     }
     .header .ticker .date {
-        color: #a95000;
+        color: /*[[sweclockersOrange]]*/
+        ;
     }
     .galleryFileEditor button,
     .tanukiButton,
     .taunkiButton {
         color: #DDD!important;
-        background-color: #1e1e1e!important;
-        background-image: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: -moz-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: -o-linear-gradient(top, #1e1e1e, #1e1e1e)!important;
-        background-image: linear-gradient(to bottom, #1e1e1e, #1e1e1e)!important;
+        background-color: /*[[mainColor]]*/
+        !important;
+        background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
+        background-image: linear-gradient(to bottom, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        )!important;
     }
     .forumPost.isAuthor .postHeader .cell {
-        background-color: #a95000!important;
-        background-image: -webkit-linear-gradient(top, #a95000, #a95000)!important;
-        background-image: -moz-linear-gradient(top, #a95000, #a95000)!important;
-        background-image: -o-linear-gradient(top, #a95000, #a95000)!important;
-        background-image: linear-gradient(to bottom, #a95000, #a95000)!important;
+        background-color: /*[[sweclockersOrange]]*/
+        !important;
+        background-image: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        )!important;
+        background-image: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        )!important;
+        background-image: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        )!important;
+        background-image: linear-gradient(to bottom, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        )!important;
     }
     .articleNavi .quick a,
     .pages a {
@@ -260,19 +358,26 @@
         color: #6A6A6A!important;
     }
     .mellandagsrea .tips .tipsData .pjCell {
-        background: #1e1e1e;
-        border-bottom: 2px solid #1e1e1e;
-        color: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border-bottom: 2px solid/*[[mainColor]]*/
+        ;
+        color: /*[[mainColor]]*/
+        ;
     }
     .mellandagsrea .tips .tipsData .productCell {
-        background: #1e1e1e;
-        border-bottom: 2px solid #1e1e1e;
-        border-left: 1px solid #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border-bottom: 2px solid/*[[mainColor]]*/
+        ;
+        border-left: 1px solid/*[[mainColor]]*/
+        ;
     }
     .searchField .fieldWrap,
     .searchField input,
     .signinDialog input {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
         background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
         color: #8A8A8A!important;
     }
@@ -283,28 +388,38 @@
         color: #ccc!important;
     }
     .mellandagsrea .tips .tipsData .userCell .colUser {
-        background: #1e1e1e;
-        border-bottom: 2px solid #1e1e1e;
-        border-right: 1px solid #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border-bottom: 2px solid/*[[mainColor]]*/
+        ;
+        border-right: 1px solid/*[[mainColor]]*/
+        ;
     }
     .mellandagsrea .tips .tipsRow:hover .userCell .colUser {
-        background: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
     }
     .mellandagsrea .tips .tipsData .userCell .colScore .label {
-        background: #a95000;
+        background: /*[[sweclockersOrange]]*/
+        ;
         color: #fff;
     }
     .mellandagsrea .vendorProducts {
-        background: #1e1e1e;
-        border-left: 1px solid #1e1e1e;
-        border-top: 1px solid #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border-left: 1px solid/*[[mainColor]]*/
+        ;
+        border-top: 1px solid/*[[mainColor]]*/
+        ;
     }
     .mellandagsrea .productFooter {
-        background: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
     }
     .threadList .isSticky .lastReply,
     .threadList .isSticky .numViews {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
     }
     .bbExpander>.expanderFrame>.expanderFade,
     .bbQuote.isExpandable>.quoteFrame>.quoteFade {
@@ -316,13 +431,26 @@
     }
     .forumList .categoryItem .cell,
     .forumList .categoryItem.isCollapsed .cell {
-        background: #1e1e1e;
-        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e);
-        background: linear-gradient(top, #1e1e1e, #1e1e1e);
+        background: /*[[mainColor]]*/
+        ;
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
+        ), to(/*[[mainColor]]*/
+        ));
+        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -ms-linear-gradient(top, /*[[mainColor]]*/
+        0, /*[[mainColor]]*/
+        );
+        background: linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
     }
     .button:hover,
     .galleryFileEditor button:hover,
@@ -336,7 +464,8 @@
     }
     .mellandagsrea .tips .tipsRow:hover .productCell,
     .mellandagsrea .tips .tipsRow:hover .pjCell {
-        background: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
     }
     .header,
     .header .shadow,
@@ -345,13 +474,16 @@
     .searchField input,
     .signinDialog input,
     body {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
         color: #8A8A8A!important;
-        background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
+        background-image: url("/*[[backgroundColor]]*/")!important;
     }
     .menuItem.isSelected {
-        background-color: #1e1e1e!important;
-        color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
+        color: /*[[mainColor]]*/
+        !important;
         background-image: url("https://i.imgur.com/7Q8mgVx.png")!important;
     }
     .threadList .isSticky .numReplies,
@@ -440,7 +572,8 @@
     .threadList .lastReply,
     .threadList .numViews,
     .threadMap .postElement {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
     }
     .articleKeywords a,
     .articleNavi .pageButton:hover,
@@ -469,7 +602,8 @@
     input,
     select,
     textarea {
-        background-color: #1e1e1e!important;
+        background-color: /*[[mainColor]]*/
+        !important;
     }
     .searchField .fieldWrap,
     .bbList,
@@ -523,31 +657,70 @@
         color: #8A8A8A!important;
     }
     .forumWidget {
-        background-color: #a95000;
-        background: -moz-linear-gradient(top, #a95000, #a95000);
-        background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
-        background: -o-linear-gradient(top, #a95000, #a95000);
-        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
-        background: -webkit-linear-gradient(top, #a95000, #a95000);
-        background: linear-gradient(top, #a95000, #a95000);
+        background-color: /*[[sweclockersOrange]]*/
+        ;
+        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -ms-linear-gradient(top, /*[[sweclockersOrange]]*/
+        0, /*[[sweclockersOrange]]*/
+        100%);
+        background: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
+        ), to(/*[[sweclockersOrange]]*/
+        ));
+        background: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
     }
     .mainRecentNews {
-        background-color: #1e1e1e;
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e 100%);
-        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: linear-gradient(top, #1e1e1e, #1e1e1e);
+        background-color: /*[[mainColor]]*/
+        ;
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -ms-linear-gradient(top, /*[[mainColor]]*/
+        0, /*[[mainColor]]*/
+        100%);
+        background: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
+        ), to(/*[[mainColor]]*/
+        ));
+        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
     }
     .orangeInfoBox {
-        background-color: #a95000;
-        background: -moz-linear-gradient(top, #a95000, #a95000);
-        background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
-        background: -o-linear-gradient(top, #a95000, #a95000);
-        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
-        background: -webkit-linear-gradient(top, #a95000, #a95000);
-        background: linear-gradient(top, #a95000, #a95000);
+        background-color: /*[[sweclockersOrange]]*/
+        ;
+        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -ms-linear-gradient(top, /*[[sweclockersOrange]]*/
+        0, /*[[sweclockersOrange]]*/
+        100%);
+        background: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
+        ), to(/*[[sweclockersOrange]]*/
+        ));
+        background: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
     }
     .prisjaktPopular {
         color: #fff;
@@ -571,7 +744,8 @@
     .header .profile .hasUnread a,
     .mwLabel.mwComments,
     .plLabel.plComments {
-        color: #a95000!important;
+        color: /*[[sweclockersOrange]]*/
+        !important;
     }
     #proofArticle:hover,
     * a:hover,
@@ -581,23 +755,38 @@
     .galleryBody .commentLink::before:hover,
     .mwLabel.mwComments:hover,
     .plLabel.plComments:hover {
-        color: #a95000!important;
+        color: /*[[sweclockersOrange]]*/
+        !important;
     }
     #threadList-1 tr.hasUnreadPosts td.status {
-        box-shadow: inset 5px 0 0 0 #a95000;
+        box-shadow: inset 5px 0 0 0/*[[sweclockersOrange]]*/
+        ;
     }
     .profileFeed .date {
         color: #864000;
     }
     .pushListInternal {
         color: #fff;
-        background-color: #1e1e1e;
-        background: -moz-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -ms-linear-gradient(top, #1e1e1e 0, #1e1e1e 100%);
-        background: -o-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e));
-        background: -webkit-linear-gradient(top, #1e1e1e, #1e1e1e);
-        background: linear-gradient(top, #1e1e1e, #1e1e1e);
+        background-color: /*[[mainColor]]*/
+        ;
+        background: -moz-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -ms-linear-gradient(top, /*[[mainColor]]*/
+        0, /*[[mainColor]]*/
+        100%);
+        background: -o-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
+        ), to(/*[[mainColor]]*/
+        ));
+        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
+        background: linear-gradient(top, /*[[mainColor]]*/
+        , /*[[mainColor]]*/
+        );
         border: 1px solid;
     }
     .pushListInternal .head a {
@@ -634,28 +823,40 @@
         color: #BBB!important;
     }
     .tanukiCombobox.hasErrors .tcbTriggerFrame {
-        border-color: #a95000;
-        outline: #a95000 auto 5px;
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        outline: /*[[sweclockersOrange]]*/
+        auto 5px;
     }
     .tanukiFile.hasErrors input {
-        border-color: #a95000;
-        outline: #a95000 auto 5px;
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        outline: /*[[sweclockersOrange]]*/
+        auto 5px;
     }
     .tanukiSelect.hasErrors select {
-        border-color: #a95000;
-        outline: #a95000 auto 5px;
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        outline: /*[[sweclockersOrange]]*/
+        auto 5px;
     }
     .tanukiTextarea.hasErrors textarea {
-        border-color: #a95000;
-        outline: #a95000 auto 5px;
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        outline: /*[[sweclockersOrange]]*/
+        auto 5px;
     }
     .tanukiTextbox.hasErrors input {
-        border-color: #a95000;
-        outline: #a95000 auto 5px;
+        border-color: /*[[sweclockersOrange]]*/
+        ;
+        outline: /*[[sweclockersOrange]]*/
+        auto 5px;
     }
     .tanukiError .error {
-        background-color: #a95000;
-        border: 1px solid #a95000;
+        background-color: /*[[sweclockersOrange]]*/
+        ;
+        border: 1px solid/*[[sweclockersOrange]]*/
+        ;
         color: #fff;
     }
     .tanukiCombobox .tcbPanel {
@@ -664,48 +865,85 @@
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.175);
     }
     .carousel .nav.left .handle {
-        border-right: 10px solid #a95000;
+        border-right: 10px solid/*[[sweclockersOrange]]*/
+        ;
     }
     .carousel .nav.right .handle {
-        border-left: 10px solid #a95000;
+        border-left: 10px solid/*[[sweclockersOrange]]*/
+        ;
     }
     .gp-subject-group {
-        background: #1e1e1e;
-        border: 1px solid #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border: 1px solid/*[[mainColor]]*/
+        ;
     }
     .gp-subject-group .gpsg-header {
-        border-bottom: 1px solid #1e1e1e;
+        border-bottom: 1px solid/*[[mainColor]]*/
+        ;
     }
     .gp-subject-group .gpsg-more a {
-        background: #1e1e1e;
-        border: 1px solid #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border: 1px solid/*[[mainColor]]*/
+        ;
         color: #191919;
     }
     .gp-subject-group .gpsg-more a:hover {
-        background: #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
     }
     .gp-subject-group .bbcode a {
         color: inherit;
     }
     .bbPoll .optionBar>div {
-        background: #a95000;
+        background: /*[[sweclockersOrange]]*/
+        ;
         border: 0px;
     }
+    .bbPoll>.inner {
+        border: 1px solid/*[[borderColor]]*/
+        ;
+        border-top-color: /*[[borderColor]]*/
+        ;
+        border-right-color: /*[[borderColor]]*/
+        ;
+        border-bottom-color: /*[[borderColor]]*/
+        ;
+        border-left-color: /*[[borderColor]]*/
+        ;
+    }
     .mainContent .greyContentShare #fbLikeButton {
-        background: #1e1e1e;
-        border: 1px solid #1e1e1e;
+        background: /*[[mainColor]]*/
+        ;
+        border: 1px solid/*[[mainColor]]*/
+        ;
     }
     .whiteHeader h1 .titleSection {
-        color: #a95000;
+        color: /*[[sweclockersOrange]]*/
+        ;
     }
     .sponsoredArticle {
         color: #d8d8d8;
-        background-color: #a95000;
-        background: -webkit-linear-gradient(top, #a95000, #a95000);
-        background: -webkit-gradient(linear, left top, left bottom, from(#a95000), to(#a95000));
-        background: -o-linear-gradient(top, #a95000, #a95000);
-        background: -moz-linear-gradient(top, #a95000, #a95000);
-        background: -ms-linear-gradient(top, #a95000 0, #a95000 100%);
-        background: linear-gradient(top, #a95000, #a95000);
+        background-color: /*[[sweclockersOrange]]*/
+        ;
+        background: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
+        ), to(/*[[sweclockersOrange]]*/
+        ));
+        background: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
+        background: -ms-linear-gradient(top, /*[[sweclockersOrange]]*/
+        0, /*[[sweclockersOrange]]*/
+        100%);
+        background: linear-gradient(top, /*[[sweclockersOrange]]*/
+        , /*[[sweclockersOrange]]*/
+        );
     }
 }
