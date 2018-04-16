@@ -3,7 +3,7 @@
     * Created by: Soitora
     * Created: 2017-11-03
     * Updated: 2018-04-15
-    * Version: 1.6.1
+    * Version: 1.6.2
     * Licence: GNU General Public License v3 (GPL-3).
     */
      :not(.arrow):not(.handle) {
@@ -38,7 +38,7 @@
         ;
     }
     img[src*="/artikel/diagram/"] {
-        background-color: #8a8a8a;
+        background-color: #8A8A8A;
         -webkit-filter: invert(85%);
         -o-filter: invert(85%);
         filter: invert(85%);
@@ -174,11 +174,11 @@
         );
     }
     .bbcode hr.bbHr {
-        border: 1px solid/*[[mainColor]]*/
+        border: 1px solid/*[[borderColor]]*/
         !important;
-        border-top-color: /*[[mainColor]]*/
+        border-top-color: /*[[borderColor]]*/
         !important;
-        border-left-color: /*[[mainColor]]*/
+        border-left-color: /*[[borderColor]]*/
         !important;
     }
     .mainMenu .isSelected {
@@ -273,20 +273,12 @@
         );
     }
     .forumPost .postHeader .cell {
-        background-color: /*[[mainColor]]*/
-        !important;
-        background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: linear-gradient(to bottom, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
+        background-color: #1c1c1c !important;
+        background-image: -webkit-linear-gradient(top, #1c1c1c, #1c1c1c) !important;
+        background-image: -moz-linear-gradient(top, #1c1c1c, #1c1c1c) !important;
+        background-image: -o-linear-gradient(top, #1c1c1c, #1c1c1c) !important;
+        background-image: linear-gradient(to bottom, #1c1c1c, #1c1c1c) !important;
+        background-image: linear-gradient(to bottom, #1c1c1c, #1c1c1c) !important;
     }
     .mainWidget .body .divider {
         border-color: #43413d !important;
@@ -534,6 +526,10 @@
         ;
         border-left-color: /*[[sweclockersOrange]]*/
         ;
+    }
+    .forumForm>.head {
+        border-bottom: 4px solid/*[[sweclockersOrange]]*/
+        !important;
     }
     .commentsBubble,
     .commentsBubble:hover,
