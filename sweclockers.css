@@ -3,7 +3,7 @@
     * Created by: Soitora
     * Created: 2017-11-03
     * Updated: 2018-04-15
-    * Version: 1.6
+    * Version: 1.6.1
     * Licence: GNU General Public License v3 (GPL-3).
     */
      :not(.arrow):not(.handle) {
@@ -11,14 +11,14 @@
         !important;
     }
      :not(.arrow):not(.handle).menuItem.isSelected {
-        border-color: #161616!important;
+        border-color: #161616 !important;
     }
      :not(.arrow):not(.handle).menuItem {
         border-color: /*[[borderColor]]*/
         !important;
     }
     .bbColor[style="color: blue;"] {
-        color: #09F!important;
+        color: #09F !important;
     }
     #Better_SweClockers fieldset,
     #betterSwecFilterSettingsList {
@@ -27,7 +27,7 @@
     }
     #Better_SweClockers input:not(.button),
     #Better_SweClockers textarea {
-        color: #8A8A8A!important;
+        color: #8A8A8A !important;
     }
     #Better_SweClockers_SearchWithGoogle {
         color: #166beb;
@@ -42,7 +42,7 @@
         -webkit-filter: invert(85%);
         -o-filter: invert(85%);
         filter: invert(85%);
-        background: none!important;
+        background: none !important;
     }
     img[src*="/image/diagram/"] {
         background-color: #CCC;
@@ -72,27 +72,27 @@
         !important;
         background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: -o-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: linear-gradient(to bottom, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
-        color: #DDD!important;
+        ) !important;
+        color: #DDD !important;
     }
     .bbIns,
     .bbMark {
-        padding: 0 1px!important;
-        border-radius: 3px!important;
+        padding: 0 1px !important;
+        border-radius: 3px !important;
         background-color: /*[[sweclockersOrange]]*/
         !important;
     }
     .mainMenu li.optionBlackfriday {
-        border-color: #393d44!important;
+        border-color: #393d44 !important;
     }
     .tv-frame .tvf-left {
         background-image: url("https://i.imgur.com/y8gWfV1.png");
@@ -130,16 +130,16 @@
         color: #898989;
     }
     .postBox .head {
-        background: -moz-linear-gradient(top, #979590, #979590)!important;
-        background: -o-linear-gradient(top, #979590, #979590 60%, #979590)!important;
-        background: -webkit-linear-gradient(top, #979590, #979590 60%, #979590)!important;
-        background: linear-gradient(top, #979590, #979590 60%, #979590)!important;
+        background: -moz-linear-gradient(top, #979590, #979590) !important;
+        background: -o-linear-gradient(top, #979590, #979590 60%, #979590) !important;
+        background: -webkit-linear-gradient(top, #979590, #979590 60%, #979590) !important;
+        background: linear-gradient(top, #979590, #979590 60%, #979590) !important;
     }
     .pages .icon {
-        background-image: url("https://i.imgur.com/83T2WX6.png")!important;
+        background-image: url("https://i.imgur.com/83T2WX6.png") !important;
     }
     .sideMenu .icon {
-        background-image: url("https://i.imgur.com/83T2WX6.png")!important;
+        background-image: url("https://i.imgur.com/83T2WX6.png") !important;
     }
     .bbSpoiler .spoilerHeader {
         float: right;
@@ -147,10 +147,10 @@
         margin-right: 5px;
     }
     .commentsWidget .mwReadmore {
-        text-decoration: none!important;
+        text-decoration: none !important;
     }
     .commentsWidget .mwReadmore a:hover {
-        text-decoration: underline!important;
+        text-decoration: underline !important;
     }
     .footer .bottom {
         background: #191919;
@@ -184,14 +184,21 @@
     .mainMenu .isSelected {
         background-color: /*[[mainColor]]*/
         !important;
-        background-image: none!important;
+        background-image: none !important;
     }
     .articleNavi .head {
         border-bottom: 1px solid #b2afa6;
         padding-top: 3px;
     }
+    .articleHeader h1 {
+        color: /*[[sweclockersOrange]]*/
+        ;
+    }
+    .articleHeader .meta {
+        color: #ccc;
+    }
     .bbImage .caption {
-        background-color: rgba(35, 39, 42, .8)!important;
+        background-color: rgba(35, 39, 42, .8) !important;
     }
     .bbSpoiler .spoilerFrame {
         border: 1px solid/*[[mainColor]]*/
@@ -208,9 +215,9 @@
         ;
     }
     .bbcode .bbQuote {
-        border: 1px solid #8A8A8A!important;
-        border-top-color: #8A8A8A!important;
-        border-left-color: #8A8A8A!important;
+        border: 1px solid #8A8A8A !important;
+        border-top-color: #8A8A8A !important;
+        border-left-color: #8A8A8A !important;
     }
     .forumTable .caption {
         background: -moz-linear-gradient(top, /*[[mainColor]]*/
@@ -236,22 +243,22 @@
     .header .main {
         background: linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        98%, #272829)!important;
+        98%, #272829) !important;
         background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
         ), color-stop(98%, /*[[mainColor]]*/
-        ), to(#272829))!important;
+        ), to(#272829)) !important;
         background: -webkit-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        98%, #272829)!important;
+        98%, #272829) !important;
         background: -moz-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background: -o-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        98%, #272829)!important;
+        98%, #272829) !important;
         background: linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        98%, #272829)!important;
+        98%, #272829) !important;
     }
     .spoilerContent .bbVideoYoutube:first-child {
         clear: both;
@@ -270,19 +277,19 @@
         !important;
         background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: -o-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: linear-gradient(to bottom, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
     }
     .mainWidget .body .divider {
-        border-color: #43413d!important;
+        border-color: #43413d !important;
     }
     .menu.root.clear {
         padding-left: 0px;
@@ -317,45 +324,45 @@
     .galleryFileEditor button,
     .tanukiButton,
     .taunkiButton {
-        color: #DDD!important;
+        color: #DDD !important;
         background-color: /*[[mainColor]]*/
         !important;
         background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: -o-linear-gradient(top, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
         background-image: linear-gradient(to bottom, /*[[mainColor]]*/
         , /*[[mainColor]]*/
-        )!important;
+        ) !important;
     }
     .forumPost.isAuthor .postHeader .cell {
         background-color: /*[[sweclockersOrange]]*/
         !important;
         background-image: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
         , /*[[sweclockersOrange]]*/
-        )!important;
+        ) !important;
         background-image: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
         , /*[[sweclockersOrange]]*/
-        )!important;
+        ) !important;
         background-image: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
         , /*[[sweclockersOrange]]*/
-        )!important;
+        ) !important;
         background-image: linear-gradient(to bottom, /*[[sweclockersOrange]]*/
         , /*[[sweclockersOrange]]*/
-        )!important;
+        ) !important;
     }
     .articleNavi .quick a,
     .pages a {
-        border-radius: 3px!important;
+        border-radius: 3px !important;
     }
     .link .label,
     .pushListExternal a span {
-        color: #6A6A6A!important;
+        color: #6A6A6A !important;
     }
     .mellandagsrea .tips .tipsData .pjCell {
         background: /*[[mainColor]]*/
@@ -378,14 +385,14 @@
     .signinDialog input {
         background-color: /*[[mainColor]]*/
         !important;
-        background-image: url("https://i.imgur.com/1mcRgWN.png")!important;
-        color: #8A8A8A!important;
+        background-image: url("https://i.imgur.com/1mcRgWN.png") !important;
+        color: #8A8A8A !important;
     }
     .mwLabel,
     .mwLabel:hover,
     .plLabel,
     .plLabel:hover {
-        color: #ccc!important;
+        color: #ccc !important;
     }
     .mellandagsrea .tips .tipsData .userCell .colUser {
         background: /*[[mainColor]]*/
@@ -456,11 +463,11 @@
     .galleryFileEditor button:hover,
     .tanukiButton:hover,
     .taunkiButton:hover {
-        background-color: #2a2a2a!important;
-        background-image: -webkit-linear-gradient(top, #2a2a2a, #262626)!important;
-        background-image: -moz-linear-gradient(top, #2a2a2a, #262626)!important;
-        background-image: -o-linear-gradient(top, #2a2a2a, #262626)!important;
-        background-image: linear-gradient(to bottom, #2a2a2a, #262626)!important;
+        background-color: #2a2a2a !important;
+        background-image: -webkit-linear-gradient(top, #2a2a2a, #262626) !important;
+        background-image: -moz-linear-gradient(top, #2a2a2a, #262626) !important;
+        background-image: -o-linear-gradient(top, #2a2a2a, #262626) !important;
+        background-image: linear-gradient(to bottom, #2a2a2a, #262626) !important;
     }
     .mellandagsrea .tips .tipsRow:hover .productCell,
     .mellandagsrea .tips .tipsRow:hover .pjCell {
@@ -476,28 +483,28 @@
     body {
         background-color: /*[[mainColor]]*/
         !important;
-        color: #8A8A8A!important;
-        background-image: url("/*[[backgroundColor]]*/")!important;
+        color: #8A8A8A !important;
+        background-image: url("/*[[backgroundColor]]*/") !important;
     }
     .menuItem.isSelected {
         background-color: /*[[mainColor]]*/
         !important;
         color: /*[[mainColor]]*/
         !important;
-        background-image: url("https://i.imgur.com/7Q8mgVx.png")!important;
+        background-image: url("https://i.imgur.com/7Q8mgVx.png") !important;
     }
     .threadList .isSticky .numReplies,
     .threadList .isSticky .select,
     .threadList .isSticky .status,
     .threadList .isSticky .title {
-        background-color: #272727!important;
+        background-color: #272727 !important;
     }
     .bbTable thead .bbParagraph,
     .forumTable th .numReplies,
     .pages a:hover>.label,
     .postBox .head .title,
     .tanukiCombobox .tcbSelectedItem {
-        color: #EBEBEB!important;
+        color: #EBEBEB !important;
     }
     .articleBBCode .bbTable thead th {
         background: #191919;
@@ -514,6 +521,20 @@
         color: #757575;
         background: #191919;
     }
+    .errorBox {
+        background-color: /*[[sweclockersOrange]]*/
+        ;
+        border: 1px solid/*[[sweclockersOrange]]*/
+        ;
+        border-top-color: /*[[sweclockersOrange]]*/
+        ;
+        border-right-color: /*[[sweclockersOrange]]*/
+        ;
+        border-bottom-color: /*[[sweclockersOrange]]*/
+        ;
+        border-left-color: /*[[sweclockersOrange]]*/
+        ;
+    }
     .commentsBubble,
     .commentsBubble:hover,
     .errorBox a,
@@ -522,7 +543,7 @@
     .mainWidget h5 a,
     .mwReadmore a,
     .pushListInternal .head h5 a {
-        color: #FFF!important;
+        color: #FFF !important;
     }
     .articleCommentsWidget .boxAction .actionLabel,
     .forumPost .postHeader .headerLink,
@@ -532,7 +553,7 @@
     .pushListInternal .link .label,
     .slide a,
     .socialWidget a {
-        color: #EBEBEB!important;
+        color: #EBEBEB !important;
     }
     .articleNavi .isCurrent a,
     .galleryItem a,
@@ -544,7 +565,7 @@
     .tagSection h2 a,
     .threadMap .postElement a,
     .videoPush a {
-        color: #8A8A8A!important;
+        color: #8A8A8A !important;
     }
     .bbPoll .inner,
     .bbQuote,
@@ -654,7 +675,7 @@
     .tanukiTextbox input,
     label,
     select {
-        color: #8A8A8A!important;
+        color: #8A8A8A !important;
     }
     .forumWidget {
         background-color: /*[[sweclockersOrange]]*/
@@ -790,7 +811,7 @@
         border: 1px solid;
     }
     .pushListInternal .head a {
-        color: #CCC!important;
+        color: #CCC !important;
     }
     .pushListMonster {
         background-color: #4a276a;
@@ -811,16 +832,16 @@
         height: 19px;
     }
     .kwd {
-        color: #0050FF!important;
+        color: #0050FF !important;
     }
     .lit {
-        color: #EBEBEB!important;
+        color: #EBEBEB !important;
     }
     .pln {
-        color: #8A8A8A!important;
+        color: #8A8A8A !important;
     }
     .pun {
-        color: #BBB!important;
+        color: #BBB !important;
     }
     .tanukiCombobox.hasErrors .tcbTriggerFrame {
         border-color: /*[[sweclockersOrange]]*/
