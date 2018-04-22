@@ -8,8 +8,6 @@
     */
     /* Customizable Variables */
      :root {
-        --background-color: /*[[backgroundColor]]*/
-        ;
         --main-color: /*[[mainColor]]*/
         ;
         --border-color: /*[[borderColor]]*/
@@ -366,7 +364,7 @@
     body {
         background-color: var(--main-color) !important;
         color: #8A8A8A !important;
-        background-image: url("var(--background-color)") !important;
+        background-image: url("/*[[backgroundColor]]*/") !important;
     }
     .menuItem.isSelected {
         background-color: var(--main-color) !important;
