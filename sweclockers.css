@@ -2,28 +2,37 @@
     /* Dark Mode for Sweclockers.com
     * Created by: Soitora
     * Created: 2017-11-03
-    * Updated: 2018-04-15
-    * Version: 1.6.2
+    * Updated: 2018-04-22
+    * Version: 1.6.3
     * Licence: GNU General Public License v3 (GPL-3).
     */
+    /* Customizable Variables */
+     :root {
+        --background-color: /*[[backgroundColor]]*/
+        ;
+        --main-color: /*[[mainColor]]*/
+        ;
+        --border-color: /*[[borderColor]]*/
+        ;
+        --sweclockers-orange: /*[[sweclockersOrange]]*/
+        ;
+    }
+    /* Darkmode Code */
      :not(.arrow):not(.handle) {
-        border-color: /*[[borderColor]]*/
-        !important;
+        border-color: var(--border-color) !important;
     }
      :not(.arrow):not(.handle).menuItem.isSelected {
         border-color: #161616 !important;
     }
      :not(.arrow):not(.handle).menuItem {
-        border-color: /*[[borderColor]]*/
-        !important;
+        border-color: var(--border-color) !important;
     }
     .bbColor[style="color: blue;"] {
         color: #09F !important;
     }
     #Better_SweClockers fieldset,
     #betterSwecFilterSettingsList {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
     }
     #Better_SweClockers input:not(.button),
     #Better_SweClockers textarea {
@@ -34,8 +43,7 @@
         font-family: Courier;
     }
     optgroup[label="Better SweClockers"] {
-        background-color: /*[[mainColor]]*/
-        ;
+        background-color: var(--main-color);
     }
     img[src*="/artikel/diagram/"] {
         background-color: #8A8A8A;
@@ -48,48 +56,32 @@
         background-color: #CCC;
     }
     .bbRelatedBox {
-        border: 0px inset/*[[mainColor]]*/
-        ;
+        border: 0px insetvar(--main-color);
         border-radius: 2px;
-        background: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
         margin-bottom: 16px;
         padding: 10px 10px 0;
     }
     .bbPre.showFrame {
-        background: /*[[mainColor]]*/
-        ;
-        border-left-color: /*[[mainColor]]*/
-        !important;
-        border-top-color: /*[[mainColor]]*/
-        !important;
-        border: 1px solid/*[[mainColor]]*/
-        !important;
+        background: var(--main-color);
+        border-left-color: var(--main-color) !important;
+        border-top-color: var(--main-color) !important;
+        border: 1px solid var(--main-color) !important;
     }
     .button,
     a.button {
-        background-color: /*[[mainColor]]*/
-        !important;
-        background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: linear-gradient(to bottom, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
+        background-color: var(--main-color) !important;
+        background-image: -webkit-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background-image: -moz-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background-image: -o-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background-image: linear-gradient(to bottom, var(--main-color), var(--main-color)) !important;
         color: #DDD !important;
     }
     .bbIns,
     .bbMark {
         padding: 0 1px !important;
         border-radius: 3px !important;
-        background-color: /*[[sweclockersOrange]]*/
-        !important;
+        background-color: var(--sweclockers-orange) !important;
     }
     .mainMenu li.optionBlackfriday {
         border-color: #393d44 !important;
@@ -115,16 +107,10 @@
         border: 1px solid #191919;
     }
     .newsList .commentsBubble.isHot {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        background-color: /*[[sweclockersOrange]]*/
-        ;
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
-        ), to(/*[[sweclockersOrange]]*/
-        ));
-        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
+        border-color: var(--sweclockers-orange);
+        background-color: var(--sweclockers-orange);
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--sweclockers-orange)), to(var(--sweclockers-orange)));
+        background: -moz-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
     }
     .newsList .pubItem .itemMeta li {
         color: #898989;
@@ -158,32 +144,19 @@
         padding: 20px 0 20px 0;
     }
     .forumForm>.head {
-        background: /*[[mainColor]]*/
-        ;
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
-        ), to(/*[[mainColor]]*/
-        ));
-        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
+        background: var(--main-color);
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), to(var(--main-color)));
+        background: -webkit-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -o-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color));
     }
     .bbcode hr.bbHr {
-        border: 1px solid/*[[borderColor]]*/
-        !important;
-        border-top-color: /*[[borderColor]]*/
-        !important;
-        border-left-color: /*[[borderColor]]*/
-        !important;
+        border: 1px solid var(--border-color) !important;
+        border-top-color: var(--border-color) !important;
+        border-left-color: var(--border-color) !important;
     }
     .mainMenu .isSelected {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
         background-image: none !important;
     }
     .articleNavi .head {
@@ -191,8 +164,7 @@
         padding-top: 3px;
     }
     .articleHeader h1 {
-        color: /*[[sweclockersOrange]]*/
-        ;
+        color: var(--sweclockers-orange);
     }
     .articleHeader .meta {
         color: #ccc;
@@ -201,18 +173,13 @@
         background-color: rgba(35, 39, 42, .8) !important;
     }
     .bbSpoiler .spoilerFrame {
-        border: 1px solid/*[[mainColor]]*/
-        !important;
-        border-top-color: /*[[mainColor]]*/
-        !important;
-        border-left-color: /*[[mainColor]]*/
-        !important;
+        border: 1px solid var(--main-color) !important;
+        border-top-color: var(--main-color) !important;
+        border-left-color: var(--main-color) !important;
     }
     .forumPost.isLinked.isAuthor {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        box-shadow: 0 0 5px 2px/*[[sweclockersOrange]]*/
-        ;
+        border-color: var(--sweclockers-orange);
+        box-shadow: 0 0 5px 2px var(--sweclockers-orange);
     }
     .bbcode .bbQuote {
         border: 1px solid #8A8A8A !important;
@@ -220,45 +187,27 @@
         border-left-color: #8A8A8A !important;
     }
     .forumTable .caption {
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color));
     }
     .forumTable .cell.alt2 {
-        background: /*[[mainColor]]*/
-        ;
-        border-bottom-color: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border-bottom-color: var(--main-color);
     }
     .forumTable .cell,
     .forumTable .cell.alt1 {
-        background: /*[[mainColor]]*/
-        ;
-        border-bottom: /*[[mainColor]]*/
-        2px solid;
+        background: var(--main-color);
+        border-bottom: var(--main-color) 2px solid;
     }
     .header .logo {
         background-image: url("https://i.imgur.com/83T2WX6.png");
     }
     .header .main {
-        background: linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        98%, #272829) !important;
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
-        ), color-stop(98%, /*[[mainColor]]*/
-        ), to(#272829)) !important;
-        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        98%, #272829) !important;
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        98%, #272829) !important;
-        background: linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        98%, #272829) !important;
+        background: linear-gradient(top, var(--main-color), var(--main-color) 98%, #272829) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), color-stop(98%, var(--main-color)), to(#272829)) !important;
+        background: -webkit-linear-gradient(top, var(--main-color), var(--main-color) 98%, #272829) !important;
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background: -o-linear-gradient(top, var(--main-color), var(--main-color) 98%, #272829) !important;
+        background: linear-gradient(top, var(--main-color), var(--main-color) 98%, #272829) !important;
     }
     .spoilerContent .bbVideoYoutube:first-child {
         clear: both;
@@ -268,9 +217,7 @@
         border-bottom-color: #d7d5d1;
     }
     .forumResultPost .postHeader .threadTitle {
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color));
     }
     .forumPost .postHeader .cell {
         background-color: #1c1c1c !important;
@@ -287,66 +234,41 @@
         padding-left: 0px;
     }
     .forumTable .head .cell {
-        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
+        background: -moz-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
     }
     .forumPost.isReader {
-        box-shadow: -8px 0 0/*[[sweclockersOrange]]*/
-        ;
+        box-shadow: -8px 0 0 var(--sweclockers-orange);
     }
     .forumPost .guruFlag,
     .forumPost .supporterFlag {
-        color: /*[[sweclockersOrange]]*/
-        ;
+        color: var(--sweclockers-orange);
     }
     .forumPost .details .activity.online {
-        color: /*[[sweclockersOrange]]*/
-        ;
+        color: var(--sweclockers-orange);
     }
     .forumPost.isGuru .controls .button.like .score,
     .forumPost.isLiked .controls .button.like .score {
-        color: /*[[sweclockersOrange]]*/
-        ;
+        color: var(--sweclockers-orange);
     }
     .header .ticker .date {
-        color: /*[[sweclockersOrange]]*/
-        ;
+        color: var(--sweclockers-orange);
     }
     .galleryFileEditor button,
     .tanukiButton,
     .taunkiButton {
         color: #DDD !important;
-        background-color: /*[[mainColor]]*/
-        !important;
-        background-image: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
-        background-image: linear-gradient(to bottom, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        ) !important;
+        background-color: var(--main-color) !important;
+        background-image: -webkit-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background-image: -moz-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background-image: -o-linear-gradient(top, var(--main-color), var(--main-color)) !important;
+        background-image: linear-gradient(to bottom, var(--main-color), var(--main-color)) !important;
     }
     .forumPost.isAuthor .postHeader .cell {
-        background-color: /*[[sweclockersOrange]]*/
-        !important;
-        background-image: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        ) !important;
-        background-image: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        ) !important;
-        background-image: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        ) !important;
-        background-image: linear-gradient(to bottom, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        ) !important;
+        background-color: var(--sweclockers-orange) !important;
+        background-image: -webkit-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange)) !important;
+        background-image: -moz-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange)) !important;
+        background-image: -o-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange)) !important;
+        background-image: linear-gradient(to bottom, var(--sweclockers-orange), var(--sweclockers-orange)) !important;
     }
     .articleNavi .quick a,
     .pages a {
@@ -357,26 +279,19 @@
         color: #6A6A6A !important;
     }
     .mellandagsrea .tips .tipsData .pjCell {
-        background: /*[[mainColor]]*/
-        ;
-        border-bottom: 2px solid/*[[mainColor]]*/
-        ;
-        color: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
     }
     .mellandagsrea .tips .tipsData .productCell {
-        background: /*[[mainColor]]*/
-        ;
-        border-bottom: 2px solid/*[[mainColor]]*/
-        ;
-        border-left: 1px solid/*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        border-left: 1px solid var(--main-color);
     }
     .searchField .fieldWrap,
     .searchField input,
     .signinDialog input {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
         background-image: url("https://i.imgur.com/1mcRgWN.png") !important;
         color: #8A8A8A !important;
     }
@@ -387,38 +302,28 @@
         color: #ccc !important;
     }
     .mellandagsrea .tips .tipsData .userCell .colUser {
-        background: /*[[mainColor]]*/
-        ;
-        border-bottom: 2px solid/*[[mainColor]]*/
-        ;
-        border-right: 1px solid/*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        border-right: 1px solid var(--main-color);
     }
     .mellandagsrea .tips .tipsRow:hover .userCell .colUser {
-        background: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
     }
     .mellandagsrea .tips .tipsData .userCell .colScore .label {
-        background: /*[[sweclockersOrange]]*/
-        ;
+        background: var(--sweclockers-orange);
         color: #fff;
     }
     .mellandagsrea .vendorProducts {
-        background: /*[[mainColor]]*/
-        ;
-        border-left: 1px solid/*[[mainColor]]*/
-        ;
-        border-top: 1px solid/*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border-left: 1px solid var(--main-color);
+        border-top: 1px solid var(--main-color);
     }
     .mellandagsrea .productFooter {
-        background: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
     }
     .threadList .isSticky .lastReply,
     .threadList .isSticky .numViews {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
     }
     .bbExpander>.expanderFrame>.expanderFade,
     .bbQuote.isExpandable>.quoteFrame>.quoteFade {
@@ -430,26 +335,13 @@
     }
     .forumList .categoryItem .cell,
     .forumList .categoryItem.isCollapsed .cell {
-        background: /*[[mainColor]]*/
-        ;
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
-        ), to(/*[[mainColor]]*/
-        ));
-        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -ms-linear-gradient(top, /*[[mainColor]]*/
-        0, /*[[mainColor]]*/
-        );
-        background: linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
+        background: var(--main-color);
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), to(var(--main-color)));
+        background: -webkit-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -o-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -ms-linear-gradient(top, var(--main-color) 0, var(--main-color));
+        background: linear-gradient(top, var(--main-color), var(--main-color));
     }
     .button:hover,
     .galleryFileEditor button:hover,
@@ -463,8 +355,7 @@
     }
     .mellandagsrea .tips .tipsRow:hover .productCell,
     .mellandagsrea .tips .tipsRow:hover .pjCell {
-        background: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
     }
     .header,
     .header .shadow,
@@ -473,16 +364,13 @@
     .searchField input,
     .signinDialog input,
     body {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
         color: #8A8A8A !important;
-        background-image: url("/*[[backgroundColor]]*/") !important;
+        background-image: url("var(--background-color)") !important;
     }
     .menuItem.isSelected {
-        background-color: /*[[mainColor]]*/
-        !important;
-        color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
+        color: var(--main-color) !important;
         background-image: url("https://i.imgur.com/7Q8mgVx.png") !important;
     }
     .threadList .isSticky .numReplies,
@@ -514,22 +402,15 @@
         background: #191919;
     }
     .errorBox {
-        background-color: /*[[sweclockersOrange]]*/
-        ;
-        border: 1px solid/*[[sweclockersOrange]]*/
-        ;
-        border-top-color: /*[[sweclockersOrange]]*/
-        ;
-        border-right-color: /*[[sweclockersOrange]]*/
-        ;
-        border-bottom-color: /*[[sweclockersOrange]]*/
-        ;
-        border-left-color: /*[[sweclockersOrange]]*/
-        ;
+        background-color: var(--sweclockers-orange);
+        border: 1px solid var(--sweclockers-orange);
+        border-top-color: var(--sweclockers-orange);
+        border-right-color: var(--sweclockers-orange);
+        border-bottom-color: var(--sweclockers-orange);
+        border-left-color: var(--sweclockers-orange);
     }
     .forumForm>.head {
-        border-bottom: 4px solid/*[[sweclockersOrange]]*/
-        !important;
+        border-bottom: 4px solid var(--sweclockers-orange) !important;
     }
     .commentsBubble,
     .commentsBubble:hover,
@@ -589,8 +470,7 @@
     .threadList .lastReply,
     .threadList .numViews,
     .threadMap .postElement {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
     }
     .articleKeywords a,
     .articleNavi .pageButton:hover,
@@ -619,8 +499,7 @@
     input,
     select,
     textarea {
-        background-color: /*[[mainColor]]*/
-        !important;
+        background-color: var(--main-color) !important;
     }
     .searchField .fieldWrap,
     .bbList,
@@ -674,70 +553,31 @@
         color: #8A8A8A !important;
     }
     .forumWidget {
-        background-color: /*[[sweclockersOrange]]*/
-        ;
-        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -ms-linear-gradient(top, /*[[sweclockersOrange]]*/
-        0, /*[[sweclockersOrange]]*/
-        100%);
-        background: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
-        ), to(/*[[sweclockersOrange]]*/
-        ));
-        background: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
+        background-color: var(--sweclockers-orange);
+        background: -moz-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -ms-linear-gradient(top, var(--sweclockers-orange) 0, var(--sweclockers-orange) 100%);
+        background: -o-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--sweclockers-orange)), to(var(--sweclockers-orange)));
+        background: -webkit-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
     }
     .mainRecentNews {
-        background-color: /*[[mainColor]]*/
-        ;
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -ms-linear-gradient(top, /*[[mainColor]]*/
-        0, /*[[mainColor]]*/
-        100%);
-        background: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
-        ), to(/*[[mainColor]]*/
-        ));
-        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
+        background-color: var(--main-color);
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -ms-linear-gradient(top, var(--main-color) 0, var(--main-color) 100%);
+        background: -o-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), to(var(--main-color)));
+        background: -webkit-linear-gradient(top, var(--main-color), var(--main-color));
+        background: linear-gradient(top, var(--main-color), var(--main-color));
     }
     .orangeInfoBox {
-        background-color: /*[[sweclockersOrange]]*/
-        ;
-        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -ms-linear-gradient(top, /*[[sweclockersOrange]]*/
-        0, /*[[sweclockersOrange]]*/
-        100%);
-        background: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
-        ), to(/*[[sweclockersOrange]]*/
-        ));
-        background: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
+        background-color: var(--sweclockers-orange);
+        background: -moz-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -ms-linear-gradient(top, var(--sweclockers-orange) 0, var(--sweclockers-orange) 100%);
+        background: -o-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--sweclockers-orange)), to(var(--sweclockers-orange)));
+        background: -webkit-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
     }
     .prisjaktPopular {
         color: #fff;
@@ -761,8 +601,7 @@
     .header .profile .hasUnread a,
     .mwLabel.mwComments,
     .plLabel.plComments {
-        color: /*[[sweclockersOrange]]*/
-        !important;
+        color: var(--sweclockers-orange) !important;
     }
     #proofArticle:hover,
     * a:hover,
@@ -772,38 +611,23 @@
     .galleryBody .commentLink::before:hover,
     .mwLabel.mwComments:hover,
     .plLabel.plComments:hover {
-        color: /*[[sweclockersOrange]]*/
-        !important;
+        color: var(--sweclockers-orange) !important;
     }
     #threadList-1 tr.hasUnreadPosts td.status {
-        box-shadow: inset 5px 0 0 0/*[[sweclockersOrange]]*/
-        ;
+        box-shadow: inset 5px 0 0 0 var(--sweclockers-orange);
     }
     .profileFeed .date {
         color: #864000;
     }
     .pushListInternal {
         color: #fff;
-        background-color: /*[[mainColor]]*/
-        ;
-        background: -moz-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -ms-linear-gradient(top, /*[[mainColor]]*/
-        0, /*[[mainColor]]*/
-        100%);
-        background: -o-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[mainColor]]*/
-        ), to(/*[[mainColor]]*/
-        ));
-        background: -webkit-linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
-        background: linear-gradient(top, /*[[mainColor]]*/
-        , /*[[mainColor]]*/
-        );
+        background-color: var(--main-color);
+        background: -moz-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -ms-linear-gradient(top, var(--main-color) 0, var(--main-color) 100%);
+        background: -o-linear-gradient(top, var(--main-color), var(--main-color));
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), to(var(--main-color)));
+        background: -webkit-linear-gradient(top, var(--main-color), var(--main-color));
+        background: linear-gradient(top, var(--main-color), var(--main-color));
         border: 1px solid;
     }
     .pushListInternal .head a {
@@ -840,40 +664,28 @@
         color: #BBB !important;
     }
     .tanukiCombobox.hasErrors .tcbTriggerFrame {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        outline: /*[[sweclockersOrange]]*/
-        auto 5px;
+        border-color: var(--sweclockers-orange);
+        outline: var(--sweclockers-orange) auto 5px;
     }
     .tanukiFile.hasErrors input {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        outline: /*[[sweclockersOrange]]*/
-        auto 5px;
+        border-color: var(--sweclockers-orange);
+        outline: var(--sweclockers-orange) auto 5px;
     }
     .tanukiSelect.hasErrors select {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        outline: /*[[sweclockersOrange]]*/
-        auto 5px;
+        border-color: var(--sweclockers-orange);
+        outline: var(--sweclockers-orange) auto 5px;
     }
     .tanukiTextarea.hasErrors textarea {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        outline: /*[[sweclockersOrange]]*/
-        auto 5px;
+        border-color: var(--sweclockers-orange);
+        outline: var(--sweclockers-orange) auto 5px;
     }
     .tanukiTextbox.hasErrors input {
-        border-color: /*[[sweclockersOrange]]*/
-        ;
-        outline: /*[[sweclockersOrange]]*/
-        auto 5px;
+        border-color: var(--sweclockers-orange);
+        outline: var(--sweclockers-orange) auto 5px;
     }
     .tanukiError .error {
-        background-color: /*[[sweclockersOrange]]*/
-        ;
-        border: 1px solid/*[[sweclockersOrange]]*/
-        ;
+        background-color: var(--sweclockers-orange);
+        border: 1px solid var(--sweclockers-orange);
         color: #fff;
     }
     .tanukiCombobox .tcbPanel {
@@ -882,85 +694,55 @@
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.175);
     }
     .carousel .nav.left .handle {
-        border-right: 10px solid/*[[sweclockersOrange]]*/
-        ;
+        border-right: 10px solid var(--sweclockers-orange);
     }
     .carousel .nav.right .handle {
-        border-left: 10px solid/*[[sweclockersOrange]]*/
-        ;
+        border-left: 10px solid var(--sweclockers-orange);
     }
     .gp-subject-group {
-        background: /*[[mainColor]]*/
-        ;
-        border: 1px solid/*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border: 1px solid var(--main-color);
     }
     .gp-subject-group .gpsg-header {
-        border-bottom: 1px solid/*[[mainColor]]*/
-        ;
+        border-bottom: 1px solid var(--main-color);
     }
     .gp-subject-group .gpsg-more a {
-        background: /*[[mainColor]]*/
-        ;
-        border: 1px solid/*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border: 1px solid var(--main-color);
         color: #191919;
     }
     .gp-subject-group .gpsg-more a:hover {
-        background: /*[[mainColor]]*/
-        ;
+        background: var(--main-color);
     }
     .gp-subject-group .bbcode a {
         color: inherit;
     }
     .bbPoll .optionBar>div {
-        background: /*[[sweclockersOrange]]*/
-        ;
+        background: var(--sweclockers-orange);
         border: 0px;
     }
     .bbPoll>.inner {
-        border: 1px solid/*[[borderColor]]*/
-        ;
-        border-top-color: /*[[borderColor]]*/
-        ;
-        border-right-color: /*[[borderColor]]*/
-        ;
-        border-bottom-color: /*[[borderColor]]*/
-        ;
-        border-left-color: /*[[borderColor]]*/
-        ;
+        border: 1px solid var(--border-color);
+        border-top-color: var(--border-color);
+        border-right-color: var(--border-color);
+        border-bottom-color: var(--border-color);
+        border-left-color: var(--border-color);
     }
     .mainContent .greyContentShare #fbLikeButton {
-        background: /*[[mainColor]]*/
-        ;
-        border: 1px solid/*[[mainColor]]*/
-        ;
+        background: var(--main-color);
+        border: 1px solid var(--main-color);
     }
     .whiteHeader h1 .titleSection {
-        color: /*[[sweclockersOrange]]*/
-        ;
+        color: var(--sweclockers-orange);
     }
     .sponsoredArticle {
         color: #d8d8d8;
-        background-color: /*[[sweclockersOrange]]*/
-        ;
-        background: -webkit-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -webkit-gradient(linear, left top, left bottom, from(/*[[sweclockersOrange]]*/
-        ), to(/*[[sweclockersOrange]]*/
-        ));
-        background: -o-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -moz-linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
-        background: -ms-linear-gradient(top, /*[[sweclockersOrange]]*/
-        0, /*[[sweclockersOrange]]*/
-        100%);
-        background: linear-gradient(top, /*[[sweclockersOrange]]*/
-        , /*[[sweclockersOrange]]*/
-        );
+        background-color: var(--sweclockers-orange);
+        background: -webkit-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -webkit-gradient(linear, left top, left bottom, from(var(--sweclockers-orange)), to(var(--sweclockers-orange)));
+        background: -o-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -moz-linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
+        background: -ms-linear-gradient(top, var(--sweclockers-orange) 0, var(--sweclockers-orange) 100%);
+        background: linear-gradient(top, var(--sweclockers-orange), var(--sweclockers-orange));
     }
 }
