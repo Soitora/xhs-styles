@@ -2,8 +2,8 @@
     /* Dark Mode for Sweclockers.com
     * Created by: Soitora
     * Created: 2017-11-03
-    * Updated: 2018-04-22
-    * Version: 1.6.3.1
+    * Updated: 2018-07-30
+    * Version: 1.6.3.2
     * Licence: GNU General Public License v3 (GPL-3).
     */
     /* Customizable Variables - MainColor not yet working here for some reason */
@@ -449,7 +449,7 @@
     .searchField input,
     .signinDialog input,
     body {
-        background-color: #FFF !important;
+        background-color: #000 !important;
         color: #8A8A8A !important;
         background-image: url("/*[[backgroundColor]]*/") !important;
     }
