@@ -12,6 +12,9 @@
         ;
         --sweclockers-orange: /*[[sweclockersOrange]]*/
         ;
+        --text-color: /*[[textColor]]*/
+        ;
+        --header-text-color: /*[[headerTextColor]]*/
     }
     /* Darkmode Code */
      :not(.arrow):not(.handle) {
@@ -33,7 +36,7 @@
     }
     #Better_SweClockers input:not(.button),
     #Better_SweClockers textarea {
-        color: #8A8A8A !important;
+        color: var(--text-color) !important;
     }
     #Better_SweClockers_SearchWithGoogle {
         color: #166beb;
@@ -355,7 +358,7 @@
         background-color: /*[[mainColor]]*/
         !important;
         background-image: url("https://i.imgur.com/1mcRgWN.png") !important;
-        color: #8A8A8A !important;
+        color: var(--text-color) !important;
     }
     .mwLabel,
     .mwLabel:hover,
@@ -450,7 +453,7 @@
     .signinDialog input,
     body {
         background-color: #000 !important;
-        color: #8A8A8A !important;
+        color: var(--text-color) !important;
         background-image: url("/*[[backgroundColor]]*/") !important;
     }
     .menuItem.isSelected {
@@ -529,7 +532,7 @@
     .tagSection h2 a,
     .threadMap .postElement a,
     .videoPush a {
-        color: #8A8A8A !important;
+        color: var(--text-color) !important;
     }
     .bbPoll .inner,
     .bbQuote,
@@ -639,7 +642,7 @@
     .tanukiTextbox input,
     label,
     select {
-        color: #8A8A8A !important;
+        color: var(--text-color) !important;
     }
     .forumWidget {
         background-color: var(--sweclockers-orange);
@@ -773,7 +776,7 @@
         color: #EBEBEB !important;
     }
     .pln {
-        color: #8A8A8A !important;
+        color: var(--text-color) !important;
     }
     .pun {
         color: #BBB !important;
@@ -857,6 +860,9 @@
     }
     .whiteHeader h1 .titleSection {
         color: var(--sweclockers-orange);
+    }
+    .whiteHeader h1 {
+        color: var(--header-text-color);
     }
     .sponsoredArticle {
         color: #d8d8d8;
