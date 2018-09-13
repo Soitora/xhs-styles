@@ -2,17 +2,19 @@
     /* Dark Mode for Sweclockers.com
     * Created by: Soitora
     * Created: 2017-11-03
-    * Updated: 2018-09-12
-    * Version: 1.7
+    * Updated: 2018-09-13
+    * Version: 1.7.1
     * Licence: CC BY-NC-SA 3.0
     */
     /* Theme Settings */
      :root {
+        /* Main */
         --color-main: var(--color-palette-900);
         --color-border: var(--color-palette-1100);
         --color-text: var(--color-palette-400);
         --color-text-header: var(--color-palette-500);
         --color-link: var(--color-sweclockers);
+        /* Color Palette */
         --color-palette-0: #ffffff;
         --color-palette-50: #fafafa;
         --color-palette-100: #f5f5f5;
@@ -32,27 +34,34 @@
         --color-palette-1800: #080808;
         --color-palette-1900: #040404;
         --color-palette-2000: #000000;
+        /* Custom Colors */
         --color-blue: #0088ff;
-        --color-blue-darker: #0044ff;
+        --color-blue-darker: #1F5994;
+        /* Company Colors */
         --color-facebook: #4c69ba;
         --color-facebook-lighter: #5b7bd5;
         --color-prisjakt: #1d3c49;
         --color-monster: #4a276a;
         --color-sweclockers: #a14c00;
         --color-sweclockers-lighter: #d26000;
+        /* Specific Colors */
         --color-transparent: #0000;
         --color-transparent-light: rgba(0, 0, 0, 0.175);
         --color-quote-0: rgba(35, 35, 35, 0);
         --color-quote-50: rgba(35, 35, 35, .5);
         --color-quote-100: rgba(35, 35, 35, 1);
+        /* Image Variables */
         --url-background-primary: url("https://i.imgur.com/aDSjz8R.png");
         --url-background-secondary: url("https://i.imgur.com/7Q8mgVx.png");
-        --url-spritemap: url("https://i.imgur.com/83T2WX6.png");
+        --url-background-hover: url("https://i.imgur.com/BQE0mPm.png");
+        --url-background-selected: url("https://i.imgur.com/AW91aHV.png");
+        --url-spritemap: url("https://i.imgur.com/oPbRDDZ.png");
         --url-threadStatus: url("https://i.imgur.com/rlERXyo.png");
         --url-tvf-left: url("https://i.imgur.com/y8gWfV1.png");
         --url-tvf-right: url("https://i.imgur.com/fD4VmHu.png");
         --url-tvf-top: url("https://i.imgur.com/hxA5pui.png");
         --url-tvf-bottom: url("https://i.imgur.com/8KTvVe5.png")
+        /* ---------------- */
     }
     /* Darkmode Code */
      :not(.arrow):not(.handle),
@@ -63,20 +72,9 @@
     .bbColor[style="color: blue;"] {
         color: var(--color-blue) !important;
     }
-    #Better_SweClockers fieldset,
-    #betterSwecFilterSettingsList {
-        background-color: var(--color-main) !important;
-    }
-    #Better_SweClockers input:not(.button),
-    #Better_SweClockers textarea {
-        color: var(--color-text) !important;
-    }
     #Better_SweClockers_SearchWithGoogle {
         color: var(--color-blue);
         font-family: Courier;
-    }
-    optgroup[label="Better SweClockers"] {
-        background-color: var(--color-main);
     }
     img[src*="/artikel/diagram/"] {
         background-color: var(--color-palette-500);
@@ -135,6 +133,8 @@
     .newsList .commentsBubble {
         background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000));
         background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
         -webkit-border-top-left-radius: 8px;
         -webkit-border-bottom-left-radius: 8px;
         border: 1px solid var(--color-palette-1000);
@@ -146,7 +146,7 @@
         background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
     }
     .newsList .pubItem .itemMeta li {
-        color: var(--color-palette-500);
+        color: var(--color-text-header);
     }
     .postBox .head {
         background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
@@ -164,9 +164,6 @@
         float: right;
         margin-top: 7px;
         margin-right: 5px;
-    }
-    .commentsWidget .mwReadmore {
-        text-decoration: none !important;
     }
     .commentsWidget .mwReadmore a:hover {
         text-decoration: underline !important;
@@ -193,14 +190,14 @@
         background-image: none !important;
     }
     .articleNavi .head {
-        border-bottom: 1px solid var(--color-palette-400);
+        border-bottom: 1px solid var(--color-text);
         padding-top: 3px;
     }
     .articleHeader h1 {
         color: var(--color-sweclockers);
     }
     .articleHeader .meta {
-        color: var(--color-palette-500);
+        color: var(--color-text-header);
     }
     .bbImage .caption {
         background-color: rgba(35, 39, 42, .8) !important;
@@ -333,12 +330,6 @@
         background-image: var(--url-background-secondary) !important;
         color: var(--color-text) !important;
     }
-    .mwLabel,
-    .mwLabel:hover,
-    .plLabel,
-    .plLabel:hover {
-        color: var(--color-palette-400) !important;
-    }
     .mellandagsrea .tips .tipsData .userCell .colUser {
         background: var(--color-main);
         border-bottom: 2px solid var(--color-main);
@@ -358,10 +349,6 @@
     }
     .mellandagsrea .productFooter {
         background: var(--color-main);
-    }
-    .threadList .isSticky .lastReply,
-    .threadList .isSticky .numViews {
-        background-color: var(--color-main) !important;
     }
     .bbExpander>.expanderFrame>.expanderFade,
     .bbQuote.isExpandable>.quoteFrame>.quoteFade {
@@ -385,11 +372,11 @@
     .galleryFileEditor button:hover,
     .tanukiButton:hover,
     .taunkiButton:hover {
-        background-color: var(--color-palette-900) !important;
-        background-image: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-        background-image: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-        background-image: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-        background-image: linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+        background-color: var(--color-palette-850) !important;
+        background-image: -webkit-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+        background-image: -moz-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+        background-image: -o-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+        background-image: linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
     }
     .mellandagsrea .tips .tipsRow:hover .productCell,
     .mellandagsrea .tips .tipsRow:hover .pjCell {
@@ -409,7 +396,12 @@
     .menuItem.isSelected {
         background-color: var(--color-main) !important;
         color: var(--color-main) !important;
-        background-image: var(--url-background-primary) !important;
+        background-image: var(--url-background-selected) !important;
+    }
+    .menuItem:hover {
+        background-color: var(--color-main) !important;
+        color: var(--color-main) !important;
+        background-image: var(--url-background-hover) !important;
     }
     .threadList .isSticky .numReplies,
     .threadList .isSticky .select,
@@ -472,18 +464,9 @@
     .socialWidget a {
         color: var(--color-palette-200) !important;
     }
-    .articleNavi .isCurrent a,
-    .galleryItem a,
-    .header a,
-    .hotGallery a,
-    .newsList .bbParagraph a,
-    .pages a,
-    .popularGalleries a,
-    .tagSection h2 a,
-    .threadMap .postElement a,
-    .videoPush a {
-        color: var(--color-text) !important;
-    }
+    optgroup[label="Better SweClockers"],
+    #Better_SweClockers fieldset,
+    #betterSwecFilterSettingsList,
     .bbPoll .inner,
     .bbQuote,
     .bbSpoiler .spoilerFrame,
@@ -509,9 +492,9 @@
     .tanukiCombobox .tcbTriggerFrame,
     .threadList .lastReply,
     .threadList .numViews,
-    .threadMap .postElement {
-        background-color: var(--color-main) !important;
-    }
+    .threadList .isSticky .lastReply,
+    .threadList .isSticky .numViews,
+    .threadMap .postElement,
     .articleKeywords a,
     .articleNavi .pageButton:hover,
     .bbTable th,
@@ -541,9 +524,19 @@
     textarea {
         background-color: var(--color-main) !important;
     }
-    .threadList .body .cell.numReplies {
-        text-decoration: none;
-    }
+    #Better_SweClockers input:not(.button),
+    #Better_SweClockers textarea,
+    .articleNavi .isCurrent a,
+    .galleryItem a,
+    .header a,
+    .hotGallery a,
+    .newsList .bbParagraph a,
+    .pages a,
+    .popularGalleries a,
+    .tagSection h2 a,
+    .threadMap .postElement a,
+    .videoPush a,
+    .prisjaktPopular .ppPrice,
     .searchField .fieldWrap,
     .bbList,
     .bbParagraph,
@@ -584,6 +577,11 @@
     .memberTable,
     .ninjaSearch h5,
     .pages .isCurrent .label,
+    .pln,
+    .mwLabel,
+    .mwLabel:hover,
+    .plLabel,
+    .plLabel:hover,
     .profileHeader .label,
     .quickReply label,
     .signinDialog,
@@ -594,6 +592,10 @@
     label,
     select {
         color: var(--color-text) !important;
+    }
+    .threadList .body .cell.numReplies,
+    .commentsWidget .mwReadmore {
+        text-decoration: none !important;
     }
     .forumWidget {
         background-color: var(--color-sweclockers);
@@ -635,9 +637,6 @@
     .prisjaktPopular a,
     .plmi-label {
         color: var(--color-sweclockers-lighter)!important;
-    }
-    .prisjaktPopular .ppPrice {
-        color: var(--color-palette-400);
     }
     .prisjaktPopular .ppProduct,
     .pushListMonster .plm-item {
@@ -708,11 +707,11 @@
     .lit {
         color: var(--color-palette-200) !important;
     }
-    .pln {
-        color: var(--color-text) !important;
-    }
     .pun {
         color: var(--color-palette-200) !important;
+    }
+    .wndFrameDecorator {
+        background-color: var(--color-palette-1000);
     }
     .tanukiCombobox.hasErrors .tcbTriggerFrame {
         border-color: var(--color-sweclockers);
