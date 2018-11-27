@@ -2,8 +2,8 @@
     /* Dark Mode for Sweclockers.com
     * Created by: Soitora
     * Created: 2017-11-03
-    * Updated: 2018-09-13
-    * Version: 1.7.1
+    * Updated: 2018-11-27
+    * Version: 1.7.2
     * Licence: CC BY-NC-SA 3.0
     */
     /* Theme Settings */
@@ -133,17 +133,14 @@
     .newsList .commentsBubble {
         background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000));
         background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        -webkit-border-top-left-radius: 8px;
-        -webkit-border-bottom-left-radius: 8px;
+        background-color: var(--color-palette-1000);
         border: 1px solid var(--color-palette-1000);
     }
     .newsList .commentsBubble.isHot {
-        border-color: var(--color-sweclockers);
-        background-color: var(--color-sweclockers);
         background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
         background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+        background-color: var(--color-sweclockers);
+        border: 1px solid var(--color-sweclockers);
     }
     .newsList .pubItem .itemMeta li {
         color: var(--color-text-header);
@@ -813,5 +810,12 @@
         background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
         background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
         background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+    }
+    .geeksShop {
+        background-color: var(--color-main);
+        color: var(--color-text);
+    }
+    .geeksShop .geeksShopProducts .productOther {
+        color: var(--color-text);
     }
 }
