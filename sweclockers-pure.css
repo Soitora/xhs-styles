@@ -1,8 +1,8 @@
 /* Dark Mode for Sweclockers.com
 * Created by: Soitora
 * Created: 2017-11-03
-* Updated: 2018-11-27
-* Version: 1.7.3
+* Updated: 2018-11-29
+* Version: 1.7.4
 * Licence: CC BY-NC-SA 3.0
 */
 /* Theme Settings */
@@ -116,9 +116,133 @@ a.button {
 	border-radius: 3px !important;
 	background-color: var(--color-sweclockers) !important;
 }
-.mainMenu li.optionBlackfriday {
-	border-color: var(--color-palette-800) !important;
+/* Kampanjer */
+.mainMenu li.optionVr {
+	background-image: none!important;
+	background-color: #8111e1!important;
+	border-color: #6a0eb9!important;
 }
+.mainMenu li.optionVr a {
+	color: #ccc!important;
+}
+.mainMenu li.optionCes {
+	background-image: none!important;
+	background-color: #619c41!important;
+	border-color: #51743e!important;
+}
+.mainMenu li.optionCes a {
+	color: #222!important;
+}
+.mainMenu li.optionPaskrea {
+	background-image: none!important;
+	background-color: #ffd200!important;
+	border-color: #d9a92b!important;
+}
+.mainMenu li.optionPaskrea a {
+	color: #222!important;
+}
+.mainMenu li.optionGreenfriday {
+	background-image: none!important;
+	background-color: #41a500!important;
+	border-color: #2b760a!important;
+}
+.mainMenu li.optionGreenfriday a {
+	color: #222!important;
+}
+.mainMenu li.optionComputex {
+	background-image: none!important;
+	background-color: #e4007f!important;
+	border-color: #c6006e!important;
+}
+.mainMenu li.optionComputex a {
+	color: #ccc!important;
+}
+.mainMenu li.optionE3 {
+	background-image: none!important;
+	background-color: #ea2238!important;
+	border-color: #aa1929!important;
+}
+.mainMenu li.optionE3 a {
+	color: #ccc!important;
+}
+.mainMenu li.optionBack2school {
+	background-image: none!important;
+	background-color: #4d9edd!important;
+	border-color: #4b99d6!important;
+}
+.mainMenu li.optionBack2school a {
+	color: #222!important;
+}
+.mainMenu li.optionBlackfriday {
+	background-image: none!important;
+	background-color: #282828!important;
+	border-color: #282828!important;
+}
+.mainMenu li.optionBlackfriday a {
+	color: #ccc!important;
+}
+.mainMenu li.optionCybermonday {
+	background-image: none!important;
+	background-color: #49b2d6!important;
+	border-color: #419fbf!important;
+}
+.mainMenu li.optionCybermonday a {
+	color: #222!important;
+}
+.mainMenu li.optionDreamhack {
+	background-image: none!important;
+	background-color: #5e2f8e!important;
+	border-color: #402061!important;
+}
+.mainMenu li.optionDreamhack a {
+	color: #ccc!important;
+}
+.mainMenu li.optionJulkalender {
+	background-image: none!important;
+	background-color: #c00!important;
+	border-color: #900!important;
+}
+.mainMenu li.optionJulkalender a {
+	color: #ccc!important;
+}
+.mainMenu li.optionMellandagsrea {
+	background-image: none!important;
+	background-color: #af0035!important;
+	border-color: #780024!important;
+}
+.mainMenu li.optionMellandagsrea a {
+	color: #ccc!important;
+}
+.mainMenu li.optionVr:hover,
+.mainMenu li.optionCes:hover,
+.mainMenu li.optionPaskrea:hover,
+.mainMenu li.optionGreenfriday:hover,
+.mainMenu li.optionComputex:hover,
+.mainMenu li.optionE3:hover,
+.mainMenu li.optionBack2school:hover,
+.mainMenu li.optionBlackfriday:hover,
+.mainMenu li.optionCybermonday:hover,
+.mainMenu li.optionDreamhack:hover,
+.mainMenu li.optionJulkalender:hover,
+.mainMenu li.optionMellandagsrea:hover {
+	background-image: none!important;
+	opacity: 0.8!important;
+}
+.mainMenu li.optionVr:hover a,
+.mainMenu li.optionCes:hover a,
+.mainMenu li.optionPaskrea:hover a,
+.mainMenu li.optionGreenfriday:hover a,
+.mainMenu li.optionComputex:hover a,
+.mainMenu li.optionE3:hover a,
+.mainMenu li.optionBack2school:hover a,
+.mainMenu li.optionBlackfriday:hover a,
+.mainMenu li.optionCybermonday:hover a,
+.mainMenu li.optionDreamhack:hover a,
+.mainMenu li.optionJulkalender:hover a,
+.mainMenu li.optionMellandagsrea:hover a {
+	color: var(--color-text)!important;
+}
+/* Kampanjer END */
 .tv-frame .tvf-left {
 	background-image: var(--url-tvf-left);
 }
