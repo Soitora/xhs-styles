@@ -2,8 +2,8 @@
     /* Dark Mode for Sweclockers.com
     * Created by: Soitora
     * Created: 2017-11-03
-    * Updated: 2018-11-29
-    * Version: 1.7.4
+    * Updated: 2018-11-30
+    * Version: 1.7.5
     * Licence: CC BY-NC-SA 3.0
     */
     /* Theme Settings */
@@ -438,9 +438,6 @@
     .mainWidget .body .divider {
         border-color: var(--color-palette-800) !important;
     }
-    .menu.root.clear {
-        padding-left: 0px;
-    }
     .forumTable .head .cell {
         background: var(--color-sweclockers);
         background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
@@ -860,7 +857,9 @@
         background: -moz-linear-gradient(var(--color-main), var(--color-main));
         background: -ms-linear-gradient(var(--color-main), var(--color-main));
         background: linear-gradient(var(--color-main), var(--color-main));
-        border: 1px solid;
+        box-shadow: inset 0px 0px 0px 1px var(--color-border);
+        -webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border);
+        -moz-box-shadow: inset 0px 0px 0px 1px var(--color-border);
     }
     .pushListInternal .head a {
         color: var(--color-palette-500) !important;
