@@ -1,217 +1,217 @@
 /* Dark Mode for Sweclockers.com
 * Created by: Soitora
 * Created: 2017-11-03
-* Updated: 2018-11-30
-* Version: 1.7.5
+* Updated: 2018-12-22
+* Version: 1.7.6
 * Licence: CC BY-NC-SA 3.0
 */
 /* Theme Settings */
  :root {
-    /* Main */
-    --color-main: var(--color-palette-900);
-    --color-border: var(--color-palette-1100);
-    --color-text: var(--color-palette-400);
-    --color-text-header: var(--color-palette-500);
-    --color-link: var(--color-sweclockers);
-    /* Color Palette */
-    --color-palette-0: #ffffff;
-    --color-palette-50: #fafafa;
-    --color-palette-100: #f5f5f5;
-    --color-palette-200: #eeeeee;
-    --color-palette-300: #e0e0e0;
-    --color-palette-400: #bdbdbd;
-    --color-palette-500: #9e9e9e;
-    --color-palette-600: #757575;
-    --color-palette-700: #616161;
-    --color-palette-800: #424242;
-    --color-palette-850: #303030;
-    --color-palette-900: #212121;
-    --color-palette-1000: #1d1d1d;
-    --color-palette-1100: #1b1b1b;
-    --color-palette-1200: #191919;
-    --color-palette-1300: #161616;
-    --color-palette-1800: #080808;
-    --color-palette-1900: #040404;
-    --color-palette-2000: #000000;
-    /* Custom Colors */
-    --color-blue: #0088ff;
-    --color-blue-darker: #1F5994;
-    /* Company Colors */
-    --color-facebook: #4c69ba;
-    --color-facebook-lighter: #5b7bd5;
-    --color-prisjakt: #1d3c49;
-    --color-monster: #4a276a;
-    --color-sweclockers: #a14c00;
-    --color-sweclockers-lighter: #d26000;
-    /* Specific Colors */
-    --color-transparent: #0000;
-    --color-transparent-light: rgba(0, 0, 0, 0.175);
-    --color-quote-0: rgba(35, 35, 35, 0);
-    --color-quote-50: rgba(35, 35, 35, .5);
-    --color-quote-100: rgba(35, 35, 35, 1);
-    /* Image Variables */
-    --url-background-primary: url("https://i.imgur.com/aDSjz8R.png");
-    --url-background-secondary: url("https://i.imgur.com/7Q8mgVx.png");
-    --url-background-hover: url("https://i.imgur.com/BQE0mPm.png");
-    --url-background-selected: url("https://i.imgur.com/AW91aHV.png");
-    --url-spritemap: url("https://i.imgur.com/oPbRDDZ.png");
-    --url-threadStatus: url("https://i.imgur.com/rlERXyo.png");
-    --url-tvf-left: url("https://i.imgur.com/y8gWfV1.png");
-    --url-tvf-right: url("https://i.imgur.com/fD4VmHu.png");
-    --url-tvf-top: url("https://i.imgur.com/hxA5pui.png");
-    --url-tvf-bottom: url("https://i.imgur.com/8KTvVe5.png")
-    /* ---------------- */
+	/* Main */
+	--color-main: var(--color-palette-900);
+	--color-border: var(--color-palette-1100);
+	--color-text: var(--color-palette-400);
+	--color-text-header: var(--color-palette-500);
+	--color-link: var(--color-sweclockers);
+	/* Color Palette */
+	--color-palette-0: #ffffff;
+	--color-palette-50: #fafafa;
+	--color-palette-100: #f5f5f5;
+	--color-palette-200: #eeeeee;
+	--color-palette-300: #e0e0e0;
+	--color-palette-400: #bdbdbd;
+	--color-palette-500: #9e9e9e;
+	--color-palette-600: #757575;
+	--color-palette-700: #616161;
+	--color-palette-800: #424242;
+	--color-palette-850: #303030;
+	--color-palette-900: #212121;
+	--color-palette-1000: #1d1d1d;
+	--color-palette-1100: #1b1b1b;
+	--color-palette-1200: #191919;
+	--color-palette-1300: #161616;
+	--color-palette-1800: #080808;
+	--color-palette-1900: #040404;
+	--color-palette-2000: #000000;
+	/* Custom Colors */
+	--color-blue: #0088ff;
+	--color-blue-darker: #1F5994;
+	/* Company Colors */
+	--color-facebook: #4c69ba;
+	--color-facebook-lighter: #5b7bd5;
+	--color-prisjakt: #1d3c49;
+	--color-monster: #4a276a;
+	--color-sweclockers: #a14c00;
+	--color-sweclockers-lighter: #d26000;
+	/* Specific Colors */
+	--color-transparent: #0000;
+	--color-transparent-light: rgba(0, 0, 0, 0.175);
+	--color-quote-0: rgba(35, 35, 35, 0);
+	--color-quote-50: rgba(35, 35, 35, .5);
+	--color-quote-100: rgba(35, 35, 35, 1);
+	/* Image Variables */
+	--url-background-primary: url("https://i.imgur.com/aDSjz8R.png");
+	--url-background-secondary: url("https://i.imgur.com/7Q8mgVx.png");
+	--url-background-hover: url("https://i.imgur.com/BQE0mPm.png");
+	--url-background-selected: url("https://i.imgur.com/AW91aHV.png");
+	--url-spritemap: url("https://i.imgur.com/oPbRDDZ.png");
+	--url-threadStatus: url("https://i.imgur.com/rlERXyo.png");
+	--url-tvf-left: url("https://i.imgur.com/y8gWfV1.png");
+	--url-tvf-right: url("https://i.imgur.com/fD4VmHu.png");
+	--url-tvf-top: url("https://i.imgur.com/hxA5pui.png");
+	--url-tvf-bottom: url("https://i.imgur.com/8KTvVe5.png")
+	/* ---------------- */
 }
 /* Darkmode Code */
  :not(.arrow):not(.handle),
  :not(.arrow):not(.handle).menuItem.isSelected,
  :not(.arrow):not(.handle).menuItem {
-    border-color: var(--color-border) !important;
+	border-color: var(--color-border) !important;
 }
 .bbColor[style="color: blue;"] {
-    color: var(--color-blue) !important;
+	color: var(--color-blue) !important;
 }
 #Better_SweClockers_SearchWithGoogle {
-    color: var(--color-blue);
-    font-family: Courier;
+	color: var(--color-blue);
+	font-family: Courier;
 }
 img[src*="/artikel/diagram/"] {
-    background-color: var(--color-palette-500);
-    -webkit-filter: invert(85%);
-    -o-filter: invert(85%);
-    filter: invert(85%);
-    background: none !important;
+	background-color: var(--color-palette-500);
+	-webkit-filter: invert(85%);
+	-o-filter: invert(85%);
+	filter: invert(85%);
+	background: none !important;
 }
 img[src*="/image/diagram/"] {
-    background-color: var(--color-palette-300);
+	background-color: var(--color-palette-300);
 }
 .bbRelatedBox {
-    border: 0px inset var(--color-main);
-    border-radius: 2px;
-    background: var(--color-main);
-    margin-bottom: 16px;
-    padding: 10px 10px 0;
+	border: 0px inset var(--color-main);
+	border-radius: 2px;
+	background: var(--color-main);
+	margin-bottom: 16px;
+	padding: 10px 10px 0;
 }
 .bbPre.showFrame {
-    background: var(--color-main);
-    border-left-color: var(--color-main) !important;
-    border-top-color: var(--color-main) !important;
-    border: 1px solid var(--color-main) !important;
+	background: var(--color-main);
+	border-left-color: var(--color-main) !important;
+	border-top-color: var(--color-main) !important;
+	border: 1px solid var(--color-main) !important;
 }
 .button,
 a.button {
-    background-color: var(--color-main) !important;
-    background-image: var(--color-main)!important;
-    background-image: -webkit-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: linear-gradient(var(--color-main), var(--color-main))!important;
-    color: var(--color-palette-300) !important;
+	background-color: var(--color-main) !important;
+	background-image: var(--color-main)!important;
+	background-image: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: linear-gradient(var(--color-main), var(--color-main))!important;
+	color: var(--color-palette-300) !important;
 }
 .bbIns,
 .bbMark {
-    padding: 0 1px !important;
-    border-radius: 3px !important;
-    background-color: var(--color-sweclockers) !important;
+	padding: 0 1px !important;
+	border-radius: 3px !important;
+	background-color: var(--color-sweclockers) !important;
 }
 /* Kampanjer */
 .mainMenu li.optionVr {
-    background-image: none!important;
-    background-color: #8111e1!important;
-    border-color: #6a0eb9!important;
+	background-image: none!important;
+	background-color: #8111e1!important;
+	border-color: #6a0eb9!important;
 }
 .mainMenu li.optionVr a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionCes {
-    background-image: none!important;
-    background-color: #619c41!important;
-    border-color: #51743e!important;
+	background-image: none!important;
+	background-color: #619c41!important;
+	border-color: #51743e!important;
 }
 .mainMenu li.optionCes a {
-    color: #222!important;
+	color: #222!important;
 }
 .mainMenu li.optionPaskrea {
-    background-image: none!important;
-    background-color: #ffd200!important;
-    border-color: #d9a92b!important;
+	background-image: none!important;
+	background-color: #ffd200!important;
+	border-color: #d9a92b!important;
 }
 .mainMenu li.optionPaskrea a {
-    color: #222!important;
+	color: #222!important;
 }
 .mainMenu li.optionGreenfriday {
-    background-image: none!important;
-    background-color: #41a500!important;
-    border-color: #2b760a!important;
+	background-image: none!important;
+	background-color: #41a500!important;
+	border-color: #2b760a!important;
 }
 .mainMenu li.optionGreenfriday a {
-    color: #222!important;
+	color: #222!important;
 }
 .mainMenu li.optionComputex {
-    background-image: none!important;
-    background-color: #e4007f!important;
-    border-color: #c6006e!important;
+	background-image: none!important;
+	background-color: #e4007f!important;
+	border-color: #c6006e!important;
 }
 .mainMenu li.optionComputex a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionE3 {
-    background-image: none!important;
-    background-color: #ea2238!important;
-    border-color: #aa1929!important;
+	background-image: none!important;
+	background-color: #ea2238!important;
+	border-color: #aa1929!important;
 }
 .mainMenu li.optionE3 a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionBack2school {
-    background-image: none!important;
-    background-color: #4d9edd!important;
-    border-color: #4b99d6!important;
+	background-image: none!important;
+	background-color: #4d9edd!important;
+	border-color: #4b99d6!important;
 }
 .mainMenu li.optionBack2school a {
-    color: #222!important;
+	color: #222!important;
 }
 .mainMenu li.optionBlackfriday {
-    background-image: none!important;
-    background-color: #282828!important;
-    border-color: #282828!important;
+	background-image: none!important;
+	background-color: #282828!important;
+	border-color: #282828!important;
 }
 .mainMenu li.optionBlackfriday a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionCybermonday {
-    background-image: none!important;
-    background-color: #49b2d6!important;
-    border-color: #419fbf!important;
+	background-image: none!important;
+	background-color: #49b2d6!important;
+	border-color: #419fbf!important;
 }
 .mainMenu li.optionCybermonday a {
-    color: #222!important;
+	color: #222!important;
 }
 .mainMenu li.optionDreamhack {
-    background-image: none!important;
-    background-color: #5e2f8e!important;
-    border-color: #402061!important;
+	background-image: none!important;
+	background-color: #5e2f8e!important;
+	border-color: #402061!important;
 }
 .mainMenu li.optionDreamhack a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionJulkalender {
-    background-image: none!important;
-    background-color: #c00!important;
-    border-color: #900!important;
+	background-image: none!important;
+	background-color: #c00!important;
+	border-color: #900!important;
 }
 .mainMenu li.optionJulkalender a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionMellandagsrea {
-    background-image: none!important;
-    background-color: #af0035!important;
-    border-color: #780024!important;
+	background-image: none!important;
+	background-color: #af0035!important;
+	border-color: #780024!important;
 }
 .mainMenu li.optionMellandagsrea a {
-    color: #ccc!important;
+	color: #ccc!important;
 }
 .mainMenu li.optionVr:hover,
 .mainMenu li.optionCes:hover,
@@ -225,8 +225,8 @@ a.button {
 .mainMenu li.optionDreamhack:hover,
 .mainMenu li.optionJulkalender:hover,
 .mainMenu li.optionMellandagsrea:hover {
-    background-image: none!important;
-    opacity: 0.8!important;
+	background-image: none!important;
+	opacity: 0.8!important;
 }
 .mainMenu li.optionVr:hover a,
 .mainMenu li.optionCes:hover a,
@@ -240,128 +240,128 @@ a.button {
 .mainMenu li.optionDreamhack:hover a,
 .mainMenu li.optionJulkalender:hover a,
 .mainMenu li.optionMellandagsrea:hover a {
-    color: var(--color-text)!important;
+	color: var(--color-text)!important;
 }
 /* Kampanjer END */
 .tv-frame .tvf-left {
-    background-image: var(--url-tvf-left);
+	background-image: var(--url-tvf-left);
 }
 .tv-frame .tvf-right {
-    background-image: var(--url-tvf-right);
+	background-image: var(--url-tvf-right);
 }
 .tv-frame .tvf-top {
-    background-image: var(--url-tvf-top);
+	background-image: var(--url-tvf-top);
 }
 .tv-frame .tvf-bottom {
-    background-image: var(--url-tvf-bottom);
-    height: 48px;
+	background-image: var(--url-tvf-bottom);
+	height: 48px;
 }
 .newsList .commentsBubble {
-    background: var(--color-palette-1000);
-    background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000));
-    background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
-    background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
-    background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
-    background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
-    background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000));
-    background-color: var(--color-palette-1000);
-    border: 1px solid var(--color-palette-1000);
+	background: var(--color-palette-1000)!important;
+	background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background-color: var(--color-palette-1000)!important;
+	border: 1px solid var(--color-palette-1000)!important;
 }
 .newsList .commentsBubble.isHot {
-    background: var(--color-sweclockers);
-    background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background-color: var(--color-sweclockers);
-    border: 1px solid var(--color-sweclockers);
+	background: var(--color-sweclockers)!important;
+	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-color: var(--color-sweclockers)!important;
+	border: 1px solid var(--color-sweclockers)!important;
 }
 .newsList .pubItem .itemMeta li {
-    color: var(--color-text-header);
+	color: var(--color-text-header)!important;
 }
 .postBox .head {
-    background: var(--color-palette-1000)!important;
-    background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-    background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-    background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-    background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-    background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-    background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: var(--color-palette-1000)!important;
+	background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+	background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
 }
 .pages .icon {
-    background-image: var(--url-spritemap) !important;
+	background-image: var(--url-spritemap) !important;
 }
 .sideMenu .icon {
-    background-image: var(--url-spritemap) !important;
+	background-image: var(--url-spritemap) !important;
 }
 .bbSpoiler .spoilerHeader {
-    float: right;
-    margin-top: 7px;
-    margin-right: 5px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 5px;
 }
 .commentsWidget .mwReadmore a:hover {
-    text-decoration: underline !important;
+	text-decoration: underline !important;
 }
 .footer .bottom {
-    background: var(--color-palette-900);
-    color: var(--color-palette-0);
-    padding: 20px 0 20px 0;
+	background: var(--color-palette-900);
+	color: var(--color-palette-0);
+	padding: 20px 0 20px 0;
 }
 .forumForm>.head {
-    background: var(--color-main)!important;
-    background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: linear-gradient(var(--color-main), var(--color-main))!important;
+	background: var(--color-main)!important;
+	background: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: linear-gradient(var(--color-main), var(--color-main))!important;
 }
 .bbcode hr.bbHr {
-    border: 1px solid var(--color-border) !important;
-    border-top-color: var(--color-border) !important;
-    border-left-color: var(--color-border) !important;
+	border: 1px solid var(--color-border) !important;
+	border-top-color: var(--color-border) !important;
+	border-left-color: var(--color-border) !important;
 }
 .mainMenu .isSelected {
-    background-color: var(--color-main) !important;
-    background-image: none !important;
+	background-color: var(--color-main) !important;
+	background-image: none !important;
 }
 .articleNavi .head {
-    border-bottom: 1px solid var(--color-text);
-    padding-top: 3px;
+	border-bottom: 1px solid var(--color-text);
+	padding-top: 3px;
 }
 .articleHeader h1 {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers);
 }
 .articleHeader .meta {
-    color: var(--color-text-header);
+	color: var(--color-text-header);
 }
 .bbImage .caption {
-    background-color: rgba(35, 39, 42, .8) !important;
+	background-color: rgba(35, 39, 42, .8) !important;
 }
 .bbSpoiler .spoilerFrame {
-    border: 1px solid var(--color-main) !important;
-    border-top-color: var(--color-main) !important;
-    border-left-color: var(--color-main) !important;
+	border: 1px solid var(--color-main) !important;
+	border-top-color: var(--color-main) !important;
+	border-left-color: var(--color-main) !important;
 }
 .forumPost.isLinked.isAuthor {
-    border-color: var(--color-sweclockers);
-    box-shadow: 0 0 5px 2px var(--color-sweclockers);
+	border-color: var(--color-sweclockers);
+	box-shadow: 0 0 5px 2px var(--color-sweclockers);
 }
 .bbcode .bbQuote {
-    border: 1px solid var(--color-palette-800) !important;
-    border-top-color: var(--color-palette-800) !important;
-    border-left-color: var(--color-palette-800) !important;
+	border: 1px solid var(--color-palette-800) !important;
+	border-top-color: var(--color-palette-800) !important;
+	border-left-color: var(--color-palette-800) !important;
 }
 .forumTable .caption {
-    background: var(--color-main)!important;
-    background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: linear-gradient(var(--color-main), var(--color-main))!important;
+	background: var(--color-main)!important;
+	background: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: linear-gradient(var(--color-main), var(--color-main))!important;
 }
 .threadList .isSticky .numReplies,
 .threadList .isSticky .select,
@@ -373,7 +373,7 @@ a.button {
 .threadList .isSticky .numViews.alt,
 .threadList .isSticky .numViews.alt1,
 .threadList .isSticky .numViews.alt2 {
-    background-color: var(--color-palette-1000) !important;
+	background-color: var(--color-palette-1000) !important;
 }
 .threadList .numReplies,
 .threadList .select,
@@ -385,191 +385,210 @@ a.button {
 .threadList .numViews.alt,
 .threadList .numViews.alt1,
 .threadList .numViews.alt2 {
-    background-color: var(--color-main) !important;
+	background-color: var(--color-main) !important;
 }
 .forumTable .cell,
 .forumTable .cell.alt1,
 .forumTable .cell.alt2 {
-    background: var(--color-main);
-    border-bottom: 2px solid var(--color-main);
+	background: var(--color-main);
+	border-bottom: 2px solid var(--color-main);
 }
 td.cell.lastReply.alt2 {
-    color: var(--color-palette-500) !important;
+	color: var(--color-palette-500) !important;
 }
 .header .logo {
-    background-image: var(--url-spritemap);
+	background-image: var(--url-spritemap);
 }
 .header .main {
-    background: var(--color-main)!important;
-    background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-    background: linear-gradient(var(--color-main), var(--color-main))!important;
+	background: var(--color-main)!important;
+	background: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: linear-gradient(var(--color-main), var(--color-main))!important;
 }
 .spoilerContent .bbVideoYoutube:first-child {
-    clear: both;
+	clear: both;
 }
 .threadList .isSelected .cell {
-    background: #200e00 !important;
-    border-bottom-color: var(--color-palette-400);
+	background: #200e00 !important;
+	border-bottom-color: var(--color-palette-400);
 }
 .forumResultPost .postHeader .threadTitle {
-    background: var(--color-main);
-    background: -webkit-gradient(var(--color-main), var(--color-main));
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main));
-    background: -o-linear-gradient(var(--color-main), var(--color-main));
-    background: -moz-linear-gradient(var(--color-main), var(--color-main));
-    background: -ms-linear-gradient(var(--color-main), var(--color-main));
-    background: linear-gradient(var(--color-main), var(--color-main));
+	background: var(--color-main);
+	background: -webkit-gradient(var(--color-main), var(--color-main));
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main));
+	background: -o-linear-gradient(var(--color-main), var(--color-main));
+	background: -moz-linear-gradient(var(--color-main), var(--color-main));
+	background: -ms-linear-gradient(var(--color-main), var(--color-main));
+	background: linear-gradient(var(--color-main), var(--color-main));
 }
 .forumPost .postHeader .cell {
-    background-color: var(--color-palette-900) !important;
-    background-image: var(--color-palette-900)!important;
-    background-image: -webkit-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-    background-image: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-    background-image: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-    background-image: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-    background-image: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-    background-image: linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+	background-color: var(--color-palette-900) !important;
+	background-image: var(--color-palette-900)!important;
+	background-image: -webkit-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+	background-image: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+	background-image: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+	background-image: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+	background-image: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+	background-image: linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
 }
 .mainWidget .body .divider {
-    border-color: var(--color-palette-800) !important;
+	border-color: var(--color-palette-800) !important;
 }
 .forumTable .head .cell {
-    background: var(--color-sweclockers);
-    background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background: var(--color-sweclockers);
+	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
 }
 .forumPost.isReader {
-    box-shadow: -8px 0 0 var(--color-sweclockers);
+	box-shadow: -8px 0 0 var(--color-sweclockers);
 }
 .forumPost .guruFlag,
 .forumPost .supporterFlag {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers)!important;
 }
 .forumPost .details .activity.online {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers);
 }
 .forumPost.isGuru .controls .button.like .score,
 .forumPost.isLiked .controls .button.like .score {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers)!important;
 }
 .header .ticker .date {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers)!important;
 }
 .galleryFileEditor button,
 .tanukiButton,
 .taunkiButton {
-    color: var(--color-palette-300) !important;
-    background-color: var(--color-main) !important;
-    background-image: var(--color-main)!important;
-    background-image: -webkit-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-    background-image: linear-gradient(var(--color-main), var(--color-main))!important;
+	color: var(--color-palette-300) !important;
+	background-color: var(--color-main) !important;
+	background-image: var(--color-main)!important;
+	background-image: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background-image: linear-gradient(var(--color-main), var(--color-main))!important;
 }
 .forumPost.isAuthor .postHeader .cell {
-    background-color: var(--color-sweclockers) !important;
-    background-image: var(--color-sweclockers)!important;
-    background-image: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-    background-image: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-    background-image: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-    background-image: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-    background-image: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-    background-image: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-color: var(--color-sweclockers) !important;
+	background-image: var(--color-sweclockers)!important;
+	background-image: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-image: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-image: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-image: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-image: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background-image: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
 }
 .articleNavi .quick a,
 .pages a {
-    border-radius: 3px !important;
+	border-radius: 3px !important;
 }
 .link .label,
 .pushListExternal a span {
-    color: var(--color-link) !important;
+	color: var(--color-link) !important;
 }
 .pushListExternal {
-    color: var(--color-text-header);
+	color: var(--color-text-header);
 }
 .mellandagsrea .tips .tipsData .pjCell {
-    background: var(--color-main);
-    border-bottom: 2px solid var(--color-main);
-    color: var(--color-main);
+	background: var(--color-main);
+	border-bottom: 2px solid var(--color-main);
+	color: var(--color-main);
 }
 .mellandagsrea .tips .tipsData .productCell {
-    background: var(--color-main);
-    border-bottom: 2px solid var(--color-main);
-    border-left: 1px solid var(--color-main);
+	background: var(--color-main);
+	border-bottom: 2px solid var(--color-main);
+	border-left: 1px solid var(--color-main);
+}
+.mellandagsrea .tips a.userCell {
+    background-color: var(--color-border)!important;
 }
 .searchField .fieldWrap,
 .searchField input,
 .signinDialog input {
-    background-color: var(--color-main) !important;
-    background-image: var(--url-background-secondary) !important;
-    color: var(--color-text) !important;
+	background-color: var(--color-main) !important;
+	background-image: var(--url-background-secondary) !important;
+	color: var(--color-text) !important;
+}
+.mellandagsrea .vendorGuides .guideBlock .icon {
+    -webkit-filter: invert(.8)!important;
+	-o-filter: invert(.8)!important;
+    filter: invert(.8)!important;
+}
+.mellandagsrea .vendorGuides .guideBlock span {
+    color: var(--color-text)!important;
 }
 .mellandagsrea .tips .tipsData .userCell .colUser {
-    background: var(--color-main);
-    border-bottom: 2px solid var(--color-main);
-    border-right: 1px solid var(--color-main);
+	background: var(--color-main);
+	border-bottom: 2px solid var(--color-main);
+	border-right: 1px solid var(--color-main);
 }
 .mellandagsrea .tips .tipsRow:hover .userCell .colUser {
-    background: var(--color-main);
+	background: var(--color-main);
 }
 .mellandagsrea .tips .tipsData .userCell .colScore .label {
-    background: var(--color-sweclockers);
-    color: var(--color-palette-0);
+	background: var(--color-sweclockers);
+	color: var(--color-palette-0);
 }
 .mellandagsrea .vendorProducts {
-    background: var(--color-main);
-    border-left: 1px solid var(--color-main);
-    border-top: 1px solid var(--color-main);
+	background: var(--color-main);
+	border-left: 1px solid var(--color-main);
+	border-top: 1px solid var(--color-main);
 }
 .mellandagsrea .productFooter {
-    background: var(--color-main);
+	background: var(--color-main);
+}
+.mellandagsrea .tips .tipsData .colScore {
+    background-color: var(--color-main)!important;
+}
+.mellandagsrea #guideWrapper {
+    background-color: var(--color-main)!important;
+    color: var(--color-text)!important;
+    border: var(--color-border)!important;
 }
 .bbExpander>.expanderFrame>.expanderFade,
 .bbQuote.isExpandable>.quoteFrame>.quoteFade {
-    background: var(--color-quote-0);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--color-quote-0)), color-stop(25%, var(--color-quote-50)), color-stop(100%, var(--color-quote-100)));
-    background: -webkit-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%);
-    background: -o-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%);
-    background: -moz-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%);
-    background: -ms-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%);
-    background: linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%);
+	background: var(--color-quote-0)!important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--color-quote-0)), color-stop(25%, var(--color-quote-50)), color-stop(100%, var(--color-quote-100)))!important;
+	background: -webkit-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
+	background: -o-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
+	background: -moz-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
+	background: -ms-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
+	background: linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
 }
 .forumList .categoryItem .cell,
 .forumList .categoryItem.isCollapsed .cell {
-    background: var(--color-main);
-    background: -webkit-gradient(var(--color-main), var(--color-main));
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main));
-    background: -o-linear-gradient(var(--color-main), var(--color-main));
-    background: -moz-linear-gradient(var(--color-main), var(--color-main));
-    background: -ms-linear-gradient(var(--color-main), var(--color-main));
-    background: linear-gradient(var(--color-main), var(--color-main));
+	background: var(--color-main);
+	background: -webkit-gradient(var(--color-main), var(--color-main));
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main));
+	background: -o-linear-gradient(var(--color-main), var(--color-main));
+	background: -moz-linear-gradient(var(--color-main), var(--color-main));
+	background: -ms-linear-gradient(var(--color-main), var(--color-main));
+	background: linear-gradient(var(--color-main), var(--color-main));
 }
 .button:hover,
 .galleryFileEditor button:hover,
 .tanukiButton:hover,
 .taunkiButton:hover {
-    background-color: var(--color-palette-850) !important;
-    background-image: var(--color-palette-850)!important;
-    background-image: -webkit-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-    background-image: -webkit-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-    background-image: -o-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-    background-image: -moz-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-    background-image: -ms-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-    background-image: linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+	background-color: var(--color-palette-850) !important;
+	background-image: var(--color-palette-850)!important;
+	background-image: -webkit-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+	background-image: -webkit-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+	background-image: -o-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+	background-image: -moz-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+	background-image: -ms-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+	background-image: linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
 }
 .mellandagsrea .tips .tipsRow:hover .productCell,
 .mellandagsrea .tips .tipsRow:hover .pjCell {
-    background: var(--color-main);
+	background: var(--color-main);
 }
 .header,
 .header .shadow,
@@ -578,52 +597,52 @@ td.cell.lastReply.alt2 {
 .searchField input,
 .signinDialog input,
 body {
-    background-color: var(--color-palette-2000) !important;
-    color: var(--color-text) !important;
-    background-image: var(--url-background-primary) !important;
+	background-color: var(--color-palette-2000) !important;
+	color: var(--color-text) !important;
+	background-image: var(--url-background-primary) !important;
 }
 .menuItem.isSelected {
-    background-color: var(--color-main) !important;
-    color: var(--color-main) !important;
-    background-image: var(--url-background-selected) !important;
+	background-color: var(--color-main) !important;
+	color: var(--color-main) !important;
+	background-image: var(--url-background-selected) !important;
 }
 .menuItem:hover {
-    background-color: var(--color-main) !important;
-    color: var(--color-main) !important;
-    background-image: var(--url-background-hover) !important;
+	background-color: var(--color-main) !important;
+	color: var(--color-main) !important;
+	background-image: var(--url-background-hover) !important;
 }
 .bbTable thead .bbParagraph,
 .forumTable th .numReplies,
 .pages a:hover>.label,
 .postBox .head .title,
 .tanukiCombobox .tcbSelectedItem {
-    color: var(--color-palette-200) !important;
+	color: var(--color-palette-200) !important;
 }
 .articleBBCode .bbTable thead th {
-    background: var(--color-palette-900);
-    background: -webkit-gradient(var(--color-palette-900), var(--color-palette-900));
-    background: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900));
-    background: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900));
-    background: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900));
-    background: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900));
-    background: linear-gradient(var(--color-palette-900), var(--color-palette-900));
-    background-color: var(--color-transparent);
-    color: var(--color-palette-0);
+	background: var(--color-palette-900);
+	background: -webkit-gradient(var(--color-palette-900), var(--color-palette-900));
+	background: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900));
+	background: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900));
+	background: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900));
+	background: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900));
+	background: linear-gradient(var(--color-palette-900), var(--color-palette-900));
+	background-color: var(--color-transparent);
+	color: var(--color-palette-0);
 }
 .bbAward .reason {
-    color: var(--color-palette-600);
-    background: var(--color-palette-900);
+	color: var(--color-palette-600);
+	background: var(--color-palette-900);
 }
 .errorBox {
-    background-color: var(--color-sweclockers);
-    border: 1px solid var(--color-sweclockers);
-    border-top-color: var(--color-sweclockers);
-    border-right-color: var(--color-sweclockers);
-    border-bottom-color: var(--color-sweclockers);
-    border-left-color: var(--color-sweclockers);
+	background-color: var(--color-sweclockers);
+	border: 1px solid var(--color-sweclockers);
+	border-top-color: var(--color-sweclockers);
+	border-right-color: var(--color-sweclockers);
+	border-bottom-color: var(--color-sweclockers);
+	border-left-color: var(--color-sweclockers);
 }
 .forumForm>.head {
-    border-bottom: 4px solid var(--color-sweclockers) !important;
+	border-bottom: 4px solid var(--color-sweclockers) !important;
 }
 .commentsBubble,
 .commentsBubble:hover,
@@ -633,7 +652,7 @@ body {
 .mainWidget h5 a,
 .mwReadmore a,
 .pushListInternal .head h5 a {
-    color: var(--color-palette-0) !important;
+	color: var(--color-palette-0) !important;
 }
 .articleCommentsWidget .boxAction .actionLabel,
 .forumPost .postHeader .headerLink,
@@ -643,7 +662,7 @@ body {
 .pushListInternal .link .label,
 .slide a,
 .socialWidget a {
-    color: var(--color-palette-200) !important;
+	color: var(--color-palette-200) !important;
 }
 optgroup[label="Better SweClockers"],
 #Better_SweClockers fieldset,
@@ -695,7 +714,7 @@ optgroup[label="Better SweClockers"],
 input,
 select,
 textarea {
-    background-color: var(--color-main) !important;
+	background-color: var(--color-main) !important;
 }
 #Better_SweClockers input:not(.button),
 #Better_SweClockers textarea,
@@ -764,60 +783,60 @@ textarea {
 .tanukiTextbox input,
 label,
 select {
-    color: var(--color-text) !important;
+	color: var(--color-text) !important;
 }
 .threadList .body .cell.numReplies,
 .commentsWidget .mwReadmore {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 .forumWidget {
-    background-color: var(--color-sweclockers);
-    background: var(--color-sweclockers);
-    background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background-color: var(--color-sweclockers)!important;
+	background: var(--color-sweclockers)!important;
+	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
 }
 .mainRecentNews {
-    background-color: var(--color-main);
-    background: var(--color-main);
-    background: -webkit-gradient(var(--color-main), var(--color-main));
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main));
-    background: -o-linear-gradient(var(--color-main), var(--color-main));
-    background: -moz-linear-gradient(var(--color-main), var(--color-main));
-    background: -ms-linear-gradient(var(--color-main), var(--color-main));
-    background: linear-gradient(var(--color-main), var(--color-main));
+	background-color: var(--color-main)!important;
+	background: var(--color-main)!important;
+	background: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: linear-gradient(var(--color-main), var(--color-main))!important;
 }
 .orangeInfoBox {
-    background-color: var(--color-sweclockers);
-    background: var(--color-sweclockers);
-    background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	background-color: var(--color-sweclockers)!important;
+	background: var(--color-sweclockers)!important;
+	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
 }
 .prisjaktPopular {
-    color: var(--color-palette-0);
-    background-color: var(--color-prisjakt);
-    background: var(--color-prisjakt);
-    background: -webkit-gradient(var(--color-prisjakt), var(--color-prisjakt));
-    background: -webkit-linear-gradient(var(--color-prisjakt), var(--color-prisjakt));
-    background: -o-linear-gradient(var(--color-prisjakt), var(--color-prisjakt));
-    background: -moz-linear-gradient(var(--color-prisjakt), var(--color-prisjakt));
-    background: -ms-linear-gradient(var(--color-prisjakt), var(--color-prisjakt));
-    background: linear-gradient(var(--color-prisjakt), var(--color-prisjakt));
+	color: var(--color-palette-0)!important;
+	background-color: var(--color-prisjakt)!important;
+	background: var(--color-prisjakt)!important;
+	background: -webkit-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
+	background: -webkit-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
+	background: -o-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
+	background: -moz-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
+	background: -ms-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
+	background: linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
 }
 .prisjaktPopular a,
 .plmi-label {
-    color: var(--color-sweclockers-lighter)!important;
+	color: var(--color-sweclockers-lighter)!important;
 }
 .prisjaktPopular .ppProduct,
 .pushListMonster .plm-item {
-    border-bottom: 0px;
+	border-bottom: 0px;
 }
 #proofArticle,
 * a,
@@ -828,7 +847,7 @@ select {
 .header .profile .hasUnread a,
 .mwLabel.mwComments,
 .plLabel.plComments {
-    color: var(--color-sweclockers) !important;
+	color: var(--color-sweclockers) !important;
 }
 #proofArticle:hover,
 * a:hover,
@@ -838,185 +857,185 @@ select {
 .galleryBody .commentLink::before:hover,
 .mwLabel.mwComments:hover,
 .plLabel.plComments:hover {
-    color: var(--color-sweclockers) !important;
+	color: var(--color-sweclockers) !important;
 }
 #threadList-1 tr.hasUnreadPosts td.status {
-    box-shadow: inset 5px 0 0 0 var(--color-sweclockers);
+	box-shadow: inset 5px 0 0 0 var(--color-sweclockers);
 }
 .profileFeed .date {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers);
 }
 .pushListInternal {
-    color: var(--color-palette-0);
-    background-color: var(--color-main);
-    background: var(--color-main);
-    background: -webkit-gradient(var(--color-main), var(--color-main));
-    background: -webkit-linear-gradient(var(--color-main), var(--color-main));
-    background: -o-linear-gradient(var(--color-main), var(--color-main));
-    background: -moz-linear-gradient(var(--color-main), var(--color-main));
-    background: -ms-linear-gradient(var(--color-main), var(--color-main));
-    background: linear-gradient(var(--color-main), var(--color-main));
-    box-shadow: inset 0px 0px 0px 1px var(--color-border);
-    -webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border);
-    -moz-box-shadow: inset 0px 0px 0px 1px var(--color-border);
+	color: var(--color-palette-0)!important;
+	background-color: var(--color-main)!important;
+	background: var(--color-main)!important;
+	background: -webkit-gradient(var(--color-main), var(--color-main))!important;
+	background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
+	background: linear-gradient(var(--color-main), var(--color-main))!important;
+	box-shadow: inset 0px 0px 0px 1px var(--color-border)!important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border)!important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--color-border)!important;
 }
 .pushListInternal .head a {
-    color: var(--color-palette-500) !important;
+	color: var(--color-palette-500) !important;
 }
 .pushListMonster {
-    background-color: var(--color-monster);
-    background: var(--color-monster);
-    background: -webkit-gradient(var(--color-monster), var(--color-monster));
-    background: -webkit-linear-gradient(var(--color-monster), var(--color-monster));
-    background: -o-linear-gradient(var(--color-monster), var(--color-monster));
-    background: -moz-linear-gradient(var(--color-monster), var(--color-monster));
-    background: -ms-linear-gradient(var(--color-monster), var(--color-monster));
-    background: linear-gradient(var(--color-monster), var(--color-monster));
+	background-color: var(--color-monster)!important;
+	background: var(--color-monster)!important;
+	background: -webkit-gradient(var(--color-monster), var(--color-monster))!important;
+	background: -webkit-linear-gradient(var(--color-monster), var(--color-monster))!important;
+	background: -o-linear-gradient(var(--color-monster), var(--color-monster))!important;
+	background: -moz-linear-gradient(var(--color-monster), var(--color-monster))!important;
+	background: -ms-linear-gradient(var(--color-monster), var(--color-monster))!important;
+	background: linear-gradient(var(--color-monster), var(--color-monster))!important;
 }
 .threadStatus {
-    background-image: var(--url-threadStatus);
-    background-repeat: no-repeat;
-    background-size: 850px auto;
-    background-position: 0 0;
-    margin: 0 auto;
-    width: 19px;
-    height: 19px;
+	background-image: var(--url-threadStatus);
+	background-repeat: no-repeat;
+	background-size: 850px auto;
+	background-position: 0 0;
+	margin: 0 auto;
+	width: 19px;
+	height: 19px;
 }
 .kwd {
-    color: var(--color-blue-darker) !important;
+	color: var(--color-blue-darker) !important;
 }
 .lit {
-    color: var(--color-palette-200) !important;
+	color: var(--color-palette-200) !important;
 }
 .pun {
-    color: var(--color-palette-200) !important;
+	color: var(--color-palette-200) !important;
 }
 .wndFrameDecorator {
-    background-color: var(--color-palette-1000);
+	background-color: var(--color-palette-1000);
 }
 .tanukiCombobox.hasErrors .tcbTriggerFrame {
-    border-color: var(--color-sweclockers);
-    outline: var(--color-sweclockers) auto 5px;
+	border-color: var(--color-sweclockers);
+	outline: var(--color-sweclockers) auto 5px;
 }
 .tanukiFile.hasErrors input {
-    border-color: var(--color-sweclockers);
-    outline: var(--color-sweclockers) auto 5px;
+	border-color: var(--color-sweclockers);
+	outline: var(--color-sweclockers) auto 5px;
 }
 .tanukiSelect.hasErrors select {
-    border-color: var(--color-sweclockers);
-    outline: var(--color-sweclockers) auto 5px;
+	border-color: var(--color-sweclockers);
+	outline: var(--color-sweclockers) auto 5px;
 }
 .tanukiTextarea.hasErrors textarea {
-    border-color: var(--color-sweclockers);
-    outline: var(--color-sweclockers) auto 5px;
+	border-color: var(--color-sweclockers);
+	outline: var(--color-sweclockers) auto 5px;
 }
 .tanukiTextbox.hasErrors input {
-    border-color: var(--color-sweclockers);
-    outline: var(--color-sweclockers) auto 5px;
+	border-color: var(--color-sweclockers);
+	outline: var(--color-sweclockers) auto 5px;
 }
 .tanukiError .error {
-    background-color: var(--color-sweclockers);
-    border: 1px solid var(--color-sweclockers);
-    color: var(--color-palette-0);
+	background-color: var(--color-sweclockers);
+	border: 1px solid var(--color-sweclockers);
+	color: var(--color-palette-0);
 }
 .tanukiCombobox .tcbPanel {
-    background: var(--color-palette-900);
-    border: 1px solid var(--color-palette-400);
-    box-shadow: 2px 2px 4px var(--color-transparent-light);
+	background: var(--color-palette-900);
+	border: 1px solid var(--color-palette-400);
+	box-shadow: 2px 2px 4px var(--color-transparent-light);
 }
 .carousel .nav.left .handle {
-    border-right: 10px solid var(--color-sweclockers);
+	border-right: 10px solid var(--color-sweclockers);
 }
 .carousel .nav.right .handle {
-    border-left: 10px solid var(--color-sweclockers);
+	border-left: 10px solid var(--color-sweclockers);
 }
 .gp-subject-group {
-    background: var(--color-main);
-    border: 1px solid var(--color-main);
+	background: var(--color-main);
+	border: 1px solid var(--color-main);
 }
 .gp-subject-group .gpsg-header {
-    border-bottom: 1px solid var(--color-main);
+	border-bottom: 1px solid var(--color-main);
 }
 .gp-subject-group .gpsg-more a {
-    background: var(--color-main);
-    border: 1px solid var(--color-main);
-    color: var(--color-palette-900);
+	background: var(--color-main);
+	border: 1px solid var(--color-main);
+	color: var(--color-palette-900);
 }
 .gp-subject-group .gpsg-more a:hover {
-    background: var(--color-main);
+	background: var(--color-main);
 }
 .gp-subject-group .bbcode a {
-    color: inherit;
+	color: inherit;
 }
 .bbPoll .optionBar>div {
-    background: var(--color-sweclockers);
-    border: 0px;
+	background: var(--color-sweclockers);
+	border: 0px;
 }
 .bbPoll>.inner {
-    border: 1px solid var(--color-border);
-    border-top-color: var(--color-border);
-    border-right-color: var(--color-border);
-    border-bottom-color: var(--color-border);
-    border-left-color: var(--color-border);
+	border: 1px solid var(--color-border);
+	border-top-color: var(--color-border);
+	border-right-color: var(--color-border);
+	border-bottom-color: var(--color-border);
+	border-left-color: var(--color-border);
 }
 .mainContent .greyContentShare #fbLikeButton {
-    background: var(--color-main);
-    border: 1px solid var(--color-main);
+	background: var(--color-main);
+	border: 1px solid var(--color-main);
 }
 .fbShareButton {
-    border: 1px solid var(--color-facebook);
-    background-color: var(--color-facebook);
-    background-image: var(--color-facebook);
-    background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: linear-gradient(var(--color-facebook), var(--color-facebook));
+	border: 1px solid var(--color-facebook);
+	background-color: var(--color-facebook);
+	background-image: var(--color-facebook);
+	background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: linear-gradient(var(--color-facebook), var(--color-facebook));
 }
 .fbShareButton:hover {
-    border: 1px solid var(--color-facebook-lighter);
-    background-color: var(--color-facebook-lighter);
-    background-image: var(--color-facebook);
-    background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook));
-    background-image: linear-gradient(var(--color-facebook), var(--color-facebook));
+	border: 1px solid var(--color-facebook-lighter);
+	background-color: var(--color-facebook-lighter);
+	background-image: var(--color-facebook);
+	background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook));
+	background-image: linear-gradient(var(--color-facebook), var(--color-facebook));
 }
 .whiteHeader h1 .titleSection {
-    color: var(--color-sweclockers);
+	color: var(--color-sweclockers);
 }
 .whiteHeader h1 {
-    color: var(--color-text-header);
+	color: var(--color-text-header);
 }
 h5,
 h6 {
-    color: var(--color-text-header);
+	color: var(--color-text-header)!important;
 }
 .sponsoredArticle {
-    color: var(--color-palette-300);
-    background-color: var(--color-sweclockers);
-    background: var(--color-sweclockers);
-    background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
-    background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers));
+	color: var(--color-palette-300)!important;
+	background-color: var(--color-sweclockers)!important;
+	background: var(--color-sweclockers)!important;
+	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
 }
 .geeksShop {
-    background-color: var(--color-main);
-    color: var(--color-text);
+	background-color: var(--color-main)!important;
+	color: var(--color-text)!important;
 }
 .geeksShop .geeksShopProducts .productOther {
-    color: var(--color-text);
+	color: var(--color-text)!important;
 }
 .geeksShop .geeksShopProducts .productOther .buyButton {
-    background-color: var(--color-sweclockers)!important;
-    color: var(--color-text)!important;
+	background-color: var(--color-sweclockers)!important;
+	color: var(--color-text)!important;
 }
 .geeksShop .geeksShopProducts .productOther .buyButton:hover {
-    background-color: var(--color-palette-1100)!important;
+	background-color: var(--color-palette-1100)!important;
 }
