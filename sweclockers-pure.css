@@ -1,12 +1,12 @@
 /* Dark Mode for Sweclockers.com
 * Created by: Soitora
 * Created: 2017-11-03
-* Updated: 2018-12-22
-* Version: 1.8.0
+* Updated: 2018-12-27
+* Version: 1.8.1
 * Licence: CC BY-NC-SA 3.0
 */
 /* Theme Settings */
- :root {
+:root {
 	/* Main */
 	--color-main: var(--color-palette-900);
 	--color-border: var(--color-palette-1100);
@@ -58,24 +58,26 @@
 	--url-tvf-left: url("https://i.imgur.com/y8gWfV1.png");
 	--url-tvf-right: url("https://i.imgur.com/fD4VmHu.png");
 	--url-tvf-top: url("https://i.imgur.com/hxA5pui.png");
-	--url-tvf-bottom: url("https://i.imgur.com/8KTvVe5.png");
+	--url-tvf-bottom: url("https://i.imgur.com/p16tIQV.png");
 	/* ---------------- */
 }
 /* Darkmode Code */
- :not(.arrow):not(.handle),
- :not(.arrow):not(.handle).menuItem.isSelected,
- :not(.arrow):not(.handle).menuItem {
+:not(.arrow):not(.handle),
+:not(.arrow):not(.handle).menuItem.isSelected,
+:not(.arrow):not(.handle).menuItem {
 	border-color: var(--color-border)!important;
 }
 .bbColor[style="color: blue!important;"] {
 	color: var(--color-blue)!important;
 }
-#Better_SweClockers_SearchWithGoogle {
-	color: var(--color-blue)!important;
-	font-family: Courier!important;
-}
-#better-sweclockers-dark-theme-toggle > a {
+#better-sweclockers-dark-theme-toggle>a {
 	background-color: var(--color-palette-500)!important;
+	border-top-left-radius: 5px!important;
+	border-top-right-radius: 5px!important;
+	-webkit-border-top-left-radius: 5px!important;
+	-webkit-border-top-right-radius: 5px!important;
+	-moz-border-radius-topleft: 5px!important;
+	-moz-border-radius-topright: 5px!important;
 }
 #better-sweclockers-preferences-shortcut {
 	background-color: var(--color-main)!important;
@@ -83,7 +85,13 @@
 #better-sweclockers-preferences-shortcut:hover {
 	background-color: var(--color-palette-850)!important;
 }
-#better-sweclockers-preference-quote_signature_message, #better-sweclockers-preference-textarea_size_small, #better-sweclockers-preference-textarea_size_large, #better-sweclockers-preference-dark_theme_interval, #better-sweclockers-preference-dark_theme_time_on, #better-sweclockers-preference-dark_theme_time_off {
+#better-sweclockers-preference-quote_signature_message,
+#better-sweclockers-preference-textarea_size_small,
+#better-sweclockers-preference-textarea_size_large,
+#better-sweclockers-preference-dark_theme_interval,
+#better-sweclockers-preference-dark_theme_time_on,
+#better-sweclockers-preference-dark_theme_time_off,
+#better-sweclockers-preference-custom_css_code {
 	color: var(--color-text)!important;
 }
 img[src*="/artikel/diagram/"] {
@@ -265,7 +273,7 @@ a.button {
 }
 .tv-frame .tvf-bottom {
 	background-image: var(--url-tvf-bottom)!important;
-	height: 48px!important;
+	height: 32px!important;
 }
 .newsList .commentsBubble {
 	background: var(--color-palette-1000)!important;
@@ -527,7 +535,10 @@ td.cell.lastReply.alt2 {
 .mellandagsrea .tips .tipsData .tipsRow:nth-child(odd) {
 	background-color: var(--color-main)!important;
 }
-.mellandagsrea .tips .tipsRow:hover .productCell, .mellandagsrea .tips .tipsRow:hover .pjCell, .mellandagsrea .tips .tipsRow:hover .userCell .colUser, .mellandagsrea .tips .tipsRow:hover .userCell .colScore {
+.mellandagsrea .tips .tipsRow:hover .productCell,
+.mellandagsrea .tips .tipsRow:hover .pjCell,
+.mellandagsrea .tips .tipsRow:hover .userCell .colUser,
+.mellandagsrea .tips .tipsRow:hover .userCell .colScore {
 	background: var(--color-main)!important;
 }
 .searchField .fieldWrap,
