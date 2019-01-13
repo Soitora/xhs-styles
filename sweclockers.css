@@ -1,9 +1,10 @@
 @-moz-document domain("sweclockers.com") {
+
 	/* Dark Mode for Sweclockers.com
 	* Created by: Soitora
 	* Created: 2017-11-03
-	* Updated: 2018-12-27
-	* Version: 1.8.1
+	* Updated: 2019-01-13
+	* Version: 1.8.2
 	* Licence: CC BY-NC-SA 3.0
 	*/
 	/* Theme Settings */
@@ -62,30 +63,79 @@
 		--url-tvf-bottom: url("https://i.imgur.com/p16tIQV.png");
 		/* ---------------- */
 	}
+
+	/* Scrollbar */
+	::-webkit-scrollbar {
+		width: 9px;
+		height: 9px;
+	}
+
+	::-webkit-scrollbar-button {
+		width: 0px;
+		height: 0px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--color-sweclockers);
+		border: 0px none #ffffff;
+		border-radius: 13px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--color-sweclockers-lighter);
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: var(--color-sweclockers);
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--color-main);
+		border: 0px none #ffffff;
+		border-radius: 26px;
+	}
+
+	::-webkit-scrollbar-track:hover {
+		background: #222222;
+	}
+
+	::-webkit-scrollbar-track:active {
+		background: #222222;
+	}
+
+	::-webkit-scrollbar-corner {
+		background: transparent;
+	}
+
 	/* Darkmode Code */
 	:not(.arrow):not(.handle),
 	:not(.arrow):not(.handle).menuItem.isSelected,
 	:not(.arrow):not(.handle).menuItem {
-		border-color: var(--color-border)!important;
+		border-color: var(--color-border) !important;
 	}
+
 	.bbColor[style="color: blue!important;"] {
-		color: var(--color-blue)!important;
+		color: var(--color-blue) !important;
 	}
+
 	#better-sweclockers-dark-theme-toggle>a {
-		background-color: var(--color-palette-500)!important;
-		border-top-left-radius: 5px!important;
-		border-top-right-radius: 5px!important;
-		-webkit-border-top-left-radius: 5px!important;
-		-webkit-border-top-right-radius: 5px!important;
-		-moz-border-radius-topleft: 5px!important;
-		-moz-border-radius-topright: 5px!important;
+		background-color: var(--color-palette-500) !important;
+		border-top-left-radius: 5px !important;
+		border-top-right-radius: 5px !important;
+		-webkit-border-top-left-radius: 5px !important;
+		-webkit-border-top-right-radius: 5px !important;
+		-moz-border-radius-topleft: 5px !important;
+		-moz-border-radius-topright: 5px !important;
 	}
+
 	#better-sweclockers-preferences-shortcut {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	#better-sweclockers-preferences-shortcut:hover {
-		background-color: var(--color-palette-850)!important;
+		background-color: var(--color-palette-850) !important;
 	}
+
 	#better-sweclockers-preference-quote_signature_message,
 	#better-sweclockers-preference-textarea_size_small,
 	#better-sweclockers-preference-textarea_size_large,
@@ -93,146 +143,177 @@
 	#better-sweclockers-preference-dark_theme_time_on,
 	#better-sweclockers-preference-dark_theme_time_off,
 	#better-sweclockers-preference-custom_css_code {
-		color: var(--color-text)!important;
+		color: var(--color-text) !important;
 	}
+
 	img[src*="/artikel/diagram/"] {
-		background-color: var(--color-palette-500)!important;
-		-webkit-filter: invert(85%)!important;
-		-o-filter: invert(85%)!important;
-		filter: invert(85%)!important;
-		background: none!important;
+		background-color: var(--color-palette-500) !important;
+		-webkit-filter: invert(85%) !important;
+		-o-filter: invert(85%) !important;
+		filter: invert(85%) !important;
+		background: none !important;
 	}
+
 	img[src*="/image/diagram/"] {
-		background-color: var(--color-palette-300)!important;
+		background-color: var(--color-palette-300) !important;
 	}
+
 	.bbRelatedBox {
-		border: 0px inset var(--color-main)!important;
-		border-radius: 2px!important;
-		background: var(--color-main)!important;
-		margin-bottom: 16px!important;
-		padding: 10px 10px 0!important;
+		border: 0px inset var(--color-main) !important;
+		border-radius: 2px !important;
+		background: var(--color-main) !important;
+		margin-bottom: 16px !important;
+		padding: 10px 10px 0 !important;
 	}
+
 	.bbPre.showFrame {
-		background: var(--color-main)!important;
-		border-left-color: var(--color-main)!important;
-		border-top-color: var(--color-main)!important;
-		border: 1px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border-left-color: var(--color-main) !important;
+		border-top-color: var(--color-main) !important;
+		border: 1px solid var(--color-main) !important;
 	}
+
 	.button,
 	a.button {
-		background-color: var(--color-main)!important;
-		background-image: var(--color-main)!important;
-		background-image: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: linear-gradient(var(--color-main), var(--color-main))!important;
-		color: var(--color-palette-300)!important;
+		background-color: var(--color-main) !important;
+		background-image: var(--color-main) !important;
+		background-image: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: linear-gradient(var(--color-main), var(--color-main)) !important;
+		color: var(--color-palette-300) !important;
 	}
+
 	.bbIns,
 	.bbMark {
-		padding: 0 1px!important;
-		border-radius: 3px!important;
-		background-color: var(--color-sweclockers)!important;
+		padding: 0 1px !important;
+		border-radius: 3px !important;
+		background-color: var(--color-sweclockers) !important;
 	}
+
 	/* Kampanjer */
 	.mainMenu li.optionVr {
-		background-image: none!important;
-		background-color: #8111e1!important;
-		border-color: #6a0eb9!important;
+		background-image: none !important;
+		background-color: #8111e1 !important;
+		border-color: #6a0eb9 !important;
 	}
+
 	.mainMenu li.optionVr a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionCes {
-		background-image: none!important;
-		background-color: #619c41!important;
-		border-color: #51743e!important;
+		background-image: none !important;
+		background-color: #619c41 !important;
+		border-color: #51743e !important;
 	}
+
 	.mainMenu li.optionCes a {
-		color: #222!important;
+		color: #222 !important;
 	}
+
 	.mainMenu li.optionPaskrea {
-		background-image: none!important;
-		background-color: #ffd200!important;
-		border-color: #d9a92b!important;
+		background-image: none !important;
+		background-color: #ffd200 !important;
+		border-color: #d9a92b !important;
 	}
+
 	.mainMenu li.optionPaskrea a {
-		color: #222!important;
+		color: #222 !important;
 	}
+
 	.mainMenu li.optionGreenfriday {
-		background-image: none!important;
-		background-color: #41a500!important;
-		border-color: #2b760a!important;
+		background-image: none !important;
+		background-color: #41a500 !important;
+		border-color: #2b760a !important;
 	}
+
 	.mainMenu li.optionGreenfriday a {
-		color: #222!important;
+		color: #222 !important;
 	}
+
 	.mainMenu li.optionComputex {
-		background-image: none!important;
-		background-color: #e4007f!important;
-		border-color: #c6006e!important;
+		background-image: none !important;
+		background-color: #e4007f !important;
+		border-color: #c6006e !important;
 	}
+
 	.mainMenu li.optionComputex a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionE3 {
-		background-image: none!important;
-		background-color: #ea2238!important;
-		border-color: #aa1929!important;
+		background-image: none !important;
+		background-color: #ea2238 !important;
+		border-color: #aa1929 !important;
 	}
+
 	.mainMenu li.optionE3 a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionBack2school {
-		background-image: none!important;
-		background-color: #4d9edd!important;
-		border-color: #4b99d6!important;
+		background-image: none !important;
+		background-color: #4d9edd !important;
+		border-color: #4b99d6 !important;
 	}
+
 	.mainMenu li.optionBack2school a {
-		color: #222!important;
+		color: #222 !important;
 	}
+
 	.mainMenu li.optionBlackfriday {
-		background-image: none!important;
-		background-color: #282828!important;
-		border-color: #282828!important;
+		background-image: none !important;
+		background-color: #282828 !important;
+		border-color: #282828 !important;
 	}
+
 	.mainMenu li.optionBlackfriday a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionCybermonday {
-		background-image: none!important;
-		background-color: #49b2d6!important;
-		border-color: #419fbf!important;
+		background-image: none !important;
+		background-color: #49b2d6 !important;
+		border-color: #419fbf !important;
 	}
+
 	.mainMenu li.optionCybermonday a {
-		color: #222!important;
+		color: #222 !important;
 	}
+
 	.mainMenu li.optionDreamhack {
-		background-image: none!important;
-		background-color: #5e2f8e!important;
-		border-color: #402061!important;
+		background-image: none !important;
+		background-color: #5e2f8e !important;
+		border-color: #402061 !important;
 	}
+
 	.mainMenu li.optionDreamhack a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionJulkalender {
-		background-image: none!important;
-		background-color: #c00!important;
-		border-color: #900!important;
+		background-image: none !important;
+		background-color: #c00 !important;
+		border-color: #900 !important;
 	}
+
 	.mainMenu li.optionJulkalender a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionMellandagsrea {
-		background-image: none!important;
-		background-color: #af0035!important;
-		border-color: #780024!important;
+		background-image: none !important;
+		background-color: #af0035 !important;
+		border-color: #780024 !important;
 	}
+
 	.mainMenu li.optionMellandagsrea a {
-		color: #ccc!important;
+		color: #ccc !important;
 	}
+
 	.mainMenu li.optionVr:hover,
 	.mainMenu li.optionCes:hover,
 	.mainMenu li.optionPaskrea:hover,
@@ -245,9 +326,10 @@
 	.mainMenu li.optionDreamhack:hover,
 	.mainMenu li.optionJulkalender:hover,
 	.mainMenu li.optionMellandagsrea:hover {
-		background-image: none!important;
-		opacity: 0.8!important;
+		background-image: none !important;
+		opacity: 0.8 !important;
 	}
+
 	.mainMenu li.optionVr:hover a,
 	.mainMenu li.optionCes:hover a,
 	.mainMenu li.optionPaskrea:hover a,
@@ -260,123 +342,146 @@
 	.mainMenu li.optionDreamhack:hover a,
 	.mainMenu li.optionJulkalender:hover a,
 	.mainMenu li.optionMellandagsrea:hover a {
-		color: var(--color-text)!important;
+		color: var(--color-text) !important;
 	}
+
 	/* Kampanjer END */
 	.tv-frame .tvf-left {
-		background-image: var(--url-tvf-left)!important;
+		background-image: var(--url-tvf-left) !important;
 	}
+
 	.tv-frame .tvf-right {
-		background-image: var(--url-tvf-right)!important;
+		background-image: var(--url-tvf-right) !important;
 	}
+
 	.tv-frame .tvf-top {
-		background-image: var(--url-tvf-top)!important;
+		background-image: var(--url-tvf-top) !important;
 	}
+
 	.tv-frame .tvf-bottom {
-		background-image: var(--url-tvf-bottom)!important;
-		height: 32px!important;
+		background-image: var(--url-tvf-bottom) !important;
+		height: 32px !important;
 	}
+
 	.newsList .commentsBubble {
-		background: var(--color-palette-1000)!important;
-		background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background-color: var(--color-palette-1000)!important;
-		border: 1px solid var(--color-palette-1000)!important;
+		background: var(--color-palette-1000) !important;
+		background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background-color: var(--color-palette-1000) !important;
+		border: 1px solid var(--color-palette-1000) !important;
 	}
+
 	.newsList .commentsBubble.isHot {
-		background: var(--color-sweclockers)!important;
-		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background-color: var(--color-sweclockers)!important;
-		border: 1px solid var(--color-sweclockers)!important;
+		background: var(--color-sweclockers) !important;
+		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background-color: var(--color-sweclockers) !important;
+		border: 1px solid var(--color-sweclockers) !important;
 	}
+
 	.newsList .pubItem .itemMeta li {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	.postBox .head {
-		background: var(--color-palette-1000)!important;
-		background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
-		background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000))!important;
+		background: var(--color-palette-1000) !important;
+		background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
+		background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
 	}
+
 	.bbSpoiler .spoilerHeader {
-		float: right!important;
-		margin-top: 7px!important;
-		margin-right: 5px!important;
+		float: right !important;
+		margin-top: 7px !important;
+		margin-right: 5px !important;
 	}
+
 	.commentsWidget .mwReadmore a:hover {
-		text-decoration: underline!important;
+		text-decoration: underline !important;
 	}
+
 	.footer .bottom {
-		background: var(--color-palette-900)!important;
-		color: var(--color-palette-0)!important;
-		padding: 20px 0 20px 0!important;
+		background: var(--color-palette-900) !important;
+		color: var(--color-palette-0) !important;
+		padding: 20px 0 20px 0 !important;
 	}
+
 	.forumForm>.head {
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.bbcode hr.bbHr {
-		border: 1px solid var(--color-border)!important;
-		border-top-color: var(--color-border)!important;
-		border-left-color: var(--color-border)!important;
+		border: 1px solid var(--color-border) !important;
+		border-top-color: var(--color-border) !important;
+		border-left-color: var(--color-border) !important;
 	}
+
 	.mainMenu .isSelected {
-		background-color: var(--color-main)!important;
-		background-image: none!important;
+		background-color: var(--color-main) !important;
+		background-image: none !important;
 	}
+
 	.articleNavi .head {
-		border-bottom: 1px solid var(--color-text)!important;
-		padding-top: 3px!important;
+		border-bottom: 1px solid var(--color-text) !important;
+		padding-top: 3px !important;
 	}
+
 	.articleHeader h1 {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	.articleHeader .meta {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	.bbImage .caption {
-		background-color: rgba(35, 39, 42, .8)!important;
+		background-color: rgba(35, 39, 42, .8) !important;
 	}
+
 	.bbSpoiler .spoilerFrame {
-		border: 1px solid var(--color-main)!important;
-		border-top-color: var(--color-main)!important;
-		border-left-color: var(--color-main)!important;
+		border: 1px solid var(--color-main) !important;
+		border-top-color: var(--color-main) !important;
+		border-left-color: var(--color-main) !important;
 	}
+
 	.forumPost.isLinked.isAuthor {
-		border-color: var(--color-sweclockers)!important;
-		box-shadow: 0 0 5px 2px var(--color-sweclockers)!important;
+		border-color: var(--color-sweclockers) !important;
+		box-shadow: 0 0 5px 2px var(--color-sweclockers) !important;
 	}
+
 	.bbcode .bbQuote {
-		border: 1px solid var(--color-palette-800)!important;
-		border-top-color: var(--color-palette-800)!important;
-		border-left-color: var(--color-palette-800)!important;
+		border: 1px solid var(--color-palette-800) !important;
+		border-top-color: var(--color-palette-800) !important;
+		border-left-color: var(--color-palette-800) !important;
 	}
+
 	.forumTable .caption {
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.threadList .isSticky .numReplies,
 	.threadList .isSticky .select,
 	.threadList .isSticky .status,
@@ -387,8 +492,9 @@
 	.threadList .isSticky .numViews.alt,
 	.threadList .isSticky .numViews.alt1,
 	.threadList .isSticky .numViews.alt2 {
-		background-color: var(--color-palette-1000)!important;
+		background-color: var(--color-palette-1000) !important;
 	}
+
 	.threadList .numReplies,
 	.threadList .select,
 	.threadList .status,
@@ -399,229 +505,271 @@
 	.threadList .numViews.alt,
 	.threadList .numViews.alt1,
 	.threadList .numViews.alt2 {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	.forumTable .cell,
 	.forumTable .cell.alt1,
 	.forumTable .cell.alt2 {
-		background: var(--color-main)!important;
-		border-bottom: 2px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border-bottom: 2px solid var(--color-main) !important;
 	}
+
 	td.cell.lastReply.alt2 {
-		color: var(--color-palette-500)!important;
+		color: var(--color-palette-500) !important;
 	}
+
 	.header .main {
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.spoilerContent .bbVideoYoutube:first-child {
-		clear: both!important;
+		clear: both !important;
 	}
+
 	.threadList .isSelected .cell {
-		background: #200e00!important;
-		border-bottom-color: var(--color-palette-400)!important;
+		background: #200e00 !important;
+		border-bottom-color: var(--color-palette-400) !important;
 	}
+
 	.forumResultPost .postHeader .threadTitle {
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.forumPost .postHeader .cell {
-		background-color: var(--color-palette-900)!important;
-		background-image: var(--color-palette-900)!important;
-		background-image: -webkit-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background-image: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background-image: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background-image: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background-image: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background-image: linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
+		background-color: var(--color-palette-900) !important;
+		background-image: var(--color-palette-900) !important;
+		background-image: -webkit-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background-image: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background-image: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background-image: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background-image: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background-image: linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
 	}
+
 	.mainWidget .body .divider {
-		border-color: var(--color-palette-800)!important;
+		border-color: var(--color-palette-800) !important;
 	}
+
 	.forumTable .head .cell {
-		background: var(--color-sweclockers)!important;
-		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+		background: var(--color-sweclockers) !important;
+		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
 	}
+
 	.forumPost.isReader {
-		box-shadow: -8px 0 0 var(--color-sweclockers)!important;
+		box-shadow: -8px 0 0 var(--color-sweclockers) !important;
 	}
+
 	.forumPost .guruFlag,
 	.forumPost .supporterFlag {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	.forumPost .details .activity.online {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	.forumPost.isGuru .controls .button.like .score,
 	.forumPost.isLiked .controls .button.like .score {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	.header .ticker .date {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	.galleryFileEditor button,
 	.tanukiButton,
 	.taunkiButton {
-		color: var(--color-palette-300)!important;
-		background-color: var(--color-main)!important;
-		background-image: var(--color-main)!important;
-		background-image: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background-image: linear-gradient(var(--color-main), var(--color-main))!important;
+		color: var(--color-palette-300) !important;
+		background-color: var(--color-main) !important;
+		background-image: var(--color-main) !important;
+		background-image: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background-image: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.forumPost.isAuthor .postHeader .cell {
-		background-color: var(--color-sweclockers)!important;
-		background-image: var(--color-sweclockers)!important;
-		background-image: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background-image: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background-image: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background-image: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background-image: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background-image: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+		background-color: var(--color-sweclockers) !important;
+		background-image: var(--color-sweclockers) !important;
+		background-image: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background-image: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background-image: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background-image: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background-image: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background-image: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
 	}
+
 	.articleNavi .quick a,
 	.pages a {
-		border-radius: 3px!important;
+		border-radius: 3px !important;
 	}
+
 	.link .label,
 	.pushListExternal a span {
-		color: var(--color-link)!important;
+		color: var(--color-link) !important;
 	}
+
 	.pushListExternal {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .pjCell {
-		background: var(--color-main)!important;
-		border-bottom: 2px solid var(--color-main)!important;
-		color: var(--color-main)!important;
+		background: var(--color-main) !important;
+		border-bottom: 2px solid var(--color-main) !important;
+		color: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .productCell {
-		background: var(--color-main)!important;
-		border-bottom: 2px solid var(--color-main)!important;
-		border-left: 1px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border-bottom: 2px solid var(--color-main) !important;
+		border-left: 1px solid var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips a.userCell {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips a.userCell:hover {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsTitle {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .tipsRow {
-		border-bottom: 1px solid var(--color-border)!important;
-		border-left: 1px solid var(--color-border)!important;
-		border-right: 1px solid var(--color-border)!important;
-		background: var(--color-main)!important;
+		border-bottom: 1px solid var(--color-border) !important;
+		border-left: 1px solid var(--color-border) !important;
+		border-right: 1px solid var(--color-border) !important;
+		background: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .tipsRow:nth-child(odd) {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsRow:hover .productCell,
 	.mellandagsrea .tips .tipsRow:hover .pjCell,
 	.mellandagsrea .tips .tipsRow:hover .userCell .colUser,
 	.mellandagsrea .tips .tipsRow:hover .userCell .colScore {
-		background: var(--color-main)!important;
+		background: var(--color-main) !important;
 	}
+
 	.searchField .fieldWrap,
 	.searchField input,
 	.signinDialog input {
-		background-color: var(--color-main)!important;
-		background-image: var(--url-background-secondary)!important;
-		color: var(--color-text)!important;
+		background-color: var(--color-main) !important;
+		background-image: var(--url-background-secondary) !important;
+		color: var(--color-text) !important;
 	}
+
 	.mellandagsrea .vendorGuides .guideBlock .icon {
-		-webkit-filter: invert(.8)!important;
-		-o-filter: invert(.8)!important;
-		filter: invert(.8)!important;
+		-webkit-filter: invert(.8) !important;
+		-o-filter: invert(.8) !important;
+		filter: invert(.8) !important;
 	}
+
 	.mellandagsrea .vendorGuides .guideBlock span {
-		color: var(--color-text)!important;
+		color: var(--color-text) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .userCell .colUser {
-		background: var(--color-main)!important;
-		border-bottom: 2px solid var(--color-main)!important;
-		border-right: 1px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border-bottom: 2px solid var(--color-main) !important;
+		border-right: 1px solid var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsRow:hover .userCell .colUser {
-		background: var(--color-main)!important;
+		background: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .userCell .colScore .label {
-		background: var(--color-sweclockers)!important;
-		color: var(--color-palette-0)!important;
+		background: var(--color-sweclockers) !important;
+		color: var(--color-palette-0) !important;
 	}
+
 	.mellandagsrea .vendorProducts {
-		background: var(--color-main)!important;
-		border-left: 1px solid var(--color-main)!important;
-		border-top: 1px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border-left: 1px solid var(--color-main) !important;
+		border-top: 1px solid var(--color-main) !important;
 	}
+
 	.mellandagsrea .productFooter {
-		background: var(--color-main)!important;
+		background: var(--color-main) !important;
 	}
+
 	.mellandagsrea .tips .tipsData .colScore:hover {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	.mellandagsrea #guideWrapper {
-		background-color: var(--color-main)!important;
-		color: var(--color-text)!important;
-		border: var(--color-border)!important;
+		background-color: var(--color-main) !important;
+		color: var(--color-text) !important;
+		border: var(--color-border) !important;
 	}
+
 	.bbExpander>.expanderFrame>.expanderFade,
 	.bbQuote.isExpandable>.quoteFrame>.quoteFade {
-		background: var(--color-quote-0)!important;
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--color-quote-0)), color-stop(25%, var(--color-quote-50)), color-stop(100%, var(--color-quote-100)))!important;
-		background: -webkit-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
-		background: -o-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
-		background: -moz-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
-		background: -ms-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
-		background: linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%)!important;
+		background: var(--color-quote-0) !important;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--color-quote-0)), color-stop(25%, var(--color-quote-50)), color-stop(100%, var(--color-quote-100))) !important;
+		background: -webkit-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
+		background: -o-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
+		background: -moz-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
+		background: -ms-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
+		background: linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
 	}
+
 	.forumList .categoryItem .cell,
 	.forumList .categoryItem.isCollapsed .cell {
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.button:hover,
 	.galleryFileEditor button:hover,
 	.tanukiButton:hover,
 	.taunkiButton:hover {
-		background-color: var(--color-palette-850)!important;
-		background-image: var(--color-palette-850)!important;
-		background-image: -webkit-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-		background-image: -webkit-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-		background-image: -o-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-		background-image: -moz-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-		background-image: -ms-linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
-		background-image: linear-gradient(var(--color-palette-850), var(--color-palette-850))!important;
+		background-color: var(--color-palette-850) !important;
+		background-image: var(--color-palette-850) !important;
+		background-image: -webkit-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+		background-image: -webkit-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+		background-image: -o-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+		background-image: -moz-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+		background-image: -ms-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
+		background-image: linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
 	}
+
 	.mellandagsrea .tips .tipsRow:hover .productCell,
 	.mellandagsrea .tips .tipsRow:hover .pjCell {
-		background: var(--color-main)!important;
+		background: var(--color-main) !important;
 	}
+
 	.header,
 	.header .shadow,
 	.menuItem,
@@ -629,53 +777,61 @@
 	.searchField input,
 	.signinDialog input,
 	body {
-		background-color: var(--color-palette-2000)!important;
-		color: var(--color-text)!important;
-		background-image: var(--url-background-primary)!important;
+		background-color: var(--color-palette-2000) !important;
+		color: var(--color-text) !important;
+		background-image: var(--url-background-primary) !important;
 	}
+
 	.menuItem.isSelected {
-		background-color: var(--color-main)!important;
-		color: var(--color-main)!important;
-		background-image: var(--url-background-selected)!important;
+		background-color: var(--color-main) !important;
+		color: var(--color-main) !important;
+		background-image: var(--url-background-selected) !important;
 	}
+
 	.menuItem:hover {
-		background-color: var(--color-main)!important;
-		color: var(--color-main)!important;
-		background-image: var(--url-background-hover)!important;
+		background-color: var(--color-main) !important;
+		color: var(--color-main) !important;
+		background-image: var(--url-background-hover) !important;
 	}
+
 	.bbTable thead .bbParagraph,
 	.forumTable th .numReplies,
 	.pages a:hover>.label,
 	.postBox .head .title,
 	.tanukiCombobox .tcbSelectedItem {
-		color: var(--color-palette-200)!important;
+		color: var(--color-palette-200) !important;
 	}
+
 	.articleBBCode .bbTable thead th {
-		background: var(--color-palette-900)!important;
-		background: -webkit-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background: linear-gradient(var(--color-palette-900), var(--color-palette-900))!important;
-		background-color: var(--color-transparent)!important;
-		color: var(--color-palette-0)!important;
+		background: var(--color-palette-900) !important;
+		background: -webkit-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background: linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
+		background-color: var(--color-transparent) !important;
+		color: var(--color-palette-0) !important;
 	}
+
 	.bbAward .reason {
-		color: var(--color-palette-600)!important;
-		background: var(--color-palette-900)!important;
+		color: var(--color-palette-600) !important;
+		background: var(--color-palette-900) !important;
 	}
+
 	.errorBox {
-		background-color: var(--color-sweclockers)!important;
-		border: 1px solid var(--color-sweclockers)!important;
-		border-top-color: var(--color-sweclockers)!important;
-		border-right-color: var(--color-sweclockers)!important;
-		border-bottom-color: var(--color-sweclockers)!important;
-		border-left-color: var(--color-sweclockers)!important;
+		background-color: var(--color-sweclockers) !important;
+		border: 1px solid var(--color-sweclockers) !important;
+		border-top-color: var(--color-sweclockers) !important;
+		border-right-color: var(--color-sweclockers) !important;
+		border-bottom-color: var(--color-sweclockers) !important;
+		border-left-color: var(--color-sweclockers) !important;
 	}
+
 	.forumForm>.head {
-		border-bottom: 4px solid var(--color-sweclockers)!important;
+		border-bottom: 4px solid var(--color-sweclockers) !important;
 	}
+
 	.commentsBubble,
 	.commentsBubble:hover,
 	.errorBox a,
@@ -684,8 +840,9 @@
 	.mainWidget h5 a,
 	.mwReadmore a,
 	.pushListInternal .head h5 a {
-		color: var(--color-palette-0)!important;
+		color: var(--color-palette-0) !important;
 	}
+
 	.articleCommentsWidget .boxAction .actionLabel,
 	.forumPost .postHeader .headerLink,
 	.forumTable .title h3 a,
@@ -694,8 +851,9 @@
 	.pushListInternal .link .label,
 	.slide a,
 	.socialWidget a {
-		color: var(--color-palette-200)!important;
+		color: var(--color-palette-200) !important;
 	}
+
 	optgroup[label="Better SweClockers"],
 	#Better_SweClockers fieldset,
 	#betterSwecFilterSettingsList,
@@ -746,8 +904,9 @@
 	input,
 	select,
 	textarea {
-		background-color: var(--color-main)!important;
+		background-color: var(--color-main) !important;
 	}
+
 	#Better_SweClockers input:not(.button),
 	#Better_SweClockers textarea,
 	.articleNavi .isCurrent a,
@@ -815,61 +974,69 @@
 	.tanukiTextbox input,
 	label,
 	select {
-		color: var(--color-text)!important;
+		color: var(--color-text) !important;
 	}
+
 	.threadList .body .cell.numReplies,
 	.commentsWidget .mwReadmore {
-		text-decoration: none!important;
+		text-decoration: none !important;
 	}
+
 	.forumWidget {
-		background-color: var(--color-sweclockers)!important;
-		background: var(--color-sweclockers)!important;
-		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+		background-color: var(--color-sweclockers) !important;
+		background: var(--color-sweclockers) !important;
+		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
 	}
+
 	.mainRecentNews {
-		background-color: var(--color-main)!important;
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
+		background-color: var(--color-main) !important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
 	}
+
 	.orangeInfoBox {
-		background-color: var(--color-sweclockers)!important;
-		background: var(--color-sweclockers)!important;
-		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+		background-color: var(--color-sweclockers) !important;
+		background: var(--color-sweclockers) !important;
+		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
 	}
+
 	.prisjaktPopular {
-		color: var(--color-palette-0)!important;
-		background-color: var(--color-prisjakt)!important;
-		background: var(--color-prisjakt)!important;
-		background: -webkit-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
-		background: -webkit-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
-		background: -o-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
-		background: -moz-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
-		background: -ms-linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
-		background: linear-gradient(var(--color-prisjakt), var(--color-prisjakt))!important;
+		color: var(--color-palette-0) !important;
+		background-color: var(--color-prisjakt) !important;
+		background: var(--color-prisjakt) !important;
+		background: -webkit-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
+		background: -webkit-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
+		background: -o-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
+		background: -moz-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
+		background: -ms-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
+		background: linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
 	}
+
 	.prisjaktPopular a,
 	.plmi-label {
-		color: var(--color-sweclockers-lighter)!important;
+		color: var(--color-sweclockers-lighter) !important;
 	}
+
 	.prisjaktPopular .ppProduct,
 	.pushListMonster .plm-item {
-		border-bottom: 0px!important;
+		border-bottom: 0px !important;
 	}
+
 	#proofArticle,
 	* a,
 	.feedMore,
@@ -879,8 +1046,9 @@
 	.header .profile .hasUnread a,
 	.mwLabel.mwComments,
 	.plLabel.plComments {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	#proofArticle:hover,
 	* a:hover,
 	.feedMore:hover,
@@ -889,186 +1057,223 @@
 	.galleryBody .commentLink::before:hover,
 	.mwLabel.mwComments:hover,
 	.plLabel.plComments:hover {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	#threadList-1 tr.hasUnreadPosts td.status {
-		box-shadow: inset 5px 0 0 0 var(--color-sweclockers)!important;
+		box-shadow: inset 5px 0 0 0 var(--color-sweclockers) !important;
 	}
+
 	.profileFeed .date {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	.pushListInternal {
-		color: var(--color-palette-0)!important;
-		background-color: var(--color-main)!important;
-		background: var(--color-main)!important;
-		background: -webkit-gradient(var(--color-main), var(--color-main))!important;
-		background: -webkit-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -o-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -moz-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: -ms-linear-gradient(var(--color-main), var(--color-main))!important;
-		background: linear-gradient(var(--color-main), var(--color-main))!important;
-		box-shadow: inset 0px 0px 0px 1px var(--color-border)!important;
-		-webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border)!important;
-		-moz-box-shadow: inset 0px 0px 0px 1px var(--color-border)!important;
+		color: var(--color-palette-0) !important;
+		background-color: var(--color-main) !important;
+		background: var(--color-main) !important;
+		background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
+		background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
+		background: linear-gradient(var(--color-main), var(--color-main)) !important;
+		box-shadow: inset 0px 0px 0px 1px var(--color-border) !important;
+		-webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border) !important;
+		-moz-box-shadow: inset 0px 0px 0px 1px var(--color-border) !important;
 	}
+
 	.pushListInternal .head a {
-		color: var(--color-palette-500)!important;
+		color: var(--color-palette-500) !important;
 	}
+
 	.pushListMonster {
-		background-color: var(--color-monster)!important;
-		background: var(--color-monster)!important;
-		background: -webkit-gradient(var(--color-monster), var(--color-monster))!important;
-		background: -webkit-linear-gradient(var(--color-monster), var(--color-monster))!important;
-		background: -o-linear-gradient(var(--color-monster), var(--color-monster))!important;
-		background: -moz-linear-gradient(var(--color-monster), var(--color-monster))!important;
-		background: -ms-linear-gradient(var(--color-monster), var(--color-monster))!important;
-		background: linear-gradient(var(--color-monster), var(--color-monster))!important;
+		background-color: var(--color-monster) !important;
+		background: var(--color-monster) !important;
+		background: -webkit-gradient(var(--color-monster), var(--color-monster)) !important;
+		background: -webkit-linear-gradient(var(--color-monster), var(--color-monster)) !important;
+		background: -o-linear-gradient(var(--color-monster), var(--color-monster)) !important;
+		background: -moz-linear-gradient(var(--color-monster), var(--color-monster)) !important;
+		background: -ms-linear-gradient(var(--color-monster), var(--color-monster)) !important;
+		background: linear-gradient(var(--color-monster), var(--color-monster)) !important;
 	}
+
 	.threadStatus {
-		background-image: var(--url-threadStatus)!important;
-		background-repeat: no-repeat!important;
-		background-size: 850px auto!important;
-		background-position: 0 0!important;
-		margin: 0 auto!important;
-		width: 19px!important;
-		height: 19px!important;
+		background-image: var(--url-threadStatus) !important;
+		background-repeat: no-repeat !important;
+		background-size: 850px auto !important;
+		background-position: 0 0 !important;
+		margin: 0 auto !important;
+		width: 19px !important;
+		height: 19px !important;
 	}
+
 	.kwd {
-		color: var(--color-blue-darker)!important;
+		color: var(--color-blue-darker) !important;
 	}
+
 	.lit {
-		color: var(--color-palette-200)!important;
+		color: var(--color-palette-200) !important;
 	}
+
 	.pun {
-		color: var(--color-palette-200)!important;
+		color: var(--color-palette-200) !important;
 	}
+
 	.wndFrameDecorator {
-		background-color: var(--color-palette-1000)!important;
+		background-color: var(--color-palette-1000) !important;
 	}
+
 	.tanukiCombobox.hasErrors .tcbTriggerFrame {
-		border-color: var(--color-sweclockers)!important;
-		outline: var(--color-sweclockers) auto 5px!important;
+		border-color: var(--color-sweclockers) !important;
+		outline: var(--color-sweclockers) auto 5px !important;
 	}
+
 	.tanukiFile.hasErrors input {
-		border-color: var(--color-sweclockers)!important;
-		outline: var(--color-sweclockers) auto 5px!important;
+		border-color: var(--color-sweclockers) !important;
+		outline: var(--color-sweclockers) auto 5px !important;
 	}
+
 	.tanukiSelect.hasErrors select {
-		border-color: var(--color-sweclockers)!important;
-		outline: var(--color-sweclockers) auto 5px!important;
+		border-color: var(--color-sweclockers) !important;
+		outline: var(--color-sweclockers) auto 5px !important;
 	}
+
 	.tanukiTextarea.hasErrors textarea {
-		border-color: var(--color-sweclockers)!important;
-		outline: var(--color-sweclockers) auto 5px!important;
+		border-color: var(--color-sweclockers) !important;
+		outline: var(--color-sweclockers) auto 5px !important;
 	}
+
 	.tanukiTextbox.hasErrors input {
-		border-color: var(--color-sweclockers)!important;
-		outline: var(--color-sweclockers) auto 5px!important;
+		border-color: var(--color-sweclockers) !important;
+		outline: var(--color-sweclockers) auto 5px !important;
 	}
+
 	.tanukiError .error {
-		background-color: var(--color-sweclockers)!important;
-		border: 1px solid var(--color-sweclockers)!important;
-		color: var(--color-palette-0)!important;
+		background-color: var(--color-sweclockers) !important;
+		border: 1px solid var(--color-sweclockers) !important;
+		color: var(--color-palette-0) !important;
 	}
+
 	.tanukiCombobox .tcbPanel {
-		background: var(--color-palette-900)!important;
-		border: 1px solid var(--color-palette-400)!important;
-		box-shadow: 2px 2px 4px var(--color-transparent-light)!important;
+		background: var(--color-palette-900) !important;
+		border: 1px solid var(--color-palette-400) !important;
+		box-shadow: 2px 2px 4px var(--color-transparent-light) !important;
 	}
+
 	.carousel .nav.left .handle {
-		border-right: 10px solid var(--color-sweclockers)!important;
+		border-right: 10px solid var(--color-sweclockers) !important;
 	}
+
 	.carousel .nav.right .handle {
-		border-left: 10px solid var(--color-sweclockers)!important;
+		border-left: 10px solid var(--color-sweclockers) !important;
 	}
+
 	.gp-subject-group {
-		background: var(--color-main)!important;
-		border: 1px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border: 1px solid var(--color-main) !important;
 	}
+
 	.gp-subject-group .gpsg-header {
-		border-bottom: 1px solid var(--color-main)!important;
+		border-bottom: 1px solid var(--color-main) !important;
 	}
+
 	.gp-subject-group .gpsg-more a {
-		background: var(--color-main)!important;
-		border: 1px solid var(--color-main)!important;
-		color: var(--color-palette-900)!important;
+		background: var(--color-main) !important;
+		border: 1px solid var(--color-main) !important;
+		color: var(--color-palette-900) !important;
 	}
+
 	.gp-subject-group .gpsg-more a:hover {
-		background: var(--color-main)!important;
+		background: var(--color-main) !important;
 	}
+
 	.gp-subject-group .bbcode a {
-		color: inherit!important;
+		color: inherit !important;
 	}
+
 	.bbPoll .optionBar>div {
-		background: var(--color-sweclockers)!important;
-		border: 0px!important;
+		background: var(--color-sweclockers) !important;
+		border: 0px !important;
 	}
+
 	.bbPoll>.inner {
-		border: 1px solid var(--color-border)!important;
-		border-top-color: var(--color-border)!important;
-		border-right-color: var(--color-border)!important;
-		border-bottom-color: var(--color-border)!important;
-		border-left-color: var(--color-border)!important;
+		border: 1px solid var(--color-border) !important;
+		border-top-color: var(--color-border) !important;
+		border-right-color: var(--color-border) !important;
+		border-bottom-color: var(--color-border) !important;
+		border-left-color: var(--color-border) !important;
 	}
+
 	.mainContent .greyContentShare #fbLikeButton {
-		background: var(--color-main)!important;
-		border: 1px solid var(--color-main)!important;
+		background: var(--color-main) !important;
+		border: 1px solid var(--color-main) !important;
 	}
+
 	.fbShareButton {
-		border: 1px solid var(--color-facebook)!important;
-		background-color: var(--color-facebook)!important;
-		background-image: var(--color-facebook)!important;
-		background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: linear-gradient(var(--color-facebook), var(--color-facebook))!important;
+		border: 1px solid var(--color-facebook) !important;
+		background-color: var(--color-facebook) !important;
+		background-image: var(--color-facebook) !important;
+		background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
 	}
+
 	.fbShareButton:hover {
-		border: 1px solid var(--color-facebook-lighter)!important;
-		background-color: var(--color-facebook-lighter)!important;
-		background-image: var(--color-facebook)!important;
-		background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook))!important;
-		background-image: linear-gradient(var(--color-facebook), var(--color-facebook))!important;
+		border: 1px solid var(--color-facebook-lighter) !important;
+		background-color: var(--color-facebook-lighter) !important;
+		background-image: var(--color-facebook) !important;
+		background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
+		background-image: linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
 	}
+
 	.whiteHeader h1 .titleSection {
-		color: var(--color-sweclockers)!important;
+		color: var(--color-sweclockers) !important;
 	}
+
 	.whiteHeader h1 {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	h5,
 	h6 {
-		color: var(--color-text-header)!important;
+		color: var(--color-text-header) !important;
 	}
+
 	.sponsoredArticle {
-		color: var(--color-palette-300)!important;
-		background-color: var(--color-sweclockers)!important;
-		background: var(--color-sweclockers)!important;
-		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
-		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers))!important;
+		color: var(--color-palette-300) !important;
+		background-color: var(--color-sweclockers) !important;
+		background: var(--color-sweclockers) !important;
+		background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
+		background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
 	}
+
 	.geeksShop {
-		background-color: var(--color-main)!important;
-		color: var(--color-text)!important;
+		background-color: var(--color-main) !important;
+		color: var(--color-text) !important;
 	}
+
 	.geeksShop .geeksShopProducts .productOther {
-		color: var(--color-text)!important;
+		color: var(--color-text) !important;
 	}
+
 	.geeksShop .geeksShopProducts .productOther .buyButton {
-		background-color: var(--color-sweclockers)!important;
-		color: var(--color-text)!important;
+		background-color: var(--color-sweclockers) !important;
+		color: var(--color-text) !important;
 	}
+
 	.geeksShop .geeksShopProducts .productOther .buyButton:hover {
-		background-color: var(--color-palette-1100)!important;
+		background-color: var(--color-palette-1100) !important;
 	}
 }
