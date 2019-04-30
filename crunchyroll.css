@@ -3,10 +3,32 @@
 * Original by: MatthewCoccon
 * Redesigned by: Soitora
 * Created: 2018-02-21
-* Updated: 2018-02-22
-* Version: 1.0
+* Updated: 2019-04-30
+* Version: 1.0.1
 * Licence: GNU General Public License v3 (GPL-3).
 */
+	
+/* Fix as per Issue #4 */
+	
+#source_home .landscape-grid li .queue-wrapper {
+ background:#303030;
+}
+
+#source_home .queue-to-top {
+ background: url(https://i.imgur.com/kBuiJBq.png) -3px 0 no-repeat;
+}
+
+#source_home .dropdown-collection {
+    background: url(https://i.imgur.com/PofM8pS.png) 0 0 no-repeat;
+}
+
+#source_home .more-options {
+    background: #111;
+}
+
+.collection-carousel-arrow {
+    background: url(https://i.imgur.com/L9EFgy0.png) no-repeat -40px 42px;
+}
 
 /* Main */
 .container-shadow {
