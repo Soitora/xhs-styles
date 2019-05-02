@@ -3,42 +3,96 @@
 * Original by: MatthewCoccon
 * Redesigned by: Soitora
 * Created: 2018-02-21
-* Updated: 2019-05-01
-* Version: 1.1.0
+* Updated: 2019-05-02
+* Version: 1.1.1
 * Licence: MIT.
 */
+
+/*
+/* Changes for v.1.1.1
+*/
+
+.resume-play {
+    background: #c76200;
+}
+.add-queue-button.not-queued {
+    background: #004868;
+}
+.availability-notes-low a.text-link {
+    color: #F1F1F1;
+}
+.rating-histogram .rating-proportion {
+    background: #c76200;
+}
+.header-menubar li a:hover, .header-menubar li.state-selected a {
+    color: #c76200;
+}
+.header-menubar .freetrial-note, .add-queue-button.not-queued {
+    color: #c76200!important;
+}
+.cart-badge, .user-notification-badge {
+    background: #c76200;
+    color: #F1F1F1;
+}
+#template_body .special-button, #template_body a.special-button, #template_body input.special-button, #template_body span.special-button, .special-button, a.special-button, input.special-button, span.special-button {
+    text-shadow: 0 1px 4px #c76200!important;
+    border: 0px!important;
+    background: #c76200!important;
+}
+.old-template-body a.block-link, a.block-link, .new-template-body a.block-link {
+    color: #0A6DA4!important;
+}
+select {
+    background: #191919;
+    color: #BBB;
+    border: solid 1px #555;
+}
+a.bbtool img {
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+.button.medium-button, a.button.medium-button, input.button.medium-button, span.button.medium-button {
+    background: #c76200!important;
+    color: #F1F1F1!important;
+}
+.payment-method-label {
+    background-color: #1E1E1E;
+    color: #F1F1F1;
+    border: 0px!important;
+}
+.error-details {
+    background-color: #1E1E1E;
+    color: #F1F1F1;
+}
 
 /*
 /* Changes for v1.1.0
 */
 
 .availability-notes-high {
-	background: #a85118;
+	background: #c76200;
 }
 .availability-notes-low {
 	background: #004868;
-}
-.availability-notes-low a.text-link {
-	color: #fff;
 }
 .rating-histogram .rating-bar {
 	background: #212121;
 }
 ul.topbar-nav-sub li.highlight a {
-	background-color: #A85118!important;
+	background-color: #c76200!important;
 	color: #fff
 }
 #template_action_button a,
 .action-button {
 	border-width: 0px;
-	background-color: #A85118;
+	background-color: #c76200;
 	color: #fff;
 }
 #template_action_button a:hover,
 .action-button:hover {
 	opacity: 0.8;
 	border-width: 0px;
-	background-color: #A85118;
+	background-color: #c76200;
 	color: #fff;
 }
 .search-submit-button {
@@ -88,7 +142,7 @@ a.forum_main-topic-desc-numcomments {
 .premium-value-props {
 	background: #1E1E1E;
 	color: #ccc;
-	fill: #F78C25;
+	fill: #c76200;
 }
 main>footer {
 	background: #1E1E1E;
@@ -98,7 +152,7 @@ main>footer {
 	color: #606060;
 }
 select#sort-selector {
-	background: #333;
+	background: #191919;
 	color: #BBB;
 	border: solid 1px #555;
 }
@@ -119,7 +173,7 @@ select#sort-selector {
 	height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-	background: #A85118;
+	background: #c76200;
 	border: 0px none #ffffff;
 	border-radius: 13px;
 }
@@ -146,8 +200,11 @@ select#sort-selector {
 
 /* 
 /* CSS changes as per GitHub Issue #4 by TBlazeWarriorT
-/* For v1.0.1 and v1.1.0
 */
+
+#source_home #main_content .landscape-element {
+    background: #303030;
+}
 
 #source_home .landscape-grid li .queue-wrapper {
 	background: #303030;
@@ -193,6 +250,17 @@ html.no-js body.main-page.responsive.enUS div#template_scroller.ad-skin div#temp
 	color: #BBB;
 	border: solid 1px #555;
 }
+
+/*
+/* CSS for MAL-Sync
+*/
+
+#source_showview .season-dropdown.open, #source_showview .season-dropdown {
+    color: #8A8A8A;
+    background-color: #1E1E1E!important;
+    border: 0px!important;
+}
+
 /*
 /* Main
 */
