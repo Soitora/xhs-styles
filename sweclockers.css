@@ -1,9 +1,9 @@
-/*! SweClockers Dark - XHS v2.0.0 (2019-05-18)
+/*! SweClockers Dark - XHS v2.0.1 (2019-05-18)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
 
-/****** VARIABLES ******/
+/* Variables */
 
 :root {
 	--xhs-primary: #1A1A1D;
@@ -12,399 +12,1367 @@
 	--xhs-highlight: #232326;
 	--xhs-title: #C8C8C8;
 	--xhs-body: #AAAAAA;
-	--xhs-blue: #3779A1;
 	--xhs-orange: #F47447;
+	--xhs-blue: #3779A1;
 	--xhs-green: #648E76;
 	--xhs-purple: #8E78A2;
 	--xhs-brown: #7A6A5A;
 	--xhs-red: #EF4A4B;
 }
-/****** SORTED LINES ******/
 
-/*** PRIMARY ***/
+/*! Main Code !*/
 
-body, .ninjaSearch .searchField .input, .ninjaSearch .searchField .fieldWrap, .button.bg-orange, .geeksShop .geeksShopProducts .productOther .buyButton, .forumTable .head .cell, .forumList .categoryItem .cell, .forumList .subforums .link, .forumTable .caption, .forumPost.isAuthor .postHeader .cell, .forumPost .postHeader .cell, .forumPost .controls .button, .postBox .head, .postBox .postElement, .bbQuote, .forumForm.postEditForm .tanukiButton, .forumForm.postPollListForm .button, .forumForm.postDeleteForm .tanukiButton, .gp-subject-group .gphi-descr, .gp-subject-group .gpsg-more a, .forumResultPost .postHeader .threadTitle, .forumResultPost .controls .button, .bbPre.showFrame, .bbSpoiler .spoilerHeader button, .bbSpoiler .spoilerFrame, .postBody .bbPoll>.inner, .forumSearchForm #__laika_cnt\.select\.1, .forumSearchForm #__laika_cnt\.select\.2, .forumSearchForm .tanukiButton, .articleBBCode .bbPoll>.inner, .articleBBCode .bbTable thead th, .articleBBCode .bbTable th, .articleBBCode .bbTable td, .bbRelatedBox, .articleKeywords a, .articleKeywords a, #__laika_cnt\.textbox\.0, #__laika_cnt\.textbox\.1, #__laika_cnt\.textbox\.2, #__laika_cnt\.textbox\.3, #__laika_cnt\.textbox\.4, #__laika_cnt\.textarea\.0, #contactForm button, .galleryForm .tanukiButton, .infoTextWindow, .infoBox, #subscribeForm>fieldset>button, #__laika_cnt\.select\.0, .articlesMostTagged .tagSummary a, .header {
+body,
+.ninjaSearch .searchField .input,
+.ninjaSearch .searchField .fieldWrap,
+.button.bg-orange,
+.geeksShop .geeksShopProducts .productOther .buyButton,
+.forumTable .head .cell,
+.forumList .categoryItem .cell,
+.forumList .subforums .link,
+.forumTable .caption,
+.forumPost.isAuthor .postHeader .cell,
+.forumPost .postHeader .cell,
+.forumPost .controls .button,
+.postBox .head,
+.postBox .postElement,
+.bbQuote,
+.forumForm.postEditForm .tanukiButton,
+.forumForm.postPollListForm .button,
+.forumForm.postDeleteForm .tanukiButton,
+.gp-subject-group .gphi-descr,
+.gp-subject-group .gpsg-more a,
+.forumResultPost .postHeader .threadTitle,
+.forumResultPost .controls .button,
+.bbPre.showFrame,
+.bbSpoiler .spoilerHeader button,
+.bbSpoiler .spoilerFrame,
+.postBody .bbPoll>.inner,
+.forumSearchForm #__laika_cnt\.select\.1,
+.forumSearchForm #__laika_cnt\.select\.2,
+.forumSearchForm .tanukiButton,
+.articleBBCode .bbPoll>.inner,
+.articleBBCode .bbTable thead th,
+.articleBBCode .bbTable th,
+.articleBBCode .bbTable td,
+.bbRelatedBox,
+.articleKeywords a,
+.articleKeywords a,
+#__laika_cnt\.textbox\.0,
+#__laika_cnt\.textbox\.1,
+#__laika_cnt\.textbox\.2,
+#__laika_cnt\.textbox\.3,
+#__laika_cnt\.textbox\.4,
+#__laika_cnt\.textarea\.0,
+#contactForm button,
+.galleryForm .tanukiButton,
+.infoTextWindow,
+.infoBox,
+#subscribeForm>fieldset>button,
+#__laika_cnt\.select\.0,
+.articlesMostTagged .tagSummary a,
+.header,
+.forumForm>.head,
+.tanukiCombobox .tcbPanelTrigger,
+.tanukiCombobox .tcbpLoading,
+.tanukiCombobox .tcbPanelItem {
 	background: var(--xhs-primary) !important;
 }
-body, .subMenu .menu li.isSelected:hover, .subMenu .menu li, .ninjaSearch .searchField .fieldWrap, #search .searchField>a[title*=Google], .sponsoredArticle, .newsList .commentsBubble, .button.bg-orange, .geeksShop .geeksShopProducts .productOther .buyButton, .forumList .categoryItem .cell, .pages a.isCurrent, .pages a.isCurrent:hover, .pages a:hover, .forumPost.isReader .button.like.isDisabled:hover, .forumPost.isLiked.isReader .button.like.isDisabled:hover, .threadMap .naviView .shortcut, .forumForm.postDeleteForm .tanukiButton, .forumForm.postPollListForm .button, .forumForm.postEditForm .tanukiButton, .gp-subject-group .gphi-descr, .forumResultPost .controls .button, .bbSpoiler .spoilerHeader button, .bbSpoiler .spoilerFrame .bbPoll>.inner button, .postBody .bbPoll>.inner, .forumSearchForm .tanukiButton, .mainContent #detailsForm .tanukiButton, .mainContent #notificationForm .tanukiButton, .mainContent #optionsForm .tanukiButton, .mainContent #passwordForm .tanukiButton, .mainContent #signatureForm .tanukiButton, .mainContent #relationForm .tanukiButton, .mainContent .imageForm .tanukiButton, .mainContent #contactForm .tanukiTextbox input, .articleBBCode .bbTable thead th, .articleBBCode .bbTable th, .articleBBCode .bbTable td, .articleBBCode .bbPoll>.inner, .articleKeywords a, #contactForm button, .galleryBody .button, .galleryForm.galleryEditForm .tanukiButton, .whiteBody .sorter .column.isDesc.isCurrent:hover, .whiteBody .sorter .column.isDesc:hover, .marketEditForm #__laika_cnt\.select\.1, .marketEditForm #__laika_cnt\.select\.2, .marketEditForm .tanukiButton, .toolbar .tbButton.iconButton .inner, .uploadPanel .tanukiButton, .mainContent .s5fieldset a.button, .galleryFileEditor .uploadEntry .entryState>.progressLabel, .marketAcceptRules .tanukiButton, .marketForm #activateForm .tanukiButton, .marketForm #hideForm .tanukiButton, #subscribeForm>fieldset>button, .mainContent .btnGroup.right>a.button {
+
+body,
+.subMenu .menu li.isSelected:hover,
+.subMenu .menu li,
+.ninjaSearch .searchField .fieldWrap,
+#search .searchField>a[title*=Google],
+.sponsoredArticle,
+.newsList .commentsBubble,
+.button.bg-orange,
+.geeksShop .geeksShopProducts .productOther .buyButton,
+.forumList .categoryItem .cell,
+.pages a.isCurrent,
+.pages a.isCurrent:hover,
+.pages a:hover,
+.forumPost.isReader .button.like.isDisabled:hover,
+.forumPost.isLiked.isReader .button.like.isDisabled:hover,
+.threadMap .naviView .shortcut,
+.forumForm.postDeleteForm .tanukiButton,
+.forumForm.postPollListForm .button,
+.forumForm.postEditForm .tanukiButton,
+.gp-subject-group .gphi-descr,
+.forumResultPost .controls .button,
+.bbSpoiler .spoilerHeader button,
+.bbSpoiler .spoilerFrame .bbPoll>.inner button,
+.postBody .bbPoll>.inner,
+.forumSearchForm .tanukiButton,
+.mainContent #detailsForm .tanukiButton,
+.mainContent #notificationForm .tanukiButton,
+.mainContent #optionsForm .tanukiButton,
+.mainContent #passwordForm .tanukiButton,
+.mainContent #signatureForm .tanukiButton,
+.mainContent #relationForm .tanukiButton,
+.mainContent .imageForm .tanukiButton,
+.mainContent #contactForm .tanukiTextbox input,
+.articleBBCode .bbTable thead th,
+.articleBBCode .bbTable th,
+.articleBBCode .bbTable td,
+.articleBBCode .bbPoll>.inner,
+.articleKeywords a,
+#contactForm button,
+.galleryBody .button,
+.galleryForm.galleryEditForm .tanukiButton,
+.whiteBody .sorter .column.isDesc.isCurrent:hover,
+.whiteBody .sorter .column.isDesc:hover,
+.marketEditForm #__laika_cnt\.select\.1,
+.marketEditForm #__laika_cnt\.select\.2,
+.marketEditForm .tanukiButton,
+.toolbar .tbButton.iconButton .inner,
+.uploadPanel .tanukiButton,
+.mainContent .s5fieldset a.button,
+.galleryFileEditor .uploadEntry .entryState>.progressLabel,
+.marketAcceptRules .tanukiButton,
+.marketForm #activateForm .tanukiButton,
+.marketForm #hideForm .tanukiButton,
+#subscribeForm>fieldset>button,
+.mainContent .btnGroup.right>a.button,
+#siteHeader .signin .actions .button,
+.mainContent #signinForm input,
+.mainContent #signinForm .tanukiButton,
+.mainContent .registerForm .tanukiButton,
+.pmNewThreadForm .tcbInput,
+.pmNewThreadForm .tcbEditField,
+.pmNewThreadForm #createForm .s5fieldset .tanukiButton {
 	background-color: var(--xhs-primary) !important;
 }
-/*** SECONDARY ***/
 
-.mainContent, .forumTable .cell, .forumTable .cell.alt1, .forumControls .button.newThread, .forumSearch #__laika_cnt\.textbox\.0, .forumPost .cell.alt2, .forumPost .cell.main, .forumPost .cell.controls, .postBox, .forumControls .button.replyToThread, .postActions #__laika_cnt\.select\.0, .quickReply #__laika_cnt\.textarea\.0, .forumForm>.body, .tbButton.iconButton.noselect.header, .gp-subject-group, .forumResultPost, .forumResultPost .postHeader .dateline, .bbSpoiler .spoilerFrame .bbPoll>.inner, .tanukiTextbox input, .tanukiSelect select, .tanukiButton, .articleCommentsWidget, .sideBox #__laika_cnt\.textbox\.0, .sideBox #__laika_cnt\.select\.0 {
+.mainContent,
+.forumTable .cell,
+.forumTable .cell.alt1,
+.forumControls .button.newThread,
+.forumSearch #__laika_cnt\.textbox\.0,
+.forumPost .cell.alt2,
+.forumPost .cell.main,
+.forumPost .cell.controls,
+.postBox,
+.forumControls .button.replyToThread,
+.postActions #__laika_cnt\.select\.0,
+.quickReply #__laika_cnt\.textarea\.0,
+.forumForm>.body,
+.tbButton.iconButton.noselect.header,
+.gp-subject-group,
+.forumResultPost,
+.forumResultPost .postHeader .dateline,
+.bbSpoiler .spoilerFrame .bbPoll>.inner,
+.tanukiTextbox input,
+.tanukiSelect select,
+.tanukiButton,
+.articleCommentsWidget,
+.sideBox #__laika_cnt\.textbox\.0,
+.sideBox #__laika_cnt\.select\.0 {
 	background: var(--xhs-secondary) !important;
 }
-.mainContent, .header>.main, .mainMenu .menu li.isSelected:hover, .mainMenu .menu li, .mainRecentNews, .pushListInternal, .geeksShop, .prisjaktPopular, .mainRecentThreads, .forumControls .button.newThread, .forumControls .button.replyToThread, .bbSpoiler .spoilerFrame .bbPoll>.inner, .tanukiButton, .mainContent .pages a.isCurrent, .mainContent .pages a.isCurrent:hover, .mainContent .pages a:hover, .articleHeader .sponsoredArticle, .articleCommentsWidget, .infoText a.button, .marketFilterBox #__laika_cnt\.textbox\.0, .marketFilterBox #__laika_cnt\.select\.0, .whiteBody .forumControls .button, .whiteBody .forumWidget, .contentBox, .footer .top, .footer .bottom {
+
+.mainContent,
+.header>.main,
+.mainMenu .menu li.isSelected:hover,
+.mainMenu .menu li,
+.mainRecentNews,
+.pushListInternal,
+.geeksShop,
+.prisjaktPopular,
+.mainRecentThreads,
+.forumControls .button.newThread,
+.forumControls .button.replyToThread,
+.bbSpoiler .spoilerFrame .bbPoll>.inner,
+.tanukiButton,
+.mainContent .pages a.isCurrent,
+.mainContent .pages a.isCurrent:hover,
+.mainContent .pages a:hover,
+.articleHeader .sponsoredArticle,
+.articleCommentsWidget,
+.infoText a.button,
+.marketFilterBox #__laika_cnt\.textbox\.0,
+.marketFilterBox #__laika_cnt\.select\.0,
+.whiteBody .forumControls .button,
+.whiteBody .forumWidget,
+.contentBox,
+.footer .top,
+.footer .bottom,
+.threadActions .tanukiControl.tanukiSelect #__laika_cnt\.select\.0,
+.pmNewThreadForm .tcbSelectedItem {
 	background-color: var(--xhs-secondary) !important;
 }
-/*** BORDER ***/
 
-.ninjaSearch .searchField .fieldWrap, .newsList .commentsBubble, .geeksShop .geeksShopProducts .productOther .buyButton, .forumPost.isReader, .forumPost.isReader .button.edit, .postBox, .postBox .postElement, .threadMap .naviView .shortcut, .bbQuote, .quickReply #__laika_cnt\.textarea\.0, .tanukiError .error, .errorBox, .gp-subject-group, .gp-subject-group .gpsg-more a, .forumResultPost, .bbPre.showFrame, .bbSpoiler .spoilerFrame, .bbSpoiler .spoilerFrame .bbPoll>.inner, .postBody .bbPoll>.inner, .articleHeader .sponsoredArticle, .articleBBCode .bbPoll>.inner, .bbRelatedBox, .articleKeywords a, #__laika_cnt\.textarea\.0, .contentBox, .infoTextWindow, .articlesMostTagged .tagSummary a {
+.ninjaSearch .searchField .fieldWrap,
+.newsList .commentsBubble,
+.geeksShop .geeksShopProducts .productOther .buyButton,
+.forumPost.isReader,
+.forumPost.isReader .button.edit,
+.postBox,
+.postBox .postElement,
+.threadMap .naviView .shortcut,
+.bbQuote,
+.quickReply #__laika_cnt\.textarea\.0,
+.tanukiError .error,
+.errorBox,
+.gp-subject-group,
+.gp-subject-group .gpsg-more a,
+.forumResultPost,
+.bbPre.showFrame,
+.bbSpoiler .spoilerFrame,
+.bbSpoiler .spoilerFrame .bbPoll>.inner,
+.postBody .bbPoll>.inner,
+.articleHeader .sponsoredArticle,
+.articleBBCode .bbPoll>.inner,
+.bbRelatedBox,
+.articleKeywords a,
+#__laika_cnt\.textarea\.0,
+.contentBox,
+.infoTextWindow,
+.articlesMostTagged .tagSummary a {
 	border: 1px solid var(--xhs-border) !important;
 }
-/*** HIGHLIGHT ***/
 
-.button.bg-orange:hover, .geeksShop .geeksShopProducts .productOther .buyButton:hover, .forumList .subforums .link:hover, .forumControls .button.newThread:hover, .threadList .isSelected .cell, .forumPost .controls .button:hover, .forumControls .button.replyToThread:hover, .toolbar .tbButton.iconButton:hover .inner, .forumForm.postEditForm .tanukiButton:hover, .forumForm.postPollListForm .button:hover, .forumForm.postDeleteForm .tanukiButton:hover, .gp-subject-group .gpsg-more a:hover, .forumResultPost .controls .button:hover, .bbSpoiler .spoilerHeader button:hover, .bbMark, .forumSearchForm .tanukiButton:hover, .tanukiButton:hover, .articleKeywords a:hover, #contactForm button:hover, .galleryForm .tanukiButton:hover, #subscribeForm>fieldset>button:hover, .articlesMostTagged .tagSummary a:hover {
+.button.bg-orange:hover,
+.geeksShop .geeksShopProducts .productOther .buyButton:hover,
+.forumList .subforums .link:hover,
+.forumControls .button.newThread:hover,
+.threadList .isSelected .cell,
+.forumPost .controls .button:hover,
+.forumControls .button.replyToThread:hover,
+.toolbar .tbButton.iconButton:hover .inner,
+.forumForm.postEditForm .tanukiButton:hover,
+.forumForm.postPollListForm .button:hover,
+.forumForm.postDeleteForm .tanukiButton:hover,
+.gp-subject-group .gpsg-more a:hover,
+.forumResultPost .controls .button:hover,
+.bbSpoiler .spoilerHeader button:hover,
+.bbMark,
+.forumSearchForm .tanukiButton:hover,
+.tanukiButton:hover,
+.articleKeywords a:hover,
+#contactForm button:hover,
+.galleryForm .tanukiButton:hover,
+#subscribeForm>fieldset>button:hover,
+.articlesMostTagged .tagSummary a:hover,
+.tanukiCombobox .tcbPanelItem.isSelected {
 	background: var(--xhs-highlight) !important;
 }
-.mainMenu .menu li:hover, .subMenu .menu li:hover, #search .searchField>a[title*=Google]:hover, .button.bg-orange:hover, .geeksShop .geeksShopProducts .productOther .buyButton:hover, .forumControls .button.newThread:hover, .threadList .isSelected .cell, .postBox .treeNode.hasChildren.isCollapsed>.treeCommand, .forumControls .button.replyToThread:hover, .toolbar .tbButton.iconButton:hover .inner, .forumForm.postEditForm .tanukiButton:hover, .forumForm.postPollListForm .button:hover, .forumForm.postDeleteForm .tanukiButton:hover, .forumResultPost .controls .button:hover, .bbSpoiler .spoilerHeader button:hover, .forumSearchForm .tanukiButton:hover, .tanukiButton:hover, .mainContent #detailsForm .tanukiButton:hover, .mainContent #notificationForm .tanukiButton:hover, .mainContent #optionsForm .tanukiButton:hover, .mainContent #passwordForm .tanukiButton:hover, .mainContent #signatureForm .tanukiButton:hover, .mainContent #relationForm .tanukiButton:hover, .mainContent .imageForm .tanukiButton:hover, #contactForm button:hover, .infoText a.button:hover, .galleryBody .button:hover, .galleryForm.galleryEditForm .tanukiButton:hover, .marketEditForm .tanukiButton:hover, .whiteBody .forumControls .button:hover, .toolbar .tbButton.iconButton .inner:hover, .uploadPanel .tanukiButton:hover, .mainContent .s5fieldset a.button:hover, .marketAcceptRules .tanukiButton:hover, .marketForm #activateForm .tanukiButton:hover, .marketForm #hideForm .tanukiButton:hover, .mainContent .btnGroup.right>a.button:hover, #subscribeForm>fieldset>button:hover {
+
+.mainMenu .menu li:hover,
+.subMenu .menu li:hover,
+#search .searchField>a[title*=Google]:hover,
+.button.bg-orange:hover,
+.geeksShop .geeksShopProducts .productOther .buyButton:hover,
+.forumControls .button.newThread:hover,
+.threadList .isSelected .cell,
+.postBox .treeNode.hasChildren.isCollapsed>.treeCommand,
+.forumControls .button.replyToThread:hover,
+.toolbar .tbButton.iconButton:hover .inner,
+.forumForm.postEditForm .tanukiButton:hover,
+.forumForm.postPollListForm .button:hover,
+.forumForm.postDeleteForm .tanukiButton:hover,
+.forumResultPost .controls .button:hover,
+.bbSpoiler .spoilerHeader button:hover,
+.forumSearchForm .tanukiButton:hover,
+.tanukiButton:hover,
+.mainContent #detailsForm .tanukiButton:hover,
+.mainContent #notificationForm .tanukiButton:hover,
+.mainContent #optionsForm .tanukiButton:hover,
+.mainContent #passwordForm .tanukiButton:hover,
+.mainContent #signatureForm .tanukiButton:hover,
+.mainContent #relationForm .tanukiButton:hover,
+.mainContent .imageForm .tanukiButton:hover,
+#contactForm button:hover,
+.infoText a.button:hover,
+.galleryBody .button:hover,
+.galleryForm.galleryEditForm .tanukiButton:hover,
+.marketEditForm .tanukiButton:hover,
+.whiteBody .forumControls .button:hover,
+.toolbar .tbButton.iconButton .inner:hover,
+.uploadPanel .tanukiButton:hover,
+.mainContent .s5fieldset a.button:hover,
+.marketAcceptRules .tanukiButton:hover,
+.marketForm #activateForm .tanukiButton:hover,
+.marketForm #hideForm .tanukiButton:hover,
+.mainContent .btnGroup.right>a.button:hover,
+#subscribeForm>fieldset>button:hover,
+#siteHeader .signin .actions .button:hover,
+.mainContent #signinForm .tanukiButton:hover,
+.mainContent .registerForm .tanukiButton:hover,
+.pmNewThreadForm #createForm .s5fieldset .tanukiButton:hover,
+.pmNewThreadForm .tcbSelectedItem:hover {
 	background-color: var(--xhs-highlight) !important;
 }
-/*** TITLE ***/
 
-.footer .bottom a, .footer h6, .s5fieldset legend, .bbPodcast .title span, #subscribeForm>fieldset>button:hover, #contactForm button:hover, .articleList .title, .tanukiButton:hover, .forumSearchForm .tanukiButton:hover, .bbSpoiler .spoilerHeader button:hover, .forumResultPost .controls .button:hover, .geeksShop .geeksShopProducts .productOther .buyButton:hover, .button.bg-orange:hover, .forumControls .button.newThread:hover, .forumForm.postEditForm .tanukiButton:hover, .toolbar .tbButton.iconButton:hover .inner, .forumControls .button.replyToThread:hover, .forumPost .controls .button:hover, .articleKeywords a, .articleCommentsWidget .mwLabel>.mwLabelDate, .articleBBCode .bbPoll .pollSums .totalVotes, .articleBBCode .bbPoll .pollQuestion, .articleBBCode .bbcode h3, .articleHeader .meta li, .articleHeader .sponsoredArticle, .articleBBCode .bbTable thead th, .articleList .timestamp, .tanukiTextbox input:focus, .sideMenu h5, .whiteHeader h1, .rulesList h4, .forumResultPost .message>.title, .forumResultPost .postHeader .threadTitle, .forumResultPost .postHeader .dateline, .bbQuote .quoteHead, .forumPost .message>.title, .forumSearch #__laika_cnt\.textbox\.0:focus, .threadList .body .lastReply .time, .forumTable .caption, #threadList-1 .table .head .cell, .forumList .numThreads, .forumList .numReplies, .forumList .subforums .link, .forumList .categoryItem .cell a, .mainRecentThreads .mwBody h6, .pushListExternal .plBody .plLabelDate, .pushListExternal .plBody h6, .prisjaktPopular .ppPrice, .geeksShop .geeksShopProducts .productOther .productPrice, #wdgtSideRecentClassifieds>div:nth-child(2)>h6, #wdgtSideRecentClassifieds>div:nth-child(3)>h6, #wdgtSideRecentClassifieds>div:nth-child(4)>h6, #wdgtSideRecentClassifieds>div:nth-child(5)>h6, .pushList .plLabel>.plLabelDate, .popularGalleries .rating, .sideBox a, .mainRecentNews .mwLabelDate, .mainRecentNews .mwBody h6, .newsList .commentsBubble, .sponsoredArticle, .newsList .pubItem .itemMeta .date, .newsList .pubItem .itemText a, #search .searchField>a[title*=Google]:hover, .ninjaSearchResult h6, .ninjaSearch .searchField .input:focus, .subMenu .menu li:hover, .subMenu .menu li a:hover, .subMenu .menu li.isSelected a, .mainMenu .menu li:hover, .mainMenu .menu li a:hover, .mainMenu .menu li.isSelected a, #__laika_cnt\.textarea\.0:focus, #__laika_cnt\.textbox\.0:focus, #__laika_cnt\.textbox\.1:focus, #__laika_cnt\.textbox\.2:focus, #__laika_cnt\.textbox\.3:focus, #__laika_cnt\.textbox\.4:focus, .infoText .contactInfo h4, .infoText h1, .infoText h2, .profileHeader h1, .mainContent .mainContentHeader, .sideMenu .link .label, .forumForm.postPollListForm .button:hover, .forumForm.postDeleteForm .tanukiButton:hover, .bbExpander .expanderHeader, .articleContent .bbRelatedBox h3, .articleContent .articleNavi .head h5, .sideBox h5, .infoText a.button:hover, .galleryPortal .galleryItem h3, .galleryItem .author a, .galleryList .galleryItem h3, .galleryForm.galleryEditForm .tanukiButton:hover, .mainContent .stepItem, .galleryFileEditor .uploadEntry .entryState>.progressLabel, .marketHeader .marketMeta dt, .mainContent .btnGroup.right>a.button:hover, .forumSearch input:focus::-webkit-input-placeholder, .forumPost.isLinked .postHeader .postNum, .postBox .head .title, .postBox .postElement .karma, .threadMap .naviView .shortcut, .gp-subject-group .gphi-descr h3, .gp-subject-group .gpsg-header h2, .gp-subject-group .gpsg-more a, .mainContent #detailsForm .tanukiButton:hover, .mainContent #notificationForm .tanukiButton:hover, .mainContent #optionsForm .tanukiButton:hover, .mainContent #passwordForm .tanukiButton:hover, .mainContent #signatureForm .tanukiButton:hover, .mainContent #relationForm .tanukiButton:hover, .mainContent .imageForm .tanukiButton:hover, .articlePage h2.pageTitle, .hotGallery h3, .hotGallery .title .author, .galleryPortal .head .title, .galleryHeader dt, .whiteHeader .meta .metaItem a, .galleryBody .button:hover, .whiteBody .sorter .column.isDesc, .marketFilterBox legend, .forumTable h2 a, .marketList .type, .marketEditForm .tanukiButton:hover, .forumTable .cell.date.alt2, .whiteBody .forumControls .button:hover, .whiteBody .forumWidget .mwLabel>.mwLabelDate, .contentBox h1, .contentBox a, .mainContent .contentHeader h2, .uploadPanel .tanukiButton:hover, .mainContent .s5fieldset a.button:hover, .galleryForm .tanukiButton:hover, .infoTextWindow, .marketAcceptRules .tanukiButton:hover, .marketForm #activateForm .tanukiButton:hover, .marketForm #hideForm .tanukiButton:hover, .marketForm .s5fieldset h6 {
+.footer .bottom a,
+.footer h6,
+.s5fieldset legend,
+.bbPodcast .title span,
+#subscribeForm>fieldset>button:hover,
+#contactForm button:hover,
+.articleList .title,
+.tanukiButton:hover,
+.forumSearchForm .tanukiButton:hover,
+.bbSpoiler .spoilerHeader button:hover,
+.forumResultPost .controls .button:hover,
+.geeksShop .geeksShopProducts .productOther .buyButton:hover,
+.button.bg-orange:hover,
+.forumControls .button.newThread:hover,
+.forumForm.postEditForm .tanukiButton:hover,
+.toolbar .tbButton.iconButton:hover .inner,
+.forumControls .button.replyToThread:hover,
+.forumPost .controls .button:hover,
+.articleKeywords a,
+.articleCommentsWidget .mwLabel>.mwLabelDate,
+.articleBBCode .bbPoll .pollSums .totalVotes,
+.articleBBCode .bbPoll .pollQuestion,
+.articleBBCode .bbcode h3,
+.articleHeader .meta li,
+.articleHeader .sponsoredArticle,
+.articleBBCode .bbTable thead th,
+.articleList .timestamp,
+.tanukiTextbox input:focus,
+.sideMenu h5,
+.whiteHeader h1,
+.rulesList h4,
+.forumResultPost .message>.title,
+.forumResultPost .postHeader .threadTitle,
+.forumResultPost .postHeader .dateline,
+.bbQuote .quoteHead,
+.forumPost .message>.title,
+.forumSearch #__laika_cnt\.textbox\.0:focus,
+.threadList .body .lastReply .time,
+.forumTable .caption,
+#threadList-1 .table .head .cell,
+.forumList .numThreads,
+.forumList .numReplies,
+.forumList .subforums .link,
+.forumList .categoryItem .cell a,
+.mainRecentThreads .mwBody h6,
+.pushListExternal .plBody .plLabelDate,
+.pushListExternal .plBody h6,
+.prisjaktPopular .ppPrice,
+.geeksShop .geeksShopProducts .productOther .productPrice,
+#wdgtSideRecentClassifieds>div:nth-child(2)>h6,
+#wdgtSideRecentClassifieds>div:nth-child(3)>h6,
+#wdgtSideRecentClassifieds>div:nth-child(4)>h6,
+#wdgtSideRecentClassifieds>div:nth-child(5)>h6,
+.pushList .plLabel>.plLabelDate,
+.popularGalleries .rating,
+.sideBox a,
+.mainRecentNews .mwLabelDate,
+.mainRecentNews .mwBody h6,
+.newsList .commentsBubble,
+.sponsoredArticle,
+.newsList .pubItem .itemMeta .date,
+.newsList .pubItem .itemText a,
+#search .searchField>a[title*=Google]:hover,
+.ninjaSearchResult h6,
+.ninjaSearch .searchField .input:focus,
+.subMenu .menu li:hover,
+.subMenu .menu li a:hover,
+.subMenu .menu li.isSelected a,
+.mainMenu .menu li:hover,
+.mainMenu .menu li a:hover,
+.mainMenu .menu li.isSelected a,
+#__laika_cnt\.textarea\.0:focus,
+#__laika_cnt\.textbox\.0:focus,
+#__laika_cnt\.textbox\.1:focus,
+#__laika_cnt\.textbox\.2:focus,
+#__laika_cnt\.textbox\.3:focus,
+#__laika_cnt\.textbox\.4:focus,
+.infoText .contactInfo h4,
+.infoText h1,
+.infoText h2,
+.profileHeader h1,
+.mainContent .mainContentHeader,
+.sideMenu .link .label,
+.forumForm.postPollListForm .button:hover,
+.forumForm.postDeleteForm .tanukiButton:hover,
+.bbExpander .expanderHeader,
+.articleContent .bbRelatedBox h3,
+.articleContent .articleNavi .head h5,
+.sideBox h5,
+.infoText a.button:hover,
+.galleryPortal .galleryItem h3,
+.galleryItem .author a,
+.galleryList .galleryItem h3,
+.galleryForm.galleryEditForm .tanukiButton:hover,
+.mainContent .stepItem,
+.galleryFileEditor .uploadEntry .entryState>.progressLabel,
+.marketHeader .marketMeta dt,
+.mainContent .btnGroup.right>a.button:hover,
+.forumSearch input:focus::-webkit-input-placeholder,
+.forumPost.isLinked .postHeader .postNum,
+.postBox .head .title,
+.postBox .postElement .karma,
+.threadMap .naviView .shortcut,
+.gp-subject-group .gphi-descr h3,
+.gp-subject-group .gpsg-header h2,
+.gp-subject-group .gpsg-more a,
+.mainContent #detailsForm .tanukiButton:hover,
+.mainContent #notificationForm .tanukiButton:hover,
+.mainContent #optionsForm .tanukiButton:hover,
+.mainContent #passwordForm .tanukiButton:hover,
+.mainContent #signatureForm .tanukiButton:hover,
+.mainContent #relationForm .tanukiButton:hover,
+.mainContent .imageForm .tanukiButton:hover,
+.articlePage h2.pageTitle,
+.hotGallery h3,
+.hotGallery .title .author,
+.galleryPortal .head .title,
+.galleryHeader dt,
+.whiteHeader .meta .metaItem a,
+.galleryBody .button:hover,
+.whiteBody .sorter .column.isDesc,
+.marketFilterBox legend,
+.forumTable h2 a,
+.marketList .type,
+.marketEditForm .tanukiButton:hover,
+.forumTable .cell.date.alt2,
+.whiteBody .forumControls .button:hover,
+.whiteBody .forumWidget .mwLabel>.mwLabelDate,
+.contentBox h1,
+.contentBox a,
+.mainContent .contentHeader h2,
+.uploadPanel .tanukiButton:hover,
+.mainContent .s5fieldset a.button:hover,
+.galleryForm .tanukiButton:hover,
+.infoTextWindow,
+.marketAcceptRules .tanukiButton:hover,
+.marketForm #activateForm .tanukiButton:hover,
+.marketForm #hideForm .tanukiButton:hover,
+.marketForm .s5fieldset h6,
+.articleContent .articleNavi .pageButton,
+.articleContent .articleNavi .pageButton:hover,
+#siteHeader .signin .actions .button:hover,
+.mainContent #signinForm .tanukiButton:hover,
+.mainContent .registerForm .tanukiButton:hover,
+.articleCommentsWidget .boxAction .actionLabel,
+.pmNewThreadForm #createForm .s5fieldset .tanukiButton:hover,
+.pmNewThreadForm .tcbInput,
+.pmNewThreadForm .tcbEditField:focus,
+.tanukiCombobox .tcbPanelItem.isSelected,
+.pmNewThreadForm .tcbSelectedItem:hover {
 	color: var(--xhs-title) !important;
 }
-/*** BODY ***/
 
-.mainMenu .menu li a, .subMenu .menu li a, .header>.main .section.profile h5 a, .header .profile .label, .header .profile .signout button, .header .ticker .latest, .header .ticker .current, .ninjaSearch .searchField .input, .ninjaSearch h5, .ninjaSearchResult .resultSection.isEmpty .noResults, .ninjaSearchResult .resultList .label a, .ninjaSearchResult .resultList .date, #search .searchField>a[title*=Google], .mainContent, .mainRecentNews .mwHead p, .mainRecentNews .mwItem, .sideBox, .videoPush h3>a, .popularGalleries .cat>a, .popularGalleries .author>a, div.plBody, .button.bg-orange, .geeksShop .geeksShopProducts .productOther, .geeksShop .geeksShopProducts .productOther .buyButton, .prisjaktPopular, .prisjaktPopular .descr, .pushListExternal .plHead p, .pushListExternal .plBody .plItem, .mainRecentThreads, .mainRecentThreads .mwHead p, .mainRecentThreads .mwBody .mwItem, .forumTable.forumList .descr, .forumTable .lastThread h3>a, .forumTable .lastThread>div, .forumControls .button.newThread, .threadList .title h2 a, .threadList .hasUnreadPosts .title h2 a, .threadList .body .lastReply .date, .threadList .body .lastReply .by, .threadList .body .numReplies a, .threadList .body .numViews a, .pages a, body pre, .forumSearch #__laika_cnt\.textbox\.0, .forumPost .cell.main, .forumPost .postHeader, .forumPost .profile .title>*, .forumPost .profile .meta dt, .forumPost .profile .meta dd, .forumPost .controls .button, .bbQuote, .forumControls .button.replyToThread, .quickReply .tcLabel, .quickReply #__laika_cnt\.textarea\.0, .forumForm .tcLabel, .forumForm.postEditForm .tanukiButton, .forumResultPost, .tanukiControl .tcHint, .forumResultPost .controls .button, .bbPre.showFrame, .bbSpoiler .spoilerHeader button, .bbSpoiler .spoilerFrame, .forumSearchForm .tanukiButton, .whiteHeader div, .tanukiTextbox input, .tanukiSelect select, .tanukiButton, .articleList .category, .mainContent .pages a, .articleBBCode .bbSlideshow .slideFooter, .articleBBCode .bbTable th, .articleBBCode .bbTable td, .articleBBCode .bbPoll>.inner, .articleBBCode .bbPoll .pollSums .pollMessage, .articleBBCode .bbPoll .pollOptions .votesAbs, .articleBBCode .bbPoll .pollOptions .votesRel, .articleCommentsWidget, .articleCommentsWidget .mwHead p, .articleCommentsWidget .mwLabel>.mwLabelText, .bbPrisjaktFull h6, .bbPrisjaktFull .pjVendors .name a, .articleKeywords a, .bbPodcast .meta, .bbPodcast .descr, #__laika_cnt\.textbox\.0, #__laika_cnt\.textbox\.1, #__laika_cnt\.textbox\.2, #__laika_cnt\.textbox\.3, #__laika_cnt\.textbox\.4, #__laika_cnt\.textarea\.0, #contactForm label, #contactForm button, .infoText p, .infoText ul, .footer .bottom .copyright, .footer p, .articlesMostRead .title, .articlesMostTagged .tagSummary a, .articlesMostTagged .title, #__laika_cnt\.select\.0, #subscribeForm>fieldset>button, .profileHeader .title, .profileHeader .meta dt, .profileHeader .meta dd, .profileHeader .statistics .label, .profileFeed .date, .forumPost.isReader .button.like.isDisabled:hover, .forumPost.isLiked.isReader .button.like.isDisabled:hover, .forumForm.postEditForm .tanukiControl.tanukiCheckbox, .forumForm.postPollListForm .button, .forumForm.postDeleteForm .tanukiButton, .forumForm .tanukiControl.tanukiCheckbox.isRequired, .articleBBCode .bbPrisjakt a.prices, .articleBBCode .bbExpander .expanderFooter, .articleContent .bbRelatedBox p, .articleContent .articleNavi .pageItem.isCurrent a, .articleContent .articleNavi .pageItem::before, .articleByline .author span, .sideShare.sideBox .link, .bbPrisjaktFull .pjFooter .withPrisjakt, .infoText a.button, .galleryItem .cat a, .galleryForm.galleryEditForm .tanukiButton, .mainContent .stepItem.isDisabled, .uploadPanel .s5fieldset p, .galleryFileEditor .uploadEntry .entryName, .marketHeader .marketMeta dd, .marketHeader .marketMeta dd a, .mainContent .btnGroup.right>a.button, .forumSearch input::-webkit-input-placeholder, .postBox .postElement .summary, .gp-subject-group, .gp-subject-group .gphi-descr p, .mainContent #detailsForm .tanukiButton, .mainContent #notificationForm .tanukiButton, .mainContent #optionsForm .tanukiButton, .mainContent #passwordForm .tanukiButton, .mainContent #signatureForm .tanukiButton, .mainContent #relationForm .tanukiButton, .mainContent .imageForm .tanukiButton, .mainContent #signatureForm .signaturePreview .bbcode p, .hotGallery .title .cat, .galleryPortal .head .descr, .galleryHeader dd, .galleryHeader .galleryRating .num, .galleryImage .bbcode .bbParagraph, .galleryBody .button, .marketFilterBox .gallerySearchQuery .tcLabel, .marketFilterBox .galleryCategory .tcLabel, .marketFilterBox .tcLabel, .marketFilterBox .tanukiControl .tcHint, .marketFilterBox .checkboxList .checkboxItem, .marketList .category, .marketEditForm #__laika_cnt\.select\.1, .marketEditForm #__laika_cnt\.select\.2, .marketEditForm .tanukiButton, .forumTable .cell.price.alt2, .marketList .date .time, .whiteBody .forumControls .button, .whiteBody .forumWidget .mwHead p, .whiteBody .forumWidget .mwLabel>.mwLabelText, .contentBox, .uploadPanel .tanukiButton, .mainContent .s5fieldset a.button, .galleryFileEditor .orderHint, .galleryForm .tanukiButton, .infoBox, .marketAcceptRules .tanukiButton, .marketForm #activateForm .tanukiButton, .marketForm .s5fieldset p {
+.mainMenu .menu li a,
+.subMenu .menu li a,
+.header>.main .section.profile h5 a,
+.header .profile .label,
+.header .profile .signout button,
+.header .ticker .latest,
+.header .ticker .current,
+.ninjaSearch .searchField .input,
+.ninjaSearch h5,
+.ninjaSearchResult .resultSection.isEmpty .noResults,
+.ninjaSearchResult .resultList .label a,
+.ninjaSearchResult .resultList .date,
+#search .searchField>a[title*=Google],
+.mainContent,
+.mainRecentNews .mwHead p,
+.mainRecentNews .mwItem,
+.sideBox,
+.videoPush h3>a,
+.popularGalleries .cat>a,
+.popularGalleries .author>a,
+div.plBody,
+.button.bg-orange,
+.geeksShop .geeksShopProducts .productOther,
+.geeksShop .geeksShopProducts .productOther .buyButton,
+.prisjaktPopular,
+.prisjaktPopular .descr,
+.pushListExternal .plHead p,
+.pushListExternal .plBody .plItem,
+.mainRecentThreads,
+.mainRecentThreads .mwHead p,
+.mainRecentThreads .mwBody .mwItem,
+.forumTable.forumList .descr,
+.forumTable .lastThread h3>a,
+.forumTable .lastThread>div,
+.forumControls .button.newThread,
+.threadList .title h2 a,
+.threadList .hasUnreadPosts .title h2 a,
+.threadList .body .lastReply .date,
+.threadList .body .lastReply .by,
+.threadList .body .numReplies a,
+.threadList .body .numViews a,
+.pages a,
+body pre,
+.forumSearch #__laika_cnt\.textbox\.0,
+.forumPost .cell.main,
+.forumPost .postHeader,
+.forumPost .profile .title>*,
+.forumPost .profile .meta dt,
+.forumPost .profile .meta dd,
+.forumPost .controls .button,
+.bbQuote,
+.forumControls .button.replyToThread,
+.quickReply .tcLabel,
+.quickReply #__laika_cnt\.textarea\.0,
+.forumForm .tcLabel,
+.forumForm.postEditForm .tanukiButton,
+.forumResultPost,
+.tanukiControl .tcHint,
+.forumResultPost .controls .button,
+.bbPre.showFrame,
+.bbSpoiler .spoilerHeader button,
+.bbSpoiler .spoilerFrame,
+.forumSearchForm .tanukiButton,
+.whiteHeader div,
+.tanukiTextbox input,
+.tanukiSelect select,
+.tanukiButton,
+.articleList .category,
+.mainContent .pages a,
+.articleBBCode .bbSlideshow .slideFooter,
+.articleBBCode .bbTable th,
+.articleBBCode .bbTable td,
+.articleBBCode .bbPoll>.inner,
+.articleBBCode .bbPoll .pollSums .pollMessage,
+.articleBBCode .bbPoll .pollOptions .votesAbs,
+.articleBBCode .bbPoll .pollOptions .votesRel,
+.articleCommentsWidget,
+.articleCommentsWidget .mwHead p,
+.articleCommentsWidget .mwLabel>.mwLabelText,
+.bbPrisjaktFull h6,
+.bbPrisjaktFull .pjVendors .name a,
+.articleKeywords a,
+.bbPodcast .meta,
+.bbPodcast .descr,
+#__laika_cnt\.textbox\.0,
+#__laika_cnt\.textbox\.1,
+#__laika_cnt\.textbox\.2,
+#__laika_cnt\.textbox\.3,
+#__laika_cnt\.textbox\.4,
+#__laika_cnt\.textarea\.0,
+#contactForm label,
+#contactForm button,
+.infoText p,
+.infoText ul,
+.footer .bottom .copyright,
+.footer p,
+.articlesMostRead .title,
+.articlesMostTagged .tagSummary a,
+.articlesMostTagged .title,
+#__laika_cnt\.select\.0,
+#subscribeForm>fieldset>button,
+.profileHeader .title,
+.profileHeader .meta dt,
+.profileHeader .meta dd,
+.profileHeader .statistics .label,
+.profileFeed .date,
+.forumPost.isReader .button.like.isDisabled:hover,
+.forumPost.isLiked.isReader .button.like.isDisabled:hover,
+.forumForm.postEditForm .tanukiControl.tanukiCheckbox,
+.forumForm.postPollListForm .button,
+.forumForm.postDeleteForm .tanukiButton,
+.forumForm .tanukiControl.tanukiCheckbox.isRequired,
+.articleBBCode .bbPrisjakt a.prices,
+.articleBBCode .bbExpander .expanderFooter,
+.articleContent .bbRelatedBox p,
+.articleContent .articleNavi .pageItem.isCurrent a,
+.articleContent .articleNavi .pageItem::before,
+.articleByline .author span,
+.sideShare.sideBox .link,
+.bbPrisjaktFull .pjFooter .withPrisjakt,
+.infoText a.button,
+.galleryItem .cat a,
+.galleryForm.galleryEditForm .tanukiButton,
+.mainContent .stepItem.isDisabled,
+.uploadPanel .s5fieldset p,
+.galleryFileEditor .uploadEntry .entryName,
+.marketHeader .marketMeta dd,
+.marketHeader .marketMeta dd a,
+.mainContent .btnGroup.right>a.button,
+.forumSearch input::-webkit-input-placeholder,
+.postBox .postElement .summary,
+.gp-subject-group,
+.gp-subject-group .gphi-descr p,
+.mainContent #detailsForm .tanukiButton,
+.mainContent #notificationForm .tanukiButton,
+.mainContent #optionsForm .tanukiButton,
+.mainContent #passwordForm .tanukiButton,
+.mainContent #signatureForm .tanukiButton,
+.mainContent #relationForm .tanukiButton,
+.mainContent .imageForm .tanukiButton,
+.mainContent #signatureForm .signaturePreview .bbcode p,
+.hotGallery .title .cat,
+.galleryPortal .head .descr,
+.galleryHeader dd,
+.galleryHeader .galleryRating .num,
+.galleryImage .bbcode .bbParagraph,
+.galleryBody .button,
+.marketFilterBox .gallerySearchQuery .tcLabel,
+.marketFilterBox .galleryCategory .tcLabel,
+.marketFilterBox .tcLabel,
+.marketFilterBox .tanukiControl .tcHint,
+.marketFilterBox .checkboxList .checkboxItem,
+.marketList .category,
+.marketEditForm #__laika_cnt\.select\.1,
+.marketEditForm #__laika_cnt\.select\.2,
+.marketEditForm .tanukiButton,
+.forumTable .cell.price.alt2,
+.marketList .date .time,
+.whiteBody .forumControls .button,
+.whiteBody .forumWidget .mwHead p,
+.whiteBody .forumWidget .mwLabel>.mwLabelText,
+.contentBox,
+.uploadPanel .tanukiButton,
+.mainContent .s5fieldset a.button,
+.galleryFileEditor .orderHint,
+.galleryForm .tanukiButton,
+.infoBox,
+.marketAcceptRules .tanukiButton,
+.marketForm #activateForm .tanukiButton,
+.marketForm .s5fieldset p,
+#siteHeader .signin .actions .button,
+#siteHeader .signin h5,
+.mainContent #signinForm .tanukiButton,
+.mainContent .registerForm .tanukiButton,
+.forumForm>.head,
+.pmNewThreadForm .tcbInput,
+.pmNewThreadForm .tcbEditField,
+.pmNewThreadForm #createForm .s5fieldset .tanukiButton,
+.tanukiCombobox .tcbPanelTrigger,
+.tanukiCombobox .tcbpLoading,
+.tanukiCombobox .tcbPanelItem,
+.pmNewThreadForm .tcbSelectedItem {
 	color: var(--xhs-body) !important;
 }
-/*** BLUE ***/
 
-.pages a:active, .bbSpoiler .spoilerFrame .bbPoll>.inner button:hover, .mainContent .pages a:active {
-	color: var(--xhs-blue) !important;
-}
-/*** ORANGE ***/
-
-.articlesMostTagged h2>a, .articlesMostTagged .n, .articlesMostRead h2>a, .articlesMostRead .n, .infoText a, .infoText .contactInfo h1, .bbPodcast a, .bbPrisjaktFull .price>a, .bbPrisjaktFull h6>a, .articleHeader h1, .articleHeader .meta a, .menuItems .link, .articleList .comments, .quickReply h4, .bbQuote .quoteLink>a, .forumPost .guruFlag, .forumPost .supporterFlag, .forumPost.isGuru .controls .button.like .score, .forumPost.isLiked .controls .button.like .score, .forumTable .lastThread>div>a, .forumList .lastThread .time, .mainRecentThreads h5>a, .pushListExternal .plHead h5, .prisjaktPopular h5>a, .pushList .plLabel.plComments, div.plHead h5, .mainRecentNews .mwComments, .mainRecentNews .mwHead h5>a, .newsList .pubItem .itemMeta a, .newsList .pubItem h2 a, .ninjaSearchResult .showMore, .ninjaSearchResult .externalSearch a, .header .ticker .date, .footer .top a, .footer .top a:before, .articlesMostTagged .showMore, .articleKeywords a:hover, .bbPrisjaktFull .pjFooter .seeMore, .articleCommentsWidget h5>a, .mainContent .pages a.isCurrent, .breadcrumbs .breadcrumb .link, .bbcode .bbLink, .bbReply, .bbKeyword, .tanukiControl .tcHint a, .forumResultPost .postHeader .dateline a, .forumPost .signature .bbParagraph a, .forumPost .signature .bbParagraph a:hover, .forumPost .profile .name>a, .forumPost .profile .name>a:hover, .forumPost .cell.main a, .forumPost .cell.main a:hover, .pages a.isCurrent, .threadList .body .lastReply .name, .forumThreads .dateline>a, .forumThreads .pageLinks>a, .forumList .subforums .link:hover, .forumTable.forumList .title h2>a, .geeksShop, .readMoreArchive, .newsList .pubItem .itemText a:last-child:hover, .newsList .pubItem .itemText a:last-child, .profileHeader .statistics a, .profileFeed .link, .profileFeed .user, .feedMore, .articleBBCode .bbExpander .expanderHeader, .articleContent .bbRelatedBox .bbLink, .articleContent .articleNavi .pageItem a, .articleContent .articleNavi .pageButton, .mainContent .stepItem.isSelected, .galleryFileEditor .selectedPanel .s5fieldset .curFile a, .galleryFileEditor .uploadEntry .entryError>.errorAlert, .marketHeader .marketMeta dd.strongLabel a, .marketHeader .marketMeta dd.strongLabel, .newsList .relatedLinks a, .forumPost .details .activity.online, .postBox .postElement .username, .postBox .siblingCommand .label, .gp-subject-group h4, .articleContent .articleNavi .pageButton:hover, .hotGallery .hot, .hotGallery .rating, .galleryItem .rating, .galleryPortal .head .more, .galleryHeader .galleryRating .score, .whiteHeader .pmThreadPtcps a, .whiteBody .sorter .column.isDesc.isCurrent, .marketList .comments, .whiteBody .forumWidget .mwHead h5, .contentBox h2 {
+.articlesMostTagged h2>a,
+.articlesMostTagged .n,
+.articlesMostRead h2>a,
+.articlesMostRead .n,
+.infoText a,
+.infoText .contactInfo h1,
+.bbPodcast a,
+.bbPrisjaktFull .price>a,
+.bbPrisjaktFull h6>a,
+.articleHeader h1,
+.articleHeader .meta a,
+.menuItems .link,
+.articleList .comments,
+.quickReply h4,
+.bbQuote .quoteLink>a,
+.forumPost .guruFlag,
+.forumPost .supporterFlag,
+.forumPost.isGuru .controls .button.like .score,
+.forumPost.isLiked .controls .button.like .score,
+.forumTable .lastThread>div>a,
+.forumList .lastThread .time,
+.mainRecentThreads h5>a,
+.pushListExternal .plHead h5,
+.prisjaktPopular h5>a,
+.pushList .plLabel.plComments,
+div.plHead h5,
+.mainRecentNews .mwComments,
+.mainRecentNews .mwHead h5>a,
+.newsList .pubItem .itemMeta a,
+.newsList .pubItem h2 a,
+.ninjaSearchResult .showMore,
+.ninjaSearchResult .externalSearch a,
+.header .ticker .date,
+.footer .top a,
+.footer .top a:before,
+.articlesMostTagged .showMore,
+.articleKeywords a:hover,
+.bbPrisjaktFull .pjFooter .seeMore,
+.articleCommentsWidget h5>a,
+.mainContent .pages a.isCurrent,
+.breadcrumbs .breadcrumb .link,
+.bbcode .bbLink,
+.bbReply,
+.bbKeyword,
+.tanukiControl .tcHint a,
+.forumResultPost .postHeader .dateline a,
+.forumPost .signature .bbParagraph a,
+.forumPost .signature .bbParagraph a:hover,
+.forumPost .profile .name>a,
+.forumPost .profile .name>a:hover,
+.forumPost .cell.main a,
+.forumPost .cell.main a:hover,
+.pages a.isCurrent,
+.threadList .body .lastReply .name,
+.forumThreads .dateline>a,
+.forumThreads .pageLinks>a,
+.forumList .subforums .link:hover,
+.forumTable.forumList .title h2>a,
+.geeksShop,
+.readMoreArchive,
+.newsList .pubItem .itemText a:last-child:hover,
+.newsList .pubItem .itemText a:last-child,
+.profileHeader .statistics a,
+.profileFeed .link,
+.profileFeed .user,
+.feedMore,
+.articleBBCode .bbExpander .expanderHeader,
+.articleContent .bbRelatedBox .bbLink,
+.articleContent .articleNavi .pageItem a,
+.mainContent .stepItem.isSelected,
+.galleryFileEditor .selectedPanel .s5fieldset .curFile a,
+.galleryFileEditor .uploadEntry .entryError>.errorAlert,
+.marketHeader .marketMeta dd.strongLabel a,
+.marketHeader .marketMeta dd.strongLabel,
+.newsList .relatedLinks a,
+.forumPost .details .activity.online,
+.postBox .postElement .username,
+.postBox .siblingCommand .label,
+.gp-subject-group h4,
+.hotGallery .hot,
+.hotGallery .rating,
+.galleryItem .rating,
+.galleryPortal .head .more,
+.galleryHeader .galleryRating .score,
+.whiteHeader .pmThreadPtcps a,
+.whiteBody .sorter .column.isDesc.isCurrent,
+.marketList .comments,
+.whiteBody .forumWidget .mwHead h5,
+.contentBox h2,
+.mainContent .registerForm a,
+.activePolls a {
 	color: var(--xhs-orange) !important;
 }
-/*** PURPLE ***/
+
+.bbSpoiler .spoilerFrame .bbPoll>.inner button:hover {
+	color: var(--xhs-blue) !important;
+}
 
 .bbMark {
 	color: var(--xhs-purple) !important;
 }
-/*** RED ***/
 
-.header .profile .signout button:hover, .forumForm.postDeleteForm .tanukiButton, .rulesList li:before, .rulesList a, .tanukiControl.isRequired .tcLabel:after, .galleryForm #deleteForm .tanukiButton, .infoBox a, .marketForm #hideForm .tanukiButton {
+.header .profile .signout button:hover,
+.forumForm.postDeleteForm .tanukiButton,
+.rulesList li:before,
+.rulesList a,
+.tanukiControl.isRequired .tcLabel:after,
+.galleryForm #deleteForm .tanukiButton,
+.infoBox a,
+.marketForm #hideForm .tanukiButton {
 	color: var(--xhs-red) !important;
 }
-/*** LINKS ***/
 
-.ninjaSearchResult .showMore:hover, .header>.main .section.profile h5 a:hover, .header .profile .label:hover, .header .profile .signout button:hover, #siteHeader .ticker a:hover .title, #siteHeader .ticker a:hover .date, .ninjaSearchResult .externalSearch a:hover, .profileHeader .statistics a:hover, .profileFeed .link:hover, .feedMore:hover, .newsList .pubItem h2 a:hover, .newsList .pubItem .itemMeta a:hover, .newsList .pubItem .itemText a:hover, .newsList .pubItem .itemText a:last-child:hover, .newsList .relatedLinks a:hover, .newsList .commentsBubble.isHot:hover, .newsList .commentsBubble:hover, .readMoreArchive:hover, .mainRecentNews .mwHead h5>a:hover, .mainRecentNews .mwItem a:hover .mwLabelText, .mainRecentNews .mwItem a:hover .mwLabelDate, .mainRecentNews .mwItem a:hover .mwLabelIcon, .sideBox a:hover, .sideBox .menuSection a:hover .label, .sideMenu .isSelected .link .label, .pushList .plBody a:hover .plLabelText, .pushList .plBody a:hover .plLabelIcon, .pushList .plHead h5>a:hover, .pushList .plHead p>a:hover, .geeksShop .geeksShopProducts a:hover .productName, .prisjaktPopular h5>a:hover, .prisjaktPopular .ppProducts a:hover .ppTitle, .mainRecentThreads h5>a:hover, .mainRecentThreads .mwItem a:hover .mwLabelText, .forumTable .lastThread>div>a:hover, .threadList .title h2 a:hover, .threadList .hasUnreadPosts .title h2 a:hover, .forumThreads .pageLinks>a:hover, .forumThreads .dateline>a:hover, .threadList .body .lastReply .name:hover, .pages a:hover, .forumPost .cell.main a:hover, .forumPost .profile .name>a:hover, .forumPost .signature .bbParagraph a:hover, .postBox .siblingCommand .label:hover, .threadMap .naviView .shortcut a:hover, .bbQuote .quoteLink>a:hover, .gp-subject-group h4 a:hover, .gp-subject-group .gphi-descr h3 a:hover, .forumResultPost .postHeader .dateline a:hover, .tanukiControl .tcHint a:hover, .forumResultPost .postHeader .threadTitle a:hover, .bbcode .bbLink:hover, .bbReply:hover, .bbKeyword:hover, .bbExpander .expanderHeader:hover, .rulesList a:hover, .breadcrumbs .breadcrumb .link:hover, .articleList .title>a:hover, .articleList .category:hover, .articleList .listItem a:hover .n, .mainContent .pages a:hover, .articleBBCode .bbPrisjakt a:hover.prices, .articleBBCode .bbExpander .expanderHeader:hover, .articleBBCode .bbExpander .expanderFooter:hover, .articleContent .bbRelatedBox .bbLink:hover, .articleContent .articleNavi .pageItem a:hover, .articleContent .articleNavi .pageButton:hover, .sideShare.sideBox .menuItem a:hover .label, .articleCommentsWidget h5>a:hover, .bbPrisjaktFull h6>a:hover, .bbPrisjaktFull .price>a:hover, .bbPrisjaktFull .pjFooter .seeMore:hover, .bbPodcast a:hover, .hotGallery .title a:hover, .hotGallery h3 a:hover, .galleryPortal .head .more:hover, .whiteHeader .meta .metaItem a:hover, .whiteHeader .pmThreadPtcps a:hover, .galleryList .galleryItem h3>a:hover, .galleryList .cat>a:hover, .galleryList .author>a:hover, .whiteBody .sorter .column.isDesc.isCurrent:hover, .whiteBody .sorter .column.isDesc:hover, .forumTable h2 a:hover, .marketList .type:hover, .marketList .category:hover, .marketList .meta a:hover .label, .marketList .meta a:hover .icon, .whiteBody .forumWidget .mwHead h5>a:hover, .whiteBody .forumWidget .mwItem a:hover .mwLabelText, .whiteBody .forumWidget .mwItem a:hover .mwLabelDate, .contentBox a:hover, .mainContent .stepItem a:hover, .galleryFileEditor .selectedPanel .s5fieldset .curFile a:hover, .infoText a:hover, .infoBox a:hover, .marketHeader .marketMeta dd a:hover, .marketHeader .marketMeta dd.strongLabel a:hover, .articlesMostTagged h2>a:hover, .articlesMostTagged .title:hover, .articlesMostTagged .showMore:hover, .articlesMostTagged .articleListCompact a:hover .n, .articlesMostRead h2>a:hover, .articlesMostRead .title:hover, .footer .top a:hover, .footer .top a:hover .label, .footer .bottom a:hover, .forumTable.forumList .title h2>a:hover, .threadList .body .numReplies a:hover, .threadList .body .numViews a:hover, .forumTable .lastThread h3>a:hover, .forumList .categoryItem .cell a:hover {
+.ninjaSearchResult .showMore:hover,
+.header>.main .section.profile h5 a:hover,
+.header .profile .label:hover,
+.header .profile .signout button:hover,
+#siteHeader .ticker a:hover .title,
+#siteHeader .ticker a:hover .date,
+.ninjaSearchResult .externalSearch a:hover,
+.profileHeader .statistics a:hover,
+.profileFeed .link:hover,
+.feedMore:hover,
+.newsList .pubItem h2 a:hover,
+.newsList .pubItem .itemMeta a:hover,
+.newsList .pubItem .itemText a:hover,
+.newsList .pubItem .itemText a:last-child:hover,
+.newsList .relatedLinks a:hover,
+.newsList .commentsBubble.isHot:hover,
+.newsList .commentsBubble:hover,
+.readMoreArchive:hover,
+.mainRecentNews .mwHead h5>a:hover,
+.mainRecentNews .mwItem a:hover .mwLabelText,
+.mainRecentNews .mwItem a:hover .mwLabelDate,
+.mainRecentNews .mwItem a:hover .mwLabelIcon,
+.sideBox a:hover,
+.sideBox .menuSection a:hover .label,
+.sideMenu .isSelected .link .label,
+.pushList .plBody a:hover .plLabelText,
+.pushList .plBody a:hover .plLabelIcon,
+.pushList .plHead h5>a:hover,
+.pushList .plHead p>a:hover,
+.geeksShop .geeksShopProducts a:hover .productName,
+.prisjaktPopular h5>a:hover,
+.prisjaktPopular .ppProducts a:hover .ppTitle,
+.mainRecentThreads h5>a:hover,
+.mainRecentThreads .mwItem a:hover .mwLabelText,
+.forumTable .lastThread>div>a:hover,
+.threadList .title h2 a:hover,
+.threadList .hasUnreadPosts .title h2 a:hover,
+.forumThreads .pageLinks>a:hover,
+.forumThreads .dateline>a:hover,
+.threadList .body .lastReply .name:hover,
+.pages a:hover,
+.forumPost .cell.main a:hover,
+.forumPost .profile .name>a:hover,
+.forumPost .signature .bbParagraph a:hover,
+.postBox .siblingCommand .label:hover,
+.threadMap .naviView .shortcut a:hover,
+.bbQuote .quoteLink>a:hover,
+.gp-subject-group h4 a:hover,
+.gp-subject-group .gphi-descr h3 a:hover,
+.forumResultPost .postHeader .dateline a:hover,
+.tanukiControl .tcHint a:hover,
+.forumResultPost .postHeader .threadTitle a:hover,
+.bbcode .bbLink:hover,
+.bbReply:hover,
+.bbKeyword:hover,
+.bbExpander .expanderHeader:hover,
+.rulesList a:hover,
+.breadcrumbs .breadcrumb .link:hover,
+.articleList .title>a:hover,
+.articleList .category:hover,
+.articleList .listItem a:hover .n,
+.mainContent .pages a:hover,
+.articleBBCode .bbPrisjakt a:hover.prices,
+.articleBBCode .bbExpander .expanderHeader:hover,
+.articleBBCode .bbExpander .expanderFooter:hover,
+.articleContent .bbRelatedBox .bbLink:hover,
+.articleContent .articleNavi .pageItem a:hover,
+.articleContent .articleNavi .pageButton:hover,
+.sideShare.sideBox .menuItem a:hover .label,
+.articleCommentsWidget h5>a:hover,
+.bbPrisjaktFull h6>a:hover,
+.bbPrisjaktFull .price>a:hover,
+.bbPrisjaktFull .pjFooter .seeMore:hover,
+.bbPodcast a:hover,
+.hotGallery .title a:hover,
+.hotGallery h3 a:hover,
+.galleryPortal .head .more:hover,
+.whiteHeader .meta .metaItem a:hover,
+.whiteHeader .pmThreadPtcps a:hover,
+.galleryList .galleryItem h3>a:hover,
+.galleryList .cat>a:hover,
+.galleryList .author>a:hover,
+.whiteBody .sorter .column.isDesc.isCurrent:hover,
+.whiteBody .sorter .column.isDesc:hover,
+.forumTable h2 a:hover,
+.marketList .type:hover,
+.marketList .category:hover,
+.marketList .meta a:hover .label,
+.marketList .meta a:hover .icon,
+.whiteBody .forumWidget .mwHead h5>a:hover,
+.whiteBody .forumWidget .mwItem a:hover .mwLabelText,
+.whiteBody .forumWidget .mwItem a:hover .mwLabelDate,
+.contentBox a:hover,
+.mainContent .stepItem a:hover,
+.galleryFileEditor .selectedPanel .s5fieldset .curFile a:hover,
+.infoText a:hover,
+.infoBox a:hover,
+.marketHeader .marketMeta dd a:hover,
+.marketHeader .marketMeta dd.strongLabel a:hover,
+.articlesMostTagged h2>a:hover,
+.articlesMostTagged .title:hover,
+.articlesMostTagged .showMore:hover,
+.articlesMostTagged .articleListCompact a:hover .n,
+.articlesMostRead h2>a:hover,
+.articlesMostRead .title:hover,
+.footer .top a:hover,
+.footer .top a:hover .label,
+.footer .bottom a:hover,
+.forumTable.forumList .title h2>a:hover,
+.threadList .body .numReplies a:hover,
+.threadList .body .numViews a:hover,
+.forumTable .lastThread h3>a:hover,
+.forumList .categoryItem .cell a:hover,
+.pages a:active,
+.mainContent .pages a:active,
+.mainContent .registerForm a:hover,
+#carousel div.slide:hover>div>div.front>h3>a,
+.activePolls a:hover,
+.articleCommentsWidget .boxAction a:hover .actionLabel,
+.articleCommentsWidget .boxAction a:hover .actionIcon,
+.articleCommentsWidget .mwItem a:hover .mwIcon,
+.articleCommentsWidget .mwItem a:hover .mwLabelDate,
+.articleCommentsWidget .mwItem a:hover .mwLabelText,
+.articleHeader .meta a:hover,
+#siteHeader .ninjaSearchResult .row td a:hover {
 	text-decoration: none !important;
 	opacity: 0.75 !important;
 }
-/*** TEXT DECORATION ***/
 
-.ninjaSearchResult .showMore, .ninjaSearchResult .externalSearch a, .profileHeader .statistics a, .feedMore, .newsList .pubItem .itemText a:last-child, .readMoreArchive, .sideBox.swec20Box>div>a:hover, .forumTable.forumList .title h2>a, .forumTable.forumList .descr, .forumList .subforums .link:hover, .forumTable .lastThread h3>a, .threadList .title h2 a, .threadList .hasUnreadPosts .title h2 a, .forumThreads .pageLinks>a, .forumThreads .dateline>a, .threadList .body .lastReply .name, .threadList .body .numReplies a, .threadList .body .numViews a, .pages a.isCurrent:hover, .forumPost.isLinked .postHeader .postNum, .forumPost .cell.main a, .forumPost .profile .name>a, .forumPost .signature .bbParagraph a, .forumResultPost .postHeader .dateline a, .tanukiControl .tcHint a, .bbcode .bbLink, .bbReply, .bbKeyword, .rulesList a, .breadcrumbs .breadcrumb .link, .articleList .title, .mainContent .pages a.isCurrent:hover, .articleContent .articleNavi .pageItem.isCurrent a:hover, .articleContent .articleNavi .pageItem a, .articleCommentsWidget h5>a, .bbPrisjaktFull .pjFooter .seeMore, .articleKeywords a:hover, .galleryPortal .head .more, .forumTable h2 a, .infoBox a, .articlesMostTagged .title, .articlesMostTagged .showMore, .articlesMostRead .title {
+.ninjaSearchResult .showMore,
+.ninjaSearchResult .externalSearch a,
+.profileHeader .statistics a,
+.feedMore,
+.newsList .pubItem .itemText a:last-child,
+.readMoreArchive,
+.sideBox.swec20Box>div>a:hover,
+.forumTable.forumList .title h2>a,
+.forumTable.forumList .descr,
+.forumList .subforums .link:hover,
+.forumTable .lastThread h3>a,
+.threadList .title h2 a,
+.threadList .hasUnreadPosts .title h2 a,
+.forumThreads .pageLinks>a,
+.forumThreads .dateline>a,
+.threadList .body .lastReply .name,
+.threadList .body .numReplies a,
+.threadList .body .numViews a,
+.pages a.isCurrent:hover,
+.forumPost.isLinked .postHeader .postNum,
+.forumPost .cell.main a,
+.forumPost .profile .name>a,
+.forumPost .signature .bbParagraph a,
+.forumResultPost .postHeader .dateline a,
+.tanukiControl .tcHint a,
+.bbcode .bbLink,
+.bbReply,
+.bbKeyword,
+.rulesList a,
+.breadcrumbs .breadcrumb .link,
+.articleList .title,
+.mainContent .pages a.isCurrent:hover,
+.articleContent .articleNavi .pageItem.isCurrent a:hover,
+.articleContent .articleNavi .pageItem a,
+.articleCommentsWidget h5>a,
+.bbPrisjaktFull .pjFooter .seeMore,
+.articleKeywords a:hover,
+.galleryPortal .head .more,
+.forumTable h2 a,
+.infoBox a,
+.articlesMostTagged .title,
+.articlesMostTagged .showMore,
+.articlesMostRead .title {
 	text-decoration: none !important;
 }
-/*** FILTERS ***/
 
-/* ORANGE FILTER */
-
-.mainRecentNews .mwIcon, .pushListInternal .plIcon, .pushListExternal .plIcon, .mainRecentThreads .mwIcon, .pages .icon, .postBox .treeNode .treeLine, .articleList .comments .icon, .mainContent .pages .icon, .menuItems .icon, .sideShare.sideBox .icon, .articleCommentsWidget .mwItem .mwLabelIcon, .marketList .comments .icon, .articlesMostTagged .icon, .articlesMostRead .icon {
+.mainRecentNews .mwIcon,
+.pushListInternal .plIcon,
+.pushListExternal .plIcon,
+.mainRecentThreads .mwIcon,
+.pages .icon,
+.postBox .treeNode .treeLine,
+.articleList .comments .icon,
+.mainContent .pages .icon,
+.menuItems .icon,
+.sideShare.sideBox .icon,
+.articleCommentsWidget .mwItem .mwLabelIcon,
+.marketList .comments .icon,
+.articlesMostTagged .icon,
+.articlesMostRead .icon,
+.tanukiCombobox .tcbpLoadIcon,
+.pmNewThreadForm .tcbSelectedItem:hover .tbcsiClose {
 	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
-/* GREY FILTER */
 
-.forumList .cell.status .forumStatus, .threadStatus.icon-0, .threadStatus.icon-2, .threadStatus.icon-8, .threadStatus.icon-16, .threadStatus.icon-32, .threadStatus.icon-17, .threadList .pageLinks .icon, .threadList .body .lastReply .icon, #siteHeader .profile .icon {
+.forumList .cell.status .forumStatus,
+.threadStatus.icon-0,
+.threadStatus.icon-2,
+.threadStatus.icon-8,
+.threadStatus.icon-16,
+.threadStatus.icon-32,
+.threadStatus.icon-17,
+.threadList .pageLinks .icon,
+.threadList .body .lastReply .icon,
+#siteHeader .profile .icon {
 	filter: sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%) !important;
 	-webkit-filter: sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%) !important;
 }
-/* TITLE FILTER */
 
 .forumPost .controls .button.report:hover .icon {
 	filter: brightness(0) saturate(100%) invert(34%) sepia(43%) saturate(2820%) hue-rotate(332deg) brightness(104%) contrast(87%);
 	-webkit-filter: brightness(0) saturate(100%) invert(34%) sepia(43%) saturate(2820%) hue-rotate(332deg) brightness(104%) contrast(87%);
 }
-/*** BETTER SWECLOCKERS ***/
 
-/*** BETTER SWECLOCKERS ***/
+.tanukiButton:focus,
+.button:focus {
+	outline: none !important;
+}
 
-.better-sweclockers-icon-button, .better-sweclockers-editing-tools .button, #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler {
+:not(.arrow):not(.handle) {
+	border-color: var(--xhs-border) !important;
+}
+
+/*! Better Sweclockers !*/
+
+.better-sweclockers-icon-button,
+.better-sweclockers-editing-tools .button,
+#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler {
 	background: var(--xhs-primary) !important;
 }
+
 form#better-sweclockers textarea {
 	background-color: var(--xhs-primary) !important;
 }
+
 form#better-sweclockers .s5fieldset {
 	background-color: var(--xhs-secondary) !important;
 }
-.better-sweclockers-icon-button:hover, .better-sweclockers-editing-tools .button:hover, #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
+
+.better-sweclockers-icon-button:hover,
+.better-sweclockers-editing-tools .button:hover,
+#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
 	background: var(--xhs-highlight) !important;
 }
-.better-sweclockers-editing-tools .button:hover, #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
+
+.better-sweclockers-editing-tools .button:hover,
+#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
 	background-color: var(--xhs-highlight) !important;
 }
-#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover, .better-sweclockers-editing-tools .button:hover, .better-sweclockers-icon-button:hover, form#better-sweclockers label, form#better-sweclockers textarea:focus {
+
+#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover,
+.better-sweclockers-editing-tools .button:hover,
+.better-sweclockers-icon-button:hover,
+form#better-sweclockers label,
+form#better-sweclockers textarea:focus {
 	color: var(--xhs-title) !important;
 }
-.better-sweclockers-icon-button, .better-sweclockers-editing-tools .button, form#better-sweclockers input[type="checkbox"]+label, form#better-sweclockers input[type="radio"]+labell, form#better-sweclockers footer, form#better-sweclockers textarea {
+
+.better-sweclockers-icon-button,
+.better-sweclockers-editing-tools .button,
+form#better-sweclockers input[type="checkbox"]+label,
+form#better-sweclockers input[type="radio"]+labell,
+form#better-sweclockers footer,
+form#better-sweclockers textarea {
 	color: var(--xhs-body) !important;
 }
+
 form#better-sweclockers footer a {
 	color: var(--xhs-orange) !important;
 }
+
 #better-sweclockers-document #proofArticle {
 	background-color: var(--xhs-orange) !important;
 }
+
 form#better-sweclockers footer a:hover {
 	text-decoration: none !important;
 	opacity: 0.75 !important;
 }
+
 .forumPost.isReader .button.better-sweclockers-icon-button.better-sweclockers-pm-button {
 	display: none !important;
 }
+
 .better-sweclockers-icon-button:hover {
 	opacity: 1;
 }
+
 #better-sweclockers-preferences-shortcut {
 	background-image: url(https://www.sweclockers.com/gfx/spritemap2x.png) !important;
 	background-position: -165px -95px;
 	background-size: 600px auto;
 }
+
 #better-sweclockers-dark-theme-toggle {
 	background-image: url(https://www.sweclockers.com/gfx/spritemap2x.png) !important;
 	background-position: -466px -95px;
 	background-size: 600px auto;
 }
-form#better-sweclockers .better-sweclockers-inlinePreference input[type="text"], form#better-sweclockers .better-sweclockers-inlinePreference input[type="number"], form#better-sweclockers .better-sweclockers-inlinePreference input[type="time"] {
+
+form#better-sweclockers .better-sweclockers-inlinePreference input[type="text"],
+form#better-sweclockers .better-sweclockers-inlinePreference input[type="number"],
+form#better-sweclockers .better-sweclockers-inlinePreference input[type="time"] {
 	background-color: var(--xhs-primary) !important;
 	color: var(--xhs-body) !important;
 	border: 1px solid var(--xhs-border) !important;
 }
-form#better-sweclockers input[type="text"], form#better-sweclockers input[type="number"], form#better-sweclockers input[type="time"] {
+
+form#better-sweclockers input[type="text"],
+form#better-sweclockers input[type="number"],
+form#better-sweclockers input[type="time"] {
 	background-color: var(--xhs-primary) !important;
 	color: var(--xhs-body) !important;
 }
+
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-color {
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), linear-gradient(to right, rgba(255, 0, 0, 0.7) 0%, rgba(255, 153, 50, 0.7) 16%, rgba(247, 227, 49, 0.7) 33%, rgba(62, 211, 42, 0.7) 49%, rgba(46, 117, 232, 0.7) 66%, rgba(90, 45, 226, 0.7) 83%, rgba(152, 25, 198, 0.7) 100%) !important;
 	color: black !important;
 }
+
 #better-sweclockers-document .tbGroup.better-sweclockers-textarea-size svg {
 	filter: brightness(0) saturate(100%) invert(61%) sepia(47%) saturate(0%) hue-rotate(230deg) brightness(111%) contrast(68%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(61%) sepia(47%) saturate(0%) hue-rotate(230deg) brightness(111%) contrast(68%) !important;
 }
+
 #better-sweclockers-document .tbGroup.better-sweclockers-textarea-size svg:hover {
 	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
-/*** REST OF CODE ***/
 
-/* SITE BORDER */
-
-:not(.arrow):not(.handle) {
-	border-color: var(--xhs-border) !important;
-}
-/* SCROLLBAR */
+/*! Rest of Code !*/
 
 ::-webkit-scrollbar {
 	width: 17px;
 	height: 12px;
 }
+
 ::-webkit-scrollbar-thumb {
 	background: var(--xhs-orange);
 	border-left: 4px solid var(--xhs-secondary) !important;
 	border-right: 4px solid var(--xhs-secondary) !important;
 }
+
 ::-webkit-scrollbar-track {
 	background: var(--xhs-primary);
 }
+
 ::-webkit-scrollbar-corner {
 	background: var(--xhs-primary);
 }
-/* MISC */
 
 .header>.main {
 	border-right: 1px solid var(--xhs-border) !important;
 }
+
 .header>.main>.container {
 	border-bottom: none !important;
 }
-.mainMenu .menu li, .mainMenu .menu li:hover, .subMenu .menu li, .subMenu .menu li:hover {
+
+.mainMenu .menu li,
+.mainMenu .menu li:hover,
+.subMenu .menu li,
+.subMenu .menu li:hover {
 	border-top: 1px solid var(--xhs-border) !important;
 	border-left: 1px solid var(--xhs-border) !important;
 	border-right: 1px solid var(--xhs-border) !important;
 }
+
 .subMenu .menu li a {
 	border-bottom: 1px solid var(--xhs-border) !important;
 }
+
 .newsList .commentsBubble.isHot {
 	color: white !important;
 	border-color: var(--xhs-border) !important;
 	background-color: var(--xhs-orange) !important;
 }
+
 .newsList .commentsBubble {
 	border-right-width: 0px !important;
 }
+
 .carousel .nav.left .handle {
 	border-right: 10px solid var(--xhs-orange) !important;
 }
+
 .carousel .nav.right .handle {
 	border-left: 10px solid var(--xhs-orange) !important;
 }
+
 .mainRecentNews {
 	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 }
+
 .sideBox.swec20Box>div>a:hover {
 	opacity: 1 !important;
 }
+
 .pushListInternal {
 	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 }
+
 .button.bg-orange {
 	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 }
+
 .prisjaktPopular {
 	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 }
+
 .mainRecentThreads {
 	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
 }
+
 .forumTable {
 	border: none !important;
 }
+
 .forumTable .subForums {
 	border-left: 1px solid var(--xhs-border) !important;
 	border-right: 1px solid var(--xhs-border) !important;
 }
+
 .forumList .categoryItem .cell.title {
 	border-left: 1px solid var(--xhs-border) !important;
 }
+
 .forumList .categoryItem .cell.toggle {
 	border-right: 1px solid var(--xhs-border) !important;
 }
+
 .forumTable .head .cell {
 	color: white !important;
 	border: none !important;
 }
+
 .forumList .categoryItem .cell {
 	border-top: 1px solid var(--xhs-border)!important;
 	border-bottom: 1px solid var(--xhs-border)!important;
 }
-.forumTable .cell, .forumTable .cell.alt1 {
+
+.forumTable .cell,
+.forumTable .cell.alt1 {
 	border-bottom: none !important;
 }
+
 .forumTable .lastThread h3>a {
 	text-decoration-color: var(--xhs-secondary) !important;
 }
+
 .forumTable .lastThread h3>a:hover {
 	text-decoration-color: var(--xhs-secondary) !important;
 }
+
 .forumList .categoryItem .toggle .arrow {
 	border-color: transparent !important;
 	border-bottom-color: var(--xhs-orange) !important;
 	border-top-color: var(--xhs-orange) !important;
 }
+
 #threadList-1 .table .head .cell {
 	border-top: 1px solid var(--xhs-border) !important;
 	border-bottom: 1px solid var(--xhs-border) !important;
 }
+
 #threadList-1 .table .head .cell.status {
 	border-left: 1px solid var(--xhs-border) !important;
 }
+
 #threadList-1 .table .head .cell.select {
 	border-right: 1px solid var(--xhs-border) !important;
 }
+
 #threadList-1 tr.hasUnreadPosts td.status {
 	box-shadow: inset 5px 0 0 0 var(--xhs-highlight) !important;
 }
+
 .forumThreads .body.threadsBody {
 	border-left: 1px solid var(--xhs-border) !important;
 	border-right: 1px solid var(--xhs-border) !important;
 	border-bottom: 1px solid var(--xhs-border) !important;
 }
+
 .threadList .isSelected .cell {
 	border-bottom: none !important;
 }
-.threadList .body .numReplies a, .threadList .body .numViews a {
+
+.threadList .body .numReplies a,
+.threadList .body .numViews a {
 	text-decoration-color: transparent !important;
 }
-.threadList .body .numReplies a:hover, .threadList .body .numViews a:hover {
+
+.threadList .body .numReplies a:hover,
+.threadList .body .numViews a:hover {
 	text-decoration-color: transparent !important;
 }
+
 .pages a.isCurrent:hover {
 	opacity: 1;
 }
+
 .forumPost.isLinked a.postNum:hover {
 	text-decoration: underline !important;
 }
+
 .forumPost .cell.alt2 {
 	border-right: none !important;
 }
+
 .forumPost .cell.main a:hover.clickArea {
 	opacity: 1;
 }
+
 .forumPost.isAuthor .postHeader .cell {
 	border-top: 3px solid var(--xhs-orange) !important;
 }
+
 .forumPost.isAuthor .postHeader .cell {
 	padding: 4px 5px !important;
 }
+
 .forumPost.isAuthor {
 	border-top: 2px solid var(--xhs-border) !important;
 }
+
 .forumPost.isLinked.isAuthor {
 	border-color: var(--xhs-border) !important;
 	box-shadow: 0 0 0 4px var(--xhs-border) !important;
 }
+
 .forumPost.isReader {
 	border-image: linear-gradient(to bottom, var(--xhs-primary) 0, var(--xhs-primary) 1px, var(--xhs-primary) 15px, var(--xhs-primary) 25px) 1;
 	margin-left: 0px !important;
 }
-.forumPost.isReader .button.like.isDisabled:hover, .forumPost.isLiked.isReader .button.like.isDisabled:hover {
+
+.forumPost.isReader .button.like.isDisabled:hover,
+.forumPost.isLiked.isReader .button.like.isDisabled:hover {
 	cursor: not-allowed !important;
 }
+
 .forumPost.isReader .button.report {
 	display: none !important;
 }
+
 .forumPost.isReader .postHeader .cell {
 	border-top: 3px solid var(--xhs-blue) !important;
 }
+
 .forumPost.isLinked.isAuthor .postHeader .cell {
 	background: var(--xhs-border) !important;
 }
+
 .forumPost.isLinked {
 	border-color: var(--xhs-border) !important;
 	box-shadow: 0 0 0 4px var(--xhs-border) !important;
 }
+
 .forumPost.isLinked .postHeader .cell {
 	background: var(--xhs-border) !important;
 }
+
 .forumPost .controls .button:hover {
 	opacity: 1;
 }
+
+.forumPost .cell.main a.clickArea:hover {
+	opacity: 1 !important;
+}
+
+.forumForm>.head {
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+
 .postBox .postElement .summary {
 	border: none !important;
 }
+
 .postBox .postElement .username {
 	border: none !important;
 }
+
 .postBox .postElement .karma {
 	border: none !important;
 }
+
 .postBox .postElement .select {
 	border: none !important;
 }
+
 .forumControls .button.replyToThread:hover {
 	opacity: 1;
 }
+
 .toolbar .tbButton.iconButton:hover .btnIcon {
 	filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(34%) hue-rotate(314deg) brightness(88%) contrast(85%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(34%) hue-rotate(314deg) brightness(88%) contrast(85%) !important;
 }
+
 .tanukiError .error {
 	color: white !important;
 	background-color: var(--xhs-red) !important;
 }
+
 .errorBox {
 	color: white !important;
 	background-color: var(--xhs-red) !important;
 }
+
 .bbQuote.isExpandable>.quoteFrame>.quoteFade {
 	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
@@ -413,6 +1381,7 @@ form#better-sweclockers input[type="text"], form#better-sweclockers input[type="
 	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 }
+
 .bbExpander>.expanderFrame>.expanderFade {
 	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
@@ -421,41 +1390,53 @@ form#better-sweclockers input[type="text"], form#better-sweclockers input[type="
 	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 }
+
 .bbSpoiler .spoilerHeader button:focus {
 	outline-color: transparent !important;
 }
+
 .postBody .bbPoll .optionBar>div {
 	background: var(--xhs-orange) !important;
 	border: none !important;
 }
+
 .postBody .bbPoll .pollQuestion {
 	border-bottom: 1px solid var(--xhs-border) !important;
 }
+
 .postBody .bbPoll .pollSums .totalVotes {
 	border-top: 1px solid var(--xhs-border) !important;
 }
+
 .tanukiTextbox input:focus {
 	box-shadow: 0 0 0px !important;
 }
+
 .tanukiSelect select:focus {
 	box-shadow: 0 0 0px !important;
 }
+
 .mainContent .pages a.isCurrent:hover {
 	opacity: 1;
 }
+
 .menuItems a:hover {
 	opacity: 1;
 }
+
 .articleBBCode .bbPoll .optionBar>div {
 	background: var(--xhs-orange) !important;
 	border: none !important;
 }
+
 .articleBBCode .bbPoll .pollQuestion {
 	border-bottom: 1px solid var(--xhs-border) !important;
 }
+
 .articleBBCode .bbPoll .pollSums .totalVotes {
 	border-top: 1px solid var(--xhs-border) !important;
 }
+
 .articleBBCode .bbExpander>.expanderFrame>.expanderFade {
 	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
@@ -464,166 +1445,236 @@ form#better-sweclockers input[type="text"], form#better-sweclockers input[type="
 	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 }
+
 .articleContent .articleNavi .pageItem.isCurrent a:hover {
 	opacity: 1;
 }
+
 .articleContent .articleNavi .pageButton:hover {
 	background: transparent !important;
 }
+
 .articleCommentsWidget {
 	box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
 	-webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
 	-moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
 }
+
 .bbPrisjaktFull h6 {
 	border-bottom: 1px solid var(--xhs-border) !important;
 }
+
 .tv-frame .tvf-left {
 	background-image: url("https://i.imgur.com/y8gWfV1.png") !important;
 }
+
 .tv-frame .tvf-right {
 	background-image: url("https://i.imgur.com/fD4VmHu.png") !important;
 }
+
 .tv-frame .tvf-top {
 	background-image: url("https://i.imgur.com/hxA5pui.png") !important;
 }
+
 .tv-frame .tvf-bottom {
 	background-image: url("https://i.imgur.com/p16tIQV.png") !important;
 	height: 32px !important;
 }
-#__laika_cnt\.textbox\.0:focus, #__laika_cnt\.textbox\.1:focus, #__laika_cnt\.textbox\.2:focus, #__laika_cnt\.textbox\.3:focus, #__laika_cnt\.textbox\.4:focus {
+
+#__laika_cnt\.textbox\.0:focus,
+#__laika_cnt\.textbox\.1:focus,
+#__laika_cnt\.textbox\.2:focus,
+#__laika_cnt\.textbox\.3:focus,
+#__laika_cnt\.textbox\.4:focus {
 	box-shadow: 0 0 0px !important;
 }
+
 #__laika_cnt\.textarea\.0:focus {
 	box-shadow: 0 0 0px !important;
 }
+
 .galleryNavi .next .arrow {
 	border-left: 10px solid var(--xhs-orange) !important;
 }
+
 .galleryNavi .prev .arrow {
 	border-right: 10px solid var(--xhs-orange) !important;
 }
+
 .mainContent .stepItem.isSelected {
 	background-color: transparent !important;
 }
+
 .mainContent .stepItem.isDisabled {
 	background-color: transparent !important;
 }
+
 .mainContent .stepItem {
 	background-color: transparent !important;
 }
+
 .footer {
 	border-top: none !important;
 }
+
 .footer .top {
 	border-top: 1px solid var(--xhs-border) !important;
 }
+
 .footer .top a {
 	text-decoration: none;
 	font-weight: 700;
 }
-/* UNTESTED PROMOTION TAB */
+
+/*! Untested Promotions !*/
 
 .mainMenu li.optionVr {
 	background-image: none !important;
 	background-color: #8111e1 !important;
 	border-color: #6a0eb9 !important;
 }
+
 .mainMenu li.optionVr a {
 	color: #ccc !important;
 }
+
 .mainMenu li.optionCes {
 	background-image: none !important;
 	background-color: #619c41 !important;
 	border-color: #51743e !important;
 }
+
 .mainMenu li.optionCes a {
 	color: #222 !important;
 }
+
 .mainMenu li.optionPaskrea {
 	background-image: none !important;
 	background-color: #ffd200 !important;
 	border-color: #d9a92b !important;
 }
+
 .mainMenu li.optionPaskrea a {
 	color: #222 !important;
 }
+
 .mainMenu li.optionGreenfriday {
 	background-image: none !important;
 	background-color: #41a500 !important;
 	border-color: #2b760a !important;
 }
+
 .mainMenu li.optionGreenfriday a {
 	color: #222 !important;
 }
+
 .mainMenu li.optionComputex {
 	background-image: none !important;
 	background-color: #e4007f !important;
 	border-color: #c6006e !important;
 }
+
 .mainMenu li.optionComputex a {
 	color: #ccc !important;
 }
+
 .mainMenu li.optionE3 {
 	background-image: none !important;
 	background-color: #ea2238 !important;
 	border-color: #aa1929 !important;
 }
+
 .mainMenu li.optionE3 a {
 	color: #ccc !important;
 }
+
 .mainMenu li.optionBack2school {
 	background-image: none !important;
 	background-color: #4d9edd !important;
 	border-color: #4b99d6 !important;
 }
+
 .mainMenu li.optionBack2school a {
 	color: #222 !important;
 }
+
 .mainMenu li.optionBlackfriday {
 	background-image: none !important;
 	background-color: #282828 !important;
 	border-color: #282828 !important;
 }
+
 .mainMenu li.optionBlackfriday a {
 	color: #ccc !important;
 }
+
 .mainMenu li.optionCybermonday {
 	background-image: none !important;
 	background-color: #49b2d6 !important;
 	border-color: #419fbf !important;
 }
+
 .mainMenu li.optionCybermonday a {
 	color: #222 !important;
 }
+
 .mainMenu li.optionDreamhack {
 	background-image: none !important;
 	background-color: #5e2f8e !important;
 	border-color: #402061 !important;
 }
+
 .mainMenu li.optionDreamhack a {
 	color: #ccc !important;
 }
+
 .mainMenu li.optionJulkalender {
 	background-image: none !important;
 	background-color: #c00 !important;
 	border-color: #900 !important;
 }
+
 .mainMenu li.optionJulkalender a {
 	color: #ccc !important;
 }
+
 .mainMenu li.optionMellandagsrea {
 	background-image: none !important;
 	background-color: #af0035 !important;
 	border-color: #780024 !important;
 }
+
 .mainMenu li.optionMellandagsrea a {
 	color: #ccc !important;
 }
-.mainMenu li.optionVr:hover, .mainMenu li.optionCes:hover, .mainMenu li.optionPaskrea:hover, .mainMenu li.optionGreenfriday:hover, .mainMenu li.optionComputex:hover, .mainMenu li.optionE3:hover, .mainMenu li.optionBack2school:hover, .mainMenu li.optionBlackfriday:hover, .mainMenu li.optionCybermonday:hover, .mainMenu li.optionDreamhack:hover, .mainMenu li.optionJulkalender:hover, .mainMenu li.optionMellandagsrea:hover {
+
+.mainMenu li.optionVr:hover,
+.mainMenu li.optionCes:hover,
+.mainMenu li.optionPaskrea:hover,
+.mainMenu li.optionGreenfriday:hover,
+.mainMenu li.optionComputex:hover,
+.mainMenu li.optionE3:hover,
+.mainMenu li.optionBack2school:hover,
+.mainMenu li.optionBlackfriday:hover,
+.mainMenu li.optionCybermonday:hover,
+.mainMenu li.optionDreamhack:hover,
+.mainMenu li.optionJulkalender:hover,
+.mainMenu li.optionMellandagsrea:hover {
 	background-image: none !important;
 	opacity: 0.8 !important;
 }
-.mainMenu li.optionVr:hover a, .mainMenu li.optionCes:hover a, .mainMenu li.optionPaskrea:hover a, .mainMenu li.optionGreenfriday:hover a, .mainMenu li.optionComputex:hover a, .mainMenu li.optionE3:hover a, .mainMenu li.optionBack2school:hover a, .mainMenu li.optionBlackfriday:hover a, .mainMenu li.optionCybermonday:hover a, .mainMenu li.optionDreamhack:hover a, .mainMenu li.optionJulkalender:hover a, .mainMenu li.optionMellandagsrea:hover a {
+
+.mainMenu li.optionVr:hover a,
+.mainMenu li.optionCes:hover a,
+.mainMenu li.optionPaskrea:hover a,
+.mainMenu li.optionGreenfriday:hover a,
+.mainMenu li.optionComputex:hover a,
+.mainMenu li.optionE3:hover a,
+.mainMenu li.optionBack2school:hover a,
+.mainMenu li.optionBlackfriday:hover a,
+.mainMenu li.optionCybermonday:hover a,
+.mainMenu li.optionDreamhack:hover a,
+.mainMenu li.optionJulkalender:hover a,
+.mainMenu li.optionMellandagsrea:hover a {
 	color: var(--color-text) !important;
 }
