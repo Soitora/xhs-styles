@@ -1,1276 +1,629 @@
-/* Dark Mode for Sweclockers.com
-* Created by: Soitora
-* Created: 2017-11-03
-* Updated: 2019-01-13
-* Version: 1.8.2
-* Licence: CC BY-NC-SA 3.0
+/*! SweClockers Dark - XHS v2.0.0 (2019-05-18)
+/*! Repository: https://github.com/Soitora/xhs-styles/
+/*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
-/* Theme Settings */
+
+/****** VARIABLES ******/
+
 :root {
-	/* Main */
-	--color-main: var(--color-palette-900);
-	--color-border: var(--color-palette-1100);
-	--color-text: var(--color-palette-400);
-	--color-text-header: var(--color-palette-500);
-	--color-link: var(--color-sweclockers);
-	/* Color Palette */
-	--color-palette-0: #ffffff;
-	--color-palette-50: #fafafa;
-	--color-palette-100: #f5f5f5;
-	--color-palette-200: #eeeeee;
-	--color-palette-300: #e0e0e0;
-	--color-palette-400: #bdbdbd;
-	--color-palette-500: #9e9e9e;
-	--color-palette-600: #757575;
-	--color-palette-700: #616161;
-	--color-palette-800: #424242;
-	--color-palette-850: #303030;
-	--color-palette-900: #212121;
-	--color-palette-1000: #1d1d1d;
-	--color-palette-1100: #1b1b1b;
-	--color-palette-1200: #191919;
-	--color-palette-1300: #161616;
-	--color-palette-1800: #080808;
-	--color-palette-1900: #040404;
-	--color-palette-2000: #000000;
-	/* Custom Colors */
-	--color-blue: #0088ff;
-	--color-blue-darker: #1F5994;
-	/* Company Colors */
-	--color-facebook: #4c69ba;
-	--color-facebook-lighter: #5b7bd5;
-	--color-prisjakt: #1d3c49;
-	--color-monster: #4a276a;
-	--color-sweclockers: #a14c00;
-	--color-sweclockers-lighter: #d26000;
-	/* Specific Colors */
-	--color-transparent: #0000;
-	--color-transparent-light: rgba(0, 0, 0, 0.175);
-	--color-quote-0: rgba(35, 35, 35, 0);
-	--color-quote-50: rgba(35, 35, 35, .5);
-	--color-quote-100: rgba(35, 35, 35, 1);
-	/* Image Variables */
-	--url-background-primary: url("https://i.imgur.com/aDSjz8R.png");
-	--url-background-secondary: url("https://i.imgur.com/7Q8mgVx.png");
-	--url-background-hover: url("https://i.imgur.com/x0VO5ok.png");
-	--url-background-selected: url("https://i.imgur.com/AW91aHV.png");
-	--url-threadStatus: url("https://i.imgur.com/rlERXyo.png");
-	--url-tvf-left: url("https://i.imgur.com/y8gWfV1.png");
-	--url-tvf-right: url("https://i.imgur.com/fD4VmHu.png");
-	--url-tvf-top: url("https://i.imgur.com/hxA5pui.png");
-	--url-tvf-bottom: url("https://i.imgur.com/p16tIQV.png");
-	/* ---------------- */
+	--xhs-primary: #1A1A1D;
+	--xhs-secondary: #1E1E21;
+	--xhs-border: #17171A;
+	--xhs-highlight: #232326;
+	--xhs-title: #C8C8C8;
+	--xhs-body: #AAAAAA;
+	--xhs-blue: #3779A1;
+	--xhs-orange: #F47447;
+	--xhs-green: #648E76;
+	--xhs-purple: #8E78A2;
+	--xhs-brown: #7A6A5A;
+	--xhs-red: #EF4A4B;
 }
+/****** SORTED LINES ******/
 
-/* Scrollbar */
-::-webkit-scrollbar {
-	width: 9px;
-	height: 9px;
+/*** PRIMARY ***/
+
+body, .ninjaSearch .searchField .input, .ninjaSearch .searchField .fieldWrap, .button.bg-orange, .geeksShop .geeksShopProducts .productOther .buyButton, .forumTable .head .cell, .forumList .categoryItem .cell, .forumList .subforums .link, .forumTable .caption, .forumPost.isAuthor .postHeader .cell, .forumPost .postHeader .cell, .forumPost .controls .button, .postBox .head, .postBox .postElement, .bbQuote, .forumForm.postEditForm .tanukiButton, .forumForm.postPollListForm .button, .forumForm.postDeleteForm .tanukiButton, .gp-subject-group .gphi-descr, .gp-subject-group .gpsg-more a, .forumResultPost .postHeader .threadTitle, .forumResultPost .controls .button, .bbPre.showFrame, .bbSpoiler .spoilerHeader button, .bbSpoiler .spoilerFrame, .postBody .bbPoll>.inner, .forumSearchForm #__laika_cnt\.select\.1, .forumSearchForm #__laika_cnt\.select\.2, .forumSearchForm .tanukiButton, .articleBBCode .bbPoll>.inner, .articleBBCode .bbTable thead th, .articleBBCode .bbTable th, .articleBBCode .bbTable td, .bbRelatedBox, .articleKeywords a, .articleKeywords a, #__laika_cnt\.textbox\.0, #__laika_cnt\.textbox\.1, #__laika_cnt\.textbox\.2, #__laika_cnt\.textbox\.3, #__laika_cnt\.textbox\.4, #__laika_cnt\.textarea\.0, #contactForm button, .galleryForm .tanukiButton, .infoTextWindow, .infoBox, #subscribeForm>fieldset>button, #__laika_cnt\.select\.0, .articlesMostTagged .tagSummary a, .header {
+	background: var(--xhs-primary) !important;
 }
-
-::-webkit-scrollbar-button {
-	width: 0px;
-	height: 0px;
+body, .subMenu .menu li.isSelected:hover, .subMenu .menu li, .ninjaSearch .searchField .fieldWrap, #search .searchField>a[title*=Google], .sponsoredArticle, .newsList .commentsBubble, .button.bg-orange, .geeksShop .geeksShopProducts .productOther .buyButton, .forumList .categoryItem .cell, .pages a.isCurrent, .pages a.isCurrent:hover, .pages a:hover, .forumPost.isReader .button.like.isDisabled:hover, .forumPost.isLiked.isReader .button.like.isDisabled:hover, .threadMap .naviView .shortcut, .forumForm.postDeleteForm .tanukiButton, .forumForm.postPollListForm .button, .forumForm.postEditForm .tanukiButton, .gp-subject-group .gphi-descr, .forumResultPost .controls .button, .bbSpoiler .spoilerHeader button, .bbSpoiler .spoilerFrame .bbPoll>.inner button, .postBody .bbPoll>.inner, .forumSearchForm .tanukiButton, .mainContent #detailsForm .tanukiButton, .mainContent #notificationForm .tanukiButton, .mainContent #optionsForm .tanukiButton, .mainContent #passwordForm .tanukiButton, .mainContent #signatureForm .tanukiButton, .mainContent #relationForm .tanukiButton, .mainContent .imageForm .tanukiButton, .mainContent #contactForm .tanukiTextbox input, .articleBBCode .bbTable thead th, .articleBBCode .bbTable th, .articleBBCode .bbTable td, .articleBBCode .bbPoll>.inner, .articleKeywords a, #contactForm button, .galleryBody .button, .galleryForm.galleryEditForm .tanukiButton, .whiteBody .sorter .column.isDesc.isCurrent:hover, .whiteBody .sorter .column.isDesc:hover, .marketEditForm #__laika_cnt\.select\.1, .marketEditForm #__laika_cnt\.select\.2, .marketEditForm .tanukiButton, .toolbar .tbButton.iconButton .inner, .uploadPanel .tanukiButton, .mainContent .s5fieldset a.button, .galleryFileEditor .uploadEntry .entryState>.progressLabel, .marketAcceptRules .tanukiButton, .marketForm #activateForm .tanukiButton, .marketForm #hideForm .tanukiButton, #subscribeForm>fieldset>button, .mainContent .btnGroup.right>a.button {
+	background-color: var(--xhs-primary) !important;
 }
+/*** SECONDARY ***/
 
-::-webkit-scrollbar-thumb {
-	background: var(--color-sweclockers);
-	border: 0px none #ffffff;
-	border-radius: 13px;
+.mainContent, .forumTable .cell, .forumTable .cell.alt1, .forumControls .button.newThread, .forumSearch #__laika_cnt\.textbox\.0, .forumPost .cell.alt2, .forumPost .cell.main, .forumPost .cell.controls, .postBox, .forumControls .button.replyToThread, .postActions #__laika_cnt\.select\.0, .quickReply #__laika_cnt\.textarea\.0, .forumForm>.body, .tbButton.iconButton.noselect.header, .gp-subject-group, .forumResultPost, .forumResultPost .postHeader .dateline, .bbSpoiler .spoilerFrame .bbPoll>.inner, .tanukiTextbox input, .tanukiSelect select, .tanukiButton, .articleCommentsWidget, .sideBox #__laika_cnt\.textbox\.0, .sideBox #__laika_cnt\.select\.0 {
+	background: var(--xhs-secondary) !important;
 }
-
-::-webkit-scrollbar-thumb:hover {
-	background: var(--color-sweclockers-lighter);
+.mainContent, .header>.main, .mainMenu .menu li.isSelected:hover, .mainMenu .menu li, .mainRecentNews, .pushListInternal, .geeksShop, .prisjaktPopular, .mainRecentThreads, .forumControls .button.newThread, .forumControls .button.replyToThread, .bbSpoiler .spoilerFrame .bbPoll>.inner, .tanukiButton, .mainContent .pages a.isCurrent, .mainContent .pages a.isCurrent:hover, .mainContent .pages a:hover, .articleHeader .sponsoredArticle, .articleCommentsWidget, .infoText a.button, .marketFilterBox #__laika_cnt\.textbox\.0, .marketFilterBox #__laika_cnt\.select\.0, .whiteBody .forumControls .button, .whiteBody .forumWidget, .contentBox, .footer .top, .footer .bottom {
+	background-color: var(--xhs-secondary) !important;
 }
+/*** BORDER ***/
 
-::-webkit-scrollbar-thumb:active {
-	background: var(--color-sweclockers);
+.ninjaSearch .searchField .fieldWrap, .newsList .commentsBubble, .geeksShop .geeksShopProducts .productOther .buyButton, .forumPost.isReader, .forumPost.isReader .button.edit, .postBox, .postBox .postElement, .threadMap .naviView .shortcut, .bbQuote, .quickReply #__laika_cnt\.textarea\.0, .tanukiError .error, .errorBox, .gp-subject-group, .gp-subject-group .gpsg-more a, .forumResultPost, .bbPre.showFrame, .bbSpoiler .spoilerFrame, .bbSpoiler .spoilerFrame .bbPoll>.inner, .postBody .bbPoll>.inner, .articleHeader .sponsoredArticle, .articleBBCode .bbPoll>.inner, .bbRelatedBox, .articleKeywords a, #__laika_cnt\.textarea\.0, .contentBox, .infoTextWindow, .articlesMostTagged .tagSummary a {
+	border: 1px solid var(--xhs-border) !important;
 }
+/*** HIGHLIGHT ***/
 
-::-webkit-scrollbar-track {
-	background: var(--color-main);
-	border: 0px none #ffffff;
-	border-radius: 26px;
+.button.bg-orange:hover, .geeksShop .geeksShopProducts .productOther .buyButton:hover, .forumList .subforums .link:hover, .forumControls .button.newThread:hover, .threadList .isSelected .cell, .forumPost .controls .button:hover, .forumControls .button.replyToThread:hover, .toolbar .tbButton.iconButton:hover .inner, .forumForm.postEditForm .tanukiButton:hover, .forumForm.postPollListForm .button:hover, .forumForm.postDeleteForm .tanukiButton:hover, .gp-subject-group .gpsg-more a:hover, .forumResultPost .controls .button:hover, .bbSpoiler .spoilerHeader button:hover, .bbMark, .forumSearchForm .tanukiButton:hover, .tanukiButton:hover, .articleKeywords a:hover, #contactForm button:hover, .galleryForm .tanukiButton:hover, #subscribeForm>fieldset>button:hover, .articlesMostTagged .tagSummary a:hover {
+	background: var(--xhs-highlight) !important;
 }
-
-::-webkit-scrollbar-track:hover {
-	background: #222222;
+.mainMenu .menu li:hover, .subMenu .menu li:hover, #search .searchField>a[title*=Google]:hover, .button.bg-orange:hover, .geeksShop .geeksShopProducts .productOther .buyButton:hover, .forumControls .button.newThread:hover, .threadList .isSelected .cell, .postBox .treeNode.hasChildren.isCollapsed>.treeCommand, .forumControls .button.replyToThread:hover, .toolbar .tbButton.iconButton:hover .inner, .forumForm.postEditForm .tanukiButton:hover, .forumForm.postPollListForm .button:hover, .forumForm.postDeleteForm .tanukiButton:hover, .forumResultPost .controls .button:hover, .bbSpoiler .spoilerHeader button:hover, .forumSearchForm .tanukiButton:hover, .tanukiButton:hover, .mainContent #detailsForm .tanukiButton:hover, .mainContent #notificationForm .tanukiButton:hover, .mainContent #optionsForm .tanukiButton:hover, .mainContent #passwordForm .tanukiButton:hover, .mainContent #signatureForm .tanukiButton:hover, .mainContent #relationForm .tanukiButton:hover, .mainContent .imageForm .tanukiButton:hover, #contactForm button:hover, .infoText a.button:hover, .galleryBody .button:hover, .galleryForm.galleryEditForm .tanukiButton:hover, .marketEditForm .tanukiButton:hover, .whiteBody .forumControls .button:hover, .toolbar .tbButton.iconButton .inner:hover, .uploadPanel .tanukiButton:hover, .mainContent .s5fieldset a.button:hover, .marketAcceptRules .tanukiButton:hover, .marketForm #activateForm .tanukiButton:hover, .marketForm #hideForm .tanukiButton:hover, .mainContent .btnGroup.right>a.button:hover, #subscribeForm>fieldset>button:hover {
+	background-color: var(--xhs-highlight) !important;
 }
+/*** TITLE ***/
 
-::-webkit-scrollbar-track:active {
-	background: #222222;
+.footer .bottom a, .footer h6, .s5fieldset legend, .bbPodcast .title span, #subscribeForm>fieldset>button:hover, #contactForm button:hover, .articleList .title, .tanukiButton:hover, .forumSearchForm .tanukiButton:hover, .bbSpoiler .spoilerHeader button:hover, .forumResultPost .controls .button:hover, .geeksShop .geeksShopProducts .productOther .buyButton:hover, .button.bg-orange:hover, .forumControls .button.newThread:hover, .forumForm.postEditForm .tanukiButton:hover, .toolbar .tbButton.iconButton:hover .inner, .forumControls .button.replyToThread:hover, .forumPost .controls .button:hover, .articleKeywords a, .articleCommentsWidget .mwLabel>.mwLabelDate, .articleBBCode .bbPoll .pollSums .totalVotes, .articleBBCode .bbPoll .pollQuestion, .articleBBCode .bbcode h3, .articleHeader .meta li, .articleHeader .sponsoredArticle, .articleBBCode .bbTable thead th, .articleList .timestamp, .tanukiTextbox input:focus, .sideMenu h5, .whiteHeader h1, .rulesList h4, .forumResultPost .message>.title, .forumResultPost .postHeader .threadTitle, .forumResultPost .postHeader .dateline, .bbQuote .quoteHead, .forumPost .message>.title, .forumSearch #__laika_cnt\.textbox\.0:focus, .threadList .body .lastReply .time, .forumTable .caption, #threadList-1 .table .head .cell, .forumList .numThreads, .forumList .numReplies, .forumList .subforums .link, .forumList .categoryItem .cell a, .mainRecentThreads .mwBody h6, .pushListExternal .plBody .plLabelDate, .pushListExternal .plBody h6, .prisjaktPopular .ppPrice, .geeksShop .geeksShopProducts .productOther .productPrice, #wdgtSideRecentClassifieds>div:nth-child(2)>h6, #wdgtSideRecentClassifieds>div:nth-child(3)>h6, #wdgtSideRecentClassifieds>div:nth-child(4)>h6, #wdgtSideRecentClassifieds>div:nth-child(5)>h6, .pushList .plLabel>.plLabelDate, .popularGalleries .rating, .sideBox a, .mainRecentNews .mwLabelDate, .mainRecentNews .mwBody h6, .newsList .commentsBubble, .sponsoredArticle, .newsList .pubItem .itemMeta .date, .newsList .pubItem .itemText a, #search .searchField>a[title*=Google]:hover, .ninjaSearchResult h6, .ninjaSearch .searchField .input:focus, .subMenu .menu li:hover, .subMenu .menu li a:hover, .subMenu .menu li.isSelected a, .mainMenu .menu li:hover, .mainMenu .menu li a:hover, .mainMenu .menu li.isSelected a, #__laika_cnt\.textarea\.0:focus, #__laika_cnt\.textbox\.0:focus, #__laika_cnt\.textbox\.1:focus, #__laika_cnt\.textbox\.2:focus, #__laika_cnt\.textbox\.3:focus, #__laika_cnt\.textbox\.4:focus, .infoText .contactInfo h4, .infoText h1, .infoText h2, .profileHeader h1, .mainContent .mainContentHeader, .sideMenu .link .label, .forumForm.postPollListForm .button:hover, .forumForm.postDeleteForm .tanukiButton:hover, .bbExpander .expanderHeader, .articleContent .bbRelatedBox h3, .articleContent .articleNavi .head h5, .sideBox h5, .infoText a.button:hover, .galleryPortal .galleryItem h3, .galleryItem .author a, .galleryList .galleryItem h3, .galleryForm.galleryEditForm .tanukiButton:hover, .mainContent .stepItem, .galleryFileEditor .uploadEntry .entryState>.progressLabel, .marketHeader .marketMeta dt, .mainContent .btnGroup.right>a.button:hover, .forumSearch input:focus::-webkit-input-placeholder, .forumPost.isLinked .postHeader .postNum, .postBox .head .title, .postBox .postElement .karma, .threadMap .naviView .shortcut, .gp-subject-group .gphi-descr h3, .gp-subject-group .gpsg-header h2, .gp-subject-group .gpsg-more a, .mainContent #detailsForm .tanukiButton:hover, .mainContent #notificationForm .tanukiButton:hover, .mainContent #optionsForm .tanukiButton:hover, .mainContent #passwordForm .tanukiButton:hover, .mainContent #signatureForm .tanukiButton:hover, .mainContent #relationForm .tanukiButton:hover, .mainContent .imageForm .tanukiButton:hover, .articlePage h2.pageTitle, .hotGallery h3, .hotGallery .title .author, .galleryPortal .head .title, .galleryHeader dt, .whiteHeader .meta .metaItem a, .galleryBody .button:hover, .whiteBody .sorter .column.isDesc, .marketFilterBox legend, .forumTable h2 a, .marketList .type, .marketEditForm .tanukiButton:hover, .forumTable .cell.date.alt2, .whiteBody .forumControls .button:hover, .whiteBody .forumWidget .mwLabel>.mwLabelDate, .contentBox h1, .contentBox a, .mainContent .contentHeader h2, .uploadPanel .tanukiButton:hover, .mainContent .s5fieldset a.button:hover, .galleryForm .tanukiButton:hover, .infoTextWindow, .marketAcceptRules .tanukiButton:hover, .marketForm #activateForm .tanukiButton:hover, .marketForm #hideForm .tanukiButton:hover, .marketForm .s5fieldset h6 {
+	color: var(--xhs-title) !important;
 }
+/*** BODY ***/
 
-::-webkit-scrollbar-corner {
-	background: transparent;
+.mainMenu .menu li a, .subMenu .menu li a, .header>.main .section.profile h5 a, .header .profile .label, .header .profile .signout button, .header .ticker .latest, .header .ticker .current, .ninjaSearch .searchField .input, .ninjaSearch h5, .ninjaSearchResult .resultSection.isEmpty .noResults, .ninjaSearchResult .resultList .label a, .ninjaSearchResult .resultList .date, #search .searchField>a[title*=Google], .mainContent, .mainRecentNews .mwHead p, .mainRecentNews .mwItem, .sideBox, .videoPush h3>a, .popularGalleries .cat>a, .popularGalleries .author>a, div.plBody, .button.bg-orange, .geeksShop .geeksShopProducts .productOther, .geeksShop .geeksShopProducts .productOther .buyButton, .prisjaktPopular, .prisjaktPopular .descr, .pushListExternal .plHead p, .pushListExternal .plBody .plItem, .mainRecentThreads, .mainRecentThreads .mwHead p, .mainRecentThreads .mwBody .mwItem, .forumTable.forumList .descr, .forumTable .lastThread h3>a, .forumTable .lastThread>div, .forumControls .button.newThread, .threadList .title h2 a, .threadList .hasUnreadPosts .title h2 a, .threadList .body .lastReply .date, .threadList .body .lastReply .by, .threadList .body .numReplies a, .threadList .body .numViews a, .pages a, body pre, .forumSearch #__laika_cnt\.textbox\.0, .forumPost .cell.main, .forumPost .postHeader, .forumPost .profile .title>*, .forumPost .profile .meta dt, .forumPost .profile .meta dd, .forumPost .controls .button, .bbQuote, .forumControls .button.replyToThread, .quickReply .tcLabel, .quickReply #__laika_cnt\.textarea\.0, .forumForm .tcLabel, .forumForm.postEditForm .tanukiButton, .forumResultPost, .tanukiControl .tcHint, .forumResultPost .controls .button, .bbPre.showFrame, .bbSpoiler .spoilerHeader button, .bbSpoiler .spoilerFrame, .forumSearchForm .tanukiButton, .whiteHeader div, .tanukiTextbox input, .tanukiSelect select, .tanukiButton, .articleList .category, .mainContent .pages a, .articleBBCode .bbSlideshow .slideFooter, .articleBBCode .bbTable th, .articleBBCode .bbTable td, .articleBBCode .bbPoll>.inner, .articleBBCode .bbPoll .pollSums .pollMessage, .articleBBCode .bbPoll .pollOptions .votesAbs, .articleBBCode .bbPoll .pollOptions .votesRel, .articleCommentsWidget, .articleCommentsWidget .mwHead p, .articleCommentsWidget .mwLabel>.mwLabelText, .bbPrisjaktFull h6, .bbPrisjaktFull .pjVendors .name a, .articleKeywords a, .bbPodcast .meta, .bbPodcast .descr, #__laika_cnt\.textbox\.0, #__laika_cnt\.textbox\.1, #__laika_cnt\.textbox\.2, #__laika_cnt\.textbox\.3, #__laika_cnt\.textbox\.4, #__laika_cnt\.textarea\.0, #contactForm label, #contactForm button, .infoText p, .infoText ul, .footer .bottom .copyright, .footer p, .articlesMostRead .title, .articlesMostTagged .tagSummary a, .articlesMostTagged .title, #__laika_cnt\.select\.0, #subscribeForm>fieldset>button, .profileHeader .title, .profileHeader .meta dt, .profileHeader .meta dd, .profileHeader .statistics .label, .profileFeed .date, .forumPost.isReader .button.like.isDisabled:hover, .forumPost.isLiked.isReader .button.like.isDisabled:hover, .forumForm.postEditForm .tanukiControl.tanukiCheckbox, .forumForm.postPollListForm .button, .forumForm.postDeleteForm .tanukiButton, .forumForm .tanukiControl.tanukiCheckbox.isRequired, .articleBBCode .bbPrisjakt a.prices, .articleBBCode .bbExpander .expanderFooter, .articleContent .bbRelatedBox p, .articleContent .articleNavi .pageItem.isCurrent a, .articleContent .articleNavi .pageItem::before, .articleByline .author span, .sideShare.sideBox .link, .bbPrisjaktFull .pjFooter .withPrisjakt, .infoText a.button, .galleryItem .cat a, .galleryForm.galleryEditForm .tanukiButton, .mainContent .stepItem.isDisabled, .uploadPanel .s5fieldset p, .galleryFileEditor .uploadEntry .entryName, .marketHeader .marketMeta dd, .marketHeader .marketMeta dd a, .mainContent .btnGroup.right>a.button, .forumSearch input::-webkit-input-placeholder, .postBox .postElement .summary, .gp-subject-group, .gp-subject-group .gphi-descr p, .mainContent #detailsForm .tanukiButton, .mainContent #notificationForm .tanukiButton, .mainContent #optionsForm .tanukiButton, .mainContent #passwordForm .tanukiButton, .mainContent #signatureForm .tanukiButton, .mainContent #relationForm .tanukiButton, .mainContent .imageForm .tanukiButton, .mainContent #signatureForm .signaturePreview .bbcode p, .hotGallery .title .cat, .galleryPortal .head .descr, .galleryHeader dd, .galleryHeader .galleryRating .num, .galleryImage .bbcode .bbParagraph, .galleryBody .button, .marketFilterBox .gallerySearchQuery .tcLabel, .marketFilterBox .galleryCategory .tcLabel, .marketFilterBox .tcLabel, .marketFilterBox .tanukiControl .tcHint, .marketFilterBox .checkboxList .checkboxItem, .marketList .category, .marketEditForm #__laika_cnt\.select\.1, .marketEditForm #__laika_cnt\.select\.2, .marketEditForm .tanukiButton, .forumTable .cell.price.alt2, .marketList .date .time, .whiteBody .forumControls .button, .whiteBody .forumWidget .mwHead p, .whiteBody .forumWidget .mwLabel>.mwLabelText, .contentBox, .uploadPanel .tanukiButton, .mainContent .s5fieldset a.button, .galleryFileEditor .orderHint, .galleryForm .tanukiButton, .infoBox, .marketAcceptRules .tanukiButton, .marketForm #activateForm .tanukiButton, .marketForm .s5fieldset p {
+	color: var(--xhs-body) !important;
 }
+/*** BLUE ***/
 
-/* Darkmode Code */
-:not(.arrow):not(.handle),
-:not(.arrow):not(.handle).menuItem.isSelected,
-:not(.arrow):not(.handle).menuItem {
-	border-color: var(--color-border) !important;
+.pages a:active, .bbSpoiler .spoilerFrame .bbPoll>.inner button:hover, .mainContent .pages a:active {
+	color: var(--xhs-blue) !important;
 }
+/*** ORANGE ***/
 
-.bbColor[style="color: blue!important;"] {
-	color: var(--color-blue) !important;
+.articlesMostTagged h2>a, .articlesMostTagged .n, .articlesMostRead h2>a, .articlesMostRead .n, .infoText a, .infoText .contactInfo h1, .bbPodcast a, .bbPrisjaktFull .price>a, .bbPrisjaktFull h6>a, .articleHeader h1, .articleHeader .meta a, .menuItems .link, .articleList .comments, .quickReply h4, .bbQuote .quoteLink>a, .forumPost .guruFlag, .forumPost .supporterFlag, .forumPost.isGuru .controls .button.like .score, .forumPost.isLiked .controls .button.like .score, .forumTable .lastThread>div>a, .forumList .lastThread .time, .mainRecentThreads h5>a, .pushListExternal .plHead h5, .prisjaktPopular h5>a, .pushList .plLabel.plComments, div.plHead h5, .mainRecentNews .mwComments, .mainRecentNews .mwHead h5>a, .newsList .pubItem .itemMeta a, .newsList .pubItem h2 a, .ninjaSearchResult .showMore, .ninjaSearchResult .externalSearch a, .header .ticker .date, .footer .top a, .footer .top a:before, .articlesMostTagged .showMore, .articleKeywords a:hover, .bbPrisjaktFull .pjFooter .seeMore, .articleCommentsWidget h5>a, .mainContent .pages a.isCurrent, .breadcrumbs .breadcrumb .link, .bbcode .bbLink, .bbReply, .bbKeyword, .tanukiControl .tcHint a, .forumResultPost .postHeader .dateline a, .forumPost .signature .bbParagraph a, .forumPost .signature .bbParagraph a:hover, .forumPost .profile .name>a, .forumPost .profile .name>a:hover, .forumPost .cell.main a, .forumPost .cell.main a:hover, .pages a.isCurrent, .threadList .body .lastReply .name, .forumThreads .dateline>a, .forumThreads .pageLinks>a, .forumList .subforums .link:hover, .forumTable.forumList .title h2>a, .geeksShop, .readMoreArchive, .newsList .pubItem .itemText a:last-child:hover, .newsList .pubItem .itemText a:last-child, .profileHeader .statistics a, .profileFeed .link, .profileFeed .user, .feedMore, .articleBBCode .bbExpander .expanderHeader, .articleContent .bbRelatedBox .bbLink, .articleContent .articleNavi .pageItem a, .articleContent .articleNavi .pageButton, .mainContent .stepItem.isSelected, .galleryFileEditor .selectedPanel .s5fieldset .curFile a, .galleryFileEditor .uploadEntry .entryError>.errorAlert, .marketHeader .marketMeta dd.strongLabel a, .marketHeader .marketMeta dd.strongLabel, .newsList .relatedLinks a, .forumPost .details .activity.online, .postBox .postElement .username, .postBox .siblingCommand .label, .gp-subject-group h4, .articleContent .articleNavi .pageButton:hover, .hotGallery .hot, .hotGallery .rating, .galleryItem .rating, .galleryPortal .head .more, .galleryHeader .galleryRating .score, .whiteHeader .pmThreadPtcps a, .whiteBody .sorter .column.isDesc.isCurrent, .marketList .comments, .whiteBody .forumWidget .mwHead h5, .contentBox h2 {
+	color: var(--xhs-orange) !important;
 }
+/*** PURPLE ***/
 
-#better-sweclockers-dark-theme-toggle>a {
-	background-color: var(--color-palette-500) !important;
-	border-top-left-radius: 5px !important;
-	border-top-right-radius: 5px !important;
-	-webkit-border-top-left-radius: 5px !important;
-	-webkit-border-top-right-radius: 5px !important;
-	-moz-border-radius-topleft: 5px !important;
-	-moz-border-radius-topright: 5px !important;
-}
-
-#better-sweclockers-preferences-shortcut {
-	background-color: var(--color-main) !important;
-}
-
-#better-sweclockers-preferences-shortcut:hover {
-	background-color: var(--color-palette-850) !important;
-}
-
-#better-sweclockers-preference-quote_signature_message,
-#better-sweclockers-preference-textarea_size_small,
-#better-sweclockers-preference-textarea_size_large,
-#better-sweclockers-preference-dark_theme_interval,
-#better-sweclockers-preference-dark_theme_time_on,
-#better-sweclockers-preference-dark_theme_time_off,
-#better-sweclockers-preference-custom_css_code {
-	color: var(--color-text) !important;
-}
-
-img[src*="/artikel/diagram/"] {
-	background-color: var(--color-palette-500) !important;
-	-webkit-filter: invert(85%) !important;
-	-o-filter: invert(85%) !important;
-	filter: invert(85%) !important;
-	background: none !important;
-}
-
-img[src*="/image/diagram/"] {
-	background-color: var(--color-palette-300) !important;
-}
-
-.bbRelatedBox {
-	border: 0px inset var(--color-main) !important;
-	border-radius: 2px !important;
-	background: var(--color-main) !important;
-	margin-bottom: 16px !important;
-	padding: 10px 10px 0 !important;
-}
-
-.bbPre.showFrame {
-	background: var(--color-main) !important;
-	border-left-color: var(--color-main) !important;
-	border-top-color: var(--color-main) !important;
-	border: 1px solid var(--color-main) !important;
-}
-
-.button,
-a.button {
-	background-color: var(--color-main) !important;
-	background-image: var(--color-main) !important;
-	background-image: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: linear-gradient(var(--color-main), var(--color-main)) !important;
-	color: var(--color-palette-300) !important;
-}
-
-.bbIns,
 .bbMark {
-	padding: 0 1px !important;
-	border-radius: 3px !important;
-	background-color: var(--color-sweclockers) !important;
+	color: var(--xhs-purple) !important;
 }
+/*** RED ***/
 
-/* Kampanjer */
+.header .profile .signout button:hover, .forumForm.postDeleteForm .tanukiButton, .rulesList li:before, .rulesList a, .tanukiControl.isRequired .tcLabel:after, .galleryForm #deleteForm .tanukiButton, .infoBox a, .marketForm #hideForm .tanukiButton {
+	color: var(--xhs-red) !important;
+}
+/*** LINKS ***/
+
+.ninjaSearchResult .showMore:hover, .header>.main .section.profile h5 a:hover, .header .profile .label:hover, .header .profile .signout button:hover, #siteHeader .ticker a:hover .title, #siteHeader .ticker a:hover .date, .ninjaSearchResult .externalSearch a:hover, .profileHeader .statistics a:hover, .profileFeed .link:hover, .feedMore:hover, .newsList .pubItem h2 a:hover, .newsList .pubItem .itemMeta a:hover, .newsList .pubItem .itemText a:hover, .newsList .pubItem .itemText a:last-child:hover, .newsList .relatedLinks a:hover, .newsList .commentsBubble.isHot:hover, .newsList .commentsBubble:hover, .readMoreArchive:hover, .mainRecentNews .mwHead h5>a:hover, .mainRecentNews .mwItem a:hover .mwLabelText, .mainRecentNews .mwItem a:hover .mwLabelDate, .mainRecentNews .mwItem a:hover .mwLabelIcon, .sideBox a:hover, .sideBox .menuSection a:hover .label, .sideMenu .isSelected .link .label, .pushList .plBody a:hover .plLabelText, .pushList .plBody a:hover .plLabelIcon, .pushList .plHead h5>a:hover, .pushList .plHead p>a:hover, .geeksShop .geeksShopProducts a:hover .productName, .prisjaktPopular h5>a:hover, .prisjaktPopular .ppProducts a:hover .ppTitle, .mainRecentThreads h5>a:hover, .mainRecentThreads .mwItem a:hover .mwLabelText, .forumTable .lastThread>div>a:hover, .threadList .title h2 a:hover, .threadList .hasUnreadPosts .title h2 a:hover, .forumThreads .pageLinks>a:hover, .forumThreads .dateline>a:hover, .threadList .body .lastReply .name:hover, .pages a:hover, .forumPost .cell.main a:hover, .forumPost .profile .name>a:hover, .forumPost .signature .bbParagraph a:hover, .postBox .siblingCommand .label:hover, .threadMap .naviView .shortcut a:hover, .bbQuote .quoteLink>a:hover, .gp-subject-group h4 a:hover, .gp-subject-group .gphi-descr h3 a:hover, .forumResultPost .postHeader .dateline a:hover, .tanukiControl .tcHint a:hover, .forumResultPost .postHeader .threadTitle a:hover, .bbcode .bbLink:hover, .bbReply:hover, .bbKeyword:hover, .bbExpander .expanderHeader:hover, .rulesList a:hover, .breadcrumbs .breadcrumb .link:hover, .articleList .title>a:hover, .articleList .category:hover, .articleList .listItem a:hover .n, .mainContent .pages a:hover, .articleBBCode .bbPrisjakt a:hover.prices, .articleBBCode .bbExpander .expanderHeader:hover, .articleBBCode .bbExpander .expanderFooter:hover, .articleContent .bbRelatedBox .bbLink:hover, .articleContent .articleNavi .pageItem a:hover, .articleContent .articleNavi .pageButton:hover, .sideShare.sideBox .menuItem a:hover .label, .articleCommentsWidget h5>a:hover, .bbPrisjaktFull h6>a:hover, .bbPrisjaktFull .price>a:hover, .bbPrisjaktFull .pjFooter .seeMore:hover, .bbPodcast a:hover, .hotGallery .title a:hover, .hotGallery h3 a:hover, .galleryPortal .head .more:hover, .whiteHeader .meta .metaItem a:hover, .whiteHeader .pmThreadPtcps a:hover, .galleryList .galleryItem h3>a:hover, .galleryList .cat>a:hover, .galleryList .author>a:hover, .whiteBody .sorter .column.isDesc.isCurrent:hover, .whiteBody .sorter .column.isDesc:hover, .forumTable h2 a:hover, .marketList .type:hover, .marketList .category:hover, .marketList .meta a:hover .label, .marketList .meta a:hover .icon, .whiteBody .forumWidget .mwHead h5>a:hover, .whiteBody .forumWidget .mwItem a:hover .mwLabelText, .whiteBody .forumWidget .mwItem a:hover .mwLabelDate, .contentBox a:hover, .mainContent .stepItem a:hover, .galleryFileEditor .selectedPanel .s5fieldset .curFile a:hover, .infoText a:hover, .infoBox a:hover, .marketHeader .marketMeta dd a:hover, .marketHeader .marketMeta dd.strongLabel a:hover, .articlesMostTagged h2>a:hover, .articlesMostTagged .title:hover, .articlesMostTagged .showMore:hover, .articlesMostTagged .articleListCompact a:hover .n, .articlesMostRead h2>a:hover, .articlesMostRead .title:hover, .footer .top a:hover, .footer .top a:hover .label, .footer .bottom a:hover, .forumTable.forumList .title h2>a:hover, .threadList .body .numReplies a:hover, .threadList .body .numViews a:hover, .forumTable .lastThread h3>a:hover, .forumList .categoryItem .cell a:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+/*** TEXT DECORATION ***/
+
+.ninjaSearchResult .showMore, .ninjaSearchResult .externalSearch a, .profileHeader .statistics a, .feedMore, .newsList .pubItem .itemText a:last-child, .readMoreArchive, .sideBox.swec20Box>div>a:hover, .forumTable.forumList .title h2>a, .forumTable.forumList .descr, .forumList .subforums .link:hover, .forumTable .lastThread h3>a, .threadList .title h2 a, .threadList .hasUnreadPosts .title h2 a, .forumThreads .pageLinks>a, .forumThreads .dateline>a, .threadList .body .lastReply .name, .threadList .body .numReplies a, .threadList .body .numViews a, .pages a.isCurrent:hover, .forumPost.isLinked .postHeader .postNum, .forumPost .cell.main a, .forumPost .profile .name>a, .forumPost .signature .bbParagraph a, .forumResultPost .postHeader .dateline a, .tanukiControl .tcHint a, .bbcode .bbLink, .bbReply, .bbKeyword, .rulesList a, .breadcrumbs .breadcrumb .link, .articleList .title, .mainContent .pages a.isCurrent:hover, .articleContent .articleNavi .pageItem.isCurrent a:hover, .articleContent .articleNavi .pageItem a, .articleCommentsWidget h5>a, .bbPrisjaktFull .pjFooter .seeMore, .articleKeywords a:hover, .galleryPortal .head .more, .forumTable h2 a, .infoBox a, .articlesMostTagged .title, .articlesMostTagged .showMore, .articlesMostRead .title {
+	text-decoration: none !important;
+}
+/*** FILTERS ***/
+
+/* ORANGE FILTER */
+
+.mainRecentNews .mwIcon, .pushListInternal .plIcon, .pushListExternal .plIcon, .mainRecentThreads .mwIcon, .pages .icon, .postBox .treeNode .treeLine, .articleList .comments .icon, .mainContent .pages .icon, .menuItems .icon, .sideShare.sideBox .icon, .articleCommentsWidget .mwItem .mwLabelIcon, .marketList .comments .icon, .articlesMostTagged .icon, .articlesMostRead .icon {
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+/* GREY FILTER */
+
+.forumList .cell.status .forumStatus, .threadStatus.icon-0, .threadStatus.icon-2, .threadStatus.icon-8, .threadStatus.icon-16, .threadStatus.icon-32, .threadStatus.icon-17, .threadList .pageLinks .icon, .threadList .body .lastReply .icon, #siteHeader .profile .icon {
+	filter: sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%) !important;
+	-webkit-filter: sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%) !important;
+}
+/* TITLE FILTER */
+
+.forumPost .controls .button.report:hover .icon {
+	filter: brightness(0) saturate(100%) invert(34%) sepia(43%) saturate(2820%) hue-rotate(332deg) brightness(104%) contrast(87%);
+	-webkit-filter: brightness(0) saturate(100%) invert(34%) sepia(43%) saturate(2820%) hue-rotate(332deg) brightness(104%) contrast(87%);
+}
+/*** BETTER SWECLOCKERS ***/
+
+/*** BETTER SWECLOCKERS ***/
+
+.better-sweclockers-icon-button, .better-sweclockers-editing-tools .button, #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler {
+	background: var(--xhs-primary) !important;
+}
+form#better-sweclockers textarea {
+	background-color: var(--xhs-primary) !important;
+}
+form#better-sweclockers .s5fieldset {
+	background-color: var(--xhs-secondary) !important;
+}
+.better-sweclockers-icon-button:hover, .better-sweclockers-editing-tools .button:hover, #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
+	background: var(--xhs-highlight) !important;
+}
+.better-sweclockers-editing-tools .button:hover, #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
+	background-color: var(--xhs-highlight) !important;
+}
+#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover, .better-sweclockers-editing-tools .button:hover, .better-sweclockers-icon-button:hover, form#better-sweclockers label, form#better-sweclockers textarea:focus {
+	color: var(--xhs-title) !important;
+}
+.better-sweclockers-icon-button, .better-sweclockers-editing-tools .button, form#better-sweclockers input[type="checkbox"]+label, form#better-sweclockers input[type="radio"]+labell, form#better-sweclockers footer, form#better-sweclockers textarea {
+	color: var(--xhs-body) !important;
+}
+form#better-sweclockers footer a {
+	color: var(--xhs-orange) !important;
+}
+#better-sweclockers-document #proofArticle {
+	background-color: var(--xhs-orange) !important;
+}
+form#better-sweclockers footer a:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+.forumPost.isReader .button.better-sweclockers-icon-button.better-sweclockers-pm-button {
+	display: none !important;
+}
+.better-sweclockers-icon-button:hover {
+	opacity: 1;
+}
+#better-sweclockers-preferences-shortcut {
+	background-image: url(https://www.sweclockers.com/gfx/spritemap2x.png) !important;
+	background-position: -165px -95px;
+	background-size: 600px auto;
+}
+#better-sweclockers-dark-theme-toggle {
+	background-image: url(https://www.sweclockers.com/gfx/spritemap2x.png) !important;
+	background-position: -466px -95px;
+	background-size: 600px auto;
+}
+form#better-sweclockers .better-sweclockers-inlinePreference input[type="text"], form#better-sweclockers .better-sweclockers-inlinePreference input[type="number"], form#better-sweclockers .better-sweclockers-inlinePreference input[type="time"] {
+	background-color: var(--xhs-primary) !important;
+	color: var(--xhs-body) !important;
+	border: 1px solid var(--xhs-border) !important;
+}
+form#better-sweclockers input[type="text"], form#better-sweclockers input[type="number"], form#better-sweclockers input[type="time"] {
+	background-color: var(--xhs-primary) !important;
+	color: var(--xhs-body) !important;
+}
+#better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-color {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), linear-gradient(to right, rgba(255, 0, 0, 0.7) 0%, rgba(255, 153, 50, 0.7) 16%, rgba(247, 227, 49, 0.7) 33%, rgba(62, 211, 42, 0.7) 49%, rgba(46, 117, 232, 0.7) 66%, rgba(90, 45, 226, 0.7) 83%, rgba(152, 25, 198, 0.7) 100%) !important;
+	color: black !important;
+}
+#better-sweclockers-document .tbGroup.better-sweclockers-textarea-size svg {
+	filter: brightness(0) saturate(100%) invert(61%) sepia(47%) saturate(0%) hue-rotate(230deg) brightness(111%) contrast(68%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(61%) sepia(47%) saturate(0%) hue-rotate(230deg) brightness(111%) contrast(68%) !important;
+}
+#better-sweclockers-document .tbGroup.better-sweclockers-textarea-size svg:hover {
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+/*** REST OF CODE ***/
+
+/* SITE BORDER */
+
+:not(.arrow):not(.handle) {
+	border-color: var(--xhs-border) !important;
+}
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+	width: 17px;
+	height: 12px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--xhs-orange);
+	border-left: 4px solid var(--xhs-secondary) !important;
+	border-right: 4px solid var(--xhs-secondary) !important;
+}
+::-webkit-scrollbar-track {
+	background: var(--xhs-primary);
+}
+::-webkit-scrollbar-corner {
+	background: var(--xhs-primary);
+}
+/* MISC */
+
+.header>.main {
+	border-right: 1px solid var(--xhs-border) !important;
+}
+.header>.main>.container {
+	border-bottom: none !important;
+}
+.mainMenu .menu li, .mainMenu .menu li:hover, .subMenu .menu li, .subMenu .menu li:hover {
+	border-top: 1px solid var(--xhs-border) !important;
+	border-left: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--xhs-border) !important;
+}
+.subMenu .menu li a {
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+.newsList .commentsBubble.isHot {
+	color: white !important;
+	border-color: var(--xhs-border) !important;
+	background-color: var(--xhs-orange) !important;
+}
+.newsList .commentsBubble {
+	border-right-width: 0px !important;
+}
+.carousel .nav.left .handle {
+	border-right: 10px solid var(--xhs-orange) !important;
+}
+.carousel .nav.right .handle {
+	border-left: 10px solid var(--xhs-orange) !important;
+}
+.mainRecentNews {
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+.sideBox.swec20Box>div>a:hover {
+	opacity: 1 !important;
+}
+.pushListInternal {
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+.button.bg-orange {
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+.prisjaktPopular {
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+.mainRecentThreads {
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+.forumTable {
+	border: none !important;
+}
+.forumTable .subForums {
+	border-left: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--xhs-border) !important;
+}
+.forumList .categoryItem .cell.title {
+	border-left: 1px solid var(--xhs-border) !important;
+}
+.forumList .categoryItem .cell.toggle {
+	border-right: 1px solid var(--xhs-border) !important;
+}
+.forumTable .head .cell {
+	color: white !important;
+	border: none !important;
+}
+.forumList .categoryItem .cell {
+	border-top: 1px solid var(--xhs-border)!important;
+	border-bottom: 1px solid var(--xhs-border)!important;
+}
+.forumTable .cell, .forumTable .cell.alt1 {
+	border-bottom: none !important;
+}
+.forumTable .lastThread h3>a {
+	text-decoration-color: var(--xhs-secondary) !important;
+}
+.forumTable .lastThread h3>a:hover {
+	text-decoration-color: var(--xhs-secondary) !important;
+}
+.forumList .categoryItem .toggle .arrow {
+	border-color: transparent !important;
+	border-bottom-color: var(--xhs-orange) !important;
+	border-top-color: var(--xhs-orange) !important;
+}
+#threadList-1 .table .head .cell {
+	border-top: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+#threadList-1 .table .head .cell.status {
+	border-left: 1px solid var(--xhs-border) !important;
+}
+#threadList-1 .table .head .cell.select {
+	border-right: 1px solid var(--xhs-border) !important;
+}
+#threadList-1 tr.hasUnreadPosts td.status {
+	box-shadow: inset 5px 0 0 0 var(--xhs-highlight) !important;
+}
+.forumThreads .body.threadsBody {
+	border-left: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+.threadList .isSelected .cell {
+	border-bottom: none !important;
+}
+.threadList .body .numReplies a, .threadList .body .numViews a {
+	text-decoration-color: transparent !important;
+}
+.threadList .body .numReplies a:hover, .threadList .body .numViews a:hover {
+	text-decoration-color: transparent !important;
+}
+.pages a.isCurrent:hover {
+	opacity: 1;
+}
+.forumPost.isLinked a.postNum:hover {
+	text-decoration: underline !important;
+}
+.forumPost .cell.alt2 {
+	border-right: none !important;
+}
+.forumPost .cell.main a:hover.clickArea {
+	opacity: 1;
+}
+.forumPost.isAuthor .postHeader .cell {
+	border-top: 3px solid var(--xhs-orange) !important;
+}
+.forumPost.isAuthor .postHeader .cell {
+	padding: 4px 5px !important;
+}
+.forumPost.isAuthor {
+	border-top: 2px solid var(--xhs-border) !important;
+}
+.forumPost.isLinked.isAuthor {
+	border-color: var(--xhs-border) !important;
+	box-shadow: 0 0 0 4px var(--xhs-border) !important;
+}
+.forumPost.isReader {
+	border-image: linear-gradient(to bottom, var(--xhs-primary) 0, var(--xhs-primary) 1px, var(--xhs-primary) 15px, var(--xhs-primary) 25px) 1;
+	margin-left: 0px !important;
+}
+.forumPost.isReader .button.like.isDisabled:hover, .forumPost.isLiked.isReader .button.like.isDisabled:hover {
+	cursor: not-allowed !important;
+}
+.forumPost.isReader .button.report {
+	display: none !important;
+}
+.forumPost.isReader .postHeader .cell {
+	border-top: 3px solid var(--xhs-blue) !important;
+}
+.forumPost.isLinked.isAuthor .postHeader .cell {
+	background: var(--xhs-border) !important;
+}
+.forumPost.isLinked {
+	border-color: var(--xhs-border) !important;
+	box-shadow: 0 0 0 4px var(--xhs-border) !important;
+}
+.forumPost.isLinked .postHeader .cell {
+	background: var(--xhs-border) !important;
+}
+.forumPost .controls .button:hover {
+	opacity: 1;
+}
+.postBox .postElement .summary {
+	border: none !important;
+}
+.postBox .postElement .username {
+	border: none !important;
+}
+.postBox .postElement .karma {
+	border: none !important;
+}
+.postBox .postElement .select {
+	border: none !important;
+}
+.forumControls .button.replyToThread:hover {
+	opacity: 1;
+}
+.toolbar .tbButton.iconButton:hover .btnIcon {
+	filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(34%) hue-rotate(314deg) brightness(88%) contrast(85%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(34%) hue-rotate(314deg) brightness(88%) contrast(85%) !important;
+}
+.tanukiError .error {
+	color: white !important;
+	background-color: var(--xhs-red) !important;
+}
+.errorBox {
+	color: white !important;
+	background-color: var(--xhs-red) !important;
+}
+.bbQuote.isExpandable>.quoteFrame>.quoteFade {
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+}
+.bbExpander>.expanderFrame>.expanderFade {
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+}
+.bbSpoiler .spoilerHeader button:focus {
+	outline-color: transparent !important;
+}
+.postBody .bbPoll .optionBar>div {
+	background: var(--xhs-orange) !important;
+	border: none !important;
+}
+.postBody .bbPoll .pollQuestion {
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+.postBody .bbPoll .pollSums .totalVotes {
+	border-top: 1px solid var(--xhs-border) !important;
+}
+.tanukiTextbox input:focus {
+	box-shadow: 0 0 0px !important;
+}
+.tanukiSelect select:focus {
+	box-shadow: 0 0 0px !important;
+}
+.mainContent .pages a.isCurrent:hover {
+	opacity: 1;
+}
+.menuItems a:hover {
+	opacity: 1;
+}
+.articleBBCode .bbPoll .optionBar>div {
+	background: var(--xhs-orange) !important;
+	border: none !important;
+}
+.articleBBCode .bbPoll .pollQuestion {
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+.articleBBCode .bbPoll .pollSums .totalVotes {
+	border-top: 1px solid var(--xhs-border) !important;
+}
+.articleBBCode .bbExpander>.expanderFrame>.expanderFade {
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+}
+.articleContent .articleNavi .pageItem.isCurrent a:hover {
+	opacity: 1;
+}
+.articleContent .articleNavi .pageButton:hover {
+	background: transparent !important;
+}
+.articleCommentsWidget {
+	box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+}
+.bbPrisjaktFull h6 {
+	border-bottom: 1px solid var(--xhs-border) !important;
+}
+.tv-frame .tvf-left {
+	background-image: url("https://i.imgur.com/y8gWfV1.png") !important;
+}
+.tv-frame .tvf-right {
+	background-image: url("https://i.imgur.com/fD4VmHu.png") !important;
+}
+.tv-frame .tvf-top {
+	background-image: url("https://i.imgur.com/hxA5pui.png") !important;
+}
+.tv-frame .tvf-bottom {
+	background-image: url("https://i.imgur.com/p16tIQV.png") !important;
+	height: 32px !important;
+}
+#__laika_cnt\.textbox\.0:focus, #__laika_cnt\.textbox\.1:focus, #__laika_cnt\.textbox\.2:focus, #__laika_cnt\.textbox\.3:focus, #__laika_cnt\.textbox\.4:focus {
+	box-shadow: 0 0 0px !important;
+}
+#__laika_cnt\.textarea\.0:focus {
+	box-shadow: 0 0 0px !important;
+}
+.galleryNavi .next .arrow {
+	border-left: 10px solid var(--xhs-orange) !important;
+}
+.galleryNavi .prev .arrow {
+	border-right: 10px solid var(--xhs-orange) !important;
+}
+.mainContent .stepItem.isSelected {
+	background-color: transparent !important;
+}
+.mainContent .stepItem.isDisabled {
+	background-color: transparent !important;
+}
+.mainContent .stepItem {
+	background-color: transparent !important;
+}
+.footer {
+	border-top: none !important;
+}
+.footer .top {
+	border-top: 1px solid var(--xhs-border) !important;
+}
+.footer .top a {
+	text-decoration: none;
+	font-weight: 700;
+}
+/* UNTESTED PROMOTION TAB */
+
 .mainMenu li.optionVr {
 	background-image: none !important;
 	background-color: #8111e1 !important;
 	border-color: #6a0eb9 !important;
 }
-
 .mainMenu li.optionVr a {
 	color: #ccc !important;
 }
-
 .mainMenu li.optionCes {
 	background-image: none !important;
 	background-color: #619c41 !important;
 	border-color: #51743e !important;
 }
-
 .mainMenu li.optionCes a {
 	color: #222 !important;
 }
-
 .mainMenu li.optionPaskrea {
 	background-image: none !important;
 	background-color: #ffd200 !important;
 	border-color: #d9a92b !important;
 }
-
 .mainMenu li.optionPaskrea a {
 	color: #222 !important;
 }
-
 .mainMenu li.optionGreenfriday {
 	background-image: none !important;
 	background-color: #41a500 !important;
 	border-color: #2b760a !important;
 }
-
 .mainMenu li.optionGreenfriday a {
 	color: #222 !important;
 }
-
 .mainMenu li.optionComputex {
 	background-image: none !important;
 	background-color: #e4007f !important;
 	border-color: #c6006e !important;
 }
-
 .mainMenu li.optionComputex a {
 	color: #ccc !important;
 }
-
 .mainMenu li.optionE3 {
 	background-image: none !important;
 	background-color: #ea2238 !important;
 	border-color: #aa1929 !important;
 }
-
 .mainMenu li.optionE3 a {
 	color: #ccc !important;
 }
-
 .mainMenu li.optionBack2school {
 	background-image: none !important;
 	background-color: #4d9edd !important;
 	border-color: #4b99d6 !important;
 }
-
 .mainMenu li.optionBack2school a {
 	color: #222 !important;
 }
-
 .mainMenu li.optionBlackfriday {
 	background-image: none !important;
 	background-color: #282828 !important;
 	border-color: #282828 !important;
 }
-
 .mainMenu li.optionBlackfriday a {
 	color: #ccc !important;
 }
-
 .mainMenu li.optionCybermonday {
 	background-image: none !important;
 	background-color: #49b2d6 !important;
 	border-color: #419fbf !important;
 }
-
 .mainMenu li.optionCybermonday a {
 	color: #222 !important;
 }
-
 .mainMenu li.optionDreamhack {
 	background-image: none !important;
 	background-color: #5e2f8e !important;
 	border-color: #402061 !important;
 }
-
 .mainMenu li.optionDreamhack a {
 	color: #ccc !important;
 }
-
 .mainMenu li.optionJulkalender {
 	background-image: none !important;
 	background-color: #c00 !important;
 	border-color: #900 !important;
 }
-
 .mainMenu li.optionJulkalender a {
 	color: #ccc !important;
 }
-
 .mainMenu li.optionMellandagsrea {
 	background-image: none !important;
 	background-color: #af0035 !important;
 	border-color: #780024 !important;
 }
-
 .mainMenu li.optionMellandagsrea a {
 	color: #ccc !important;
 }
-
-.mainMenu li.optionVr:hover,
-.mainMenu li.optionCes:hover,
-.mainMenu li.optionPaskrea:hover,
-.mainMenu li.optionGreenfriday:hover,
-.mainMenu li.optionComputex:hover,
-.mainMenu li.optionE3:hover,
-.mainMenu li.optionBack2school:hover,
-.mainMenu li.optionBlackfriday:hover,
-.mainMenu li.optionCybermonday:hover,
-.mainMenu li.optionDreamhack:hover,
-.mainMenu li.optionJulkalender:hover,
-.mainMenu li.optionMellandagsrea:hover {
+.mainMenu li.optionVr:hover, .mainMenu li.optionCes:hover, .mainMenu li.optionPaskrea:hover, .mainMenu li.optionGreenfriday:hover, .mainMenu li.optionComputex:hover, .mainMenu li.optionE3:hover, .mainMenu li.optionBack2school:hover, .mainMenu li.optionBlackfriday:hover, .mainMenu li.optionCybermonday:hover, .mainMenu li.optionDreamhack:hover, .mainMenu li.optionJulkalender:hover, .mainMenu li.optionMellandagsrea:hover {
 	background-image: none !important;
 	opacity: 0.8 !important;
 }
-
-.mainMenu li.optionVr:hover a,
-.mainMenu li.optionCes:hover a,
-.mainMenu li.optionPaskrea:hover a,
-.mainMenu li.optionGreenfriday:hover a,
-.mainMenu li.optionComputex:hover a,
-.mainMenu li.optionE3:hover a,
-.mainMenu li.optionBack2school:hover a,
-.mainMenu li.optionBlackfriday:hover a,
-.mainMenu li.optionCybermonday:hover a,
-.mainMenu li.optionDreamhack:hover a,
-.mainMenu li.optionJulkalender:hover a,
-.mainMenu li.optionMellandagsrea:hover a {
+.mainMenu li.optionVr:hover a, .mainMenu li.optionCes:hover a, .mainMenu li.optionPaskrea:hover a, .mainMenu li.optionGreenfriday:hover a, .mainMenu li.optionComputex:hover a, .mainMenu li.optionE3:hover a, .mainMenu li.optionBack2school:hover a, .mainMenu li.optionBlackfriday:hover a, .mainMenu li.optionCybermonday:hover a, .mainMenu li.optionDreamhack:hover a, .mainMenu li.optionJulkalender:hover a, .mainMenu li.optionMellandagsrea:hover a {
 	color: var(--color-text) !important;
-}
-
-/* Kampanjer END */
-.tv-frame .tvf-left {
-	background-image: var(--url-tvf-left) !important;
-}
-
-.tv-frame .tvf-right {
-	background-image: var(--url-tvf-right) !important;
-}
-
-.tv-frame .tvf-top {
-	background-image: var(--url-tvf-top) !important;
-}
-
-.tv-frame .tvf-bottom {
-	background-image: var(--url-tvf-bottom) !important;
-	height: 32px !important;
-}
-
-.newsList .commentsBubble {
-	background: var(--color-palette-1000) !important;
-	background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background-color: var(--color-palette-1000) !important;
-	border: 1px solid var(--color-palette-1000) !important;
-}
-
-.newsList .commentsBubble.isHot {
-	background: var(--color-sweclockers) !important;
-	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background-color: var(--color-sweclockers) !important;
-	border: 1px solid var(--color-sweclockers) !important;
-}
-
-.newsList .pubItem .itemMeta li {
-	color: var(--color-text-header) !important;
-}
-
-.postBox .head {
-	background: var(--color-palette-1000) !important;
-	background: -webkit-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -webkit-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -o-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -moz-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: -ms-linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-	background: linear-gradient(var(--color-palette-1000), var(--color-palette-1000)) !important;
-}
-
-.bbSpoiler .spoilerHeader {
-	float: right !important;
-	margin-top: 7px !important;
-	margin-right: 5px !important;
-}
-
-.commentsWidget .mwReadmore a:hover {
-	text-decoration: underline !important;
-}
-
-.footer .bottom {
-	background: var(--color-palette-900) !important;
-	color: var(--color-palette-0) !important;
-	padding: 20px 0 20px 0 !important;
-}
-
-.forumForm>.head {
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.bbcode hr.bbHr {
-	border: 1px solid var(--color-border) !important;
-	border-top-color: var(--color-border) !important;
-	border-left-color: var(--color-border) !important;
-}
-
-.mainMenu .isSelected {
-	background-color: var(--color-main) !important;
-	background-image: none !important;
-}
-
-.articleNavi .head {
-	border-bottom: 1px solid var(--color-text) !important;
-	padding-top: 3px !important;
-}
-
-.articleHeader h1 {
-	color: var(--color-sweclockers) !important;
-}
-
-.articleHeader .meta {
-	color: var(--color-text-header) !important;
-}
-
-.bbImage .caption {
-	background-color: rgba(35, 39, 42, .8) !important;
-}
-
-.bbSpoiler .spoilerFrame {
-	border: 1px solid var(--color-main) !important;
-	border-top-color: var(--color-main) !important;
-	border-left-color: var(--color-main) !important;
-}
-
-.forumPost.isLinked.isAuthor {
-	border-color: var(--color-sweclockers) !important;
-	box-shadow: 0 0 5px 2px var(--color-sweclockers) !important;
-}
-
-.bbcode .bbQuote {
-	border: 1px solid var(--color-palette-800) !important;
-	border-top-color: var(--color-palette-800) !important;
-	border-left-color: var(--color-palette-800) !important;
-}
-
-.forumTable .caption {
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.threadList .isSticky .numReplies,
-.threadList .isSticky .select,
-.threadList .isSticky .status,
-.threadList .isSticky .title,
-.threadList .isSticky .lastReply.alt,
-.threadList .isSticky .lastReply.alt1,
-.threadList .isSticky .lastReply.alt2,
-.threadList .isSticky .numViews.alt,
-.threadList .isSticky .numViews.alt1,
-.threadList .isSticky .numViews.alt2 {
-	background-color: var(--color-palette-1000) !important;
-}
-
-.threadList .numReplies,
-.threadList .select,
-.threadList .status,
-.threadList .title,
-.threadList .lastReply.alt,
-.threadList .lastReply.alt1,
-.threadList .lastReply.alt2,
-.threadList .numViews.alt,
-.threadList .numViews.alt1,
-.threadList .numViews.alt2 {
-	background-color: var(--color-main) !important;
-}
-
-.forumTable .cell,
-.forumTable .cell.alt1,
-.forumTable .cell.alt2 {
-	background: var(--color-main) !important;
-	border-bottom: 2px solid var(--color-main) !important;
-}
-
-td.cell.lastReply.alt2 {
-	color: var(--color-palette-500) !important;
-}
-
-.header .main {
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.spoilerContent .bbVideoYoutube:first-child {
-	clear: both !important;
-}
-
-.threadList .isSelected .cell {
-	background: #200e00 !important;
-	border-bottom-color: var(--color-palette-400) !important;
-}
-
-.forumResultPost .postHeader .threadTitle {
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.forumPost .postHeader .cell {
-	background-color: var(--color-palette-900) !important;
-	background-image: var(--color-palette-900) !important;
-	background-image: -webkit-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background-image: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background-image: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background-image: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background-image: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background-image: linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-}
-
-.mainWidget .body .divider {
-	border-color: var(--color-palette-800) !important;
-}
-
-.forumTable .head .cell {
-	background: var(--color-sweclockers) !important;
-	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-}
-
-.forumPost.isReader {
-	box-shadow: -8px 0 0 var(--color-sweclockers) !important;
-}
-
-.forumPost .guruFlag,
-.forumPost .supporterFlag {
-	color: var(--color-sweclockers) !important;
-}
-
-.forumPost .details .activity.online {
-	color: var(--color-sweclockers) !important;
-}
-
-.forumPost.isGuru .controls .button.like .score,
-.forumPost.isLiked .controls .button.like .score {
-	color: var(--color-sweclockers) !important;
-}
-
-.header .ticker .date {
-	color: var(--color-sweclockers) !important;
-}
-
-.galleryFileEditor button,
-.tanukiButton,
-.taunkiButton {
-	color: var(--color-palette-300) !important;
-	background-color: var(--color-main) !important;
-	background-image: var(--color-main) !important;
-	background-image: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background-image: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.forumPost.isAuthor .postHeader .cell {
-	background-color: var(--color-sweclockers) !important;
-	background-image: var(--color-sweclockers) !important;
-	background-image: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background-image: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background-image: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background-image: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background-image: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background-image: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-}
-
-.articleNavi .quick a,
-.pages a {
-	border-radius: 3px !important;
-}
-
-.link .label,
-.pushListExternal a span {
-	color: var(--color-link) !important;
-}
-
-.pushListExternal {
-	color: var(--color-text-header) !important;
-}
-
-.mellandagsrea .tips .tipsData .pjCell {
-	background: var(--color-main) !important;
-	border-bottom: 2px solid var(--color-main) !important;
-	color: var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsData .productCell {
-	background: var(--color-main) !important;
-	border-bottom: 2px solid var(--color-main) !important;
-	border-left: 1px solid var(--color-main) !important;
-}
-
-.mellandagsrea .tips a.userCell {
-	background-color: var(--color-main) !important;
-}
-
-.mellandagsrea .tips a.userCell:hover {
-	background-color: var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsTitle {
-	color: var(--color-text-header) !important;
-}
-
-.mellandagsrea .tips .tipsData .tipsRow {
-	border-bottom: 1px solid var(--color-border) !important;
-	border-left: 1px solid var(--color-border) !important;
-	border-right: 1px solid var(--color-border) !important;
-	background: var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsData .tipsRow:nth-child(odd) {
-	background-color: var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsRow:hover .productCell,
-.mellandagsrea .tips .tipsRow:hover .pjCell,
-.mellandagsrea .tips .tipsRow:hover .userCell .colUser,
-.mellandagsrea .tips .tipsRow:hover .userCell .colScore {
-	background: var(--color-main) !important;
-}
-
-.searchField .fieldWrap,
-.searchField input,
-.signinDialog input {
-	background-color: var(--color-main) !important;
-	background-image: var(--url-background-secondary) !important;
-	color: var(--color-text) !important;
-}
-
-.mellandagsrea .vendorGuides .guideBlock .icon {
-	-webkit-filter: invert(.8) !important;
-	-o-filter: invert(.8) !important;
-	filter: invert(.8) !important;
-}
-
-.mellandagsrea .vendorGuides .guideBlock span {
-	color: var(--color-text) !important;
-}
-
-.mellandagsrea .tips .tipsData .userCell .colUser {
-	background: var(--color-main) !important;
-	border-bottom: 2px solid var(--color-main) !important;
-	border-right: 1px solid var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsRow:hover .userCell .colUser {
-	background: var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsData .userCell .colScore .label {
-	background: var(--color-sweclockers) !important;
-	color: var(--color-palette-0) !important;
-}
-
-.mellandagsrea .vendorProducts {
-	background: var(--color-main) !important;
-	border-left: 1px solid var(--color-main) !important;
-	border-top: 1px solid var(--color-main) !important;
-}
-
-.mellandagsrea .productFooter {
-	background: var(--color-main) !important;
-}
-
-.mellandagsrea .tips .tipsData .colScore:hover {
-	background-color: var(--color-main) !important;
-}
-
-.mellandagsrea #guideWrapper {
-	background-color: var(--color-main) !important;
-	color: var(--color-text) !important;
-	border: var(--color-border) !important;
-}
-
-.bbExpander>.expanderFrame>.expanderFade,
-.bbQuote.isExpandable>.quoteFrame>.quoteFade {
-	background: var(--color-quote-0) !important;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--color-quote-0)), color-stop(25%, var(--color-quote-50)), color-stop(100%, var(--color-quote-100))) !important;
-	background: -webkit-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
-	background: -o-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
-	background: -moz-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
-	background: -ms-linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
-	background: linear-gradient(var(--color-quote-0)0, var(--color-quote-50)25%, var(--color-quote-100)100%) !important;
-}
-
-.forumList .categoryItem .cell,
-.forumList .categoryItem.isCollapsed .cell {
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.button:hover,
-.galleryFileEditor button:hover,
-.tanukiButton:hover,
-.taunkiButton:hover {
-	background-color: var(--color-palette-850) !important;
-	background-image: var(--color-palette-850) !important;
-	background-image: -webkit-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
-	background-image: -webkit-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
-	background-image: -o-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
-	background-image: -moz-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
-	background-image: -ms-linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
-	background-image: linear-gradient(var(--color-palette-850), var(--color-palette-850)) !important;
-}
-
-.mellandagsrea .tips .tipsRow:hover .productCell,
-.mellandagsrea .tips .tipsRow:hover .pjCell {
-	background: var(--color-main) !important;
-}
-
-.header,
-.header .shadow,
-.menuItem,
-.searchField .fieldWrap,
-.searchField input,
-.signinDialog input,
-body {
-	background-color: var(--color-palette-2000) !important;
-	color: var(--color-text) !important;
-	background-image: var(--url-background-primary) !important;
-}
-
-.menuItem.isSelected {
-	background-color: var(--color-main) !important;
-	color: var(--color-main) !important;
-	background-image: var(--url-background-selected) !important;
-}
-
-.menuItem:hover {
-	background-color: var(--color-main) !important;
-	color: var(--color-main) !important;
-	background-image: var(--url-background-hover) !important;
-}
-
-.bbTable thead .bbParagraph,
-.forumTable th .numReplies,
-.pages a:hover>.label,
-.postBox .head .title,
-.tanukiCombobox .tcbSelectedItem {
-	color: var(--color-palette-200) !important;
-}
-
-.articleBBCode .bbTable thead th {
-	background: var(--color-palette-900) !important;
-	background: -webkit-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background: -webkit-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background: -o-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background: -moz-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background: -ms-linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background: linear-gradient(var(--color-palette-900), var(--color-palette-900)) !important;
-	background-color: var(--color-transparent) !important;
-	color: var(--color-palette-0) !important;
-}
-
-.bbAward .reason {
-	color: var(--color-palette-600) !important;
-	background: var(--color-palette-900) !important;
-}
-
-.errorBox {
-	background-color: var(--color-sweclockers) !important;
-	border: 1px solid var(--color-sweclockers) !important;
-	border-top-color: var(--color-sweclockers) !important;
-	border-right-color: var(--color-sweclockers) !important;
-	border-bottom-color: var(--color-sweclockers) !important;
-	border-left-color: var(--color-sweclockers) !important;
-}
-
-.forumForm>.head {
-	border-bottom: 4px solid var(--color-sweclockers) !important;
-}
-
-.commentsBubble,
-.commentsBubble:hover,
-.errorBox a,
-.footer .bottom a,
-.forumResultPost .postHeader .threadTitle .label,
-.mainWidget h5 a,
-.mwReadmore a,
-.pushListInternal .head h5 a {
-	color: var(--color-palette-0) !important;
-}
-
-.articleCommentsWidget .boxAction .actionLabel,
-.forumPost .postHeader .headerLink,
-.forumTable .title h3 a,
-.mainWidget .label,
-.plHead a,
-.pushListInternal .link .label,
-.slide a,
-.socialWidget a {
-	color: var(--color-palette-200) !important;
-}
-
-optgroup[label="Better SweClockers"],
-#Better_SweClockers fieldset,
-#betterSwecFilterSettingsList,
-.bbPoll .inner,
-.bbQuote,
-.bbSpoiler .spoilerFrame,
-.footer .top,
-.forumForm input,
-.forumForm textarea,
-.forumList .lastReply,
-.forumList .lastThread,
-.forumList .link,
-.forumList .numReplies,
-.forumList .status,
-.forumPost .details,
-.forumPost .profile,
-.forumResultPost .dateline,
-.infoTextWindow,
-.mainContent,
-.marketList .date,
-.marketList .price,
-.memberTable .alt2,
-.postBox .shortcut,
-.quickReply textarea,
-.showFrame,
-.tanukiCombobox .tcbTriggerFrame,
-.threadMap .postElement,
-.articleKeywords a,
-.articleNavi .pageButton:hover,
-.bbTable th,
-.filterLinks .filterLink.isSelected,
-.forumForm .body,
-.forumList .numThreads,
-.forumList .numViews,
-.forumList .title,
-.forumPost,
-.forumResultPost,
-.infoBox,
-.marketList .status,
-.marketList .title,
-.memberTable .cell,
-.pages .isCurrent,
-.pages a.isCurrent:hover .label,
-.postBox,
-.signinDialog .inner,
-.stepWidget .stepItem.isSelected,
-.tanukiCombobox .tcbSelectedItem,
-input,
-select,
-textarea {
-	background-color: var(--color-main) !important;
-}
-
-#Better_SweClockers input:not(.button),
-#Better_SweClockers textarea,
-.articleNavi .isCurrent a,
-.galleryItem a,
-.header a,
-.hotGallery a,
-.newsList .bbParagraph a,
-.pages a,
-.popularGalleries a,
-.tagSection h2 a,
-.threadMap .postElement a,
-.videoPush a,
-.prisjaktPopular .ppPrice,
-.searchField .fieldWrap,
-.bbList,
-.bbParagraph,
-.bbPre,
-.contactInfo,
-.expanderHeader,
-.feedItem,
-.forumForm,
-.forumPost .quoteHead,
-.forumPost .showFrame,
-.forumPost .title,
-.forumResultPost,
-.forumRules,
-.forumTable tbody .numThreads,
-.forumTable td .by,
-.forumTable td .date,
-.forumTable td .descr,
-.forumTable td .numReplies,
-.forumTable td .time,
-.forumTable td.numReplies,
-.galleryFiles,
-.galleryFiles input,
-.galleryForm,
-.galleryForm input,
-.galleryForm select,
-.galleryForm textarea,
-.header .profile .options,
-.infoText,
-.infoTextWindow,
-.marketAcceptRules,
-.marketFilterBox input,
-.marketFilterBox select,
-.marketForm,
-.marketForm input,
-.marketForm select,
-.marketForm textarea,
-.marketList .row,
-.memberTable,
-.ninjaSearch h5,
-.pages .isCurrent .label,
-.pln,
-.mwLabel,
-.mwLabel:hover,
-.plLabel,
-.plLabel:hover,
-.profileHeader .label,
-.quickReply label,
-.signinDialog,
-.spoilerPlaceholder,
-.tanukiSelect select,
-.tanukiTextarea textarea,
-.tanukiTextbox input,
-label,
-select {
-	color: var(--color-text) !important;
-}
-
-.threadList .body .cell.numReplies,
-.commentsWidget .mwReadmore {
-	text-decoration: none !important;
-}
-
-.forumWidget {
-	background-color: var(--color-sweclockers) !important;
-	background: var(--color-sweclockers) !important;
-	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-}
-
-.mainRecentNews {
-	background-color: var(--color-main) !important;
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-}
-
-.orangeInfoBox {
-	background-color: var(--color-sweclockers) !important;
-	background: var(--color-sweclockers) !important;
-	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-}
-
-.prisjaktPopular {
-	color: var(--color-palette-0) !important;
-	background-color: var(--color-prisjakt) !important;
-	background: var(--color-prisjakt) !important;
-	background: -webkit-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
-	background: -webkit-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
-	background: -o-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
-	background: -moz-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
-	background: -ms-linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
-	background: linear-gradient(var(--color-prisjakt), var(--color-prisjakt)) !important;
-}
-
-.prisjaktPopular a,
-.plmi-label {
-	color: var(--color-sweclockers-lighter) !important;
-}
-
-.prisjaktPopular .ppProduct,
-.pushListMonster .plm-item {
-	border-bottom: 0px !important;
-}
-
-#proofArticle,
-* a,
-.feedMore,
-.footer .top a::before,
-.forumList .lastThread h3,
-.galleryBody .commentLink::before,
-.header .profile .hasUnread a,
-.mwLabel.mwComments,
-.plLabel.plComments {
-	color: var(--color-sweclockers) !important;
-}
-
-#proofArticle:hover,
-* a:hover,
-.feedMore:hover,
-.footer .top a::before:hover,
-.forumList .lastThread h3:hover,
-.galleryBody .commentLink::before:hover,
-.mwLabel.mwComments:hover,
-.plLabel.plComments:hover {
-	color: var(--color-sweclockers) !important;
-}
-
-#threadList-1 tr.hasUnreadPosts td.status {
-	box-shadow: inset 5px 0 0 0 var(--color-sweclockers) !important;
-}
-
-.profileFeed .date {
-	color: var(--color-text-header) !important;
-}
-
-.pushListInternal {
-	color: var(--color-palette-0) !important;
-	background-color: var(--color-main) !important;
-	background: var(--color-main) !important;
-	background: -webkit-gradient(var(--color-main), var(--color-main)) !important;
-	background: -webkit-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -o-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -moz-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: -ms-linear-gradient(var(--color-main), var(--color-main)) !important;
-	background: linear-gradient(var(--color-main), var(--color-main)) !important;
-	box-shadow: inset 0px 0px 0px 1px var(--color-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--color-border) !important;
-}
-
-.pushListInternal .head a {
-	color: var(--color-palette-500) !important;
-}
-
-.pushListMonster {
-	background-color: var(--color-monster) !important;
-	background: var(--color-monster) !important;
-	background: -webkit-gradient(var(--color-monster), var(--color-monster)) !important;
-	background: -webkit-linear-gradient(var(--color-monster), var(--color-monster)) !important;
-	background: -o-linear-gradient(var(--color-monster), var(--color-monster)) !important;
-	background: -moz-linear-gradient(var(--color-monster), var(--color-monster)) !important;
-	background: -ms-linear-gradient(var(--color-monster), var(--color-monster)) !important;
-	background: linear-gradient(var(--color-monster), var(--color-monster)) !important;
-}
-
-.threadStatus {
-	background-image: var(--url-threadStatus) !important;
-	background-repeat: no-repeat !important;
-	background-size: 850px auto !important;
-	background-position: 0 0 !important;
-	margin: 0 auto !important;
-	width: 19px !important;
-	height: 19px !important;
-}
-
-.kwd {
-	color: var(--color-blue-darker) !important;
-}
-
-.lit {
-	color: var(--color-palette-200) !important;
-}
-
-.pun {
-	color: var(--color-palette-200) !important;
-}
-
-.wndFrameDecorator {
-	background-color: var(--color-palette-1000) !important;
-}
-
-.tanukiCombobox.hasErrors .tcbTriggerFrame {
-	border-color: var(--color-sweclockers) !important;
-	outline: var(--color-sweclockers) auto 5px !important;
-}
-
-.tanukiFile.hasErrors input {
-	border-color: var(--color-sweclockers) !important;
-	outline: var(--color-sweclockers) auto 5px !important;
-}
-
-.tanukiSelect.hasErrors select {
-	border-color: var(--color-sweclockers) !important;
-	outline: var(--color-sweclockers) auto 5px !important;
-}
-
-.tanukiTextarea.hasErrors textarea {
-	border-color: var(--color-sweclockers) !important;
-	outline: var(--color-sweclockers) auto 5px !important;
-}
-
-.tanukiTextbox.hasErrors input {
-	border-color: var(--color-sweclockers) !important;
-	outline: var(--color-sweclockers) auto 5px !important;
-}
-
-.tanukiError .error {
-	background-color: var(--color-sweclockers) !important;
-	border: 1px solid var(--color-sweclockers) !important;
-	color: var(--color-palette-0) !important;
-}
-
-.tanukiCombobox .tcbPanel {
-	background: var(--color-palette-900) !important;
-	border: 1px solid var(--color-palette-400) !important;
-	box-shadow: 2px 2px 4px var(--color-transparent-light) !important;
-}
-
-.carousel .nav.left .handle {
-	border-right: 10px solid var(--color-sweclockers) !important;
-}
-
-.carousel .nav.right .handle {
-	border-left: 10px solid var(--color-sweclockers) !important;
-}
-
-.gp-subject-group {
-	background: var(--color-main) !important;
-	border: 1px solid var(--color-main) !important;
-}
-
-.gp-subject-group .gpsg-header {
-	border-bottom: 1px solid var(--color-main) !important;
-}
-
-.gp-subject-group .gpsg-more a {
-	background: var(--color-main) !important;
-	border: 1px solid var(--color-main) !important;
-	color: var(--color-palette-900) !important;
-}
-
-.gp-subject-group .gpsg-more a:hover {
-	background: var(--color-main) !important;
-}
-
-.gp-subject-group .bbcode a {
-	color: inherit !important;
-}
-
-.bbPoll .optionBar>div {
-	background: var(--color-sweclockers) !important;
-	border: 0px !important;
-}
-
-.bbPoll>.inner {
-	border: 1px solid var(--color-border) !important;
-	border-top-color: var(--color-border) !important;
-	border-right-color: var(--color-border) !important;
-	border-bottom-color: var(--color-border) !important;
-	border-left-color: var(--color-border) !important;
-}
-
-.mainContent .greyContentShare #fbLikeButton {
-	background: var(--color-main) !important;
-	border: 1px solid var(--color-main) !important;
-}
-
-.fbShareButton {
-	border: 1px solid var(--color-facebook) !important;
-	background-color: var(--color-facebook) !important;
-	background-image: var(--color-facebook) !important;
-	background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-}
-
-.fbShareButton:hover {
-	border: 1px solid var(--color-facebook-lighter) !important;
-	background-color: var(--color-facebook-lighter) !important;
-	background-image: var(--color-facebook) !important;
-	background-image: -webkit-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -webkit-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -o-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -moz-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: -ms-linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-	background-image: linear-gradient(var(--color-facebook), var(--color-facebook)) !important;
-}
-
-.whiteHeader h1 .titleSection {
-	color: var(--color-sweclockers) !important;
-}
-
-.whiteHeader h1 {
-	color: var(--color-text-header) !important;
-}
-
-h5,
-h6 {
-	color: var(--color-text-header) !important;
-}
-
-.sponsoredArticle {
-	color: var(--color-palette-300) !important;
-	background-color: var(--color-sweclockers) !important;
-	background: var(--color-sweclockers) !important;
-	background: -webkit-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -webkit-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -o-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -moz-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: -ms-linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-	background: linear-gradient(var(--color-sweclockers), var(--color-sweclockers)) !important;
-}
-
-.geeksShop {
-	background-color: var(--color-main) !important;
-	color: var(--color-text) !important;
-}
-
-.geeksShop .geeksShopProducts .productOther {
-	color: var(--color-text) !important;
-}
-
-.geeksShop .geeksShopProducts .productOther .buyButton {
-	background-color: var(--color-sweclockers) !important;
-	color: var(--color-text) !important;
-}
-
-.geeksShop .geeksShopProducts .productOther .buyButton:hover {
-	background-color: var(--color-palette-1100) !important;
 }
