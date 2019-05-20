@@ -7,18 +7,18 @@
 /* Variables */
 
 :root {
-	--xhs-primary: #1A1A1D;
-	--xhs-secondary: #1E1E21;
-	--xhs-border: #17171A;
-	--xhs-highlight: #232326;
-	--xhs-title: #C8C8C8;
-	--xhs-body: #AAAAAA;
-	--xhs-orange: #F47447;
-	--xhs-blue: #3779A1;
-	--xhs-green: #648E76;
-	--xhs-purple: #8E78A2;
-	--xhs-brown: #7A6A5A;
-	--xhs-red: #EF4A4B;
+	--xhs-primary: /*[[primary]]*/;
+	--xhs-secondary: /*[[secondary]]*/;
+	--xhs-border: /*[[border]]*/;
+	--xhs-highlight: /*[[highlight]]*/;
+	--xhs-title: /*[[title]]*/;
+	--xhs-body: /*[[body]]*/;
+	--xhs-orange: /*[[orange]]*/;
+	--xhs-blue: /*[[blue]]*/;
+	--xhs-green: /*[[green]]*/;
+	--xhs-purple: /*[[purple]]*/;
+	--xhs-brown: /*[[brown]]*/;
+	--xhs-red: /*[[red]]*/;
 }
 
 /*! Main Code !*/
