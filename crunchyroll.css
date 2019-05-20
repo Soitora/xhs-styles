@@ -1,16 +1,28 @@
-@-moz-document domain("crunchyroll.com") {
-/* Dark Mode for Crunchyroll.com
-* Original by: MatthewCoccon
-* Redesigned by: Soitora
-* Created: 2018-02-21
-* Updated: 2019-05-02
-* Version: 1.1.1
-* Licence: MIT.
+/*! Crunchyroll Dark - XHS v1.1.2 (2019-05-20)
+/*! Repository: https://github.com/Soitora/xhs-styles/
+/*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
 
-/*
-/* Changes for v1.1.1
-*/
+/* Variables */
+
+:root {
+	--xhs-primary: #1A1A1D;
+	--xhs-secondary: #1E1E21;
+	--xhs-border: #17171A;
+	--xhs-highlight: #232326;
+	--xhs-title: #C8C8C8;
+	--xhs-body: #AAAAAA;
+	--xhs-orange: #F47447;
+	--xhs-blue: #3779A1;
+	--xhs-green: #648E76;
+	--xhs-purple: #8E78A2;
+	--xhs-brown: #7A6A5A;
+	--xhs-red: #EF4A4B;
+}
+
+/*! Main Code !*/
+
+/* Changes for v1.1.1 */
 
 .resume-play {
     background: #c76200;
@@ -912,5 +924,4 @@ a.default-button,
 input.default-button,
 span.default-button {
 	border: 1px solid #2E2E2E;
-}
 }
