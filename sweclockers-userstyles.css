@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.0.1 (2019-05-18)
+/*! SweClockers Dark - XHS v2.0.2 (2019-08-02)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -1678,5 +1678,11 @@ form#better-sweclockers input[type="time"] {
 .mainMenu li.optionJulkalender:hover a,
 .mainMenu li.optionMellandagsrea:hover a {
 	color: var(--color-text) !important;
+}
+
+img[src*="/artikel/diagram/"] {
+    -webkit-filter: invert(85%) !important;
+    -o-filter: invert(85%) !important;
+    filter: invert(85%) !important;
 }
 }
