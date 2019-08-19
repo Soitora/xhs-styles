@@ -1,4 +1,4 @@
-/*! SweClockers Dark - XHS v2.0.2 (2019-08-02) - DEPRECATED
+/*! SweClockers Dark - XHS v2.0.3 (2019-08-19) - DEPRECATED
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -1679,8 +1679,119 @@ form#better-sweclockers input[type="time"] {
 	color: var(--color-text) !important;
 }
 
+/* 2.0.2
+–––––––––*/
 img[src*="/artikel/diagram/"] {
     -webkit-filter: invert(85%) !important;
     -o-filter: invert(85%) !important;
     filter: invert(85%) !important;
+}
+
+/* 2.0.3 
+–––––––––*/
+.header .profile .hasUnread > a > span {
+    color: var(--xhs-orange);
+}
+
+#siteHeader > div.main > div > div.sections > div.section.profile > ul > li.option.quote.hasUnread > a > span.icon, #siteHeader > div.main > div > div.sections > div.section.profile > ul > li.option.watched.hasUnread > a > span.icon {
+filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+
+.header .profile .label span:last-child:hover {
+    text-decoration: none !important;
+}
+
+.bg-orange {
+    background: var(--xhs-orange) !important;
+	border-bottom-left-radius: 8px;
+}
+
+.bg-orange:hover {
+    background: var(--xhs-orange) !important;
+	opacity: 0.90 !important;
+}
+
+.mainWidget.forumWidget.commentsWidget {
+	background-color: var(--xhs-secondary) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwLabelText {
+	color: var(--xhs-body) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwLabelDate {
+	color: var(--xhs-title) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwHead > h5 {
+	color: var(--xhs-orange) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwHead > h5 > a:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwHead > p {
+	color: var(--xhs-body) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget {
+    box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+    -webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+    -moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwReadmore {
+	color: var(--xhs-title) !important;
+	text-decoration: none !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwReadmore > a:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+
+.mainWidget.forumWidget.commentsWidget > a > .mwLabel:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwLabelIcon {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+
+.mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwIcon, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelDate, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelText {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+
+.better-sweclockers-link-to-top {
+	color: var(--xhs-orange) !important;
+}
+
+.better-sweclockers-link-to-top:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+
+.better-sweclockers-link-to-top:before {
+	content: "\2B06  " !important;
+	color: var(--xhs-body);
+}
+
+.memberTable .username a {
+    color: var(--xhs-orange) !important;
+    text-decoration: none !important;
+}
+
+.memberTable .username a:hover {
+	text-decoration: none !important;
+	opacity: 0.75 !important;
+}
+
+.memberTable .title {
+    color: var(--xhs-body) !important;
 }
