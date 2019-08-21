@@ -1800,7 +1800,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .header .headMain {
-    border-bottom: 1px solid var(--xhs-border) !important
+    border-bottom: 1px solid var(--xhs-border) !important;
     padding-bottom: 0;
     background: var(--xhs-secondary) !important;
 }
@@ -1859,7 +1859,6 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .itemList .listItem .icon span {
-    background-image: url(/gfx/spritemap.png);
     filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
     -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
