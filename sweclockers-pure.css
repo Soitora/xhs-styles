@@ -1,4 +1,4 @@
-/*! SweClockers Dark - XHS v2.0.3 (2019-08-19) - DEPRECATED
+/*! SweClockers Dark - XHS v2.1.0 (2019-08-21) - DEPRECATED
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -1043,12 +1043,6 @@ form#better-sweclockers footer a:hover {
 	opacity: 1;
 }
 
-#better-sweclockers-preferences-shortcut {
-	background-image: url(https://www.sweclockers.com/gfx/spritemap2x.png) !important;
-	background-position: -165px -95px;
-	background-size: 600px auto;
-}
-
 #better-sweclockers-dark-theme-toggle {
 	background-image: url(https://www.sweclockers.com/gfx/spritemap2x.png) !important;
 	background-position: -466px -95px;
@@ -1681,6 +1675,7 @@ form#better-sweclockers input[type="time"] {
 
 /* 2.0.2
 –––––––––*/
+
 img[src*="/artikel/diagram/"] {
     -webkit-filter: invert(85%) !important;
     -o-filter: invert(85%) !important;
@@ -1689,6 +1684,7 @@ img[src*="/artikel/diagram/"] {
 
 /* 2.0.3 
 –––––––––*/
+
 .header .profile .hasUnread > a > span {
     color: var(--xhs-orange);
 }
@@ -1794,4 +1790,392 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .memberTable .title {
     color: var(--xhs-body) !important;
+}
+
+/* 2.1.0
+–––––––––*/
+
+.wrapinner {
+    background: var(--xhs-primary) !important;
+}
+
+.wrapinner .header .headMain {
+    border-bottom: 1px solid var(--xhs-border) !important
+    padding-bottom: 0;
+    background: var(--xhs-secondary) !important;
+}
+
+.wrapinner .header .dateline .mobil {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner .header .dateline span {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .mainMenu {
+    background-color: var(--xhs-primary) !important;
+    border-bottom: 1px solid var(--xhs-border) !important;
+}
+
+.wrapinner .mainMenu li {
+    background: var(--xhs-secondary) !important;
+    border-top: 1px solid var(--xhs-border) !important;
+    border-left: 1px solid var(--xhs-border) !important;
+    border-right: 1px solid var(--xhs-border) !important;;
+}
+
+.wrapinner .subMenu li {
+    background: var(--xhs-primary) !important;
+}
+
+.wrapinner .subMenu li.isSelected a {
+    color: var(--xhs-title) !important;
+}
+
+.wrapinner .subMenu li a {
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .itemList {
+    background: var(--xhs-secondary) !important;
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.wrapinner .itemList h2 {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner .articleList .metadata .cat {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner .articleList .metadata .time {
+    color: var(--xhs-title) !important;
+}
+
+.wrapinner .itemList div.preview div.bbcode {
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .itemList .listItem .icon span {
+    background-image: url(/gfx/spritemap.png);
+    filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+
+.wrapinner div.plItemRow > .plLabelText {
+     color: var(--xhs-body) !important;
+}
+
+.wrapinner div.plItemRow.plItemSubRow > .plLabelText {
+     color: var(--xhs-orange) !important;
+}
+
+.wrapinner .pushList .plComments {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner div.plItemSubRow > .plLabelComponent {
+     color: var(--xhs-title) !important;
+}
+
+.wrapinner .pushList .plComments.plIcon {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+
+.wrapinner .articleStatus.icon-comment {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(112%) contrast(101%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(112%) contrast(101%) !important;
+}
+
+.wrapinner .itemList .cell.status>span {
+    border-top: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
+}
+
+.footer {
+	border-top: 1px solid var(--xhs-border) !important;
+    background: var(--xhs-secondary) !important;
+}
+
+.footer>.shade {
+    background: var(--xhs-secondary) !important;
+}
+
+.footerBox ul {
+	background: var(--xhs-primary) !important;
+}
+
+.footerBox h6 {
+	color: var(--xhs-orange) !important;
+}
+.footerBox .listItem .label {
+    color: var(--xhs-title) !important;
+}
+
+.footer .links .link {
+    color: var(--xhs-title) !important;
+    background: var(--xhs-primary) !important;
+}
+
+.wrapinner .navi {
+    background: var(--xhs-secondary) !important;
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.wrapinner .navi .button {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    box-shadow: 1px 1px 1px transparent !important;
+	-webkit-box-shadow: 1px 1px 1px transparent !important;
+}
+
+.wrapinner .navi .button span {
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .navi .button>span:after {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner.navi .button>span:before {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner.contentHeader>.title .statusIcon+h1 {
+    color: var(--xhs-title) !important;
+}
+
+.wrapinner .contentHeader .descr {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .forumPost>.body {
+    border: 1px solid var(--xhs-border) !important;
+    background: var(--xhs-secondary) !important;
+}
+
+.wrapinner .forumPost .bbcode p {
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner button, .wrapinner  input[type="button"], .wrapinner  input[type="submit"], .wrapinner  .tanukiButton, .button {
+    -moz-box-shadow: 1px 1px 1px transparent !important;
+    -webkit-box-shadow: 1px 1px 1px transparent !important;
+    box-shadow: 1px 1px 1px transparent !important;
+}
+
+.wrapinner input[type="text"], .wrapinner input[type="email"], input[type="url"], .wrapinner input[type="search"], .wrapinner input[type="number"], .wrapinner input[type="password"], .wrapinner select, .wrapinner textarea {
+    background: var(--xhs-secondary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .forumPost .dateline .meta {
+	background: var(--xhs-secondary) !important;
+    color: var(--xhs-body) !important;
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.wrapinner a.author {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner div.title {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .forumPost .controls .button {
+	background: var(--xhs-secondary) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .contentHeader .title h1 {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .contentBox .infoText h5 {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .contentBox h6 {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .contentBox input[type="text"], .wrapinner .contentBox input[type="password"] {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .contentBox button, .wrapinner .contentBox .button {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .profileDetail h2 {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .profileDetail dt, .wrapinner .profileDetail dd {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .feedSection .listItem .inner {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .feedSection .listItem .inner b {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner .navi .curPage select {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner #threadList-1 .table .head .cell.status, .wrapinner #threadList-1 .table .head .cell.title, .wrapinner #threadList-1 .table .head .cell.lastReply, .wrapinner #threadList-1 .table .head .cell.numReplies {
+    border: none !important;
+	padding-bottom: 10px;
+}
+
+.wrapinner .galleryList .descr {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .galleryList ul h2 {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .galleryList ul .meta .cat {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .galleryList ul .meta .author {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .galleryImage {
+    background: var(--xhs-secondary) !important;
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.wrapinner .marketFilterBox #searchForm select, .wrapinner .marketFilterBox #searchForm input {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .marketList .price {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .itemList .listItem .dateline {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .itemList .listItem .cat {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .details {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .galleryComments a {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner .contentHeader .description p {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .contentHeader .preamble .bbParagraph {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .listItem.isFocused .inner {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .itemList .listItem.isFocused {
+    background: var(--xhs-highlight) !important;
+    box-shadow: inset 1px 1px 1px transparent !important;;
+    -moz-box-shadow: inset 1px 1px 1px transparent !important;;
+    -webkit-box-shadow: inset 1px 1px 1px transparent !important;;
+}
+
+.wrapinner .articleComments a {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner .forumList .treeNode>.nodeInner {
+    border: 1px solid var(--xhs-border) !important;
+    background: var(--xhs-secondary) !important;
+    background-color: var(--xhs-secondary) !important;
+}
+
+.wrapinner .forumList .treeNode>.nodeInner h2 {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner .forumList .treeNode>.nodeInner .descr {
+	color: var(--xhs-body) !important;
+}
+
+.wrapinner .forumList .cell.status .forumStatus {
+	filter: none !important;
+    -webkit-filter: none !important;
+}
+
+.wrapinner .thread .body .bbcode h1 {
+	color: var(--xhs-title) !important;
+}
+
+.wrapinner .thread .body .bbcode h3 {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner .contentHeader h1.title {
+	color: var(--xhs-title);
+}
+
+.wrapinner #searchForm .contentBox select {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .listItem .inner {
+    color: var(--xhs-body) !important;
+}
+
+.wrapinner .listItem .inner b {
+    color: var(--xhs-orange) !important;
+}
+
+.wrapinner .listItem .inner .dateline b {
+    color: var(--xhs-title) !important;
+}
+
+.wrapinner .forumPost.isLiked .dateline .meta .score {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner #post17698683 h2 .bbColor {
+	color: var(--xhs-orange) !important;
+}
+
+.wrapinner .mainMenu .menuItem.optionProfile span {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
+}
+
+.wrapinner .mainMenu .menuItem.optionIndex span, .wrapinner .mainMenu .menuItem.optionGallery span, .wrapinner .mainMenu .menuItem.optionMarket span, .wrapinner .mainMenu .menuItem.optionForum span, .wrapinner .mainMenu .menuItem.optionGuides span {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
+    -webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
 }
