@@ -1,4 +1,4 @@
-/*! SweClockers Dark - XHS v2.1.0 (2019-08-21)
+/*! SweClockers Dark - XHS v2.1.2 (2019-10-30)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -2177,4 +2177,15 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 .wrapinner .mainMenu .menuItem.optionIndex span, .wrapinner .mainMenu .menuItem.optionGallery span, .wrapinner .mainMenu .menuItem.optionMarket span, .wrapinner .mainMenu .menuItem.optionForum span, .wrapinner .mainMenu .menuItem.optionGuides span {
     filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
     -webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
+}
+
+/* 2.1.2
+–––––––––*/
+
+.forumPost {
+    background: var(--xhs-secondary) !important;
+}
+
+.forumPost.isSelected .controls .button.multiquote {
+	color: var(--xhs-orange) !important;
 }
