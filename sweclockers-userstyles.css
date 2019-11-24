@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.1.2 (2019-10-30)
+/*! SweClockers Dark - XHS v2.1.3 (2019-11-24)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -19,6 +19,7 @@
 	--xhs-purple: /*[[purple]]*/;
 	--xhs-brown: /*[[brown]]*/;
 	--xhs-red: /*[[red]]*/;
+    --swec-blackfriday: #000000;
 }
 
 /*! Main Code !*/
@@ -882,7 +883,7 @@ div.plHead h5,
 .articleHeader .meta a:hover,
 #siteHeader .ninjaSearchResult .row td a:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .ninjaSearchResult .showMore,
@@ -1033,7 +1034,7 @@ form#better-sweclockers footer a {
 
 form#better-sweclockers footer a:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .forumPost.isReader .button.better-sweclockers-icon-button.better-sweclockers-pm-button {
@@ -1727,7 +1728,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .mainWidget.forumWidget.commentsWidget .mwHead > h5 > a:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwHead > p {
@@ -1747,12 +1748,12 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .mainWidget.forumWidget.commentsWidget .mwReadmore > a:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .mainWidget.forumWidget.commentsWidget > a > .mwLabel:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwLabelIcon {
@@ -1762,7 +1763,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwIcon, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelDate, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelText {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .better-sweclockers-link-to-top {
@@ -1771,7 +1772,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .better-sweclockers-link-to-top:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .better-sweclockers-link-to-top:before {
@@ -1786,7 +1787,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .memberTable .username a:hover {
 	text-decoration: none !important;
-	opacity: 0.75 !important;
+	opacity: 0.8 !important;
 }
 
 .memberTable .title {
@@ -2189,5 +2190,130 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .forumPost.isSelected .controls .button.multiquote {
 	color: var(--xhs-orange) !important;
+}
+
+/* 2.1.3
+–––––––––*/
+
+
+/* Hoppas detta inte pajar något */
+a:hover, .link:hover, a:hover>.label, .link:hover>.label {
+    text-decoration: none !important;
+    opacity: 0.8 !important;
+}
+
+.mainMenu li.optionBlackfriday {
+    background-color: var(--swec-blackfriday) !important;
+    border-color: var(--xhs-border) !important;
+}
+
+.mainMenu li.optionBlackfriday:hover, .mainMenu li.optionBlackfriday.isSelected:hover {
+    background-color: var(--swec-blackfriday) !important;
+    opacity: 0.8 !important;
+}
+
+.mainMenu li.optionBlackfriday a {
+    color: var(--xhs-title) !important;
+}
+
+.mainMenu li.optionBlackfriday.isSelected a {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .mellandagsreaHeader .aboutFynd a, .mellandagsrea .mellandagsreaHeader h1 {
+    color: var(--xhs-orange) !important;
+}
+
+.mellandagsrea .mellandagsreaHeader p {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea #guideWrapper {
+    background-color: var(--xhs-secondary) !important;
+    color: var(--xhs-body) !important;
+    border: solid 1px var(--xhs-border) !important;
+}
+
+.mellandagsrea .vendorGuides h2 {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .vendorGuides .guideBlock span {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .tips .tipsTitle {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .tips .tipsData .tipsRow {
+    background-color: var(--xhs-secondary) !important;
+}
+
+.mellandagsrea .tips .tipsMeta .productCell {
+    background-color: var(--xhs-secondary) !important;
+    border-left: solid 1px var(--xhs-border) !important;
+    border-right: solid 1px var(--xhs-border) !important;
+}
+
+.mellandagsrea div.colProduct, .mellandagsrea div.colPrice {
+    color: var(--xhs-orange) !important;
+}
+
+.mellandagsrea div.colCategory, .mellandagsrea div.colVendor {
+    color: var(--xhs-body) !important;
+}
+
+.mellandagsrea .userCell {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .tips .tipsData .colScore .label {
+    color: white !important;
+    background: var(--xhs-orange) !important;
+}
+
+.mellandagsrea .tips .tipsData .colScore .label:hover {
+    opacity: 0.8 !important;
+}
+
+.mellandagsrea .tips .tipsMeta .productCell span.label {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea select {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.mellandagsrea .tips .tipsRow:hover .productCell, .mellandagsrea .tips .tipsRow:hover .pjCell, .mellandagsrea .tips .tipsRow:hover .userCell {
+    background: var(--xhs-highlight) !important;
+}
+
+.mellandagsrea .tips a.productCell:hover .colProduct, .mellandagsrea .tips a.productCell:hover .colPrice {
+	text-decoration: none !important;
+}
+
+.mellandagsrea .tips a.productCell .colProduct:hover, .mellandagsrea .tips a.productCell .colPrice:hover {
+	text-decoration: none !important;
+	opacity: 0.8 !important;
+}
+
+.mellandagsrea .tips a.userCell:hover .colUser {
+	text-decoration: none !important;
+	opacity: 0.8 !important;
+}
+
+.mellandagsrea .vendorGuides .guideBlock:hover {
+	opacity: 0.8 !important;
+}
+
+.sorter .isCurrent {
+    color: var(--xhs-orange) !important;
+}
+
+.forumPost .cell.main .bbStrong {
+    color: var(--xhs-title) !important;
 }
 }
