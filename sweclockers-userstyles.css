@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.1.3 (2019-11-24)
+/*! SweClockers Dark - XHS v2.1.4 (2019-11-29)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -9,6 +9,7 @@
 :root {
 	--xhs-primary: /*[[primary]]*/;
 	--xhs-secondary: /*[[secondary]]*/;
+	--xhs-tertiary: /*[[tertiary]]*/;
 	--xhs-border: /*[[border]]*/;
 	--xhs-highlight: /*[[highlight]]*/;
 	--xhs-title: /*[[title]]*/;
@@ -2315,5 +2316,93 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 
 .forumPost .cell.main .bbStrong {
     color: var(--xhs-title) !important;
+}
+
+/* 2.1.4
+–––––––––*/
+
+.mellandagsrea .tips .numComments a, .mellandagsrea .tips .tipsTitle a {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .vendorName {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .vendorCampaignLink > a {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .productFooter {
+    background: var(--xhs-secondary) !important;
+    background-color: var(--xhs-secondary) !important;
+}
+
+.mellandagsrea .productFooter a {
+    color: var(--xhs-orange) !important;
+}
+
+.mellandagsrea .productFooter p {
+    color: var(--xhs-body) !important;
+}
+
+.mellandagsrea .productHeader {
+    background: var(--xhs-tertiary) !important;
+    background-color: var(--xhs-tertiary) !important;
+}
+
+.mellandagsrea .productHeader:hover {
+    background: var(--xhs-highlight) !important;
+    background-color: var(--xhs-highlight) !important;
+    opacity: 1 !important;
+}
+
+.mellandagsrea .productPriceOffer {
+    color: var(--xhs-title) !important;
+}
+
+.mellandagsrea .productPriceRegular {
+    color: var(--xhs-body) !important;
+}
+
+.mellandagsrea .productPriceSavings {
+    color: white !important;
+    background-color: var(--xhs-orange) !important;
+}
+
+#revolut-ad {
+    background-color: var(--xhs-secondary) !important;
+}
+
+
+#revolut-ad .title > a {
+    color: var(--xhs-title) !important;
+}
+
+#revolut-ad .text {
+    color: var(--xhs-body) !important;
+}
+
+#revolut-ad .text > a {
+    color: var(--xhs-orange) !important;
+}
+
+#revolut-ad .button {
+    background: var(--xhs-primary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+#revolut-ad .button:hover {
+    background-color: var(--xhs-highlight) !important;
+}
+
+#revolut-ad > .shadow {
+    background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
+    background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+    background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+    background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+    background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 }
 }
