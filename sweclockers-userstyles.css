@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.1.5 (2019-12-03)
+/*! SweClockers Dark - XHS v2.1.6 (2019-12-03)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -2499,5 +2499,12 @@ a.back_to_cal:hover {
 
 #content-header p {
     color: var(--xhs-body);
+}
+
+/* 2.1.6
+–––––––––*/
+
+.mainMenu li.optionJulkalender:hover {
+    background-color: var(--swec-julkalender) !important;
 }
 }
