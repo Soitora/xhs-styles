@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.1.4 (2019-11-29)
+/*! SweClockers Dark - XHS v2.1.5 (2019-12-03)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -21,6 +21,7 @@
 	--xhs-brown: /*[[brown]]*/;
 	--xhs-red: /*[[red]]*/;
     --swec-blackfriday: #000000;
+    --swec-julkalender: #CC0000;
 }
 
 /*! Main Code !*/
@@ -2404,5 +2405,99 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
     background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
     background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
     background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+}
+
+/* 2.1.5
+–––––––––*/
+
+.mainMenu li.optionJulkalender {
+    background-color: var(--swec-julkalender) !important;
+    border-color: var(--xhs-border) !important;
+}
+
+.mainMenu li.isSelected.optionJulkalender:hover {
+    background-color: var(--swec-julkalender) !important;
+}
+
+#single.content_holder {
+    background-color: var(--xhs-secondary) !important;
+}
+
+.post h2 {
+    color: var(--xhs-title) !important;
+}
+
+.post p {
+    color: var(--xhs-body) !important;
+}
+
+.post p a, .post li a {
+    color: var(--xhs-orange) !important;
+    text-decoration: none;
+}
+
+.post ul {
+    color: var(--xhs-title) !important;
+}
+
+.form_options a.btn_back {
+    background-color: var(--xhs-primary) !important;
+    color: var(--xhs-title) !important;
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.back_to_cal i {
+    color: black !important;
+    background-color: var(--xhs-orange) !important;
+    margin: 12px 7px 0 0;
+}
+
+.back_to_cal {
+    color: var(--xhs-orange) !important;
+}
+
+a.back_to_cal:hover > i {
+    background-color: var(--xhs-red) !important;
+}
+
+a.back_to_cal:hover {
+    color: var(--xhs-red) !important;
+}
+
+#form_inputs label {
+    color: var(--xhs-title) !important;
+}
+
+#form_inputs textarea, #form_inputs input, #form_inputs textarea {
+    background-color: var(--xhs-primary) !important;
+    color: var(--xhs-body) !important;
+}
+
+#form_inputs div.checkbox {
+    filter: contrast(0.89) hue-rotate(-63deg) invert(1) ;
+}
+
+#form_inputs .policy_container .checkboxspan {
+    color: var(--xhs-body) !important;
+}
+
+#form_inputs .policy_container .checkboxspan a {
+    color: var(--xhs-orange) !important;
+}
+
+.content_holder, #container.on_fb {
+    background-color: var(--xhs-secondary);
+}
+
+#content-header {
+    padding-top: 20px;
+}
+
+#content-header h1 {
+    color: var(--xhs-title);
+}
+
+#content-header p {
+    color: var(--xhs-body);
 }
 }
