@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.1.7 (2019-12-07)
+/*! SweClockers Dark - XHS v2.1.8 (2019-12-22)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -22,6 +22,7 @@
 	--xhs-red: /*[[red]]*/;
     --swec-blackfriday: #000000;
     --swec-julkalender: #CC0000;
+    --swec-mellandagsrea: #AC0C38;
 }
 
 /*! Main Code !*/
@@ -2518,5 +2519,106 @@ div.content_holder > div > div > strong {
 div.content_holder > div > div > strong > a {
     color: var(--xhs-orange) !important;
     text-decoration: none;
+}
+
+/* 2.1.8
+–––––––––*/
+
+a.selectBox.selectBox-dropdown {
+    background: var(--xhs-primary) !important;
+    box-shadow: none !important;
+}
+
+#form_inputs a.selectBox {
+    text-shadow: none !important;
+    color: var(--xhs-title) !important;
+}
+
+.selectBox-options, .selectBox-options li, .selectBox-options li a {
+    background-color: var(--xhs-primary) !important;
+    color: var(--xhs-body) !important;
+}
+
+.selectBox-options:hover, .selectBox-options li:hover, .selectBox-options li a:hover {
+    background-color: var(--xhs-highlight) !important;
+    color: var(--xhs-title) !important;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+    border-left: none !important;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(489%) hue-rotate(229deg) brightness(90%) contrast(86%) !important;
+}
+
+.mainMenu li.isSelected.optionMellandagsrea:hover {
+    background-color: var(--swec-mellandagsrea) !important;
+}
+
+.mainMenu li.optionMellandagsrea:hover {
+    background-color: var(--swec-mellandagsrea) !important;
+}
+
+.campaignportal #guide-wrapper {
+    background-color: var(--xhs-secondary) !important;
+    border: solid 1px var(--xhs-border) !important;
+}
+
+.campaignportal .vendor-guides h2 {
+    color: var(--xhs-title) !important;
+}
+
+.campaignportal .vendor-guides p {
+    color: var(--xhs-body) !important;
+}
+
+.campaignportal .vendor-guides .guide-block span {
+    color: var(--xhs-body) !important;
+}
+
+.campaignportal .tips .tips-data .tips-row:nth-child(odd), .campaignportal .tips .tips-data .tips-row:nth-child(even) {
+    background: var(--xhs-secondary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.campaignportal .tips .tips-data .tips-row:hover .col-product, .campaignportal .tips .tips-data .tips-row:hover .col-category, .campaignportal .tips .tips-data .tips-row:hover .col-vendor, .campaignportal .tips .tips-data .tips-row:hover .col-price, .campaignportal .tips .tips-data .tips-row:hover .pj-cell, .campaignportal .tips .tips-data .tips-row:hover .user-cell {
+    background: var(--xhs-highlight) !important;
+}
+
+.campaignportal select {
+    background: var(--xhs-secondary) !important;
+    border: 1px solid var(--xhs-border) !important;
+    color: var(--xhs-body) !important;
+}
+
+.campaignportal .tips .tips-data .tips-row .col-product, .campaignportal .tips .tips-data .tips-row .col-user {
+    color: var(--xhs-orange) !important;
+}
+
+.campaignportal .tips .tips-data .tips-row .col-category, .campaignportal .tips .tips-data .tips-row .col-vendor {
+    color: var(--xhs-body) !important;
+}
+
+.campaignportal .tips .tips-data .tips-row .col-price {
+    color: var(--xhs-title) !important;
+}
+
+.campaignportal .tips .tips-title {
+    color: var(--xhs-title) !important;
+}
+
+.campaignportal .tips .tips-meta {
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.sorter a .label, .sorter .label {
+    color: var(--xhs-title) !important;
+}
+
+.campaignportal .tips .tips-data .col-score .label {
+    background: var(--xhs-orange) !important;
+}
+
+.campaignportal .tips .tips-data :hover .col-product, .campaignportal .tips .tips-data :hover .col-user {
+    text-decoration: none !important;
 }
 }
