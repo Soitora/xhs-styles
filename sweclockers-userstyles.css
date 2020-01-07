@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.1.8 (2019-12-22)
+/*! SweClockers Dark - XHS v2.2.0 (2020-01-07)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -20,6 +20,7 @@
 	--xhs-purple: /*[[purple]]*/;
 	--xhs-brown: /*[[brown]]*/;
 	--xhs-red: /*[[red]]*/;
+    --swec-ces: #639B48;
     --swec-blackfriday: #000000;
     --swec-julkalender: #CC0000;
     --swec-mellandagsrea: #AC0C38;
@@ -1659,24 +1660,10 @@ form#better-sweclockers input[type="time"] {
 .mainMenu li.optionDreamhack:hover,
 .mainMenu li.optionJulkalender:hover,
 .mainMenu li.optionMellandagsrea:hover {
-	background-image: none !important;
 	opacity: 0.8 !important;
 }
 
-.mainMenu li.optionVr:hover a,
-.mainMenu li.optionCes:hover a,
-.mainMenu li.optionPaskrea:hover a,
-.mainMenu li.optionGreenfriday:hover a,
-.mainMenu li.optionComputex:hover a,
-.mainMenu li.optionE3:hover a,
-.mainMenu li.optionBack2school:hover a,
-.mainMenu li.optionBlackfriday:hover a,
-.mainMenu li.optionCybermonday:hover a,
-.mainMenu li.optionDreamhack:hover a,
-.mainMenu li.optionJulkalender:hover a,
-.mainMenu li.optionMellandagsrea:hover a {
-	color: var(--color-text) !important;
-}
+
 
 /* 2.0.2
 –––––––––*/
@@ -2620,5 +2607,77 @@ a.selectBox.selectBox-dropdown {
 
 .campaignportal .tips .tips-data :hover .col-product, .campaignportal .tips .tips-data :hover .col-user {
     text-decoration: none !important;
+}
+
+/* 2.2.0
+–––––––––*/
+
+.mainMenu li.optionCes {
+    background-color: var(--swec-ces) !important;
+    border: 1px solid var(--xhs-border) !important;
+}
+
+.mainMenu li.isSelected.optionCes:hover {
+    background-color: var(--swec-ces) !important;
+}
+
+.mainMenu li.optionCes:hover {
+    background-color: var(--swec-ces) !important;
+}
+
+.mainMenu li.optionCes:hover a {
+    color: var(--xhs-primary) !important;
+}
+
+.articleList .authors-byline a {
+    color: var(--xhs-title) !important;
+}
+
+.articleActions .action.proofArticle .actionIcon {
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+
+.articleActions .action.proofArticle .actionLabel {
+    color: var(--xhs-orange) !important;
+}
+
+.articleActions .action.proofArticle .actionLabel:hover {
+    text-decoration: none !important;
+}
+
+div > .widget.bg-orange {
+    background: var(--xhs-secondary) !important;
+	border-bottom-left-radius: 8px;
+}
+
+div > .widget.bg-orange a.title {
+    color: var(--xhs-orange) !important;
+}
+
+div > .widget.bg-orange a > span.text-bold {
+    color: var(--xhs-title) !important;
+}
+
+div > .widget.bg-orange a > span.list-link-text {
+    color: var(--xhs-body) !important;
+}
+
+div > .widget.bg-orange .widget-foot > a.color-white {
+    color: var(--xhs-title) !important;
+}
+
+div > .widget.bg-orange .widget-body .list .list-item .list-link .icon {
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+}
+
+.articleList.bg-grey-primary {
+    background: var(--xhs-secondary) !important;
+    color: var(--xhs-body) !important;
+}
+
+.articleList.bg-grey-primary h3.title > a {
+    color: var(--xhs-orange) !important;
 }
 }
