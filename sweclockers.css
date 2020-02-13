@@ -1,4 +1,4 @@
-/*! SweClockers Dark - XHS v2.2.0 (2020-01-07)
+/*! SweClockers Dark - XHS v2.2.1 (2020-02-13)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -19,10 +19,10 @@
 	--xhs-purple: #8E78A2;
 	--xhs-brown: #7A6A5A;
 	--xhs-red: #EF4A4B;
-    --swec-ces: #639B48;
-    --swec-blackfriday: #000000;
-    --swec-julkalender: #CC0000;
-    --swec-mellandagsrea: #AC0C38;
+	--swec-ces: #639B48;
+	--swec-blackfriday: #000000;
+	--swec-julkalender: #CC0000;
+	--swec-mellandagsrea: #AC0C38;
 }
 
 /*! Main Code !*/
@@ -1668,34 +1668,34 @@ form#better-sweclockers input[type="time"] {
 –––––––––*/
 
 img[src*="/artikel/diagram/"] {
-    -webkit-filter: invert(85%) !important;
-    -o-filter: invert(85%) !important;
-    filter: invert(85%) !important;
+	-webkit-filter: invert(85%) !important;
+	-o-filter: invert(85%) !important;
+	filter: invert(85%) !important;
 }
 
 /* 2.0.3 
 –––––––––*/
 
 .header .profile .hasUnread > a > span {
-    color: var(--xhs-orange);
+	color: var(--xhs-orange);
 }
 
 #siteHeader > div.main > div > div.sections > div.section.profile > ul > li.option.quote.hasUnread > a > span.icon, #siteHeader > div.main > div > div.sections > div.section.profile > ul > li.option.watched.hasUnread > a > span.icon {
 filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
 .header .profile .label span:last-child:hover {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 .bg-orange {
-    background: var(--xhs-orange) !important;
+	background: var(--xhs-orange) !important;
 	border-bottom-left-radius: 8px;
 }
 
 .bg-orange:hover {
-    background: var(--xhs-orange) !important;
+	background: var(--xhs-orange) !important;
 	opacity: 0.90 !important;
 }
 
@@ -1725,9 +1725,9 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .mainWidget.forumWidget.commentsWidget {
-    box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
-    -webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
-    -moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwReadmore {
@@ -1746,8 +1746,8 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .mainWidget.forumWidget.commentsWidget .mwLabelIcon {
-    filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwIcon, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelDate, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelText {
@@ -1770,8 +1770,8 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .memberTable .username a {
-    color: var(--xhs-orange) !important;
-    text-decoration: none !important;
+	color: var(--xhs-orange) !important;
+	text-decoration: none !important;
 }
 
 .memberTable .username a:hover {
@@ -1780,24 +1780,24 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .memberTable .title {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 /* 2.1.0
 –––––––––*/
 
 .wrapinner {
-    background: var(--xhs-primary) !important;
+	background: var(--xhs-primary) !important;
 }
 
 .wrapinner .header .headMain {
-    border-bottom: 1px solid var(--xhs-border) !important;
-    padding-bottom: 0;
-    background: var(--xhs-secondary) !important;
+	border-bottom: 1px solid var(--xhs-border) !important;
+	padding-bottom: 0;
+	background: var(--xhs-secondary) !important;
 }
 
 .wrapinner .header .dateline .mobil {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner .header .dateline span {
@@ -1805,93 +1805,93 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .mainMenu {
-    background-color: var(--xhs-primary) !important;
-    border-bottom: 1px solid var(--xhs-border) !important;
+	background-color: var(--xhs-primary) !important;
+	border-bottom: 1px solid var(--xhs-border) !important;
 }
 
 .wrapinner .mainMenu li {
-    background: var(--xhs-secondary) !important;
-    border-top: 1px solid var(--xhs-border) !important;
-    border-left: 1px solid var(--xhs-border) !important;
-    border-right: 1px solid var(--xhs-border) !important;;
+	background: var(--xhs-secondary) !important;
+	border-top: 1px solid var(--xhs-border) !important;
+	border-left: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--xhs-border) !important;;
 }
 
 .wrapinner .subMenu li {
-    background: var(--xhs-primary) !important;
+	background: var(--xhs-primary) !important;
 }
 
 .wrapinner .subMenu li.isSelected a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .wrapinner .subMenu li a {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .itemList {
-    background: var(--xhs-secondary) !important;
-    border: 1px solid var(--xhs-border) !important;
+	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .wrapinner .itemList h2 {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner .articleList .metadata .cat {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner .articleList .metadata .time {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .wrapinner .itemList div.preview div.bbcode {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .itemList .listItem .icon span {
-    filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
 .wrapinner div.plItemRow > .plLabelText {
-     color: var(--xhs-body) !important;
+	 color: var(--xhs-body) !important;
 }
 
 .wrapinner div.plItemRow.plItemSubRow > .plLabelText {
-     color: var(--xhs-orange) !important;
+	 color: var(--xhs-orange) !important;
 }
 
 .wrapinner .pushList .plComments {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner div.plItemSubRow > .plLabelComponent {
-     color: var(--xhs-title) !important;
+	 color: var(--xhs-title) !important;
 }
 
 .wrapinner .pushList .plComments.plIcon {
-    filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
 .wrapinner .articleStatus.icon-comment {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(112%) contrast(101%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(112%) contrast(101%) !important;
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(112%) contrast(101%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(112%) contrast(101%) !important;
 }
 
 .wrapinner .itemList .cell.status>span {
-    border-top: 1px solid var(--xhs-border) !important;
+	border-top: 1px solid var(--xhs-border) !important;
 	color: var(--xhs-body) !important;
 }
 
 .footer {
 	border-top: 1px solid var(--xhs-border) !important;
-    background: var(--xhs-secondary) !important;
+	background: var(--xhs-secondary) !important;
 }
 
 .footer>.shade {
-    background: var(--xhs-secondary) !important;
+	background: var(--xhs-secondary) !important;
 }
 
 .footerBox ul {
@@ -1902,40 +1902,40 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	color: var(--xhs-orange) !important;
 }
 .footerBox .listItem .label {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .footer .links .link {
-    color: var(--xhs-title) !important;
-    background: var(--xhs-primary) !important;
+	color: var(--xhs-title) !important;
+	background: var(--xhs-primary) !important;
 }
 
 .wrapinner .navi {
-    background: var(--xhs-secondary) !important;
-    border: 1px solid var(--xhs-border) !important;
+	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .wrapinner .navi .button {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    box-shadow: 1px 1px 1px transparent !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	box-shadow: 1px 1px 1px transparent !important;
 	-webkit-box-shadow: 1px 1px 1px transparent !important;
 }
 
 .wrapinner .navi .button span {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .navi .button>span:after {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner.navi .button>span:before {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner.contentHeader>.title .statusIcon+h1 {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .wrapinner .contentHeader .descr {
@@ -1943,30 +1943,30 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .forumPost>.body {
-    border: 1px solid var(--xhs-border) !important;
-    background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	background: var(--xhs-secondary) !important;
 }
 
 .wrapinner .forumPost .bbcode p {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner button, .wrapinner  input[type="button"], .wrapinner  input[type="submit"], .wrapinner  .tanukiButton, .button {
-    -moz-box-shadow: 1px 1px 1px transparent !important;
-    -webkit-box-shadow: 1px 1px 1px transparent !important;
-    box-shadow: 1px 1px 1px transparent !important;
+	-moz-box-shadow: 1px 1px 1px transparent !important;
+	-webkit-box-shadow: 1px 1px 1px transparent !important;
+	box-shadow: 1px 1px 1px transparent !important;
 }
 
 .wrapinner input[type="text"], .wrapinner input[type="email"], input[type="url"], .wrapinner input[type="search"], .wrapinner input[type="number"], .wrapinner input[type="password"], .wrapinner select, .wrapinner textarea {
-    background: var(--xhs-secondary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .forumPost .dateline .meta {
 	background: var(--xhs-secondary) !important;
-    color: var(--xhs-body) !important;
-    border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .wrapinner a.author {
@@ -1979,7 +1979,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .wrapinner .forumPost .controls .button {
 	background: var(--xhs-secondary) !important;
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .contentHeader .title h1 {
@@ -1995,15 +1995,15 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .contentBox input[type="text"], .wrapinner .contentBox input[type="password"] {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .contentBox button, .wrapinner .contentBox .button {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .profileDetail h2 {
@@ -2023,13 +2023,13 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .navi .curPage select {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner #threadList-1 .table .head .cell.status, .wrapinner #threadList-1 .table .head .cell.title, .wrapinner #threadList-1 .table .head .cell.lastReply, .wrapinner #threadList-1 .table .head .cell.numReplies {
-    border: none !important;
+	border: none !important;
 	padding-bottom: 10px;
 }
 
@@ -2050,14 +2050,14 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .galleryImage {
-    background: var(--xhs-secondary) !important;
-    border: 1px solid var(--xhs-border) !important;
+	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .wrapinner .marketFilterBox #searchForm select, .wrapinner .marketFilterBox #searchForm input {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .marketList .price {
@@ -2093,10 +2093,10 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .itemList .listItem.isFocused {
-    background: var(--xhs-highlight) !important;
-    box-shadow: inset 1px 1px 1px transparent !important;;
-    -moz-box-shadow: inset 1px 1px 1px transparent !important;;
-    -webkit-box-shadow: inset 1px 1px 1px transparent !important;;
+	background: var(--xhs-highlight) !important;
+	box-shadow: inset 1px 1px 1px transparent !important;;
+	-moz-box-shadow: inset 1px 1px 1px transparent !important;;
+	-webkit-box-shadow: inset 1px 1px 1px transparent !important;;
 }
 
 .wrapinner .articleComments a {
@@ -2104,9 +2104,9 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .forumList .treeNode>.nodeInner {
-    border: 1px solid var(--xhs-border) !important;
-    background: var(--xhs-secondary) !important;
-    background-color: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	background: var(--xhs-secondary) !important;
+	background-color: var(--xhs-secondary) !important;
 }
 
 .wrapinner .forumList .treeNode>.nodeInner h2 {
@@ -2119,7 +2119,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .wrapinner .forumList .cell.status .forumStatus {
 	filter: none !important;
-    -webkit-filter: none !important;
+	-webkit-filter: none !important;
 }
 
 .wrapinner .thread .body .bbcode h1 {
@@ -2135,21 +2135,21 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner #searchForm .contentBox select {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .listItem .inner {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .wrapinner .listItem .inner b {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner .listItem .inner .dateline b {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .wrapinner .forumPost.isLiked .dateline .meta .score {
@@ -2161,20 +2161,20 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 }
 
 .wrapinner .mainMenu .menuItem.optionProfile span {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
+	filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
 }
 
 .wrapinner .mainMenu .menuItem.optionIndex span, .wrapinner .mainMenu .menuItem.optionGallery span, .wrapinner .mainMenu .menuItem.optionMarket span, .wrapinner .mainMenu .menuItem.optionForum span, .wrapinner .mainMenu .menuItem.optionGuides span {
-    filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
-    -webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
+	filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
+	-webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
 }
 
 /* 2.1.2
 –––––––––*/
 
 .forumPost {
-    background: var(--xhs-secondary) !important;
+	background: var(--xhs-secondary) !important;
 }
 
 .forumPost.isSelected .controls .button.multiquote {
@@ -2187,97 +2187,97 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 /* Hoppas detta inte pajar något */
 a:hover, .link:hover, a:hover>.label, .link:hover>.label {
-    text-decoration: none !important;
-    opacity: 0.8 !important;
+	text-decoration: none !important;
+	opacity: 0.8 !important;
 }
 
 .mainMenu li.optionBlackfriday {
-    background-color: var(--swec-blackfriday) !important;
-    border-color: var(--xhs-border) !important;
+	background-color: var(--swec-blackfriday) !important;
+	border-color: var(--xhs-border) !important;
 }
 
 .mainMenu li.optionBlackfriday:hover, .mainMenu li.optionBlackfriday.isSelected:hover {
-    background-color: var(--swec-blackfriday) !important;
-    opacity: 0.8 !important;
+	background-color: var(--swec-blackfriday) !important;
+	opacity: 0.8 !important;
 }
 
 .mainMenu li.optionBlackfriday a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mainMenu li.optionBlackfriday.isSelected a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .mellandagsreaHeader .aboutFynd a, .mellandagsrea .mellandagsreaHeader h1 {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .mellandagsrea .mellandagsreaHeader p {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea #guideWrapper {
-    background-color: var(--xhs-secondary) !important;
-    color: var(--xhs-body) !important;
-    border: solid 1px var(--xhs-border) !important;
+	background-color: var(--xhs-secondary) !important;
+	color: var(--xhs-body) !important;
+	border: solid 1px var(--xhs-border) !important;
 }
 
 .mellandagsrea .vendorGuides h2 {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .vendorGuides .guideBlock span {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .tips .tipsTitle {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .tips .tipsData .tipsRow {
-    background-color: var(--xhs-secondary) !important;
+	background-color: var(--xhs-secondary) !important;
 }
 
 .mellandagsrea .tips .tipsMeta .productCell {
-    background-color: var(--xhs-secondary) !important;
-    border-left: solid 1px var(--xhs-border) !important;
-    border-right: solid 1px var(--xhs-border) !important;
+	background-color: var(--xhs-secondary) !important;
+	border-left: solid 1px var(--xhs-border) !important;
+	border-right: solid 1px var(--xhs-border) !important;
 }
 
 .mellandagsrea div.colProduct, .mellandagsrea div.colPrice {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .mellandagsrea div.colCategory, .mellandagsrea div.colVendor {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .mellandagsrea .userCell {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .tips .tipsData .colScore .label {
-    color: white !important;
-    background: var(--xhs-orange) !important;
+	color: white !important;
+	background: var(--xhs-orange) !important;
 }
 
 .mellandagsrea .tips .tipsData .colScore .label:hover {
-    opacity: 0.8 !important;
+	opacity: 0.8 !important;
 }
 
 .mellandagsrea .tips .tipsMeta .productCell span.label {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea select {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .mellandagsrea .tips .tipsRow:hover .productCell, .mellandagsrea .tips .tipsRow:hover .pjCell, .mellandagsrea .tips .tipsRow:hover .userCell {
-    background: var(--xhs-highlight) !important;
+	background: var(--xhs-highlight) !important;
 }
 
 .mellandagsrea .tips a.productCell:hover .colProduct, .mellandagsrea .tips a.productCell:hover .colPrice {
@@ -2299,337 +2299,337 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 }
 
 .sorter .isCurrent {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .forumPost .cell.main .bbStrong {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 /* 2.1.4
 –––––––––*/
 
 .mellandagsrea .tips .numComments a, .mellandagsrea .tips .tipsTitle a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .vendorName {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .vendorCampaignLink > a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .productFooter {
-    background: var(--xhs-secondary) !important;
-    background-color: var(--xhs-secondary) !important;
+	background: var(--xhs-secondary) !important;
+	background-color: var(--xhs-secondary) !important;
 }
 
 .mellandagsrea .productFooter a {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .mellandagsrea .productFooter p {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .mellandagsrea .productHeader {
-    background: var(--xhs-tertiary) !important;
-    background-color: var(--xhs-tertiary) !important;
+	background: var(--xhs-tertiary) !important;
+	background-color: var(--xhs-tertiary) !important;
 }
 
 .mellandagsrea .productHeader:hover {
-    background: var(--xhs-highlight) !important;
-    background-color: var(--xhs-highlight) !important;
-    opacity: 1 !important;
+	background: var(--xhs-highlight) !important;
+	background-color: var(--xhs-highlight) !important;
+	opacity: 1 !important;
 }
 
 .mellandagsrea .productPriceOffer {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .mellandagsrea .productPriceRegular {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .mellandagsrea .productPriceSavings {
-    color: white !important;
-    background-color: var(--xhs-orange) !important;
+	color: white !important;
+	background-color: var(--xhs-orange) !important;
 }
 
 #revolut-ad {
-    background-color: var(--xhs-secondary) !important;
+	background-color: var(--xhs-secondary) !important;
 }
 
 
 #revolut-ad .title > a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 #revolut-ad .text {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 #revolut-ad .text > a {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 #revolut-ad .button {
-    background: var(--xhs-primary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-primary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 #revolut-ad .button:hover {
-    background-color: var(--xhs-highlight) !important;
+	background-color: var(--xhs-highlight) !important;
 }
 
 #revolut-ad > .shadow {
-    background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
-    background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-    background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-    background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-    background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 }
 
 /* 2.1.5
 –––––––––*/
 
 .mainMenu li.optionJulkalender {
-    background-color: var(--swec-julkalender) !important;
-    border-color: var(--xhs-border) !important;
+	background-color: var(--swec-julkalender) !important;
+	border-color: var(--xhs-border) !important;
 }
 
 .mainMenu li.isSelected.optionJulkalender:hover {
-    background-color: var(--swec-julkalender) !important;
+	background-color: var(--swec-julkalender) !important;
 }
 
 #single.content_holder {
-    background-color: var(--xhs-secondary) !important;
+	background-color: var(--xhs-secondary) !important;
 }
 
 .post h2 {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .post p {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .post p a, .post li a {
-    color: var(--xhs-orange) !important;
-    text-decoration: none;
+	color: var(--xhs-orange) !important;
+	text-decoration: none;
 }
 
 .post ul {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .form_options a.btn_back {
-    background-color: var(--xhs-primary) !important;
-    color: var(--xhs-title) !important;
-    border: 1px solid var(--xhs-border) !important;
+	background-color: var(--xhs-primary) !important;
+	color: var(--xhs-title) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .back_to_cal i {
-    color: black !important;
-    background-color: var(--xhs-orange) !important;
-    margin: 12px 7px 0 0;
+	color: black !important;
+	background-color: var(--xhs-orange) !important;
+	margin: 12px 7px 0 0;
 }
 
 .back_to_cal {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 a.back_to_cal:hover > i {
-    background-color: var(--xhs-red) !important;
+	background-color: var(--xhs-red) !important;
 }
 
 a.back_to_cal:hover {
-    color: var(--xhs-red) !important;
+	color: var(--xhs-red) !important;
 }
 
 #form_inputs label {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 #form_inputs textarea, #form_inputs input, #form_inputs textarea {
-    background-color: var(--xhs-primary) !important;
-    color: var(--xhs-body) !important;
+	background-color: var(--xhs-primary) !important;
+	color: var(--xhs-body) !important;
 }
 
 #form_inputs div.checkbox {
-    filter: contrast(0.89) hue-rotate(-63deg) invert(1) ;
+	filter: contrast(0.89) hue-rotate(-63deg) invert(1) ;
 }
 
 #form_inputs .policy_container .checkboxspan {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 #form_inputs .policy_container .checkboxspan a {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .content_holder, #container.on_fb {
-    background-color: var(--xhs-secondary);
+	background-color: var(--xhs-secondary);
 }
 
 #content-header {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 #content-header h1 {
-    color: var(--xhs-title);
+	color: var(--xhs-title);
 }
 
 #content-header p {
-    color: var(--xhs-body);
+	color: var(--xhs-body);
 }
 
 /* 2.1.6
 –––––––––*/
 
 .mainMenu li.optionJulkalender:hover {
-    background-color: var(--swec-julkalender) !important;
+	background-color: var(--swec-julkalender) !important;
 }
 
 /* 2.1.7
 –––––––––*/
 
 div.content_holder > div > div > strong {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 div.content_holder > div > div > strong > a {
-    color: var(--xhs-orange) !important;
-    text-decoration: none;
+	color: var(--xhs-orange) !important;
+	text-decoration: none;
 }
 
 /* 2.1.8
 –––––––––*/
 
 a.selectBox.selectBox-dropdown {
-    background: var(--xhs-primary) !important;
-    box-shadow: none !important;
+	background: var(--xhs-primary) !important;
+	box-shadow: none !important;
 }
 
 #form_inputs a.selectBox {
-    text-shadow: none !important;
-    color: var(--xhs-title) !important;
+	text-shadow: none !important;
+	color: var(--xhs-title) !important;
 }
 
 .selectBox-options, .selectBox-options li, .selectBox-options li a {
-    background-color: var(--xhs-primary) !important;
-    color: var(--xhs-body) !important;
+	background-color: var(--xhs-primary) !important;
+	color: var(--xhs-body) !important;
 }
 
 .selectBox-options:hover, .selectBox-options li:hover, .selectBox-options li a:hover {
-    background-color: var(--xhs-highlight) !important;
-    color: var(--xhs-title) !important;
+	background-color: var(--xhs-highlight) !important;
+	color: var(--xhs-title) !important;
 }
 
 .selectBox-dropdown .selectBox-arrow {
-    border-left: none !important;
-    filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(489%) hue-rotate(229deg) brightness(90%) contrast(86%) !important;
+	border-left: none !important;
+	filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(489%) hue-rotate(229deg) brightness(90%) contrast(86%) !important;
 }
 
 .mainMenu li.isSelected.optionMellandagsrea:hover {
-    background-color: var(--swec-mellandagsrea) !important;
+	background-color: var(--swec-mellandagsrea) !important;
 }
 
 .mainMenu li.optionMellandagsrea:hover {
-    background-color: var(--swec-mellandagsrea) !important;
+	background-color: var(--swec-mellandagsrea) !important;
 }
 
 .campaignportal #guide-wrapper {
-    background-color: var(--xhs-secondary) !important;
-    border: solid 1px var(--xhs-border) !important;
+	background-color: var(--xhs-secondary) !important;
+	border: solid 1px var(--xhs-border) !important;
 }
 
 .campaignportal .vendor-guides h2 {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .campaignportal .vendor-guides p {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .campaignportal .vendor-guides .guide-block span {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row:nth-child(odd), .campaignportal .tips .tips-data .tips-row:nth-child(even) {
-    background: var(--xhs-secondary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row:hover .col-product, .campaignportal .tips .tips-data .tips-row:hover .col-category, .campaignportal .tips .tips-data .tips-row:hover .col-vendor, .campaignportal .tips .tips-data .tips-row:hover .col-price, .campaignportal .tips .tips-data .tips-row:hover .pj-cell, .campaignportal .tips .tips-data .tips-row:hover .user-cell {
-    background: var(--xhs-highlight) !important;
+	background: var(--xhs-highlight) !important;
 }
 
 .campaignportal select {
-    background: var(--xhs-secondary) !important;
-    border: 1px solid var(--xhs-border) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--xhs-border) !important;
+	color: var(--xhs-body) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row .col-product, .campaignportal .tips .tips-data .tips-row .col-user {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row .col-category, .campaignportal .tips .tips-data .tips-row .col-vendor {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row .col-price {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .campaignportal .tips .tips-title {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .campaignportal .tips .tips-meta {
-    border: 1px solid var(--xhs-border) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .sorter a .label, .sorter .label {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .campaignportal .tips .tips-data .col-score .label {
-    background: var(--xhs-orange) !important;
+	background: var(--xhs-orange) !important;
 }
 
 .campaignportal .tips .tips-data :hover .col-product, .campaignportal .tips .tips-data :hover .col-user {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 /* 2.2.0
 –––––––––*/
 
 .mainMenu li.optionCes {
-    background-color: var(--swec-ces) !important;
-    border: 1px solid var(--xhs-border) !important;
+	background-color: var(--swec-ces) !important;
+	border: 1px solid var(--xhs-border) !important;
 }
 
 .mainMenu li.isSelected.optionCes:hover {
-    background-color: var(--swec-ces) !important;
+	background-color: var(--swec-ces) !important;
 }
 
 .mainMenu li.optionCes:hover {
-    background-color: var(--swec-ces) !important;
+	background-color: var(--swec-ces) !important;
 }
 
 .mainMenu li.optionCes:hover a {
-    color: var(--xhs-primary) !important;
+	color: var(--xhs-primary) !important;
 }
 
 .articleList .authors-byline a {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 .articleActions .action.proofArticle .actionIcon {
@@ -2638,32 +2638,32 @@ a.selectBox.selectBox-dropdown {
 }
 
 .articleActions .action.proofArticle .actionLabel {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 .articleActions .action.proofArticle .actionLabel:hover {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 div > .widget.bg-orange {
-    background: var(--xhs-secondary) !important;
+	background: var(--xhs-secondary) !important;
 	border-bottom-left-radius: 8px;
 }
 
 div > .widget.bg-orange a.title {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
 }
 
 div > .widget.bg-orange a > span.text-bold {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 div > .widget.bg-orange a > span.list-link-text {
-    color: var(--xhs-body) !important;
+	color: var(--xhs-body) !important;
 }
 
 div > .widget.bg-orange .widget-foot > a.color-white {
-    color: var(--xhs-title) !important;
+	color: var(--xhs-title) !important;
 }
 
 div > .widget.bg-orange .widget-body .list .list-item .list-link .icon {
@@ -2672,10 +2672,21 @@ div > .widget.bg-orange .widget-body .list .list-item .list-link .icon {
 }
 
 .articleList.bg-grey-primary {
-    background: var(--xhs-secondary) !important;
-    color: var(--xhs-body) !important;
+	background: var(--xhs-secondary) !important;
+	color: var(--xhs-body) !important;
 }
 
 .articleList.bg-grey-primary h3.title > a {
-    color: var(--xhs-orange) !important;
+	color: var(--xhs-orange) !important;
+}
+
+/* 2.2.1
+–––––––––*/
+
+.header .logo {
+	display: block;
+	width: 472px;
+	height: 66px;
+	background-image: url(https://soitora.github.io/SweClockers-Dark/images/logo.svg);
+	background-repeat: no-repeat;
 }
