@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.3.0 (2020-03-22)
+/*! SweClockers Dark - XHS v2.3.1 (2020-03-22)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -2899,5 +2899,12 @@ div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a
 
 .newsList .itemBanner img {
 	border-radius: 6px
+}
+
+/* 2.3.1
+–––––––––*/
+
+#threadList-1>table>tbody.body.threadsBody>tr>td.cell.title.padding-small-left>div>div>a {
+	color: var(--xhs-title) !important;
 }
 }
