@@ -1,4 +1,4 @@
-/*! SweClockers Dark - XHS v2.2.1 (2020-02-13)
+/*! SweClockers Dark - XHS v2.3.0 (2020-03-22)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -36,8 +36,6 @@ body,
 .forumList .categoryItem .cell,
 .forumList .subforums .link,
 .forumTable .caption,
-.forumPost.isAuthor .postHeader .cell,
-.forumPost .postHeader .cell,
 .forumPost .controls .button,
 .postBox .head,
 .postBox .postElement,
@@ -86,11 +84,9 @@ body,
 
 body,
 .subMenu .menu li.isSelected:hover,
-.subMenu .menu li,
 .ninjaSearch .searchField .fieldWrap,
 #search .searchField>a[title*=Google],
 .sponsoredArticle,
-.newsList .commentsBubble,
 .button.bg-orange,
 .geeksShop .geeksShopProducts .productOther .buyButton,
 .forumList .categoryItem .cell,
@@ -179,7 +175,6 @@ body,
 .mainContent,
 .header>.main,
 .mainMenu .menu li.isSelected:hover,
-.mainMenu .menu li,
 .mainRecentNews,
 .pushListInternal,
 .geeksShop,
@@ -1662,8 +1657,6 @@ form#better-sweclockers input[type="time"] {
 	opacity: 0.8 !important;
 }
 
-
-
 /* 2.0.2
 –––––––––*/
 
@@ -1676,12 +1669,13 @@ img[src*="/artikel/diagram/"] {
 /* 2.0.3 
 –––––––––*/
 
-.header .profile .hasUnread > a > span {
+.header .profile .hasUnread>a>span {
 	color: var(--xhs-orange);
 }
 
-#siteHeader > div.main > div > div.sections > div.section.profile > ul > li.option.quote.hasUnread > a > span.icon, #siteHeader > div.main > div > div.sections > div.section.profile > ul > li.option.watched.hasUnread > a > span.icon {
-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+#siteHeader>div.main>div>div.sections>div.section.profile>ul>li.option.quote.hasUnread>a>span.icon,
+#siteHeader>div.main>div>div.sections>div.section.profile>ul>li.option.watched.hasUnread>a>span.icon {
+	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
@@ -1711,16 +1705,16 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	color: var(--xhs-title) !important;
 }
 
-.mainWidget.forumWidget.commentsWidget .mwHead > h5 {
+.mainWidget.forumWidget.commentsWidget .mwHead>h5 {
 	color: var(--xhs-orange) !important;
 }
 
-.mainWidget.forumWidget.commentsWidget .mwHead > h5 > a:hover {
+.mainWidget.forumWidget.commentsWidget .mwHead>h5>a:hover {
 	text-decoration: none !important;
 	opacity: 0.8 !important;
 }
 
-.mainWidget.forumWidget.commentsWidget .mwHead > p {
+.mainWidget.forumWidget.commentsWidget .mwHead>p {
 	color: var(--xhs-body) !important;
 }
 
@@ -1735,12 +1729,12 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	text-decoration: none !important;
 }
 
-.mainWidget.forumWidget.commentsWidget .mwReadmore > a:hover {
+.mainWidget.forumWidget.commentsWidget .mwReadmore>a:hover {
 	text-decoration: none !important;
 	opacity: 0.8 !important;
 }
 
-.mainWidget.forumWidget.commentsWidget > a > .mwLabel:hover {
+.mainWidget.forumWidget.commentsWidget>a>.mwLabel:hover {
 	text-decoration: none !important;
 	opacity: 0.8 !important;
 }
@@ -1750,7 +1744,9 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
-.mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwIcon, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelDate, .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelText {
+.mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwIcon,
+.mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelDate,
+.mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwLabelText {
 	text-decoration: none !important;
 	opacity: 0.8 !important;
 }
@@ -1813,7 +1809,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	background: var(--xhs-secondary) !important;
 	border-top: 1px solid var(--xhs-border) !important;
 	border-left: 1px solid var(--xhs-border) !important;
-	border-right: 1px solid var(--xhs-border) !important;;
+	border-right: 1px solid var(--xhs-border) !important;
 }
 
 .wrapinner .subMenu li {
@@ -1854,20 +1850,20 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
 
-.wrapinner div.plItemRow > .plLabelText {
-	 color: var(--xhs-body) !important;
+.wrapinner div.plItemRow>.plLabelText {
+	color: var(--xhs-body) !important;
 }
 
-.wrapinner div.plItemRow.plItemSubRow > .plLabelText {
-	 color: var(--xhs-orange) !important;
+.wrapinner div.plItemRow.plItemSubRow>.plLabelText {
+	color: var(--xhs-orange) !important;
 }
 
 .wrapinner .pushList .plComments {
 	color: var(--xhs-orange) !important;
 }
 
-.wrapinner div.plItemSubRow > .plLabelComponent {
-	 color: var(--xhs-title) !important;
+.wrapinner div.plItemSubRow>.plLabelComponent {
+	color: var(--xhs-title) !important;
 }
 
 .wrapinner .pushList .plComments.plIcon {
@@ -1901,6 +1897,7 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 .footerBox h6 {
 	color: var(--xhs-orange) !important;
 }
+
 .footerBox .listItem .label {
 	color: var(--xhs-title) !important;
 }
@@ -1951,13 +1948,24 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	color: var(--xhs-body) !important;
 }
 
-.wrapinner button, .wrapinner  input[type="button"], .wrapinner  input[type="submit"], .wrapinner  .tanukiButton, .button {
+.wrapinner button,
+.wrapinner input[type="button"],
+.wrapinner input[type="submit"],
+.wrapinner .tanukiButton,
+.button {
 	-moz-box-shadow: 1px 1px 1px transparent !important;
 	-webkit-box-shadow: 1px 1px 1px transparent !important;
 	box-shadow: 1px 1px 1px transparent !important;
 }
 
-.wrapinner input[type="text"], .wrapinner input[type="email"], input[type="url"], .wrapinner input[type="search"], .wrapinner input[type="number"], .wrapinner input[type="password"], .wrapinner select, .wrapinner textarea {
+.wrapinner input[type="text"],
+.wrapinner input[type="email"],
+input[type="url"],
+.wrapinner input[type="search"],
+.wrapinner input[type="number"],
+.wrapinner input[type="password"],
+.wrapinner select,
+.wrapinner textarea {
 	background: var(--xhs-secondary) !important;
 	border: 1px solid var(--xhs-border) !important;
 	color: var(--xhs-body) !important;
@@ -1994,13 +2002,15 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	color: var(--xhs-title) !important;
 }
 
-.wrapinner .contentBox input[type="text"], .wrapinner .contentBox input[type="password"] {
+.wrapinner .contentBox input[type="text"],
+.wrapinner .contentBox input[type="password"] {
 	background: var(--xhs-primary) !important;
 	border: 1px solid var(--xhs-border) !important;
 	color: var(--xhs-body) !important;
 }
 
-.wrapinner .contentBox button, .wrapinner .contentBox .button {
+.wrapinner .contentBox button,
+.wrapinner .contentBox .button {
 	background: var(--xhs-primary) !important;
 	border: 1px solid var(--xhs-border) !important;
 	color: var(--xhs-body) !important;
@@ -2010,7 +2020,8 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	color: var(--xhs-title) !important;
 }
 
-.wrapinner .profileDetail dt, .wrapinner .profileDetail dd {
+.wrapinner .profileDetail dt,
+.wrapinner .profileDetail dd {
 	color: var(--xhs-body) !important;
 }
 
@@ -2028,7 +2039,10 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	color: var(--xhs-body) !important;
 }
 
-.wrapinner #threadList-1 .table .head .cell.status, .wrapinner #threadList-1 .table .head .cell.title, .wrapinner #threadList-1 .table .head .cell.lastReply, .wrapinner #threadList-1 .table .head .cell.numReplies {
+.wrapinner #threadList-1 .table .head .cell.status,
+.wrapinner #threadList-1 .table .head .cell.title,
+.wrapinner #threadList-1 .table .head .cell.lastReply,
+.wrapinner #threadList-1 .table .head .cell.numReplies {
 	border: none !important;
 	padding-bottom: 10px;
 }
@@ -2054,7 +2068,8 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	border: 1px solid var(--xhs-border) !important;
 }
 
-.wrapinner .marketFilterBox #searchForm select, .wrapinner .marketFilterBox #searchForm input {
+.wrapinner .marketFilterBox #searchForm select,
+.wrapinner .marketFilterBox #searchForm input {
 	background: var(--xhs-primary) !important;
 	border: 1px solid var(--xhs-border) !important;
 	color: var(--xhs-body) !important;
@@ -2094,9 +2109,9 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 
 .wrapinner .itemList .listItem.isFocused {
 	background: var(--xhs-highlight) !important;
-	box-shadow: inset 1px 1px 1px transparent !important;;
-	-moz-box-shadow: inset 1px 1px 1px transparent !important;;
-	-webkit-box-shadow: inset 1px 1px 1px transparent !important;;
+	box-shadow: inset 1px 1px 1px transparent !important;
+	-moz-box-shadow: inset 1px 1px 1px transparent !important;
+	-webkit-box-shadow: inset 1px 1px 1px transparent !important;
 }
 
 .wrapinner .articleComments a {
@@ -2165,7 +2180,11 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 	-webkit-filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(563%) hue-rotate(159deg) brightness(94%) contrast(89%) !important;
 }
 
-.wrapinner .mainMenu .menuItem.optionIndex span, .wrapinner .mainMenu .menuItem.optionGallery span, .wrapinner .mainMenu .menuItem.optionMarket span, .wrapinner .mainMenu .menuItem.optionForum span, .wrapinner .mainMenu .menuItem.optionGuides span {
+.wrapinner .mainMenu .menuItem.optionIndex span,
+.wrapinner .mainMenu .menuItem.optionGallery span,
+.wrapinner .mainMenu .menuItem.optionMarket span,
+.wrapinner .mainMenu .menuItem.optionForum span,
+.wrapinner .mainMenu .menuItem.optionGuides span {
 	filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(60%) sepia(26%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(98%) !important;
 }
@@ -2184,9 +2203,12 @@ filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-
 /* 2.1.3
 –––––––––*/
 
-
 /* Hoppas detta inte pajar något */
-a:hover, .link:hover, a:hover>.label, .link:hover>.label {
+
+a:hover,
+.link:hover,
+a:hover>.label,
+.link:hover>.label {
 	text-decoration: none !important;
 	opacity: 0.8 !important;
 }
@@ -2196,7 +2218,8 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	border-color: var(--xhs-border) !important;
 }
 
-.mainMenu li.optionBlackfriday:hover, .mainMenu li.optionBlackfriday.isSelected:hover {
+.mainMenu li.optionBlackfriday:hover,
+.mainMenu li.optionBlackfriday.isSelected:hover {
 	background-color: var(--swec-blackfriday) !important;
 	opacity: 0.8 !important;
 }
@@ -2209,7 +2232,8 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	color: var(--xhs-title) !important;
 }
 
-.mellandagsrea .mellandagsreaHeader .aboutFynd a, .mellandagsrea .mellandagsreaHeader h1 {
+.mellandagsrea .mellandagsreaHeader .aboutFynd a,
+.mellandagsrea .mellandagsreaHeader h1 {
 	color: var(--xhs-orange) !important;
 }
 
@@ -2245,11 +2269,13 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	border-right: solid 1px var(--xhs-border) !important;
 }
 
-.mellandagsrea div.colProduct, .mellandagsrea div.colPrice {
+.mellandagsrea div.colProduct,
+.mellandagsrea div.colPrice {
 	color: var(--xhs-orange) !important;
 }
 
-.mellandagsrea div.colCategory, .mellandagsrea div.colVendor {
+.mellandagsrea div.colCategory,
+.mellandagsrea div.colVendor {
 	color: var(--xhs-body) !important;
 }
 
@@ -2276,15 +2302,19 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	color: var(--xhs-body) !important;
 }
 
-.mellandagsrea .tips .tipsRow:hover .productCell, .mellandagsrea .tips .tipsRow:hover .pjCell, .mellandagsrea .tips .tipsRow:hover .userCell {
+.mellandagsrea .tips .tipsRow:hover .productCell,
+.mellandagsrea .tips .tipsRow:hover .pjCell,
+.mellandagsrea .tips .tipsRow:hover .userCell {
 	background: var(--xhs-highlight) !important;
 }
 
-.mellandagsrea .tips a.productCell:hover .colProduct, .mellandagsrea .tips a.productCell:hover .colPrice {
+.mellandagsrea .tips a.productCell:hover .colProduct,
+.mellandagsrea .tips a.productCell:hover .colPrice {
 	text-decoration: none !important;
 }
 
-.mellandagsrea .tips a.productCell .colProduct:hover, .mellandagsrea .tips a.productCell .colPrice:hover {
+.mellandagsrea .tips a.productCell .colProduct:hover,
+.mellandagsrea .tips a.productCell .colPrice:hover {
 	text-decoration: none !important;
 	opacity: 0.8 !important;
 }
@@ -2309,7 +2339,8 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 /* 2.1.4
 –––––––––*/
 
-.mellandagsrea .tips .numComments a, .mellandagsrea .tips .tipsTitle a {
+.mellandagsrea .tips .numComments a,
+.mellandagsrea .tips .tipsTitle a {
 	color: var(--xhs-title) !important;
 }
 
@@ -2317,7 +2348,7 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	color: var(--xhs-title) !important;
 }
 
-.mellandagsrea .vendorCampaignLink > a {
+.mellandagsrea .vendorCampaignLink>a {
 	color: var(--xhs-title) !important;
 }
 
@@ -2362,8 +2393,7 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	background-color: var(--xhs-secondary) !important;
 }
 
-
-#revolut-ad .title > a {
+#revolut-ad .title>a {
 	color: var(--xhs-title) !important;
 }
 
@@ -2371,7 +2401,7 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	color: var(--xhs-body) !important;
 }
 
-#revolut-ad .text > a {
+#revolut-ad .text>a {
 	color: var(--xhs-orange) !important;
 }
 
@@ -2385,7 +2415,7 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	background-color: var(--xhs-highlight) !important;
 }
 
-#revolut-ad > .shadow {
+#revolut-ad>.shadow {
 	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
 	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
@@ -2418,7 +2448,8 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	color: var(--xhs-body) !important;
 }
 
-.post p a, .post li a {
+.post p a,
+.post li a {
 	color: var(--xhs-orange) !important;
 	text-decoration: none;
 }
@@ -2443,7 +2474,7 @@ a:hover, .link:hover, a:hover>.label, .link:hover>.label {
 	color: var(--xhs-orange) !important;
 }
 
-a.back_to_cal:hover > i {
+a.back_to_cal:hover>i {
 	background-color: var(--xhs-red) !important;
 }
 
@@ -2455,13 +2486,15 @@ a.back_to_cal:hover {
 	color: var(--xhs-title) !important;
 }
 
-#form_inputs textarea, #form_inputs input, #form_inputs textarea {
+#form_inputs textarea,
+#form_inputs input,
+#form_inputs textarea {
 	background-color: var(--xhs-primary) !important;
 	color: var(--xhs-body) !important;
 }
 
 #form_inputs div.checkbox {
-	filter: contrast(0.89) hue-rotate(-63deg) invert(1) ;
+	filter: contrast(0.89) hue-rotate(-63deg) invert(1);
 }
 
 #form_inputs .policy_container .checkboxspan {
@@ -2472,7 +2505,8 @@ a.back_to_cal:hover {
 	color: var(--xhs-orange) !important;
 }
 
-.content_holder, #container.on_fb {
+.content_holder,
+#container.on_fb {
 	background-color: var(--xhs-secondary);
 }
 
@@ -2498,11 +2532,11 @@ a.back_to_cal:hover {
 /* 2.1.7
 –––––––––*/
 
-div.content_holder > div > div > strong {
+div.content_holder>div>div>strong {
 	color: var(--xhs-body) !important;
 }
 
-div.content_holder > div > div > strong > a {
+div.content_holder>div>div>strong>a {
 	color: var(--xhs-orange) !important;
 	text-decoration: none;
 }
@@ -2520,12 +2554,16 @@ a.selectBox.selectBox-dropdown {
 	color: var(--xhs-title) !important;
 }
 
-.selectBox-options, .selectBox-options li, .selectBox-options li a {
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a {
 	background-color: var(--xhs-primary) !important;
 	color: var(--xhs-body) !important;
 }
 
-.selectBox-options:hover, .selectBox-options li:hover, .selectBox-options li a:hover {
+.selectBox-options:hover,
+.selectBox-options li:hover,
+.selectBox-options li a:hover {
 	background-color: var(--xhs-highlight) !important;
 	color: var(--xhs-title) !important;
 }
@@ -2560,13 +2598,19 @@ a.selectBox.selectBox-dropdown {
 	color: var(--xhs-body) !important;
 }
 
-.campaignportal .tips .tips-data .tips-row:nth-child(odd), .campaignportal .tips .tips-data .tips-row:nth-child(even) {
+.campaignportal .tips .tips-data .tips-row:nth-child(odd),
+.campaignportal .tips .tips-data .tips-row:nth-child(even) {
 	background: var(--xhs-secondary) !important;
 	border: 1px solid var(--xhs-border) !important;
 	color: var(--xhs-body) !important;
 }
 
-.campaignportal .tips .tips-data .tips-row:hover .col-product, .campaignportal .tips .tips-data .tips-row:hover .col-category, .campaignportal .tips .tips-data .tips-row:hover .col-vendor, .campaignportal .tips .tips-data .tips-row:hover .col-price, .campaignportal .tips .tips-data .tips-row:hover .pj-cell, .campaignportal .tips .tips-data .tips-row:hover .user-cell {
+.campaignportal .tips .tips-data .tips-row:hover .col-product,
+.campaignportal .tips .tips-data .tips-row:hover .col-category,
+.campaignportal .tips .tips-data .tips-row:hover .col-vendor,
+.campaignportal .tips .tips-data .tips-row:hover .col-price,
+.campaignportal .tips .tips-data .tips-row:hover .pj-cell,
+.campaignportal .tips .tips-data .tips-row:hover .user-cell {
 	background: var(--xhs-highlight) !important;
 }
 
@@ -2576,11 +2620,13 @@ a.selectBox.selectBox-dropdown {
 	color: var(--xhs-body) !important;
 }
 
-.campaignportal .tips .tips-data .tips-row .col-product, .campaignportal .tips .tips-data .tips-row .col-user {
+.campaignportal .tips .tips-data .tips-row .col-product,
+.campaignportal .tips .tips-data .tips-row .col-user {
 	color: var(--xhs-orange) !important;
 }
 
-.campaignportal .tips .tips-data .tips-row .col-category, .campaignportal .tips .tips-data .tips-row .col-vendor {
+.campaignportal .tips .tips-data .tips-row .col-category,
+.campaignportal .tips .tips-data .tips-row .col-vendor {
 	color: var(--xhs-body) !important;
 }
 
@@ -2596,7 +2642,8 @@ a.selectBox.selectBox-dropdown {
 	border: 1px solid var(--xhs-border) !important;
 }
 
-.sorter a .label, .sorter .label {
+.sorter a .label,
+.sorter .label {
 	color: var(--xhs-title) !important;
 }
 
@@ -2604,7 +2651,8 @@ a.selectBox.selectBox-dropdown {
 	background: var(--xhs-orange) !important;
 }
 
-.campaignportal .tips .tips-data :hover .col-product, .campaignportal .tips .tips-data :hover .col-user {
+.campaignportal .tips .tips-data :hover .col-product,
+.campaignportal .tips .tips-data :hover .col-user {
 	text-decoration: none !important;
 }
 
@@ -2645,28 +2693,28 @@ a.selectBox.selectBox-dropdown {
 	text-decoration: none !important;
 }
 
-div > .widget.bg-orange {
+div>.widget.bg-orange {
 	background: var(--xhs-secondary) !important;
 	border-bottom-left-radius: 8px;
 }
 
-div > .widget.bg-orange a.title {
+div>.widget.bg-orange a.title {
 	color: var(--xhs-orange) !important;
 }
 
-div > .widget.bg-orange a > span.text-bold {
+div>.widget.bg-orange a>span.text-bold {
 	color: var(--xhs-title) !important;
 }
 
-div > .widget.bg-orange a > span.list-link-text {
+div>.widget.bg-orange a>span.list-link-text {
 	color: var(--xhs-body) !important;
 }
 
-div > .widget.bg-orange .widget-foot > a.color-white {
+div>.widget.bg-orange .widget-foot>a.color-white {
 	color: var(--xhs-title) !important;
 }
 
-div > .widget.bg-orange .widget-body .list .list-item .list-link .icon {
+div>.widget.bg-orange .widget-body .list .list-item .list-link .icon {
 	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
 }
@@ -2676,7 +2724,7 @@ div > .widget.bg-orange .widget-body .list .list-item .list-link .icon {
 	color: var(--xhs-body) !important;
 }
 
-.articleList.bg-grey-primary h3.title > a {
+.articleList.bg-grey-primary h3.title>a {
 	color: var(--xhs-orange) !important;
 }
 
@@ -2689,4 +2737,164 @@ div > .widget.bg-orange .widget-body .list .list-item .list-link .icon {
 	height: 66px;
 	background-image: url(https://soitora.github.io/SweClockers-Dark/images/logo.svg);
 	background-repeat: no-repeat;
+}
+
+/* 2.3.0
+–––––––––*/
+
+.commentsBubble.isHot {
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.newsList .relatedLinks {
+	background-color: var(--xhs-primary);
+}
+
+.mainMenu .menu li,
+.subMenu .menu li,
+.newsList .commentsBubble {
+	background-color: var(--xhs-quaternary);
+}
+
+.subMenu .menu li.isSelected {
+	background-color: var(--xhs-primary);
+}
+
+.mainMenu .menu li.isSelected {
+	background-color: var(--xhs-secondary);
+}
+
+.articleBBCode .bbRelatedBox {
+	background-color: var(--xhs-secondary) !important;
+}
+
+.body.articleBBCode .bbRelatedBox {
+	background-color: var(--xhs-primary) !important;
+}
+
+.table>.head>.row>.cell {
+	color: #fff;
+	background-color: var(--xhs-quaternary) !important;
+}
+
+.table .body.categoryItem .cell {
+	color: #fff;
+	background-color: var(--xhs-tertiary) !important;
+}
+
+.table>.row>.cell,
+.table>.body>.row>.cell,
+.table>.foot>.row>.cell {
+	background-color: var(--xhs-secondary);
+}
+
+.table>.body>.row>.cell.alt2 {
+	background-color: var(--xhs-secondary) !important;
+}
+
+.subForums .title h2 a {
+	color: var(--xhs-orange);
+}
+
+.table .cell.lastThread h3 {
+	color: var(--xhs-title);
+	text-decoration: none
+}
+
+.table .dateline,
+.table .descr {
+	color: var(--xhs-body);
+}
+
+.table .dateline a {
+	color: var(--xhs-orange);
+}
+
+.table .dateline .date .time {
+	color: var(--xhs-orange);
+}
+
+.table .body .row .cell {
+	color: var(--xhs-title);
+}
+
+.subforums .bg-grey-secondary {
+	background-color: var(--xhs-tertiary) !important;
+	color: var(--xhs-title);
+}
+
+.subforums .bg-grey-secondary:hover {
+	background-color: var(--xhs-tertiary) !important;
+	opacity: 0.8
+}
+
+.table>caption,
+.table>.caption {
+	background-color: var(--xhs-primary);
+}
+
+.table>.body>.row.isSticky .cell {
+	background-color: var(--xhs-secondary);
+}
+
+.threadsBody .title h2 a {
+	color: var(--xhs-title) !important;
+}
+
+.table .body .lastReply .name {
+	text-decoration: none;
+	color: var(--xhs-orange) !important;
+}
+
+.table .body .lastReply .date {
+	color: var(--xhs-body) !important;
+}
+
+.table .body .lastReply .time {
+	color: var(--xhs-title) !important;
+}
+
+.table>.body>.row .cell.numReplies a {
+	text-decoration: none;
+	color: var(--xhs-title) !important;
+}
+
+.forumPost.isAuthor .postHeader .cell,
+.forumPost .postHeader .cell {
+	background-color: var(--xhs-tertiary) !important;
+}
+
+.marketList .color-black {
+	color: var(--xhs-body) !important;
+}
+
+.marketList .color-black.user {
+	color: var(--xhs-title) !important;
+}
+
+.table .title h2 a {
+	color: var(--xhs-orange) !important;
+}
+
+.label.color-orange,
+.price.color-orange {
+	color: var(--xhs-orange) !important;
+}
+
+.marketHeader .marketMeta .meta-wrapper {
+	background-color: var(--xhs-secondary) !important;
+}
+
+div.whiteHeader.margin-large-bottom>div>div>a,
+div.whiteHeader.margin-large-bottom>div>h2>span.color-orange>span {
+	color: var(--xhs-orange) !important;
+}
+
+div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a {
+	background-color: var(--xhs-secondary);
+	color: var(--xhs-title) !important;
+}
+
+.newsList .itemBanner img {
+	border-radius: 6px
 }
