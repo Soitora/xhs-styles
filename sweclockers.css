@@ -1,4 +1,4 @@
-/*! SweClockers Dark - XHS v2.3.1 (2020-03-22)
+/*! SweClockers Dark - XHS v2.3.2 (2020-03-25)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -368,7 +368,6 @@ body,
 .newsList .pubItem .itemMeta .date,
 .newsList .pubItem .itemText a,
 #search .searchField>a[title*=Google]:hover,
-.ninjaSearchResult h6,
 .ninjaSearch .searchField .input:focus,
 .subMenu .menu li:hover,
 .subMenu .menu li a:hover,
@@ -673,7 +672,6 @@ div.plHead h5,
 .mainRecentNews .mwHead h5>a,
 .newsList .pubItem .itemMeta a,
 .newsList .pubItem h2 a,
-.ninjaSearchResult .showMore,
 .ninjaSearchResult .externalSearch a,
 .header .ticker .date,
 .footer .top a,
@@ -2736,7 +2734,7 @@ div>.widget.bg-orange .widget-body .list .list-item .list-link .icon {
 	display: block;
 	width: 472px;
 	height: 66px;
-	background-image: url(https://soitora.github.io/SweClockers-Dark/images/logo.svg);
+	background-image: url(https://soitora.com/SweClockers-Dark/images/logo.svg);
 	background-repeat: no-repeat;
 }
 
@@ -2905,4 +2903,23 @@ div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a
 
 #threadList-1>table>tbody.body.threadsBody>tr>td.cell.title.padding-small-left>div>div>a {
 	color: var(--xhs-title) !important;
+}
+
+/* 2.3.2
+–––––––––*/
+
+.ninjaSearchResult .resultList .list-item .list-link .link-text {
+	color: var(--xhs-body) !important;
+}
+
+.ninjaSearchResult .resultList .list-item .list-link .date {
+	color: var(--xhs-orange) !important;
+}
+
+.ninjaSearchResult h6 {
+	color: var(--xhs-title) !important;
+}
+
+.ninjaSearchResult .showMore {
+	color: var(--xhs-body) !important;
 }
