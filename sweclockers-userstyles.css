@@ -1,5 +1,5 @@
 @-moz-document domain("sweclockers.com") {
-/*! SweClockers Dark - XHS v2.3.3 (2020-03-25)
+/*! SweClockers Dark - XHS v2.3.4 (2020-03-27)
 /*! Repository: https://github.com/Soitora/xhs-styles/
 /*! License:	https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -30,9 +30,6 @@
 /*! Main Code !*/
 
 body,
-.ninjaSearch .searchField .input,
-.ninjaSearch .searchField .fieldWrap,
-.button.bg-orange,
 .geeksShop .geeksShopProducts .productOther .buyButton,
 .forumTable .head .cell,
 .forumList .categoryItem .cell,
@@ -42,20 +39,14 @@ body,
 .postBox .head,
 .postBox .postElement,
 .bbQuote,
-.forumForm.postEditForm .tanukiButton,
 .forumForm.postPollListForm .button,
-.forumForm.postDeleteForm .tanukiButton,
 .gp-subject-group .gphi-descr,
 .gp-subject-group .gpsg-more a,
 .forumResultPost .postHeader .threadTitle,
-.forumResultPost .controls .button,
 .bbPre.showFrame,
 .bbSpoiler .spoilerHeader button,
 .bbSpoiler .spoilerFrame,
 .postBody .bbPoll>.inner,
-.forumSearchForm #__laika_cnt\.select\.1,
-.forumSearchForm #__laika_cnt\.select\.2,
-.forumSearchForm .tanukiButton,
 .articleBBCode .bbPoll>.inner,
 .articleBBCode .bbTable thead th,
 .articleBBCode .bbTable th,
@@ -63,18 +54,10 @@ body,
 .bbRelatedBox,
 .articleKeywords a,
 .articleKeywords a,
-#__laika_cnt\.textbox\.0,
-#__laika_cnt\.textbox\.1,
-#__laika_cnt\.textbox\.2,
-#__laika_cnt\.textbox\.3,
-#__laika_cnt\.textbox\.4,
-#__laika_cnt\.textarea\.0,
 #contactForm button,
-.galleryForm .tanukiButton,
 .infoTextWindow,
 .infoBox,
 #subscribeForm>fieldset>button,
-#__laika_cnt\.select\.0,
 .articlesMostTagged .tagSummary a,
 .header,
 .forumForm>.head,
@@ -86,10 +69,7 @@ body,
 
 body,
 .subMenu .menu li.isSelected:hover,
-.ninjaSearch .searchField .fieldWrap,
-#search .searchField>a[title*=Google],
 .sponsoredArticle,
-.button.bg-orange,
 .geeksShop .geeksShopProducts .productOther .buyButton,
 .forumList .categoryItem .cell,
 .pages a.isCurrent,
@@ -98,52 +78,29 @@ body,
 .forumPost.isReader .button.like.isDisabled:hover,
 .forumPost.isLiked.isReader .button.like.isDisabled:hover,
 .threadMap .naviView .shortcut,
-.forumForm.postDeleteForm .tanukiButton,
 .forumForm.postPollListForm .button,
-.forumForm.postEditForm .tanukiButton,
 .gp-subject-group .gphi-descr,
-.forumResultPost .controls .button,
 .bbSpoiler .spoilerHeader button,
 .bbSpoiler .spoilerFrame .bbPoll>.inner button,
 .postBody .bbPoll>.inner,
-.forumSearchForm .tanukiButton,
-.mainContent #detailsForm .tanukiButton,
-.mainContent #notificationForm .tanukiButton,
-.mainContent #optionsForm .tanukiButton,
-.mainContent #passwordForm .tanukiButton,
-.mainContent #signatureForm .tanukiButton,
-.mainContent #relationForm .tanukiButton,
-.mainContent .imageForm .tanukiButton,
-.mainContent #contactForm .tanukiTextbox input,
 .articleBBCode .bbTable thead th,
 .articleBBCode .bbTable th,
 .articleBBCode .bbTable td,
 .articleBBCode .bbPoll>.inner,
+#__laika_cnt\.textarea\.0,
 .articleKeywords a,
 #contactForm button,
 .galleryBody .button,
-.galleryForm.galleryEditForm .tanukiButton,
 .whiteBody .sorter .column.isDesc.isCurrent:hover,
 .whiteBody .sorter .column.isDesc:hover,
-.marketEditForm #__laika_cnt\.select\.1,
-.marketEditForm #__laika_cnt\.select\.2,
-.marketEditForm .tanukiButton,
-.toolbar .tbButton.iconButton .inner,
-.uploadPanel .tanukiButton,
 .mainContent .s5fieldset a.button,
 .galleryFileEditor .uploadEntry .entryState>.progressLabel,
-.marketAcceptRules .tanukiButton,
-.marketForm #activateForm .tanukiButton,
-.marketForm #hideForm .tanukiButton,
 #subscribeForm>fieldset>button,
 .mainContent .btnGroup.right>a.button,
 #siteHeader .signin .actions .button,
 .mainContent #signinForm input,
-.mainContent #signinForm .tanukiButton,
-.mainContent .registerForm .tanukiButton,
 .pmNewThreadForm .tcbInput,
-.pmNewThreadForm .tcbEditField,
-.pmNewThreadForm #createForm .s5fieldset .tanukiButton {
+.pmNewThreadForm .tcbEditField {
 	background-color: var(--xhs-primary) !important;
 }
 
@@ -151,13 +108,11 @@ body,
 .forumTable .cell,
 .forumTable .cell.alt1,
 .forumControls .button.newThread,
-.forumSearch #__laika_cnt\.textbox\.0,
 .forumPost .cell.alt2,
 .forumPost .cell.main,
 .forumPost .cell.controls,
 .postBox,
 .forumControls .button.replyToThread,
-.postActions #__laika_cnt\.select\.0,
 .quickReply #__laika_cnt\.textarea\.0,
 .forumForm>.body,
 .tbButton.iconButton.noselect.header,
@@ -165,12 +120,8 @@ body,
 .forumResultPost,
 .forumResultPost .postHeader .dateline,
 .bbSpoiler .spoilerFrame .bbPoll>.inner,
-.tanukiTextbox input,
 .tanukiSelect select,
-.tanukiButton,
-.articleCommentsWidget,
-.sideBox #__laika_cnt\.textbox\.0,
-.sideBox #__laika_cnt\.select\.0 {
+.articleCommentsWidget {
 	background: var(--xhs-secondary) !important;
 }
 
@@ -185,26 +136,20 @@ body,
 .forumControls .button.newThread,
 .forumControls .button.replyToThread,
 .bbSpoiler .spoilerFrame .bbPoll>.inner,
-.tanukiButton,
 .mainContent .pages a.isCurrent,
 .mainContent .pages a.isCurrent:hover,
 .mainContent .pages a:hover,
 .articleHeader .sponsoredArticle,
 .articleCommentsWidget,
 .infoText a.button,
-.marketFilterBox #__laika_cnt\.textbox\.0,
-.marketFilterBox #__laika_cnt\.select\.0,
-.whiteBody .forumControls .button,
 .whiteBody .forumWidget,
 .contentBox,
 .footer .top,
 .footer .bottom,
-.threadActions .tanukiControl.tanukiSelect #__laika_cnt\.select\.0,
 .pmNewThreadForm .tcbSelectedItem {
 	background-color: var(--xhs-secondary) !important;
 }
 
-.ninjaSearch .searchField .fieldWrap,
 .newsList .commentsBubble,
 .geeksShop .geeksShopProducts .productOther .buyButton,
 .forumPost.isReader,
@@ -225,7 +170,6 @@ body,
 .postBody .bbPoll>.inner,
 .articleHeader .sponsoredArticle,
 .articleBBCode .bbPoll>.inner,
-.bbRelatedBox,
 .articleKeywords a,
 #__laika_cnt\.textarea\.0,
 .contentBox,
@@ -242,18 +186,12 @@ body,
 .forumPost .controls .button:hover,
 .forumControls .button.replyToThread:hover,
 .toolbar .tbButton.iconButton:hover .inner,
-.forumForm.postEditForm .tanukiButton:hover,
 .forumForm.postPollListForm .button:hover,
-.forumForm.postDeleteForm .tanukiButton:hover,
 .gp-subject-group .gpsg-more a:hover,
-.forumResultPost .controls .button:hover,
 .bbSpoiler .spoilerHeader button:hover,
 .bbMark,
-.forumSearchForm .tanukiButton:hover,
-.tanukiButton:hover,
 .articleKeywords a:hover,
 #contactForm button:hover,
-.galleryForm .tanukiButton:hover,
 #subscribeForm>fieldset>button:hover,
 .articlesMostTagged .tagSummary a:hover,
 .tanukiCombobox .tcbPanelItem.isSelected {
@@ -270,38 +208,17 @@ body,
 .postBox .treeNode.hasChildren.isCollapsed>.treeCommand,
 .forumControls .button.replyToThread:hover,
 .toolbar .tbButton.iconButton:hover .inner,
-.forumForm.postEditForm .tanukiButton:hover,
 .forumForm.postPollListForm .button:hover,
-.forumForm.postDeleteForm .tanukiButton:hover,
-.forumResultPost .controls .button:hover,
 .bbSpoiler .spoilerHeader button:hover,
-.forumSearchForm .tanukiButton:hover,
-.tanukiButton:hover,
-.mainContent #detailsForm .tanukiButton:hover,
-.mainContent #notificationForm .tanukiButton:hover,
-.mainContent #optionsForm .tanukiButton:hover,
-.mainContent #passwordForm .tanukiButton:hover,
-.mainContent #signatureForm .tanukiButton:hover,
-.mainContent #relationForm .tanukiButton:hover,
-.mainContent .imageForm .tanukiButton:hover,
 #contactForm button:hover,
 .infoText a.button:hover,
 .galleryBody .button:hover,
-.galleryForm.galleryEditForm .tanukiButton:hover,
-.marketEditForm .tanukiButton:hover,
 .whiteBody .forumControls .button:hover,
 .toolbar .tbButton.iconButton .inner:hover,
-.uploadPanel .tanukiButton:hover,
 .mainContent .s5fieldset a.button:hover,
-.marketAcceptRules .tanukiButton:hover,
-.marketForm #activateForm .tanukiButton:hover,
-.marketForm #hideForm .tanukiButton:hover,
 .mainContent .btnGroup.right>a.button:hover,
 #subscribeForm>fieldset>button:hover,
 #siteHeader .signin .actions .button:hover,
-.mainContent #signinForm .tanukiButton:hover,
-.mainContent .registerForm .tanukiButton:hover,
-.pmNewThreadForm #createForm .s5fieldset .tanukiButton:hover,
 .pmNewThreadForm .tcbSelectedItem:hover {
 	background-color: var(--xhs-highlight) !important;
 }
@@ -313,14 +230,10 @@ body,
 #subscribeForm>fieldset>button:hover,
 #contactForm button:hover,
 .articleList .title,
-.tanukiButton:hover,
-.forumSearchForm .tanukiButton:hover,
 .bbSpoiler .spoilerHeader button:hover,
-.forumResultPost .controls .button:hover,
 .geeksShop .geeksShopProducts .productOther .buyButton:hover,
 .button.bg-orange:hover,
 .forumControls .button.newThread:hover,
-.forumForm.postEditForm .tanukiButton:hover,
 .toolbar .tbButton.iconButton:hover .inner,
 .forumControls .button.replyToThread:hover,
 .forumPost .controls .button:hover,
@@ -389,7 +302,6 @@ body,
 .mainContent .mainContentHeader,
 .sideMenu .link .label,
 .forumForm.postPollListForm .button:hover,
-.forumForm.postDeleteForm .tanukiButton:hover,
 .bbExpander .expanderHeader,
 .articleContent .bbRelatedBox h3,
 .articleContent .articleNavi .head h5,
@@ -398,7 +310,6 @@ body,
 .galleryPortal .galleryItem h3,
 .galleryItem .author a,
 .galleryList .galleryItem h3,
-.galleryForm.galleryEditForm .tanukiButton:hover,
 .mainContent .stepItem,
 .galleryFileEditor .uploadEntry .entryState>.progressLabel,
 .marketHeader .marketMeta dt,
@@ -411,13 +322,6 @@ body,
 .gp-subject-group .gphi-descr h3,
 .gp-subject-group .gpsg-header h2,
 .gp-subject-group .gpsg-more a,
-.mainContent #detailsForm .tanukiButton:hover,
-.mainContent #notificationForm .tanukiButton:hover,
-.mainContent #optionsForm .tanukiButton:hover,
-.mainContent #passwordForm .tanukiButton:hover,
-.mainContent #signatureForm .tanukiButton:hover,
-.mainContent #relationForm .tanukiButton:hover,
-.mainContent .imageForm .tanukiButton:hover,
 .articlePage h2.pageTitle,
 .hotGallery h3,
 .hotGallery .title .author,
@@ -429,28 +333,19 @@ body,
 .marketFilterBox legend,
 .forumTable h2 a,
 .marketList .type,
-.marketEditForm .tanukiButton:hover,
 .forumTable .cell.date.alt2,
 .whiteBody .forumControls .button:hover,
 .whiteBody .forumWidget .mwLabel>.mwLabelDate,
 .contentBox h1,
 .contentBox a,
 .mainContent .contentHeader h2,
-.uploadPanel .tanukiButton:hover,
 .mainContent .s5fieldset a.button:hover,
-.galleryForm .tanukiButton:hover,
 .infoTextWindow,
-.marketAcceptRules .tanukiButton:hover,
-.marketForm #activateForm .tanukiButton:hover,
-.marketForm #hideForm .tanukiButton:hover,
 .marketForm .s5fieldset h6,
 .articleContent .articleNavi .pageButton,
 .articleContent .articleNavi .pageButton:hover,
 #siteHeader .signin .actions .button:hover,
-.mainContent #signinForm .tanukiButton:hover,
-.mainContent .registerForm .tanukiButton:hover,
 .articleCommentsWidget .boxAction .actionLabel,
-.pmNewThreadForm #createForm .s5fieldset .tanukiButton:hover,
 .pmNewThreadForm .tcbInput,
 .pmNewThreadForm .tcbEditField:focus,
 .tanukiCombobox .tcbPanelItem.isSelected,
@@ -465,12 +360,10 @@ body,
 .header .profile .signout button,
 .header .ticker .latest,
 .header .ticker .current,
-.ninjaSearch .searchField .input,
 .ninjaSearch h5,
 .ninjaSearchResult .resultSection.isEmpty .noResults,
 .ninjaSearchResult .resultList .label a,
 .ninjaSearchResult .resultList .date,
-#search .searchField>a[title*=Google],
 .mainContent,
 .mainRecentNews .mwHead p,
 .mainRecentNews .mwItem,
@@ -479,7 +372,6 @@ body,
 .popularGalleries .cat>a,
 .popularGalleries .author>a,
 div.plBody,
-.button.bg-orange,
 .geeksShop .geeksShopProducts .productOther,
 .geeksShop .geeksShopProducts .productOther .buyButton,
 .prisjaktPopular,
@@ -501,7 +393,6 @@ div.plBody,
 .threadList .body .numViews a,
 .pages a,
 body pre,
-.forumSearch #__laika_cnt\.textbox\.0,
 .forumPost .cell.main,
 .forumPost .postHeader,
 .forumPost .profile .title>*,
@@ -513,18 +404,12 @@ body pre,
 .quickReply .tcLabel,
 .quickReply #__laika_cnt\.textarea\.0,
 .forumForm .tcLabel,
-.forumForm.postEditForm .tanukiButton,
 .forumResultPost,
 .tanukiControl .tcHint,
-.forumResultPost .controls .button,
 .bbPre.showFrame,
 .bbSpoiler .spoilerHeader button,
 .bbSpoiler .spoilerFrame,
-.forumSearchForm .tanukiButton,
 .whiteHeader div,
-.tanukiTextbox input,
-.tanukiSelect select,
-.tanukiButton,
 .articleList .category,
 .mainContent .pages a,
 .articleBBCode .bbSlideshow .slideFooter,
@@ -542,11 +427,6 @@ body pre,
 .articleKeywords a,
 .bbPodcast .meta,
 .bbPodcast .descr,
-#__laika_cnt\.textbox\.0,
-#__laika_cnt\.textbox\.1,
-#__laika_cnt\.textbox\.2,
-#__laika_cnt\.textbox\.3,
-#__laika_cnt\.textbox\.4,
 #__laika_cnt\.textarea\.0,
 #contactForm label,
 #contactForm button,
@@ -557,7 +437,6 @@ body pre,
 .articlesMostRead .title,
 .articlesMostTagged .tagSummary a,
 .articlesMostTagged .title,
-#__laika_cnt\.select\.0,
 #subscribeForm>fieldset>button,
 .profileHeader .title,
 .profileHeader .meta dt,
@@ -568,7 +447,6 @@ body pre,
 .forumPost.isLiked.isReader .button.like.isDisabled:hover,
 .forumForm.postEditForm .tanukiControl.tanukiCheckbox,
 .forumForm.postPollListForm .button,
-.forumForm.postDeleteForm .tanukiButton,
 .forumForm .tanukiControl.tanukiCheckbox.isRequired,
 .articleBBCode .bbPrisjakt a.prices,
 .articleBBCode .bbExpander .expanderFooter,
@@ -580,7 +458,6 @@ body pre,
 .bbPrisjaktFull .pjFooter .withPrisjakt,
 .infoText a.button,
 .galleryItem .cat a,
-.galleryForm.galleryEditForm .tanukiButton,
 .mainContent .stepItem.isDisabled,
 .uploadPanel .s5fieldset p,
 .galleryFileEditor .uploadEntry .entryName,
@@ -591,13 +468,6 @@ body pre,
 .postBox .postElement .summary,
 .gp-subject-group,
 .gp-subject-group .gphi-descr p,
-.mainContent #detailsForm .tanukiButton,
-.mainContent #notificationForm .tanukiButton,
-.mainContent #optionsForm .tanukiButton,
-.mainContent #passwordForm .tanukiButton,
-.mainContent #signatureForm .tanukiButton,
-.mainContent #relationForm .tanukiButton,
-.mainContent .imageForm .tanukiButton,
 .mainContent #signatureForm .signaturePreview .bbcode p,
 .hotGallery .title .cat,
 .galleryPortal .head .descr,
@@ -611,31 +481,20 @@ body pre,
 .marketFilterBox .tanukiControl .tcHint,
 .marketFilterBox .checkboxList .checkboxItem,
 .marketList .category,
-.marketEditForm #__laika_cnt\.select\.1,
-.marketEditForm #__laika_cnt\.select\.2,
-.marketEditForm .tanukiButton,
 .forumTable .cell.price.alt2,
 .marketList .date .time,
-.whiteBody .forumControls .button,
 .whiteBody .forumWidget .mwHead p,
 .whiteBody .forumWidget .mwLabel>.mwLabelText,
 .contentBox,
-.uploadPanel .tanukiButton,
 .mainContent .s5fieldset a.button,
 .galleryFileEditor .orderHint,
-.galleryForm .tanukiButton,
 .infoBox,
-.marketAcceptRules .tanukiButton,
-.marketForm #activateForm .tanukiButton,
 .marketForm .s5fieldset p,
 #siteHeader .signin .actions .button,
 #siteHeader .signin h5,
-.mainContent #signinForm .tanukiButton,
-.mainContent .registerForm .tanukiButton,
 .forumForm>.head,
 .pmNewThreadForm .tcbInput,
 .pmNewThreadForm .tcbEditField,
-.pmNewThreadForm #createForm .s5fieldset .tanukiButton,
 .tanukiCombobox .tcbPanelTrigger,
 .tanukiCombobox .tcbpLoading,
 .tanukiCombobox .tcbPanelItem,
@@ -745,13 +604,10 @@ div.plHead h5,
 }
 
 .header .profile .signout button:hover,
-.forumForm.postDeleteForm .tanukiButton,
 .rulesList li:before,
 .rulesList a,
 .tanukiControl.isRequired .tcLabel:after,
-.galleryForm #deleteForm .tanukiButton,
-.infoBox a,
-.marketForm #hideForm .tanukiButton {
+.infoBox a {
 	color: var(--xhs-red) !important;
 }
 
@@ -770,8 +626,6 @@ div.plHead h5,
 .newsList .pubItem .itemText a:hover,
 .newsList .pubItem .itemText a:last-child:hover,
 .newsList .relatedLinks a:hover,
-.newsList .commentsBubble.isHot:hover,
-.newsList .commentsBubble:hover,
 .readMoreArchive:hover,
 .mainRecentNews .mwHead h5>a:hover,
 .mainRecentNews .mwItem a:hover .mwLabelText,
@@ -980,8 +834,6 @@ div.plHead h5,
 
 /*! Better Sweclockers !*/
 
-.better-sweclockers-icon-button,
-.better-sweclockers-editing-tools .button,
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler {
 	background: var(--xhs-primary) !important;
 }
@@ -1013,8 +865,6 @@ form#better-sweclockers textarea:focus {
 	color: var(--xhs-title) !important;
 }
 
-.better-sweclockers-icon-button,
-.better-sweclockers-editing-tools .button,
 form#better-sweclockers input[type="checkbox"]+label,
 form#better-sweclockers input[type="radio"]+labell,
 form#better-sweclockers footer,
@@ -2910,11 +2760,11 @@ div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a
 –––––––––*/
 
 .ninjaSearchResult .resultList .list-item .list-link .link-text {
-	color: var(--xhs-body) !important;
+    color: var(--xhs-body) !important;
 }
 
 .ninjaSearchResult .resultList .list-item .list-link .date {
-	color: var(--xhs-orange) !important;
+    color: var(--xhs-orange) !important;
 }
 
 .ninjaSearchResult h6 {
@@ -2929,6 +2779,230 @@ div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a
 –––––––––*/
 
 .table .pageLinks .link {
+    color: var(--xhs-body) !important;
+}
+
+/* 2.3.4
+–––––––––*/
+
+.articleContent.bg-grey-primary {
 	color: var(--xhs-body) !important;
+	background-color: var(--xhs-secondary) !important;
+}
+
+#articleAuthors .sl-profile .slpm-item.slpmi-name a {
+	color: var(--xhs-orange);
+}
+
+#articleAuthors .sl-profile .slpm-item {
+	color: var(--xhs-body);
+}
+
+#articleAuthors .sl-profile .slpm-item a {
+	color: var(--xhs-title);
+}
+
+div.articleContent,
+div.widget.bg-orange {
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+
+#recent-classifieds {
+	background-color: var(--xhs-secondary) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+
+#recent-classifieds p.title {
+	color: var(--xhs-orange);
+}
+
+#recent-classifieds p.title-secondary {
+	color: var(--xhs-body);
+}
+
+#recent-classifieds p.title-secondary a {
+	color: var(--xhs-title);
+}
+
+#recent-classifieds .list-link-text {
+	color: var(--xhs-title);
+}
+
+#recent-classifieds .text-bold {
+	color: var(--xhs-title) !important;
+}
+
+#recent-classifieds .bg-green {
+	background-color: #1c5a00 !important;
+}
+
+#recent-classifieds .bg-blue {
+	background-color: #305d84 !important;
+}
+
+#recent-classifieds .bg-pink {
+	background-color: #b34d84 !important;
+}
+
+#recent-classifieds .bg-beige {
+	background-color: #9c6500 !important;
+}
+
+.table>.body>.row.isGreyscale .cell.alt2,
+.table>.body>.row.isGreyscale .cell.alt2 a {
+	color: var(--xhs-body) !important;
+}
+
+.whiteFilterBox {
+	background-color: var(--xhs-secondary)
+}
+
+.whiteFilterBox button.tanukiButton {
+	background-color: var(--xhs-quaternary) !important;
+}
+
+.whiteFilterBox button.tanukiButton:hover {
+	background-color: var(--xhs-highlight) !important;
+}
+
+.ninjaSearch .searchField .fieldWrap {
+	background-color: var(--xhs-quaternary) !important;
+}
+
+.ninjaSearch .searchField .input {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+#search .searchField>a[title*=Google] {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.button.bg-orange {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.articleList h3.title a {
+	color: var(--xhs-orange);
+}
+
+.tanukiTextbox input,
+.tanukiTextbox select {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+#__laika_cnt\.textbox\.0,
+#__laika_cnt\.textbox\.1,
+#__laika_cnt\.textbox\.2,
+#__laika_cnt\.textbox\.3,
+#__laika_cnt\.textbox\.4 {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+#__laika_cnt\.select\.0,
+#__laika_cnt\.select\.1,
+#__laika_cnt\.select\.2,
+#__laika_cnt\.select\.3,
+#__laika_cnt\.select\.4 {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.tanukiButton, .button {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.tanukiButton:hover, .button:hover {
+	background-color: var(--xhs-highlight) !important;
+}
+
+.forumResultPost .controls .button {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.forumResultPost .controls .button:hover {
+	background-color: var(--xhs-highlight) !important;
+	opacity: 1 !important;
+}
+
+.forumResultPost .controls .button:hover>.label {
+	opacity: 1 !important;
+}
+
+.inner .whiteBody .bg-grey-primary {
+	color: var(--xhs-body);
+	background-color: var(--xhs-secondary) !important;
+}
+
+.inner .whiteBody .bg-grey-primary {
+	background-color: var(--xhs-secondary) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+}
+
+.inner .whiteBody .bg-grey-primary .bbRelatedBox {
+	border: none;
+}
+
+div.bg-orange:hover {
+	opacity: 1 !important
+}
+
+.bg-grey-primary a.read-more-archive {
+	color: var(--xhs-title) !important;
+	text-decoration: none !important;
+}
+
+.newsList .commentsBubble.isHot:hover,
+.newsList .commentsBubble:hover {
+	background-color: var(--xhs-highlight) !important;
+}
+
+.bg-grey-primary .crediters a {
+	color: var(--xhs-orange);
+}
+
+.articleBBCode .bbBlockQuote:after {
+	color: var(--xhs-orange);
+}
+
+.articleBBCode .bbRelatedBox {
+	border: none !important;
+	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	padding-bottom: 1px
+}
+
+.articleBBCode .footerPanel .bbRelatedBox {
+	border: none !important;
+	box-shadow: none !important
+}
+
+.toolbar .tbButton.iconButton .inner {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.better-sweclockers-icon-button,
+.better-sweclockers-editing-tools .button {
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
+}
+
+.whiteBody .forumControls .button, .forumControls .button.replyToThread	{
+	background-color: var(--xhs-quaternary) !important;
+	color: var(--xhs-body);
 }
 }
