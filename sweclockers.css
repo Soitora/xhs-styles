@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			SweClockers Dark - XHS
 @namespace		https://github.com/Soitora
-@version		2.4.0
+@version		2.4.1
 @description	A modern dark theme for SweClockers
 @author			Soitora <simon.mattila@protonmail.com> (https://soitora.com)
 @homepageURL	https://github.com/Soitora/xhs-styles
@@ -17,6 +17,7 @@
 	--text-1: #C8C8C8;
 	--text-2: #AAAAAA;
 	--border: #08080B;
+	--border-menus: #000000;
 	--highlight: #232326;
 	--warning: #EF4A4B;
 	--warning-filter: brightness(0) saturate(100%) invert(43%) sepia(88%) saturate(1483%) hue-rotate(326deg) brightness(89%) contrast(113%);
@@ -150,7 +151,6 @@ body,
 
 .newsList .commentsBubble,
 .geeksShop .geeksShopProducts .productOther .buyButton,
-.forumPost.isReader,
 .forumPost.isReader .button.edit,
 .postBox,
 .postBox .postElement,
@@ -956,15 +956,6 @@ form#better-sweclockers input[type="time"] {
 	border-bottom: none !important;
 }
 
-.mainMenu .menu li,
-.mainMenu .menu li:hover,
-.subMenu .menu li,
-.subMenu .menu li:hover {
-	border-top: 1px solid var(--border) !important;
-	border-left: 1px solid var(--border) !important;
-	border-right: 1px solid var(--border) !important;
-}
-
 .subMenu .menu li a {
 	border-bottom: 1px solid var(--border) !important;
 }
@@ -1128,15 +1119,6 @@ form#better-sweclockers input[type="time"] {
 	padding: 4px 5px !important;
 }
 
-.forumPost.isAuthor {
-	border-top: 2px solid var(--border) !important;
-}
-
-.forumPost.isLinked.isAuthor {
-	border-color: var(--border) !important;
-	box-shadow: 0 0 0 4px var(--border) !important;
-}
-
 .forumPost.isReader {
 	border-image: linear-gradient(to bottom, var(--background-1) 0, var(--background-1) 1px, var(--background-1) 15px, var(--background-1) 25px) 1;
 	margin-left: 0px !important;
@@ -1155,14 +1137,6 @@ form#better-sweclockers input[type="time"] {
 	border-top: 3px solid #3779A1 !important;
 }
 
-.forumPost.isLinked.isAuthor .postHeader .cell {
-	background: var(--border) !important;
-}
-
-.forumPost.isLinked {
-	border-color: var(--border) !important;
-	box-shadow: 0 0 0 4px var(--border) !important;
-}
 
 .forumPost.isLinked .postHeader .cell {
 	background: var(--border) !important;
@@ -1506,8 +1480,8 @@ img[src*="/artikel/diagram/"] {
 
 #siteHeader>div.main>div>div.sections>div.section.profile>ul>li.option.quote.hasUnread>a>span.icon,
 #siteHeader>div.main>div>div.sections>div.section.profile>ul>li.option.watched.hasUnread>a>span.icon {
-	filter: var(--theme-filter);
-	-webkit-filter: var(--theme-filter);
+	filter: var(--theme-filter) !important;
+	-webkit-filter: var(--theme-filter) !important;
 }
 
 .header .profile .label span:last-child:hover {
@@ -2850,12 +2824,7 @@ div.widget.bg-orange {
 	background-color: var(--highlight) !important;
 }
 
-.ninjaSearch .searchField .fieldWrap {
-	background-color: var(--background-4) !important;
-}
-
 .ninjaSearch .searchField .input {
-	background-color: var(--background-4) !important;
 	color: var(--text-2);
 }
 
@@ -3055,11 +3024,6 @@ div.forumPost {
 	background-color: var(--background-1) !important;
 }
 
-.mainMenu .menu li.menuItem,
-.subMenu .menu li.menuItem {
-	margin-right: 5px;
-}
-
 .mainMenu .menu li.menuItem {
 	background-color: var(--background-2) !important
 }
@@ -3200,4 +3164,38 @@ div.forumPost {
 
 .newsList .relatedLinks legend {
 	color: var(--text-2) !important;
+}
+	
+/* 2.4.1
+–––––––––*/
+
+.mainMenu .menu li,
+.mainMenu .menu li:hover,
+.subMenu .menu li,
+.subMenu .menu li:hover {
+	border-top: 1px solid var(--border-menus) !important;
+	border-left: 1px solid var(--border-menus) !important;
+	border-right: 1px solid var(--border-menus) !important;
+}
+
+.forumPost.isReader {
+	border: none;
+}
+
+#better-sweclockers-dark-theme-toggle {
+	opacity: 1 !important;
+}
+
+#better-sweclockers-dark-theme-toggle.better-sweclockers-dark-theme-active {
+	background-color: #696969 !important;
+}
+
+#better-sweclockers {
+	font-family: Arial, Helvetica, Meiryo, sans-serif;
+	font-size: 14px
+}
+
+.ninjaSearch .searchField .fieldWrap,
+.ninjaSearch .searchField .input {
+	background-color: var(--background-1) !important;
 }
