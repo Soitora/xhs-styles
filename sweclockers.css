@@ -1,32 +1,31 @@
-/*! SweClockers Dark - XHS v2.3.4 (2020-03-27)
-/*! Repository: https://github.com/Soitora/xhs-styles/
-/*! License:	https://creativecommons.org/licenses/by-sa/4.0/
-*/
-
-/* Variables */
-
+/* ==UserStyle==
+@name			SweClockers Dark - XHS
+@namespace		https://github.com/Soitora
+@version		2.4.0
+@description	A modern dark theme for SweClockers
+@author			Soitora <simon.mattila@protonmail.com> (https://soitora.com)
+@homepageURL	https://github.com/Soitora/xhs-styles
+@supportURL		https://github.com/Soitora/xhs-styles/issues
+@license		CC-BY-SA-4.0
+@preprocessor	default
+==/UserStyle== */
 :root {
-	--xhs-primary: #1A1A1D;
-	--xhs-secondary: #1E1E21;
-	--xhs-tertiary: #18181B;
-	--xhs-quaternary: #121215;
-	--xhs-border: #17171A;
-	--xhs-highlight: #232326;
-	--xhs-title: #C8C8C8;
-	--xhs-body: #AAAAAA;
-	--xhs-orange: #F47447;
-	--xhs-blue: #3779A1;
-	--xhs-green: #648E76;
-	--xhs-purple: #8E78A2;
-	--xhs-brown: #7A6A5A;
-	--xhs-red: #EF4A4B;
-	--swec-ces: #639B48;
-	--swec-blackfriday: #000000;
-	--swec-julkalender: #CC0000;
-	--swec-mellandagsrea: #AC0C38;
+	--background-1: #121212;
+	--background-2: #1D1D1F;
+	--background-3: #18181B;
+	--background-4: #0c0c0c;
+	--text-1: #C8C8C8;
+	--text-2: #AAAAAA;
+	--border: #08080B;
+	--highlight: #232326;
+	--warning: #EF4A4B;
+	--warning-filter: brightness(0) saturate(100%) invert(43%) sepia(88%) saturate(1483%) hue-rotate(326deg) brightness(89%) contrast(113%);
+	--theme: #F19A57;
+	--theme-filter: brightness(0) saturate(100%) invert(82%) sepia(26%) saturate(3168%) hue-rotate(320deg) brightness(99%) contrast(91%);
+	--border-style: 1px solid var(--border);
+	--box-shadow: 0 0 0 1px var(--border);
+	--text-shadow: 1px 1px 2px #000000
 }
-
-/*! Main Code !*/
 
 body,
 .geeksShop .geeksShopProducts .productOther .buyButton,
@@ -63,7 +62,7 @@ body,
 .tanukiCombobox .tcbPanelTrigger,
 .tanukiCombobox .tcbpLoading,
 .tanukiCombobox .tcbPanelItem {
-	background: var(--xhs-primary) !important;
+	background: var(--background-1) !important;
 }
 
 body,
@@ -100,7 +99,7 @@ body,
 .mainContent #signinForm input,
 .pmNewThreadForm .tcbInput,
 .pmNewThreadForm .tcbEditField {
-	background-color: var(--xhs-primary) !important;
+	background-color: var(--background-1) !important;
 }
 
 .mainContent,
@@ -121,7 +120,7 @@ body,
 .bbSpoiler .spoilerFrame .bbPoll>.inner,
 .tanukiSelect select,
 .articleCommentsWidget {
-	background: var(--xhs-secondary) !important;
+	background: var(--background-2) !important;
 }
 
 .mainContent,
@@ -146,7 +145,7 @@ body,
 .footer .top,
 .footer .bottom,
 .pmNewThreadForm .tcbSelectedItem {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .newsList .commentsBubble,
@@ -174,7 +173,7 @@ body,
 .contentBox,
 .infoTextWindow,
 .articlesMostTagged .tagSummary a {
-	border: 1px solid var(--xhs-border) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .button.bg-orange:hover,
@@ -194,7 +193,7 @@ body,
 #subscribeForm>fieldset>button:hover,
 .articlesMostTagged .tagSummary a:hover,
 .tanukiCombobox .tcbPanelItem.isSelected {
-	background: var(--xhs-highlight) !important;
+	background: var(--highlight) !important;
 }
 
 .mainMenu .menu li:hover,
@@ -219,7 +218,7 @@ body,
 #subscribeForm>fieldset>button:hover,
 #siteHeader .signin .actions .button:hover,
 .pmNewThreadForm .tcbSelectedItem:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 }
 
 .footer .bottom a,
@@ -349,7 +348,7 @@ body,
 .pmNewThreadForm .tcbEditField:focus,
 .tanukiCombobox .tcbPanelItem.isSelected,
 .pmNewThreadForm .tcbSelectedItem:hover {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mainMenu .menu li a,
@@ -498,7 +497,7 @@ body pre,
 .tanukiCombobox .tcbpLoading,
 .tanukiCombobox .tcbPanelItem,
 .pmNewThreadForm .tcbSelectedItem {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .articlesMostTagged h2>a,
@@ -591,15 +590,15 @@ div.plHead h5,
 .contentBox h2,
 .mainContent .registerForm a,
 .activePolls a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .bbSpoiler .spoilerFrame .bbPoll>.inner button:hover {
-	color: var(--xhs-blue) !important;
+	color: #3779A1 !important;
 }
 
 .bbMark {
-	color: var(--xhs-purple) !important;
+	color: #8E78A2 !important;
 }
 
 .header .profile .signout button:hover,
@@ -607,7 +606,7 @@ div.plHead h5,
 .rulesList a,
 .tanukiControl.isRequired .tcLabel:after,
 .infoBox a {
-	color: var(--xhs-red) !important;
+	color: var(--warning) !important;
 }
 
 .ninjaSearchResult .showMore:hover,
@@ -799,8 +798,8 @@ div.plHead h5,
 .articlesMostRead .icon,
 .tanukiCombobox .tcbpLoadIcon,
 .pmNewThreadForm .tcbSelectedItem:hover .tbcsiClose {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .forumList .cell.status .forumStatus,
@@ -828,32 +827,32 @@ div.plHead h5,
 }
 
 :not(.arrow):not(.handle) {
-	border-color: var(--xhs-border) !important;
+	border-color: var(--border) !important;
 }
 
 /*! Better Sweclockers !*/
 
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler {
-	background: var(--xhs-primary) !important;
+	background: var(--background-1) !important;
 }
 
 form#better-sweclockers textarea {
-	background-color: var(--xhs-primary) !important;
+	background-color: var(--background-1) !important;
 }
 
 form#better-sweclockers .s5fieldset {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .better-sweclockers-icon-button:hover,
 .better-sweclockers-editing-tools .button:hover,
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
-	background: var(--xhs-highlight) !important;
+	background: var(--highlight) !important;
 }
 
 .better-sweclockers-editing-tools .button:hover,
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 }
 
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-spoiler:hover,
@@ -861,22 +860,22 @@ form#better-sweclockers .s5fieldset {
 .better-sweclockers-icon-button:hover,
 form#better-sweclockers label,
 form#better-sweclockers textarea:focus {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 form#better-sweclockers input[type="checkbox"]+label,
 form#better-sweclockers input[type="radio"]+labell,
 form#better-sweclockers footer,
 form#better-sweclockers textarea {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 form#better-sweclockers footer a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 #better-sweclockers-document #proofArticle {
-	background-color: var(--xhs-orange) !important;
+	background-color: var(--theme) !important;
 }
 
 form#better-sweclockers footer a:hover {
@@ -901,16 +900,16 @@ form#better-sweclockers footer a:hover {
 form#better-sweclockers .better-sweclockers-inlinePreference input[type="text"],
 form#better-sweclockers .better-sweclockers-inlinePreference input[type="number"],
 form#better-sweclockers .better-sweclockers-inlinePreference input[type="time"] {
-	background-color: var(--xhs-primary) !important;
-	color: var(--xhs-body) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background-color: var(--background-1) !important;
+	color: var(--text-2) !important;
+	border: 1px solid var(--border) !important;
 }
 
 form#better-sweclockers input[type="text"],
 form#better-sweclockers input[type="number"],
 form#better-sweclockers input[type="time"] {
-	background-color: var(--xhs-primary) !important;
-	color: var(--xhs-body) !important;
+	background-color: var(--background-1) !important;
+	color: var(--text-2) !important;
 }
 
 #better-sweclockers-document .better-sweclockers-editing-tools .better-sweclockers-button-color {
@@ -924,8 +923,8 @@ form#better-sweclockers input[type="time"] {
 }
 
 #better-sweclockers-document .tbGroup.better-sweclockers-textarea-size svg:hover {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 /*! Rest of Code !*/
@@ -936,21 +935,21 @@ form#better-sweclockers input[type="time"] {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--xhs-orange);
-	border-left: 4px solid var(--xhs-secondary) !important;
-	border-right: 4px solid var(--xhs-secondary) !important;
+	background: var(--theme);
+	border-left: 4px solid var(--background-2) !important;
+	border-right: 4px solid var(--background-2) !important;
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--xhs-primary);
+	background: var(--background-1);
 }
 
 ::-webkit-scrollbar-corner {
-	background: var(--xhs-primary);
+	background: var(--background-1);
 }
 
 .header>.main {
-	border-right: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--border) !important;
 }
 
 .header>.main>.container {
@@ -961,19 +960,19 @@ form#better-sweclockers input[type="time"] {
 .mainMenu .menu li:hover,
 .subMenu .menu li,
 .subMenu .menu li:hover {
-	border-top: 1px solid var(--xhs-border) !important;
-	border-left: 1px solid var(--xhs-border) !important;
-	border-right: 1px solid var(--xhs-border) !important;
+	border-top: 1px solid var(--border) !important;
+	border-left: 1px solid var(--border) !important;
+	border-right: 1px solid var(--border) !important;
 }
 
 .subMenu .menu li a {
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 .newsList .commentsBubble.isHot {
 	color: white !important;
-	border-color: var(--xhs-border) !important;
-	background-color: var(--xhs-orange) !important;
+	border-color: var(--border) !important;
+	background-color: var(--theme) !important;
 }
 
 .newsList .commentsBubble {
@@ -981,17 +980,17 @@ form#better-sweclockers input[type="time"] {
 }
 
 .carousel .nav.left .handle {
-	border-right: 10px solid var(--xhs-orange) !important;
+	border-right: 10px solid var(--theme) !important;
 }
 
 .carousel .nav.right .handle {
-	border-left: 10px solid var(--xhs-orange) !important;
+	border-left: 10px solid var(--theme) !important;
 }
 
 .mainRecentNews {
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 .sideBox.swec20Box>div>a:hover {
@@ -999,27 +998,27 @@ form#better-sweclockers input[type="time"] {
 }
 
 .pushListInternal {
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 .button.bg-orange {
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 .prisjaktPopular {
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 .mainRecentThreads {
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 .forumTable {
@@ -1027,16 +1026,16 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumTable .subForums {
-	border-left: 1px solid var(--xhs-border) !important;
-	border-right: 1px solid var(--xhs-border) !important;
+	border-left: 1px solid var(--border) !important;
+	border-right: 1px solid var(--border) !important;
 }
 
 .forumList .categoryItem .cell.title {
-	border-left: 1px solid var(--xhs-border) !important;
+	border-left: 1px solid var(--border) !important;
 }
 
 .forumList .categoryItem .cell.toggle {
-	border-right: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--border) !important;
 }
 
 .forumTable .head .cell {
@@ -1045,8 +1044,8 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumList .categoryItem .cell {
-	border-top: 1px solid var(--xhs-border)!important;
-	border-bottom: 1px solid var(--xhs-border)!important;
+	border-top: 1px solid var(--border)!important;
+	border-bottom: 1px solid var(--border)!important;
 }
 
 .forumTable .cell,
@@ -1055,40 +1054,40 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumTable .lastThread h3>a {
-	text-decoration-color: var(--xhs-secondary) !important;
+	text-decoration-color: var(--background-2) !important;
 }
 
 .forumTable .lastThread h3>a:hover {
-	text-decoration-color: var(--xhs-secondary) !important;
+	text-decoration-color: var(--background-2) !important;
 }
 
 .forumList .categoryItem .toggle .arrow {
 	border-color: transparent !important;
-	border-bottom-color: var(--xhs-orange) !important;
-	border-top-color: var(--xhs-orange) !important;
+	border-bottom-color: var(--theme) !important;
+	border-top-color: var(--theme) !important;
 }
 
 #threadList-1 .table .head .cell {
-	border-top: 1px solid var(--xhs-border) !important;
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-top: 1px solid var(--border) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 #threadList-1 .table .head .cell.status {
-	border-left: 1px solid var(--xhs-border) !important;
+	border-left: 1px solid var(--border) !important;
 }
 
 #threadList-1 .table .head .cell.select {
-	border-right: 1px solid var(--xhs-border) !important;
+	border-right: 1px solid var(--border) !important;
 }
 
 #threadList-1 tr.hasUnreadPosts td.status {
-	box-shadow: inset 5px 0 0 0 var(--xhs-highlight) !important;
+	box-shadow: inset 5px 0 0 0 var(--highlight) !important;
 }
 
 .forumThreads .body.threadsBody {
-	border-left: 1px solid var(--xhs-border) !important;
-	border-right: 1px solid var(--xhs-border) !important;
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-left: 1px solid var(--border) !important;
+	border-right: 1px solid var(--border) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 .threadList .isSelected .cell {
@@ -1122,7 +1121,7 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumPost.isAuthor .postHeader .cell {
-	border-top: 3px solid var(--xhs-orange) !important;
+	border-top: 3px solid var(--theme) !important;
 }
 
 .forumPost.isAuthor .postHeader .cell {
@@ -1130,16 +1129,16 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumPost.isAuthor {
-	border-top: 2px solid var(--xhs-border) !important;
+	border-top: 2px solid var(--border) !important;
 }
 
 .forumPost.isLinked.isAuthor {
-	border-color: var(--xhs-border) !important;
-	box-shadow: 0 0 0 4px var(--xhs-border) !important;
+	border-color: var(--border) !important;
+	box-shadow: 0 0 0 4px var(--border) !important;
 }
 
 .forumPost.isReader {
-	border-image: linear-gradient(to bottom, var(--xhs-primary) 0, var(--xhs-primary) 1px, var(--xhs-primary) 15px, var(--xhs-primary) 25px) 1;
+	border-image: linear-gradient(to bottom, var(--background-1) 0, var(--background-1) 1px, var(--background-1) 15px, var(--background-1) 25px) 1;
 	margin-left: 0px !important;
 }
 
@@ -1153,20 +1152,20 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumPost.isReader .postHeader .cell {
-	border-top: 3px solid var(--xhs-blue) !important;
+	border-top: 3px solid #3779A1 !important;
 }
 
 .forumPost.isLinked.isAuthor .postHeader .cell {
-	background: var(--xhs-border) !important;
+	background: var(--border) !important;
 }
 
 .forumPost.isLinked {
-	border-color: var(--xhs-border) !important;
-	box-shadow: 0 0 0 4px var(--xhs-border) !important;
+	border-color: var(--border) !important;
+	box-shadow: 0 0 0 4px var(--border) !important;
 }
 
 .forumPost.isLinked .postHeader .cell {
-	background: var(--xhs-border) !important;
+	background: var(--border) !important;
 }
 
 .forumPost .controls .button:hover {
@@ -1178,7 +1177,7 @@ form#better-sweclockers input[type="time"] {
 }
 
 .forumForm>.head {
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 .postBox .postElement .summary {
@@ -1208,30 +1207,30 @@ form#better-sweclockers input[type="time"] {
 
 .tanukiError .error {
 	color: white !important;
-	background-color: var(--xhs-red) !important;
+	background-color: var(--warning) !important;
 }
 
 .errorBox {
 	color: white !important;
-	background-color: var(--xhs-red) !important;
+	background-color: var(--warning) !important;
 }
 
 .bbQuote.isExpandable>.quoteFrame>.quoteFade {
-	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
-	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--background-1))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--background-1) 100%) !important;
 }
 
 .bbExpander>.expanderFrame>.expanderFade {
-	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
-	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--background-1))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--background-1) 100%) !important;
 }
 
 .bbSpoiler .spoilerHeader button:focus {
@@ -1239,16 +1238,16 @@ form#better-sweclockers input[type="time"] {
 }
 
 .postBody .bbPoll .optionBar>div {
-	background: var(--xhs-orange) !important;
+	background: var(--theme) !important;
 	border: none !important;
 }
 
 .postBody .bbPoll .pollQuestion {
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 .postBody .bbPoll .pollSums .totalVotes {
-	border-top: 1px solid var(--xhs-border) !important;
+	border-top: 1px solid var(--border) !important;
 }
 
 .tanukiTextbox input:focus {
@@ -1268,25 +1267,25 @@ form#better-sweclockers input[type="time"] {
 }
 
 .articleBBCode .bbPoll .optionBar>div {
-	background: var(--xhs-orange) !important;
+	background: var(--theme) !important;
 	border: none !important;
 }
 
 .articleBBCode .bbPoll .pollQuestion {
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 .articleBBCode .bbPoll .pollSums .totalVotes {
-	border-top: 1px solid var(--xhs-border) !important;
+	border-top: 1px solid var(--border) !important;
 }
 
 .articleBBCode .bbExpander>.expanderFrame>.expanderFade {
-	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
-	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--background-1))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--background-1) 100%) !important;
 }
 
 .articleContent .articleNavi .pageItem.isCurrent a:hover {
@@ -1298,30 +1297,13 @@ form#better-sweclockers input[type="time"] {
 }
 
 .articleCommentsWidget {
-	box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: 0px 0px 0px 1px var(--border) !important;
 }
 
 .bbPrisjaktFull h6 {
-	border-bottom: 1px solid var(--xhs-border) !important;
-}
-
-.tv-frame .tvf-left {
-	background-image: url("https://i.imgur.com/y8gWfV1.png") !important;
-}
-
-.tv-frame .tvf-right {
-	background-image: url("https://i.imgur.com/fD4VmHu.png") !important;
-}
-
-.tv-frame .tvf-top {
-	background-image: url("https://i.imgur.com/hxA5pui.png") !important;
-}
-
-.tv-frame .tvf-bottom {
-	background-image: url("https://i.imgur.com/p16tIQV.png") !important;
-	height: 32px !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 #__laika_cnt\.textbox\.0:focus,
@@ -1337,11 +1319,11 @@ form#better-sweclockers input[type="time"] {
 }
 
 .galleryNavi .next .arrow {
-	border-left: 10px solid var(--xhs-orange) !important;
+	border-left: 10px solid var(--theme) !important;
 }
 
 .galleryNavi .prev .arrow {
-	border-right: 10px solid var(--xhs-orange) !important;
+	border-right: 10px solid var(--theme) !important;
 }
 
 .mainContent .stepItem.isSelected {
@@ -1361,7 +1343,7 @@ form#better-sweclockers input[type="time"] {
 }
 
 .footer .top {
-	border-top: 1px solid var(--xhs-border) !important;
+	border-top: 1px solid var(--border) !important;
 }
 
 .footer .top a {
@@ -1515,17 +1497,17 @@ img[src*="/artikel/diagram/"] {
 	filter: invert(85%) !important;
 }
 
-/* 2.0.3 
+/* 2.0.3
 –––––––––*/
 
 .header .profile .hasUnread>a>span {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 #siteHeader>div.main>div>div.sections>div.section.profile>ul>li.option.quote.hasUnread>a>span.icon,
 #siteHeader>div.main>div>div.sections>div.section.profile>ul>li.option.watched.hasUnread>a>span.icon {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .header .profile .label span:last-child:hover {
@@ -1533,29 +1515,29 @@ img[src*="/artikel/diagram/"] {
 }
 
 .bg-orange {
-	background: var(--xhs-orange) !important;
+	background: var(--theme) !important;
 	border-bottom-left-radius: 8px;
 }
 
 .bg-orange:hover {
-	background: var(--xhs-orange) !important;
+	background: var(--theme) !important;
 	opacity: 0.90 !important;
 }
 
 .mainWidget.forumWidget.commentsWidget {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwLabelText {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwLabelDate {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwHead>h5 {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwHead>h5>a:hover {
@@ -1564,17 +1546,17 @@ img[src*="/artikel/diagram/"] {
 }
 
 .mainWidget.forumWidget.commentsWidget .mwHead>p {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget {
-	box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: 0px 0px 0px 1px var(--border) !important;
 }
 
 .mainWidget.forumWidget.commentsWidget .mwReadmore {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 	text-decoration: none !important;
 }
 
@@ -1589,8 +1571,8 @@ img[src*="/artikel/diagram/"] {
 }
 
 .mainWidget.forumWidget.commentsWidget .mwLabelIcon {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .mainWidget.forumWidget.commentsWidget .mwItem a:hover .mwIcon,
@@ -1601,7 +1583,7 @@ img[src*="/artikel/diagram/"] {
 }
 
 .better-sweclockers-link-to-top {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .better-sweclockers-link-to-top:hover {
@@ -1611,11 +1593,11 @@ img[src*="/artikel/diagram/"] {
 
 .better-sweclockers-link-to-top:before {
 	content: "\2B06  " !important;
-	color: var(--xhs-body);
+	color: var(--text-2);
 }
 
 .memberTable .username a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 	text-decoration: none !important;
 }
 
@@ -1625,99 +1607,99 @@ img[src*="/artikel/diagram/"] {
 }
 
 .memberTable .title {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 /* 2.1.0
 –––––––––*/
 
 .wrapinner {
-	background: var(--xhs-primary) !important;
+	background: var(--background-1) !important;
 }
 
 .wrapinner .header .headMain {
-	border-bottom: 1px solid var(--xhs-border) !important;
+	border-bottom: 1px solid var(--border) !important;
 	padding-bottom: 0;
-	background: var(--xhs-secondary) !important;
+	background: var(--background-2) !important;
 }
 
 .wrapinner .header .dateline .mobil {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .header .dateline span {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .mainMenu {
-	background-color: var(--xhs-primary) !important;
-	border-bottom: 1px solid var(--xhs-border) !important;
+	background-color: var(--background-1) !important;
+	border-bottom: 1px solid var(--border) !important;
 }
 
 .wrapinner .mainMenu li {
-	background: var(--xhs-secondary) !important;
-	border-top: 1px solid var(--xhs-border) !important;
-	border-left: 1px solid var(--xhs-border) !important;
-	border-right: 1px solid var(--xhs-border) !important;
+	background: var(--background-2) !important;
+	border-top: 1px solid var(--border) !important;
+	border-left: 1px solid var(--border) !important;
+	border-right: 1px solid var(--border) !important;
 }
 
 .wrapinner .subMenu li {
-	background: var(--xhs-primary) !important;
+	background: var(--background-1) !important;
 }
 
 .wrapinner .subMenu li.isSelected a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .subMenu li a {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .itemList {
-	background: var(--xhs-secondary) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background: var(--background-2) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .wrapinner .itemList h2 {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .articleList .metadata .cat {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .articleList .metadata .time {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .itemList div.preview div.bbcode {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .itemList .listItem .icon span {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .wrapinner div.plItemRow>.plLabelText {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner div.plItemRow.plItemSubRow>.plLabelText {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .pushList .plComments {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner div.plItemSubRow>.plLabelComponent {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .pushList .plComments.plIcon {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .wrapinner .articleStatus.icon-comment {
@@ -1726,75 +1708,75 @@ img[src*="/artikel/diagram/"] {
 }
 
 .wrapinner .itemList .cell.status>span {
-	border-top: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	border-top: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .footer {
-	border-top: 1px solid var(--xhs-border) !important;
-	background: var(--xhs-secondary) !important;
+	border-top: 1px solid var(--border) !important;
+	background: var(--background-2) !important;
 }
 
 .footer>.shade {
-	background: var(--xhs-secondary) !important;
+	background: var(--background-2) !important;
 }
 
 .footerBox ul {
-	background: var(--xhs-primary) !important;
+	background: var(--background-1) !important;
 }
 
 .footerBox h6 {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .footerBox .listItem .label {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .footer .links .link {
-	color: var(--xhs-title) !important;
-	background: var(--xhs-primary) !important;
+	color: var(--text-1) !important;
+	background: var(--background-1) !important;
 }
 
 .wrapinner .navi {
-	background: var(--xhs-secondary) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background: var(--background-2) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .wrapinner .navi .button {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
 	box-shadow: 1px 1px 1px transparent !important;
 	-webkit-box-shadow: 1px 1px 1px transparent !important;
 }
 
 .wrapinner .navi .button span {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .navi .button>span:after {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner.navi .button>span:before {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner.contentHeader>.title .statusIcon+h1 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .contentHeader .descr {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .forumPost>.body {
-	border: 1px solid var(--xhs-border) !important;
-	background: var(--xhs-secondary) !important;
+	border: 1px solid var(--border) !important;
+	background: var(--background-2) !important;
 }
 
 .wrapinner .forumPost .bbcode p {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner button,
@@ -1815,77 +1797,77 @@ input[type="url"],
 .wrapinner input[type="password"],
 .wrapinner select,
 .wrapinner textarea {
-	background: var(--xhs-secondary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-2) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .forumPost .dateline .meta {
-	background: var(--xhs-secondary) !important;
-	color: var(--xhs-body) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background: var(--background-2) !important;
+	color: var(--text-2) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .wrapinner a.author {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner div.title {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .forumPost .controls .button {
-	background: var(--xhs-secondary) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-2) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .contentHeader .title h1 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .contentBox .infoText h5 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .contentBox h6 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .contentBox input[type="text"],
 .wrapinner .contentBox input[type="password"] {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .contentBox button,
 .wrapinner .contentBox .button {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .profileDetail h2 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .profileDetail dt,
 .wrapinner .profileDetail dd {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .feedSection .listItem .inner {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .feedSection .listItem .inner b {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .navi .curPage select {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner #threadList-1 .table .head .cell.status,
@@ -1897,88 +1879,88 @@ input[type="url"],
 }
 
 .wrapinner .galleryList .descr {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .galleryList ul h2 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .galleryList ul .meta .cat {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .galleryList ul .meta .author {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .galleryImage {
-	background: var(--xhs-secondary) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background: var(--background-2) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .wrapinner .marketFilterBox #searchForm select,
 .wrapinner .marketFilterBox #searchForm input {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .marketList .price {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .itemList .listItem .dateline {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .itemList .listItem .cat {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .details {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .galleryComments a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .contentHeader .description p {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .contentHeader .preamble .bbParagraph {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .listItem.isFocused .inner {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .itemList .listItem.isFocused {
-	background: var(--xhs-highlight) !important;
+	background: var(--highlight) !important;
 	box-shadow: inset 1px 1px 1px transparent !important;
 	-moz-box-shadow: inset 1px 1px 1px transparent !important;
 	-webkit-box-shadow: inset 1px 1px 1px transparent !important;
 }
 
 .wrapinner .articleComments a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .forumList .treeNode>.nodeInner {
-	border: 1px solid var(--xhs-border) !important;
-	background: var(--xhs-secondary) !important;
-	background-color: var(--xhs-secondary) !important;
+	border: 1px solid var(--border) !important;
+	background: var(--background-2) !important;
+	background-color: var(--background-2) !important;
 }
 
 .wrapinner .forumList .treeNode>.nodeInner h2 {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .forumList .treeNode>.nodeInner .descr {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .forumList .cell.status .forumStatus {
@@ -1987,41 +1969,41 @@ input[type="url"],
 }
 
 .wrapinner .thread .body .bbcode h1 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .thread .body .bbcode h3 {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .contentHeader h1.title {
-	color: var(--xhs-title);
+	color: var(--text-1);
 }
 
 .wrapinner #searchForm .contentBox select {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .listItem .inner {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .wrapinner .listItem .inner b {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .listItem .inner .dateline b {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .wrapinner .forumPost.isLiked .dateline .meta .score {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner #post17698683 h2 .bbColor {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .wrapinner .mainMenu .menuItem.optionProfile span {
@@ -2042,11 +2024,11 @@ input[type="url"],
 –––––––––*/
 
 .forumPost {
-	background: var(--xhs-secondary) !important;
+	background: var(--background-2) !important;
 }
 
 .forumPost.isSelected .controls .button.multiquote {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 /* 2.1.3
@@ -2064,7 +2046,7 @@ a:hover>.label,
 
 .mainMenu li.optionBlackfriday {
 	background-color: var(--swec-blackfriday) !important;
-	border-color: var(--xhs-border) !important;
+	border-color: var(--border) !important;
 }
 
 .mainMenu li.optionBlackfriday:hover,
@@ -2074,67 +2056,67 @@ a:hover>.label,
 }
 
 .mainMenu li.optionBlackfriday a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mainMenu li.optionBlackfriday.isSelected a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .mellandagsreaHeader .aboutFynd a,
 .mellandagsrea .mellandagsreaHeader h1 {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .mellandagsrea .mellandagsreaHeader p {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea #guideWrapper {
-	background-color: var(--xhs-secondary) !important;
-	color: var(--xhs-body) !important;
-	border: solid 1px var(--xhs-border) !important;
+	background-color: var(--background-2) !important;
+	color: var(--text-2) !important;
+	border: solid 1px var(--border) !important;
 }
 
 .mellandagsrea .vendorGuides h2 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .vendorGuides .guideBlock span {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .tips .tipsTitle {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .tips .tipsData .tipsRow {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .mellandagsrea .tips .tipsMeta .productCell {
-	background-color: var(--xhs-secondary) !important;
-	border-left: solid 1px var(--xhs-border) !important;
-	border-right: solid 1px var(--xhs-border) !important;
+	background-color: var(--background-2) !important;
+	border-left: solid 1px var(--border) !important;
+	border-right: solid 1px var(--border) !important;
 }
 
 .mellandagsrea div.colProduct,
 .mellandagsrea div.colPrice {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .mellandagsrea div.colCategory,
 .mellandagsrea div.colVendor {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .mellandagsrea .userCell {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .tips .tipsData .colScore .label {
 	color: white !important;
-	background: var(--xhs-orange) !important;
+	background: var(--theme) !important;
 }
 
 .mellandagsrea .tips .tipsData .colScore .label:hover {
@@ -2142,19 +2124,19 @@ a:hover>.label,
 }
 
 .mellandagsrea .tips .tipsMeta .productCell span.label {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea select {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .mellandagsrea .tips .tipsRow:hover .productCell,
 .mellandagsrea .tips .tipsRow:hover .pjCell,
 .mellandagsrea .tips .tipsRow:hover .userCell {
-	background: var(--xhs-highlight) !important;
+	background: var(--highlight) !important;
 }
 
 .mellandagsrea .tips a.productCell:hover .colProduct,
@@ -2178,11 +2160,11 @@ a:hover>.label,
 }
 
 .sorter .isCurrent {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .forumPost .cell.main .bbStrong {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 /* 2.1.4
@@ -2190,87 +2172,87 @@ a:hover>.label,
 
 .mellandagsrea .tips .numComments a,
 .mellandagsrea .tips .tipsTitle a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .vendorName {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .vendorCampaignLink>a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .productFooter {
-	background: var(--xhs-secondary) !important;
-	background-color: var(--xhs-secondary) !important;
+	background: var(--background-2) !important;
+	background-color: var(--background-2) !important;
 }
 
 .mellandagsrea .productFooter a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .mellandagsrea .productFooter p {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .mellandagsrea .productHeader {
-	background: var(--xhs-tertiary) !important;
-	background-color: var(--xhs-tertiary) !important;
+	background: var(--background-3) !important;
+	background-color: var(--background-3) !important;
 }
 
 .mellandagsrea .productHeader:hover {
-	background: var(--xhs-highlight) !important;
-	background-color: var(--xhs-highlight) !important;
+	background: var(--highlight) !important;
+	background-color: var(--highlight) !important;
 	opacity: 1 !important;
 }
 
 .mellandagsrea .productPriceOffer {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .mellandagsrea .productPriceRegular {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .mellandagsrea .productPriceSavings {
 	color: white !important;
-	background-color: var(--xhs-orange) !important;
+	background-color: var(--theme) !important;
 }
 
 #revolut-ad {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 #revolut-ad .title>a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 #revolut-ad .text {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 #revolut-ad .text>a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 #revolut-ad .button {
-	background: var(--xhs-primary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-1) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 #revolut-ad .button:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 }
 
 #revolut-ad>.shadow {
-	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--xhs-primary))) !important;
-	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
-	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--xhs-primary) 100%) !important;
+	background: -moz-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(45%, transparent), color-stop(100%, var(--background-1))) !important;
+	background: -webkit-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -o-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: -ms-linear-gradient(top, transparent 0, transparent 10%, var(--background-1) 100%) !important;
+	background: linear-gradient(to bottom, transparent 0, transparent 10%, var(--background-1) 100%) !important;
 }
 
 /* 2.1.5
@@ -2278,7 +2260,7 @@ a:hover>.label,
 
 .mainMenu li.optionJulkalender {
 	background-color: var(--swec-julkalender) !important;
-	border-color: var(--xhs-border) !important;
+	border-color: var(--border) !important;
 }
 
 .mainMenu li.isSelected.optionJulkalender:hover {
@@ -2286,60 +2268,60 @@ a:hover>.label,
 }
 
 #single.content_holder {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .post h2 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .post p {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .post p a,
 .post li a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 	text-decoration: none;
 }
 
 .post ul {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .form_options a.btn_back {
-	background-color: var(--xhs-primary) !important;
-	color: var(--xhs-title) !important;
-	border: 1px solid var(--xhs-border) !important;
+	background-color: var(--background-1) !important;
+	color: var(--text-1) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .back_to_cal i {
 	color: black !important;
-	background-color: var(--xhs-orange) !important;
+	background-color: var(--theme) !important;
 	margin: 12px 7px 0 0;
 }
 
 .back_to_cal {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 a.back_to_cal:hover>i {
-	background-color: var(--xhs-red) !important;
+	background-color: var(--warning) !important;
 }
 
 a.back_to_cal:hover {
-	color: var(--xhs-red) !important;
+	color: var(--warning) !important;
 }
 
 #form_inputs label {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 #form_inputs textarea,
 #form_inputs input,
 #form_inputs textarea {
-	background-color: var(--xhs-primary) !important;
-	color: var(--xhs-body) !important;
+	background-color: var(--background-1) !important;
+	color: var(--text-2) !important;
 }
 
 #form_inputs div.checkbox {
@@ -2347,16 +2329,16 @@ a.back_to_cal:hover {
 }
 
 #form_inputs .policy_container .checkboxspan {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 #form_inputs .policy_container .checkboxspan a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .content_holder,
 #container.on_fb {
-	background-color: var(--xhs-secondary);
+	background-color: var(--background-2);
 }
 
 #content-header {
@@ -2364,11 +2346,11 @@ a.back_to_cal:hover {
 }
 
 #content-header h1 {
-	color: var(--xhs-title);
+	color: var(--text-1);
 }
 
 #content-header p {
-	color: var(--xhs-body);
+	color: var(--text-2);
 }
 
 /* 2.1.6
@@ -2382,11 +2364,11 @@ a.back_to_cal:hover {
 –––––––––*/
 
 div.content_holder>div>div>strong {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 div.content_holder>div>div>strong>a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 	text-decoration: none;
 }
 
@@ -2394,27 +2376,27 @@ div.content_holder>div>div>strong>a {
 –––––––––*/
 
 a.selectBox.selectBox-dropdown {
-	background: var(--xhs-primary) !important;
+	background: var(--background-1) !important;
 	box-shadow: none !important;
 }
 
 #form_inputs a.selectBox {
 	text-shadow: none !important;
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .selectBox-options,
 .selectBox-options li,
 .selectBox-options li a {
-	background-color: var(--xhs-primary) !important;
-	color: var(--xhs-body) !important;
+	background-color: var(--background-1) !important;
+	color: var(--text-2) !important;
 }
 
 .selectBox-options:hover,
 .selectBox-options li:hover,
 .selectBox-options li a:hover {
-	background-color: var(--xhs-highlight) !important;
-	color: var(--xhs-title) !important;
+	background-color: var(--highlight) !important;
+	color: var(--text-1) !important;
 }
 
 .selectBox-dropdown .selectBox-arrow {
@@ -2431,27 +2413,27 @@ a.selectBox.selectBox-dropdown {
 }
 
 .campaignportal #guide-wrapper {
-	background-color: var(--xhs-secondary) !important;
-	border: solid 1px var(--xhs-border) !important;
+	background-color: var(--background-2) !important;
+	border: solid 1px var(--border) !important;
 }
 
 .campaignportal .vendor-guides h2 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .campaignportal .vendor-guides p {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .campaignportal .vendor-guides .guide-block span {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row:nth-child(odd),
 .campaignportal .tips .tips-data .tips-row:nth-child(even) {
-	background: var(--xhs-secondary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-2) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row:hover .col-product,
@@ -2460,44 +2442,44 @@ a.selectBox.selectBox-dropdown {
 .campaignportal .tips .tips-data .tips-row:hover .col-price,
 .campaignportal .tips .tips-data .tips-row:hover .pj-cell,
 .campaignportal .tips .tips-data .tips-row:hover .user-cell {
-	background: var(--xhs-highlight) !important;
+	background: var(--highlight) !important;
 }
 
 .campaignportal select {
-	background: var(--xhs-secondary) !important;
-	border: 1px solid var(--xhs-border) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-2) !important;
+	border: 1px solid var(--border) !important;
+	color: var(--text-2) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row .col-product,
 .campaignportal .tips .tips-data .tips-row .col-user {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row .col-category,
 .campaignportal .tips .tips-data .tips-row .col-vendor {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .campaignportal .tips .tips-data .tips-row .col-price {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .campaignportal .tips .tips-title {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .campaignportal .tips .tips-meta {
-	border: 1px solid var(--xhs-border) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .sorter a .label,
 .sorter .label {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .campaignportal .tips .tips-data .col-score .label {
-	background: var(--xhs-orange) !important;
+	background: var(--theme) !important;
 }
 
 .campaignportal .tips .tips-data :hover .col-product,
@@ -2510,7 +2492,7 @@ a.selectBox.selectBox-dropdown {
 
 .mainMenu li.optionCes {
 	background-color: var(--swec-ces) !important;
-	border: 1px solid var(--xhs-border) !important;
+	border: 1px solid var(--border) !important;
 }
 
 .mainMenu li.isSelected.optionCes:hover {
@@ -2522,20 +2504,20 @@ a.selectBox.selectBox-dropdown {
 }
 
 .mainMenu li.optionCes:hover a {
-	color: var(--xhs-primary) !important;
+	color: var(--background-1) !important;
 }
 
 .articleList .authors-byline a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .articleActions .action.proofArticle .actionIcon {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .articleActions .action.proofArticle .actionLabel {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .articleActions .action.proofArticle .actionLabel:hover {
@@ -2543,38 +2525,38 @@ a.selectBox.selectBox-dropdown {
 }
 
 div>.widget.bg-orange {
-	background: var(--xhs-secondary) !important;
+	background: var(--background-2) !important;
 	border-bottom-left-radius: 8px;
 }
 
 div>.widget.bg-orange a.title {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 div>.widget.bg-orange a>span.text-bold {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 div>.widget.bg-orange a>span.list-link-text {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 div>.widget.bg-orange .widget-foot>a.color-white {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 div>.widget.bg-orange .widget-body .list .list-item .list-link .icon {
-	filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
-	-webkit-filter: brightness(0) saturate(100%) invert(70%) sepia(63%) saturate(4179%) hue-rotate(330deg) brightness(98%) contrast(96%) !important;
+	filter: var(--theme-filter);
+	-webkit-filter: var(--theme-filter);
 }
 
 .articleList.bg-grey-primary {
-	background: var(--xhs-secondary) !important;
-	color: var(--xhs-body) !important;
+	background: var(--background-2) !important;
+	color: var(--text-2) !important;
 }
 
 .articleList.bg-grey-primary h3.title>a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 /* 2.2.1
@@ -2596,152 +2578,152 @@ div>.widget.bg-orange .widget-body .list .list-item .list-link .icon {
 }
 
 .newsList .relatedLinks {
-	background-color: var(--xhs-primary);
+	background-color: var(--background-1);
 }
 
 .mainMenu .menu li,
 .subMenu .menu li,
 .newsList .commentsBubble {
-	background-color: var(--xhs-quaternary);
+	background-color: var(--background-4);
 }
 
 .subMenu .menu li.isSelected {
-	background-color: var(--xhs-primary);
+	background-color: var(--background-1);
 }
 
 .mainMenu .menu li.isSelected {
-	background-color: var(--xhs-secondary);
+	background-color: var(--background-2);
 }
 
 .articleBBCode .bbRelatedBox {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .body.articleBBCode .bbRelatedBox {
-	background-color: var(--xhs-primary) !important;
+	background-color: var(--background-1) !important;
 }
 
 .table>.head>.row>.cell {
 	color: #fff;
-	background-color: var(--xhs-quaternary) !important;
+	background-color: var(--background-4) !important;
 }
 
 .table .body.categoryItem .cell {
 	color: #fff;
-	background-color: var(--xhs-tertiary) !important;
+	background-color: var(--background-3) !important;
 }
 
 .table>.row>.cell,
 .table>.body>.row>.cell,
 .table>.foot>.row>.cell {
-	background-color: var(--xhs-secondary);
+	background-color: var(--background-2);
 }
 
 .table>.body>.row>.cell.alt2 {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 .subForums .title h2 a {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 .table .cell.lastThread h3 {
-	color: var(--xhs-title);
+	color: var(--text-1);
 	text-decoration: none
 }
 
 .table .dateline,
 .table .descr {
-	color: var(--xhs-body);
+	color: var(--text-2);
 }
 
 .table .dateline a {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 .table .dateline .date .time {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 .table .body .row .cell {
-	color: var(--xhs-title);
+	color: var(--text-1);
 }
 
 .subforums .bg-grey-secondary {
-	background-color: var(--xhs-tertiary) !important;
-	color: var(--xhs-title);
+	background-color: var(--background-3) !important;
+	color: var(--text-1);
 }
 
 .subforums .bg-grey-secondary:hover {
-	background-color: var(--xhs-tertiary) !important;
+	background-color: var(--background-3) !important;
 	opacity: 0.8
 }
 
 .table>caption,
 .table>.caption {
-	background-color: var(--xhs-primary);
+	background-color: var(--background-1);
 }
 
 .table>.body>.row.isSticky .cell {
-	background-color: var(--xhs-secondary);
+	background-color: var(--background-2);
 }
 
 .threadsBody .title h2 a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .table .body .lastReply .name {
 	text-decoration: none;
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .table .body .lastReply .date {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .table .body .lastReply .time {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .table>.body>.row .cell.numReplies a {
 	text-decoration: none;
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .forumPost.isAuthor .postHeader .cell,
 .forumPost .postHeader .cell {
-	background-color: var(--xhs-tertiary) !important;
+	background-color: var(--background-3) !important;
 }
 
 .marketList .color-black {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .marketList .color-black.user {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .table .title h2 a {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .label.color-orange,
 .price.color-orange {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .marketHeader .marketMeta .meta-wrapper {
-	background-color: var(--xhs-secondary) !important;
+	background-color: var(--background-2) !important;
 }
 
 div.whiteHeader.margin-large-bottom>div>div>a,
 div.whiteHeader.margin-large-bottom>div>h2>span.color-orange>span {
-	color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a {
-	background-color: var(--xhs-secondary);
-	color: var(--xhs-title) !important;
+	background-color: var(--background-2);
+	color: var(--text-1) !important;
 }
 
 .newsList .itemBanner img {
@@ -2752,87 +2734,87 @@ div.marketHeader>div.marketMeta.margin-large-bottom>div.left.margin-large-left>a
 –––––––––*/
 
 #threadList-1>table>tbody.body.threadsBody>tr>td.cell.title.padding-small-left>div>div>a {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 /* 2.3.2
 –––––––––*/
 
 .ninjaSearchResult .resultList .list-item .list-link .link-text {
-    color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .ninjaSearchResult .resultList .list-item .list-link .date {
-    color: var(--xhs-orange) !important;
+	color: var(--theme) !important;
 }
 
 .ninjaSearchResult h6 {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 .ninjaSearchResult .showMore {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 /* 2.3.3
 –––––––––*/
 
 .table .pageLinks .link {
-    color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 /* 2.3.4
 –––––––––*/
 
 .articleContent.bg-grey-primary {
-	color: var(--xhs-body) !important;
-	background-color: var(--xhs-secondary) !important;
+	color: var(--text-2) !important;
+	background-color: var(--background-2) !important;
 }
 
 #articleAuthors .sl-profile .slpm-item.slpmi-name a {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 #articleAuthors .sl-profile .slpm-item {
-	color: var(--xhs-body);
+	color: var(--text-2);
 }
 
 #articleAuthors .sl-profile .slpm-item a {
-	color: var(--xhs-title);
+	color: var(--text-1);
 }
 
 div.articleContent,
 div.widget.bg-orange {
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 #recent-classifieds {
-	background-color: var(--xhs-secondary) !important;
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	background-color: var(--background-2) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 #recent-classifieds p.title {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 #recent-classifieds p.title-secondary {
-	color: var(--xhs-body);
+	color: var(--text-2);
 }
 
 #recent-classifieds p.title-secondary a {
-	color: var(--xhs-title);
+	color: var(--text-1);
 }
 
 #recent-classifieds .list-link-text {
-	color: var(--xhs-title);
+	color: var(--text-1);
 }
 
 #recent-classifieds .text-bold {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 }
 
 #recent-classifieds .bg-green {
@@ -2853,48 +2835,48 @@ div.widget.bg-orange {
 
 .table>.body>.row.isGreyscale .cell.alt2,
 .table>.body>.row.isGreyscale .cell.alt2 a {
-	color: var(--xhs-body) !important;
+	color: var(--text-2) !important;
 }
 
 .whiteFilterBox {
-	background-color: var(--xhs-secondary)
+	background-color: var(--background-2)
 }
 
 .whiteFilterBox button.tanukiButton {
-	background-color: var(--xhs-quaternary) !important;
+	background-color: var(--background-4) !important;
 }
 
 .whiteFilterBox button.tanukiButton:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 }
 
 .ninjaSearch .searchField .fieldWrap {
-	background-color: var(--xhs-quaternary) !important;
+	background-color: var(--background-4) !important;
 }
 
 .ninjaSearch .searchField .input {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 #search .searchField>a[title*=Google] {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 .button.bg-orange {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 .articleList h3.title a {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 .tanukiTextbox input,
 .tanukiTextbox select {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 #__laika_cnt\.textbox\.0,
@@ -2902,8 +2884,8 @@ div.widget.bg-orange {
 #__laika_cnt\.textbox\.2,
 #__laika_cnt\.textbox\.3,
 #__laika_cnt\.textbox\.4 {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 #__laika_cnt\.select\.0,
@@ -2911,26 +2893,26 @@ div.widget.bg-orange {
 #__laika_cnt\.select\.2,
 #__laika_cnt\.select\.3,
 #__laika_cnt\.select\.4 {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 .tanukiButton, .button {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 .tanukiButton:hover, .button:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 }
 
 .forumResultPost .controls .button {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 .forumResultPost .controls .button:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 	opacity: 1 !important;
 }
 
@@ -2939,15 +2921,15 @@ div.widget.bg-orange {
 }
 
 .inner .whiteBody .bg-grey-primary {
-	color: var(--xhs-body);
-	background-color: var(--xhs-secondary) !important;
+	color: var(--text-2);
+	background-color: var(--background-2) !important;
 }
 
 .inner .whiteBody .bg-grey-primary {
-	background-color: var(--xhs-secondary) !important;
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	background-color: var(--background-2) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 }
 
 .inner .whiteBody .bg-grey-primary .bbRelatedBox {
@@ -2959,28 +2941,28 @@ div.bg-orange:hover {
 }
 
 .bg-grey-primary a.read-more-archive {
-	color: var(--xhs-title) !important;
+	color: var(--text-1) !important;
 	text-decoration: none !important;
 }
 
 .newsList .commentsBubble.isHot:hover,
 .newsList .commentsBubble:hover {
-	background-color: var(--xhs-highlight) !important;
+	background-color: var(--highlight) !important;
 }
 
 .bg-grey-primary .crediters a {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 .articleBBCode .bbBlockQuote:after {
-	color: var(--xhs-orange);
+	color: var(--theme);
 }
 
 .articleBBCode .bbRelatedBox {
 	border: none !important;
-	box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-webkit-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
-	-moz-box-shadow: inset 0px 0px 0px 1px var(--xhs-border) !important;
+	box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-webkit-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
+	-moz-box-shadow: inset 0px 0px 0px 1px var(--border) !important;
 	padding-bottom: 1px
 }
 
@@ -2990,17 +2972,232 @@ div.bg-orange:hover {
 }
 
 .toolbar .tbButton.iconButton .inner {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
 .better-sweclockers-icon-button,
 .better-sweclockers-editing-tools .button {
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+	background-color: var(--background-4) !important;
+	color: var(--text-2);
 }
 
-.whiteBody .forumControls .button, .forumControls .button.replyToThread	{
-	background-color: var(--xhs-quaternary) !important;
-	color: var(--xhs-body);
+/* 2.4.0
+–––––––––*/
+
+.ad {
+	opacity: 0.75 !important;
+}
+
+.ad.adPanorama iframe,
+.ad.adModule iframe,
+.ad.adInsider iframe,
+.ad.adOutsider iframe {
+	border-radius: 0.6rem !important;
+	background-color: var(--background-3) !important;
+	box-shadow: var(--box-shadow) !important;
+}
+
+.ad.adModule {
+	border-bottom: none !important;
+}
+
+.adFullHeaderChild {
+	background-color: var(--background-1) !important;
+}
+
+#siteHeader .banner {
+	height: 121px !important;
+	overflow: hidden !important;
+}
+
+.whiteBody .forumControls .button,
+.forumControls .button.replyToThread {
+	background-color: var(--background-2) !important;
+	color: var(--text-2) !important;
+}
+
+#searchForm>div.tanukiControl.tanukiTextbox>div.tctbFrame #__laika_cnt\.textbox\.0 {
+	background-color: var(--background-2) !important;
+	color: var(--text-2) !important;
+}
+
+#searchForm>button {
+	background-color: var(--background-2) !important;
+	color: var(--text-2) !important;
+}
+
+div.forumPost {
+	box-shadow: var(--box-shadow) !important
+}
+
+.forumPost.isAuthor .postHeader .cell,
+.forumPost .postHeader .cell,
+.forumPost.isLinked .postHeader .cell {
+	background-color: var(--background-2) !important;
+}
+
+.forumPost.isLinked.isAuthor .postHeader .cell {
+	background: var(--background-2) !important;
+}
+
+.postActions #__laika_cnt\.select\.0 {
+	background-color: var(--background-2) !important;
+}
+
+.postActions>div>div>div>button {
+	background-color: var(--background-2) !important;
+}
+
+#createForm #__laika_cnt\.textbox\.0,
+#createForm #__laika_cnt\.select\.0,
+#replyForm #__laika_cnt\.textbox\.0 {
+	background-color: var(--background-1) !important;
+}
+
+.mainMenu .menu li.menuItem,
+.subMenu .menu li.menuItem {
+	margin-right: 5px;
+}
+
+.mainMenu .menu li.menuItem {
+	background-color: var(--background-2) !important
+}
+
+.subMenu .menu li.menuItem {
+	background-color: var(--background-1) !important
+}
+
+.mainMenu .menu li.menuItem:hover,
+.subMenu .menu li.menuItem:hover {
+	background-color: var(--highlight) !important
+}
+
+.subMenu .menu li.isSelected a {
+	border-bottom: none !important;
+}
+
+.mainMenu .menu li.isSelected a,
+.subMenu .menu li.isSelected a {
+	color: var(--theme) !important
+}
+
+.comments-bubble .cb-top {
+	color: #fff !important;
+	text-shadow: var(--text-shadow) !important;
+	background-color: var(--theme) !important;
+}
+
+.comments-bubble .cb-bottom {
+	border-color: transparent var(--theme) transparent transparent !important;
+}
+
+.comments-bubble:hover .cb-top {
+	background-color: #d26000 !important;
+}
+
+.comments-bubble:hover .cb-bottom {
+	border-color: transparent #d26000 transparent transparent !important;
+}
+
+.mainContent>.inner {
+	box-shadow: var(--box-shadow) !important;
+	border-radius: 0.6rem !important;
+}
+
+.widget .widget-head .title {
+	color: var(--theme) !important
+}
+
+#recent-classifieds,
+#recent-reviews {
+	background-color: var(--background-2) !important;
+	box-shadow: var(--box-shadow) !important;
+	border-radius: 0.6rem !important;
+}
+
+#recent-classifieds .widget-head .title,
+#recent-reviews .widget-head .title {
+	color: var(--theme) !important;
+}
+
+#recent-classifieds .widget-head .title:hover,
+#recent-reviews .widget-head .title:hover {
+	opacity: 0.8 !important;
+}
+
+#recent-classifieds .widget-head .title-secondary,
+#recent-reviews .widget-head .title-secondary {
+	color: var(--text-2) !important;
+}
+
+#recent-classifieds .widget-head .title-secondary a,
+#recent-reviews .widget-head .title-secondary a {
+	color: var(--text-1) !important;
+}
+
+#recent-classifieds .widget-head .title-secondary a:hover,
+#recent-reviews .widget-head .title-secondary a:hover {
+	opacity: 0.8 !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-link,
+#recent-reviews .widget-body .list-item .list-link {
+	color: var(--text-1) !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-link:hover,
+#recent-reviews .widget-body .list-item .list-link:hover {
+	opacity: 0.8 !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-link .icon,
+#recent-reviews .widget-body .list-item .list-link .icon {
+	filter: var(--theme-filter) !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-link .button,
+#recent-reviews .widget-body .list-item .list-link .button {
+	border: none !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-link .text-bold.color-white,
+#recent-reviews .widget-body .list-item .list-link .text-bold.color-white {
+	color: var(--theme) !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-comment-bubble:hover,
+#recent-reviews .widget-body .list-item .list-comment-bubble:hover {
+	opacity: 0.8 !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-comment-bubble.color-orange,
+#recent-reviews .widget-body .list-item .list-comment-bubble.color-orange {
+	color: var(--theme) !important;
+}
+
+#recent-classifieds .widget-body .list-item .list-comment-bubble .icon,
+#recent-reviews .widget-body .list-item .list-comment-bubble .icon {
+	filter: var(--theme-filter) !important;
+}
+
+.tv-frame .tvf-bottom {
+	background-image: url("https://i.imgur.com/gi4NvPE.png") !important;
+	height: 24px !important;
+}
+
+.tv-frame .tvf-left {
+	background-image: url("https://i.imgur.com/y8gWfV1.png") !important;
+}
+
+.tv-frame .tvf-right {
+	background-image: url("https://i.imgur.com/fD4VmHu.png") !important;
+}
+
+.tv-frame .tvf-top {
+	background-image: url("https://i.imgur.com/hxA5pui.png") !important;
+}
+
+.newsList .relatedLinks legend {
+	color: var(--text-2) !important;
 }
