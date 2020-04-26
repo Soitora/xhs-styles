@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			SweClockers Dark - XHS
 @namespace		https://github.com/Soitora
-@version		2.4.1
+@version		2.4.2
 @description	A modern dark theme for SweClockers
 @author			Soitora <simon.mattila@protonmail.com> (https://soitora.com)
 @homepageURL	https://github.com/Soitora/xhs-styles
@@ -126,7 +126,6 @@ body,
 
 .mainContent,
 .header>.main,
-.mainMenu .menu li.isSelected:hover,
 .mainRecentNews,
 .pushListInternal,
 .geeksShop,
@@ -286,7 +285,6 @@ body,
 .subMenu .menu li.isSelected a,
 .mainMenu .menu li:hover,
 .mainMenu .menu li a:hover,
-.mainMenu .menu li.isSelected a,
 #__laika_cnt\.textarea\.0:focus,
 #__laika_cnt\.textbox\.0:focus,
 #__laika_cnt\.textbox\.1:focus,
@@ -1323,143 +1321,6 @@ form#better-sweclockers input[type="time"] {
 .footer .top a {
 	text-decoration: none;
 	font-weight: 700;
-}
-
-/*! Untested Promotions !*/
-
-.mainMenu li.optionVr {
-	background-image: none !important;
-	background-color: #8111e1 !important;
-	border-color: #6a0eb9 !important;
-}
-
-.mainMenu li.optionVr a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionCes {
-	background-image: none !important;
-	background-color: #619c41 !important;
-	border-color: #51743e !important;
-}
-
-.mainMenu li.optionCes a {
-	color: #222 !important;
-}
-
-.mainMenu li.optionPaskrea {
-	background-image: none !important;
-	background-color: #ffd200 !important;
-	border-color: #d9a92b !important;
-}
-
-.mainMenu li.optionPaskrea a {
-	color: #222 !important;
-}
-
-.mainMenu li.optionGreenfriday {
-	background-image: none !important;
-	background-color: #41a500 !important;
-	border-color: #2b760a !important;
-}
-
-.mainMenu li.optionGreenfriday a {
-	color: #222 !important;
-}
-
-.mainMenu li.optionComputex {
-	background-image: none !important;
-	background-color: #e4007f !important;
-	border-color: #c6006e !important;
-}
-
-.mainMenu li.optionComputex a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionE3 {
-	background-image: none !important;
-	background-color: #ea2238 !important;
-	border-color: #aa1929 !important;
-}
-
-.mainMenu li.optionE3 a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionBack2school {
-	background-image: none !important;
-	background-color: #4d9edd !important;
-	border-color: #4b99d6 !important;
-}
-
-.mainMenu li.optionBack2school a {
-	color: #222 !important;
-}
-
-.mainMenu li.optionBlackfriday {
-	background-image: none !important;
-	background-color: #282828 !important;
-	border-color: #282828 !important;
-}
-
-.mainMenu li.optionBlackfriday a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionCybermonday {
-	background-image: none !important;
-	background-color: #49b2d6 !important;
-	border-color: #419fbf !important;
-}
-
-.mainMenu li.optionCybermonday a {
-	color: #222 !important;
-}
-
-.mainMenu li.optionDreamhack {
-	background-image: none !important;
-	background-color: #5e2f8e !important;
-	border-color: #402061 !important;
-}
-
-.mainMenu li.optionDreamhack a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionJulkalender {
-	background-image: none !important;
-	background-color: #c00 !important;
-	border-color: #900 !important;
-}
-
-.mainMenu li.optionJulkalender a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionMellandagsrea {
-	background-image: none !important;
-	background-color: #af0035 !important;
-	border-color: #780024 !important;
-}
-
-.mainMenu li.optionMellandagsrea a {
-	color: #ccc !important;
-}
-
-.mainMenu li.optionVr:hover,
-.mainMenu li.optionCes:hover,
-.mainMenu li.optionPaskrea:hover,
-.mainMenu li.optionGreenfriday:hover,
-.mainMenu li.optionComputex:hover,
-.mainMenu li.optionE3:hover,
-.mainMenu li.optionBack2school:hover,
-.mainMenu li.optionBlackfriday:hover,
-.mainMenu li.optionCybermonday:hover,
-.mainMenu li.optionDreamhack:hover,
-.mainMenu li.optionJulkalender:hover,
-.mainMenu li.optionMellandagsrea:hover {
-	opacity: 0.8 !important;
 }
 
 /* 2.0.2
@@ -2561,14 +2422,6 @@ div>.widget.bg-orange .widget-body .list .list-item .list-link .icon {
 	background-color: var(--background-4);
 }
 
-.subMenu .menu li.isSelected {
-	background-color: var(--background-1);
-}
-
-.mainMenu .menu li.isSelected {
-	background-color: var(--background-2);
-}
-
 .articleBBCode .bbRelatedBox {
 	background-color: var(--background-2) !important;
 }
@@ -3024,26 +2877,13 @@ div.forumPost {
 	background-color: var(--background-1) !important;
 }
 
-.mainMenu .menu li.menuItem {
-	background-color: var(--background-2) !important
-}
-
-.subMenu .menu li.menuItem {
-	background-color: var(--background-1) !important
-}
-
-.mainMenu .menu li.menuItem:hover,
-.subMenu .menu li.menuItem:hover {
-	background-color: var(--highlight) !important
-}
-
 .subMenu .menu li.isSelected a {
 	border-bottom: none !important;
 }
 
 .mainMenu .menu li.isSelected a,
 .subMenu .menu li.isSelected a {
-	color: var(--theme) !important
+	color: var(--theme) !important;
 }
 
 .comments-bubble .cb-top {
@@ -3198,4 +3038,359 @@ div.forumPost {
 .ninjaSearch .searchField .fieldWrap,
 .ninjaSearch .searchField .input {
 	background-color: var(--background-1) !important;
+}
+
+/* 2.4.2
+–––––––––*/
+	
+.header:not(.tbButton) .mainMenu .menu li.menuItem {
+	background-color: var(--background-2);
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionPaskrea,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionPaskrea.isSelected {
+	background-color: #b59600 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionPaskrea a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionPaskrea.isSelected a span {
+	color: #fff4bd !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionPaskrea:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionPaskrea.isSelected:hover {
+	background-color: #b59600 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCes,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCes.isSelected {
+	background-color: #00a0dc !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCes a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCes.isSelected a span {
+	color: #c5efff !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCes:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCes.isSelected:hover {
+	background-color: #00a0dc !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionComputex,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionComputex.isSelected {
+	background-color: #ad0060 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionComputex a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionComputex.isSelected a span {
+	color: #ffbce1 !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionComputex:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionComputex.isSelected:hover {
+	background-color: #ad0060 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionDreamhack,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionDreamhack.isSelected {
+	background-color: #5e2f8e !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionDreamhack a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionDreamhack.isSelected a span {
+	color: #dfcfef !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionDreamhack:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionDreamhack.isSelected:hover {
+	background-color: #5e2f8e !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionVr,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionVr.isSelected {
+	background-color: #8111e1 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionVr a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionVr.isSelected a span {
+	color: #e6cdfb !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionVr:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionVr.isSelected:hover {
+	background-color: #8111e1 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionE3,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionE3.isSelected {
+	background-color: #ea2238 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionE3 a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionE3.isSelected a span {
+	color: #fbd3d7 !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionE3:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionE3.isSelected:hover {
+	background-color: #ea2238 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBlackfriday,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBlackfriday.isSelected {
+	background-color: #000 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBlackfriday a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBlackfriday.isSelected a span {
+	color: #ccc !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBlackfriday:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBlackfriday.isSelected:hover {
+	background-color: #000 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCybermonday,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCybermonday.isSelected {
+	background-color: #2c6f86 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCybermonday a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCybermonday.isSelected a span {
+	color: #cde6ef !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCybermonday:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionCybermonday.isSelected:hover {
+	background-color: #2c6f86 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionJulkalender,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionJulkalender.isSelected {
+	background-color: #c00 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionJulkalender a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionJulkalender.isSelected a span {
+	color: #ffc2c2 !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionJulkalender:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionJulkalender.isSelected:hover {
+	background-color: #c00 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionGreenfriday,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionGreenfriday.isSelected {
+	background-color: #41a500 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionGreenfriday a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionGreenfriday.isSelected a span {
+	color: #d5ffba !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionGreenfriday:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionGreenfriday.isSelected:hover {
+	background-color: #41a500 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionMellandagsrea,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionMellandagsrea.isSelected {
+	background-color: #af0035 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionMellandagsrea a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionMellandagsrea.isSelected a span {
+	color: #ffbcd0 !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionMellandagsrea:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionMellandagsrea.isSelected:hover {
+	background-color: #af0035 !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBack2school,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBack2school.isSelected {
+	background-color: #4d9edd !important;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBack2school a span,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBack2school.isSelected a span {
+	color: #dbecf8 !important;
+	text-shadow: var(--text-shadow);
+	font-weight: 700;
+}
+
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBack2school:hover,
+.header:not(.tbButton) .mainMenu .menu li.menuItem.optionBack2school.isSelected:hover {
+	background-color: #4d9edd !important;
+}
+
+.header:not(.tbButton) .subMenu .menu li.menuItem {
+	background-color: var(--background-1);
+}
+
+.header:not(.tbButton) .subMenu .menu li.menuItem.isSelected {
+	background-color: var(--background-1);
+	border-bottom: 1px solid var(--background-1);
+}
+
+.header:not(.tbButton) .subMenu .menu li.menuItem.isSelected a.link {
+	color: var(--theme) !important;
+	padding-top: 5px;
+}
+
+.header:not(.tbButton) .mainMenu.menuItem,
+.header:not(.tbButton) .subMenu.menuItem {
+	border-bottom: var(--border-style);
+}
+
+.header:not(.tbButton) .mainMenu.menuItem.isSelected a,
+.header:not(.tbButton) .subMenu.menuItem.isSelected a {
+	color: var(--text-1) !important;
+}
+
+.tipsportal .vendor-products {
+	background-color: var(--background-2);
+}
+
+.tipsportal .vendor-products .product-footer {
+	background-color: var(--background-2);
+}
+
+.tipsportal .vendor-products .product-name {
+	color: var(--theme)
+}
+
+.tipsportal .vendor-products .product-descr {
+	color: var(--text-2)
+}
+
+.tipsportal .vendor-products .product-price-offer {
+	color: var(--text-1)
+}
+
+.tipsportal .vendor-products .product-price-regular {
+	color: var(--text-2)
+}
+
+.tipsportal .vendor-products .product-price-savings {
+	background-color: var(--theme);
+	text-shadow: var(--text-shadow)
+}
+
+.tipsportal .vendor-campaign-link a {
+	color: var(--text-1)
+}
+
+.tipsportal .vendor-name a {
+	color: var(--text-1)
+}
+
+.tipsportal .tips-title {
+	color: var(--text-1)
+}
+
+.tipsportal .tips .num-comments a {
+	color: var(--theme)
+}
+
+.tipsportal .tips-row {
+	background-color: var(--background-2)
+}
+
+.tipsportal .tips-row:nth-child(odd) {
+	background-color: var(--background-2)
+}
+
+.tipsportal .tips-row:hover .col-wrapper {
+	background-color: var(--highlight)
+}
+
+.tipsportal .tips .col-product-inner-wrapper {
+	color: var(--theme)
+}
+
+.tipsportal .tips .col-category {
+	color: var(--text-1)
+}
+
+.tipsportal .tips-data .col-vendor {
+	color: var(--text-1)
+}
+
+.tipsportal .tips-data .col-price {
+	color: var(--theme)
+}
+
+.tipsportal .tips .col-user {
+	color: var(--text-1)
+}
+
+.tipsportal .tips-data .col-score .label {
+	background-color: var(--theme);
+	text-shadow: var(--text-shadow)
+}
+
+.tipsportal .tips a.cell-product:hover .col-product,
+.tipsportal .tips a.cell-product:hover .col-user,
+.tipsportal .tips a.cell-user:hover .col-product,
+.tipsportal .tips a.cell-user:hover .col-user {
+	text-decoration: none !important;
+}
+
+.tipsportal a:hover {
+	text-decoration: none !important;
+	opacity: 1 !important
+}
+
+.tipsportal #guide-wrapper {
+	background-color: var(--background-2);
+	border-radius: 0.6rem;
+	color: var(--text-2)
+}
+
+.tipsportal .vendor-guides h2 {
+	color: var(--theme)
+}
+
+.tipsportal .vendor-guides .guide span {
+	color: var(--text-1)
+}
+
+.tipsportal .vendor-guides .guide .icon img {
+	filter: sepia(0) saturate(0.29) brightness(67%) contrast(184%) hue-rotate(179deg) invert(8%) !important;
+}
+
+.tipsportal .vendor-guides .guide .icon img:hover {
+	opacity: 0.8 !important
+}
+
+.tipsportal .tips-title a {
+	color: var(--theme)
 }
