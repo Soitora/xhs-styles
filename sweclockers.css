@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			SweClockers Dark - XHS
 @namespace		https://github.com/Soitora
-@version		2.4.2
+@version		2.4.3
 @description	A modern dark theme for SweClockers
 @author			Soitora <simon.mattila@protonmail.com> (https://soitora.com)
 @homepageURL	https://github.com/Soitora/xhs-styles
@@ -3393,4 +3393,32 @@ div.forumPost {
 
 .tipsportal .tips-title a {
 	color: var(--theme)
+}
+	
+/* 2.4.3
+–––––––––*/
+
+.tipsportal-header {
+	background-color: var(--background-2);
+	box-shadow: var(--box-shadow);
+}
+
+.tipsportal-header h1 {
+	color: var(--theme);
+}
+	
+.tipsportal-header p {
+	color: var(--text-2);
+}
+	
+.tipsportal-header p a {
+	color: var(--theme);
+}
+
+.tipsportal-header p a:hover {
+	opacity: 0.8 !important;
+}
+	
+.tipsportal-header .about-fynd a {
+	color: var(--theme);
 }
